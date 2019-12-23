@@ -1,0 +1,48 @@
+/*рэйтинг и топ прайма*/
+.season-top h3 {
+	color: #78BEF6
+	}
+.schedule-wrapper__header {
+	display: none
+	}
+.schedule-wrapper__subheader {
+	display: none
+	}
+.schedule-wrapper {
+	padding: 1px 10px 10px 25px
+	}
+/* выпилить кнопку доната и писать на твич*/   
+#tab_chat .chat-wrapper .chatTools-container .actions .icon.micro-donate {
+	display:none
+	} 
+#tab_chat .chat-wrapper .chatTools-container .actions .icon.send-to-twitch {
+	display:none
+	}
+/* Перемещает иконку написать стримеру налево*/
+.chat-wrapper .chatTools-container .actions .icon.to_streamer {
+	float: left;
+	}
+/*цвет рамки ввода*/
+#tab_chat .chat-wrapper .chatTools-container .actions-row {
+	background-color: #111111;
+	}
+#tab_chat .chat-wrapper .chatTools-container .text_block_wrapper {
+	background-color: #111111;
+	}
+.chat-wrapper .chat-container .chat_msg .ban-attempt {
+	color: #2c9917
+	}
+/*убирает гуглпоиск с главной*/  
+#block-google_cse-0 > div:nth-child(1) {
+	display: none
+	}
+#block-google_cse-0 {
+	display: none
+	}
+/*выпиливает из ноды стрима рекомендуемые настройки для SC2TV плеера*/
+.sc2tv-service-settings-toggle {
+	display: none
+	}
+.sc2tv-stream-service-description > br:nth-child(14) {
+	display: none
+	}

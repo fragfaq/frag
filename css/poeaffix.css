@@ -1,0 +1,91 @@
+/* CSS for http://poeaffix.net/ */
+
+html,
+body {
+    color: #ff0000;
+    background-color: #191919;
+}
+ol {
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
+    margin-bottom: 0px;
+    max-height: 30px;
+}
+ul {
+    color: #fff;
+    -webkit-box-shadow: unset;
+    -moz-box-shadow: unset;
+    box-shadow: unset;
+}
+ul li {
+    background: #191919;
+    cursor: pointer;
+    -webkit-transition: all 0s;
+    -moz-transition: all 0s;
+    -ms-transition: all 0s;
+    -o-transition: all 0s;
+    transition: all 0s;
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
+}
+ul li ul {
+    -webkit-box-shadow: unset;
+    -moz-box-shadow: none;
+    box-shadow: unset;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transiton: opacity 0s;
+    -moz-transition: opacity 0s;
+    -ms-transition: opacity 0s;
+    -o-transition: opacity 0s;
+    -transition: opacity 0s;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+#wrapper {
+    background-color: #191919;
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
+}
+#wrapper #corruption {
+    text-align: center;
+}
+#wrapper #left a {
+    color: #fff;
+}
+#wrapper #right a {
+    color: #fff;
+}
+.affix {
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
+}
+.modalDialog > div {
+    background-color: #191919;
+}
+.seperator {
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
+}
+
+.seperatorINDEX {
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
+}
+.VAL {
+    background-color: #191919;
+}
+nav#mainav {
+    background-color: #191919;
+}
+header ul li {
+    background: #191919;
+}
+br {
+    display: none;
+}
+.bold {
+    color: #00cc00!important;
+}
