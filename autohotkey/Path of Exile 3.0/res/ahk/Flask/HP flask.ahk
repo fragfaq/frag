@@ -234,12 +234,12 @@ else if Vkeys = 6			; 3 = 2+3+4+5 (для 4ех утилиток на 3 или d
 	Sleep, % Sleepfunction(45, 80)
 	SendInput, 5
 }
-else if Vkeys = 7			; 3 = 4+5
+else if Vkeys = 7			; 3 = 3+4
 {
 	Sleep, % Sleepfunction(45, 80)
-	SendInput, 4
+	SendInput, 3
 	Sleep, % Sleepfunction(45, 80)
-	SendInput, 5
+	SendInput, 4
 }
 return
 ;=========== бинд на D =================================
@@ -336,12 +336,12 @@ else if (Vkeys < 1 and Vkeys > 7)
 {
 	SendInput, {sc20}
 }
-else if Vkeys = 7			; 3 = 4+5
+else if Vkeys = 7			; 3 = 3+4
 {
 	Sleep, % Sleepfunction(45, 80)
-	SendInput, 4
+	SendInput, 3
 	Sleep, % Sleepfunction(45, 80)
-	SendInput, 5
+	SendInput, 4
 }
 return
 ;=========== бинд на Tilde =============================
