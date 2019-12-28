@@ -3,12 +3,15 @@ GroupAdd, poe, ahk_exe PathOfExile.exe
 GroupAdd, poe, ahk_exe PathOfExile_x64.exe
 ; ==============================================
 ; Vkeys: 
-; 0 - дефолт
-; 1 - 1/2 - 1/2, 3 - 3,4,5
-; 2 - 1/2/3 - 1/2/3, 3 - 4,5
-; 3 - 1/2/3 - 1/2/3, 3 - 4/5
-; 4 - 1/2/3/4 - 1/2/3/4, 3 - 5
-; 5 - 1/2 - 1/2, 3 - 3/4, ` - 5
+; 0 = 1 = 1, 2 = 2 etc.
+; 1 = 1/2 = 1/2, 3&d = 3+4+5, ~ = 5
+; 2 = 1/2 = 1/2/3, 3&d = 4+5, ~ = 5
+; 3 = 1/2 = 1/2/3, 3&d = 4/5, ~ = 5
+; 4 = 1/2 = 1/2/3/4, 3&d = 5, ~ = 5
+; 5 = 1/2 = 1/2, 3&d = 3/4, ~ = 5
+; 6 = 1/2 = 1, 3&d = 2+3+4+5, ~ = 5
+; 7 = 1/2 = 1/2, 3&d = 3+4, ~ = 5
+; 8 = 1/2 = 1/2, 3 = 3/4, d = 5, ~ = 5
 ;==============================================
 ; Vkeys			- меняет хоткеи
 ; Vdvehilki		- меняет значение переменной для варианта 1
@@ -32,6 +35,24 @@ global Var_autoflask_bind := 0
 global Var_FRBA := 0
 Vtest1 = 0
 ;==============================================
+; Стартовый Gui, который показывает только что Vkeys = 0
+Gui, Destroy
+Gui, 2:Destroy
+Gui, 3:Destroy
+Gui, +LastFound +AlwaysOnTop +ToolWindow +OwnDialogs
+Gui, Font, S16 W900, Verdana
+Gui, Add, Text, x215 y80 c000000 BackgroundTrans, keys %Vkeys%
+Gui, Add, Text, x215 y86 c000000 BackgroundTrans, keys %Vkeys%
+Gui, Add, Text, x221 y80 c000000 BackgroundTrans, keys %Vkeys%
+Gui, Add, Text, x221 y86 c000000 BackgroundTrans, keys %Vkeys%
+Gui, Add, Text, x219 y83 ca0a0a0 BackgroundTrans, keys %Vkeys%
+; показ и положение Gui
+Gui, Show, x220 y870 NoActivate, Flask
+; прозрачность
+Gui, Color, 000001
+WinSet, TransColor, 000001
+Gui, -Caption
+;==============================================
 ; Функция для слипа, пример использования:
 ; Sleep, % Sleepfunction(45, 80)
 ; 45 и 80 могут быть любыми числами, между которыми будет найдено случайное число.
@@ -42,6 +63,7 @@ Sleepfunction(min, max)
 	return randb
 }
 return
+;==============================================
 ;=========== бинд на 1 =================================
 sc2:: 
 If Vkeys = 0 
@@ -97,7 +119,7 @@ else if Vkeys = 6			; 1
 {
 	SendInput, 1
 }
-else if Vkeys = 7			; 1 или 2 в зависимости от Vdvehilki
+else if (Vkeys = 7 or Vkeys = 8) 	; 1 или 2 в зависимости от Vdvehilki
 {
 	SendInput, %Vdvehilki%
 	Vdvehilki += 1
@@ -162,7 +184,7 @@ else if Vkeys = 6			; 1 или 2 в зависимости от Vdvehilki, 3&d =
 {
 	SendInput, 1
 }
-else if Vkeys = 7			; 1 или 2 в зависимости от Vdvehilki
+else if (Vkeys = 7 or Vkeys = 8)			; 1 или 2 в зависимости от Vdvehilki
 {
 	SendInput, %Vdvehilki%
 	Vdvehilki += 1
@@ -234,7 +256,7 @@ else if Vkeys = 6			; 3 = 2+3+4+5 (для 4ех утилиток на 3 или d
 	Sleep, % Sleepfunction(45, 80)
 	SendInput, 5
 }
-else if Vkeys = 7			; 3 = 3+4
+else if (Vkeys = 7 or Vkeys = 8)			; 3 = 3+4
 {
 	Sleep, % Sleepfunction(45, 80)
 	SendInput, 3
@@ -332,16 +354,20 @@ else if Vkeys = 6			; d = 2+3+4+5 (для 4ех утилиток на 3 или d
 		Var_autoflask_bind := 1
 	}
 }
-else if (Vkeys < 1 and Vkeys > 7)
-{
-	SendInput, {sc20}
-}
-else if Vkeys = 7			; 3 = 3+4
+else if Vkeys = 7					; 3 = 3+4
 {
 	Sleep, % Sleepfunction(45, 80)
 	SendInput, 3
 	Sleep, % Sleepfunction(45, 80)
 	SendInput, 4
+}
+else if Vkeys = 8					; 3 = 3+4
+{
+	SendInput, 5
+}
+else if (Vkeys < 1 and Vkeys > 8)
+{
+	SendInput, {sc20}
 }
 return
 ;=========== бинд на Tilde =============================
@@ -398,14 +424,14 @@ else if Var_autoflask_bind = 1
 }
 return
 ;==============================================
-; если бинды на фласки включены - то на w сперва прожимается w, а потом сразу ноль, что б кастануть керсу.
+; если бинды на фласки включены - то на w сперва прожимается w, а потом сразу R, что б кастануть керсу.
 ~sc11::
 if Vkeys > 0
 {
 	Sleep, % Sleepfunction(35, 50)
 	SendInput, {sc13}
-	Sleep, % Sleepfunction(145, 180)
-	SendInput, +{scB}
+	; Sleep, % Sleepfunction(145, 180)
+	; SendInput, +{scB}
 }
 else if Var_autoflask_bind = 1
 {
@@ -448,7 +474,7 @@ return
 ;======;======;======;======;======;======
 ; Смена биндов и вывод GUI с их описанием, но сперва закрытиие цикла, если он работает.
 F8::
-Vkeys := 6 ; Закомментировать для доступности всех биндов. Раскомменетировать или указать Vkeys для одного варианта.
+Vkeys := 7 ; Закомментировать для доступности всех биндов. Раскомменетировать или указать Vkeys для одного варианта.
 Sleep, % Sleepfunction(40, 60)
 SetTitleMatchMode, 2
 DetectHiddenWindows, On
@@ -469,7 +495,7 @@ if Vkeys = 0
 else if Vkeys > 0
 {
 	Vkeys += 1
-	if Vkeys > 7
+	if Vkeys > 8
 	{	
 		Sleep, % Sleepfunction(30, 50)
 		Vkeys := 0
@@ -482,8 +508,8 @@ if Vkeys = 0
 	Vutil := ""
 	VHealnumder := ""
 	Vutilnumber := ""
-	VTilde := ""
-	VkeyR := ""
+	VText1 := ""
+	VText2 := ""
 }
 else if Vkeys = 1
 {
@@ -491,8 +517,8 @@ else if Vkeys = 1
 	Vutil := "Утилитки одновременно"
 	VHealnumder := 2
 	Vutilnumber := 3
-	VTilde := ""
-	VkeyR := ""
+	VText1 := ""
+	VText2 := ""
 }
 else if Vkeys = 2
 {
@@ -500,9 +526,8 @@ else if Vkeys = 2
 	Vutil := "Утилитки одновременно"
 	VHealnumder := 3
 	Vutilnumber := 2
-	VTilde := ""
-	; VkeyR := ""
-	VkeyR := ""
+	VText1 := ""
+	VText2 := ""
 }
 else if Vkeys = 3
 {
@@ -510,8 +535,8 @@ else if Vkeys = 3
 	Vutil := "Утилитки по очереди"
 	VHealnumder := 3
 	Vutilnumber := 2
-	VTilde := ""
-	VkeyR := ""
+	VText1 := ""
+	VText2 := ""
 }
 else if Vkeys = 4
 {
@@ -519,8 +544,8 @@ else if Vkeys = 4
 	Vutil := "Утилитка"
 	VHealnumder := 4
 	Vutilnumber := 1
-	VTilde := ""
-	VkeyR := ""
+	VText1 := ""
+	VText2 := ""
 }	
 else if Vkeys = 5
 {
@@ -528,8 +553,8 @@ else if Vkeys = 5
 	Vutil := "Утилитки по очереди"
 	VHealnumder := 2
 	Vutilnumber := 2
-	VTilde := ""
-	VkeyR := ""
+	VText1 := ""
+	VText2 := ""
 }
 else if Vkeys = 6
 {
@@ -537,8 +562,8 @@ else if Vkeys = 6
 	Vutil := "Утилитки одновременно"
 	VHealnumder := 1
 	Vutilnumber := 4
-	VTilde := ""
-	VkeyR := ""
+	VText1 := ""
+	VText2 := ""
 }
 else if Vkeys = 7
 {
@@ -546,8 +571,17 @@ else if Vkeys = 7
 	Vutil := "Утилитки одновременно"
 	VHealnumder := 2
 	Vutilnumber := 2
-	VTilde := ""
-	VkeyR := ""
+	VText1 := ""
+	VText2 := ""
+}
+else if Vkeys = 8
+{
+	VHeal := "Хилки по очереди"
+	Vutil := "Утилитки одновременно"
+	VHealnumder := 2
+	Vutilnumber := 2
+	VText1 := "d = 5"
+	VText2 := ""
 }
 Sleep, % Sleepfunction(30, 50)
 
@@ -563,20 +597,20 @@ Gui, Add, Text, x0 y0 cd1e150 BackgroundTrans, %VHealnumder%
 ; цифры утилок
 Gui, Add, Text, x4 y38 c000000 BackgroundTrans, %Vutilnumber%
 Gui, Add, Text, x0 y34 cd1e150 BackgroundTrans, %Vutilnumber%
-; Бинд тильды
-Gui, Font, S20 W900, Verdana
-Gui, Add, Text, x0 y70 c000000 BackgroundTrans, %VTilde%
-Gui, Add, Text, x0 y76 c000000 BackgroundTrans, %VTilde%
-Gui, Add, Text, x6 y70 c000000 BackgroundTrans, %VTilde%
-Gui, Add, Text, x6 y76 c000000 BackgroundTrans, %VTilde%
-Gui, Add, Text, x3 y73 cffffff BackgroundTrans, %VTilde%
-; Бинд R
+; не используемый на данный момент текст
 Gui, Font, S14 W900, Verdana
-Gui, Add, Text, x150 y80 c000000 BackgroundTrans, %VkeyR%
-Gui, Add, Text, x150 y86 c000000 BackgroundTrans, %VkeyR%
-Gui, Add, Text, x156 y80 c000000 BackgroundTrans, %VkeyR%
-Gui, Add, Text, x156 y86 c000000 BackgroundTrans, %VkeyR%
-Gui, Add, Text, x153 y83 cffffff BackgroundTrans, %VkeyR%
+Gui, Add, Text, x0 y83 c000000 BackgroundTrans, %VText1%
+Gui, Add, Text, x0 y89 c000000 BackgroundTrans, %VText1%
+Gui, Add, Text, x6 y83 c000000 BackgroundTrans, %VText1%
+Gui, Add, Text, x6 y89 c000000 BackgroundTrans, %VText1%
+Gui, Add, Text, x3 y86 c00c90b BackgroundTrans, %VText1%
+; Значение Vkeys
+Gui, Font, S16 W900, Verdana
+Gui, Add, Text, x215 y80 c000000 BackgroundTrans, keys %Vkeys%
+Gui, Add, Text, x215 y86 c000000 BackgroundTrans, keys %Vkeys%
+Gui, Add, Text, x221 y80 c000000 BackgroundTrans, keys %Vkeys%
+Gui, Add, Text, x221 y86 c000000 BackgroundTrans, keys %Vkeys%
+Gui, Add, Text, x219 y83 ca0a0a0 BackgroundTrans, keys %Vkeys%
 ; автопрожатие хп фласок
 ; Gui, add, Picture, x310 y80 w40 h40 gAutoflask, %A_ScriptDir%\res\hp.png
 Gui, add, Picture, x308 y88 w22 h25 gAutoflask, %A_ScriptDir%\res\hp-A.png
@@ -605,6 +639,21 @@ Vkeys := 0
 Gui, Destroy
 Gui, 2:Destroy
 Gui, 3:Destroy
+
+Gui, +LastFound +AlwaysOnTop +ToolWindow +OwnDialogs
+Gui, Font, S16 W900, Verdana
+Gui, Add, Text, x215 y80 c000000 BackgroundTrans, keys %Vkeys%
+Gui, Add, Text, x215 y86 c000000 BackgroundTrans, keys %Vkeys%
+Gui, Add, Text, x221 y80 c000000 BackgroundTrans, keys %Vkeys%
+Gui, Add, Text, x221 y86 c000000 BackgroundTrans, keys %Vkeys%
+Gui, Add, Text, x219 y83 ca0a0a0 BackgroundTrans, keys %Vkeys%
+; показ и положение Gui
+Gui, Show, x220 y870 NoActivate, Flask
+; прозрачность
+Gui, Color, 000001
+WinSet, TransColor, 000001
+Gui, -Caption
+
 return
 ;=============================================
 Autoflask:
