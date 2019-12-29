@@ -425,19 +425,21 @@ else if Var_autoflask_bind = 1
 return
 ;==============================================
 ; если бинды на фласки включены - то на w сперва прожимается w, а потом сразу R, что б кастануть керсу.
-~sc11::
+; ~sc11::
+sc11::
 if Vkeys > 0
 {
-	Sleep, % Sleepfunction(35, 50)
+	SendInput, {sc11}
+	; Sleep, % Sleepfunction(35, 50)
+	Sleep, % Sleepfunction(15, 30)
 	SendInput, {sc13}
-	; Sleep, % Sleepfunction(145, 180)
-	; SendInput, +{scB}
 }
-else if Var_autoflask_bind = 1
+else if Vkeys = 0
 {
 	SendInput, {sc11}
 }
-return 
+return
+;==============================================
 ; 7::
 ; msgbox, %Vkeys%
 ; return
