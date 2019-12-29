@@ -46,7 +46,7 @@ IfWinNotActive, ("ahk_class POEWindowClass")
 	Sleep, % Sleepfunction(40, 60)
 	SendInput, {scB}
 	Sleep, % Sleepfunction(40, 60)
-;==============================================
+;===============================================
 ; Устанавливаем таймер примерно на 4 секунды, с разбросом в 0.1 секунды
 SetTimer, FRBATimer, % Sleepfunction(2050, 2150)
 Return
