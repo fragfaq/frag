@@ -128,6 +128,10 @@ else if (Vkeys = 7 or Vkeys = 8) 	; 1 или 2 в зависимости от Vd
 		Vdvehilki := 1
 	}
 }
+else if Vkeys = 9			; 1
+{
+	SendInput, 1
+}
 return
 ;=========== бинд на 2 =================================
 sc3::
@@ -180,7 +184,7 @@ else if Vkeys = 5			; 1 или 2 в зависимости от Vdvehilki, 3&d =
 		Vdvehilki := 1
 	}
 }
-else if Vkeys = 6			; 1 или 2 в зависимости от Vdvehilki, 3&d = 3/4
+else if Vkeys = 6			; 1
 {
 	SendInput, 1
 }
@@ -192,6 +196,10 @@ else if (Vkeys = 7 or Vkeys = 8)			; 1 или 2 в зависимости от V
 	{
 		Vdvehilki := 1
 	}
+}
+else if Vkeys = 9			; 1
+{
+	SendInput, 1
 }
 return
 ;=========== бинд на 3 =================================
@@ -258,6 +266,14 @@ else if Vkeys = 6			; 3 = 2+3+4+5 (для 4ех утилиток на 3 или d
 }
 else if (Vkeys = 7 or Vkeys = 8)			; 3 = 3+4
 {
+	Sleep, % Sleepfunction(45, 80)
+	SendInput, 3
+	Sleep, % Sleepfunction(45, 80)
+	SendInput, 4
+}
+else if Vkeys = 9			; 3 = 2+3+4
+{
+	SendInput, 2
 	Sleep, % Sleepfunction(45, 80)
 	SendInput, 3
 	Sleep, % Sleepfunction(45, 80)
@@ -361,11 +377,11 @@ else if Vkeys = 7					; 3 = 3+4
 	Sleep, % Sleepfunction(45, 80)
 	SendInput, 4
 }
-else if Vkeys = 8					; 3 = 3+4
+else if (Vkeys = 8 or Vkeys = 9)				; d = 5
 {
 	SendInput, 5
 }
-else if (Vkeys < 1 and Vkeys > 8)
+else if (Vkeys < 1 and Vkeys > 9)
 {
 	SendInput, {sc20}
 }
@@ -425,20 +441,19 @@ else if Var_autoflask_bind = 1
 return
 ;==============================================
 ; если бинды на фласки включены - то на w сперва прожимается w, а потом сразу R, что б кастануть керсу.
-; ~sc11::
-sc11::
-if Vkeys > 0
-{
-	SendInput, {sc11}
-	; Sleep, % Sleepfunction(35, 50)
-	Sleep, % Sleepfunction(15, 30)
-	SendInput, {sc13}
-}
-else if Vkeys = 0
-{
-	SendInput, {sc11}
-}
-return
+; UPD: Выпилено т.к. керс он хит.
+; sc11::
+; if Vkeys > 0
+; {
+	; SendInput, {sc11}
+	; Sleep, % Sleepfunction(15, 30)
+	; SendInput, {sc13}
+; }
+; else if Vkeys = 0
+; {
+	; SendInput, {sc11}
+; }
+; return
 ;==============================================
 ; 7::
 ; msgbox, %Vkeys%
@@ -582,6 +597,15 @@ else if Vkeys = 8
 	Vutil := "Утилитки одновременно"
 	VHealnumder := 2
 	Vutilnumber := 2
+	VText1 := "d = 5"
+	VText2 := ""
+}
+else if Vkeys = 9
+{
+	VHeal := "Хилки по очереди"
+	Vutil := "Утилитки одновременно"
+	VHealnumder := 1
+	Vutilnumber := 3
 	VText1 := "d = 5"
 	VText2 := ""
 }
