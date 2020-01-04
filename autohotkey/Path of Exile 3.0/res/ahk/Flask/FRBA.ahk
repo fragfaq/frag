@@ -42,24 +42,53 @@ IfWinNotActive, ("ahk_class POEWindowClass")
 		{
 			WinWaitActive, Path of Exile
 		}
-	; SendInput, {scA}						Бонармор временно отключен
+	SendInput, {scA}
+	; Sleep, % Sleepfunction(40, 60)
+	; SendInput, {MButton}
 	Sleep, % Sleepfunction(40, 60)
 	SendInput, {scB}
 ;==============================================
-; Устанавливаем таймер примерно на 4 секунды, с разбросом в 0.1 секунды
-SetTimer, FRBATimer, % Sleepfunction(4150, 4250)
+; Устанавливаем таймер примерно на 4 секунды,  с разбросом в 0.1 секунды для бон армора и фэйсрана
+; бонармора и фэйсрана больше нет, а значит и таймеров для них.
+; SetTimer, FRBATimer, % Sleepfunction(4150, 4250)
+;============
+; Устанавливаем таймер на секунe с копьем,  с разбросом в 0.1 секунды Вортекса.
+SetTimer, Vortex, % Sleepfunction(1150, 1250)
+;============
+; Устанавливаем таймер на примерно 4,7 секунды для ИК
+SetTimer, IC, % Sleepfunction(5500, 5900)
 Return
 ;==============================================
 ; Описываем, что таймер будет делать, тут так же добавляем проверку активности окна
-FRBATimer:
+; фэйсран слишком мало действует т.к. касты по кд.
+; FRBATimer:
+	; IfWinNotActive, ("ahk_class POEWindowClass")
+		; {
+			; WinWaitActive, Path of Exile
+		; }
+	; SendInput, {scA}
+	; Sleep, % Sleepfunction(40, 60)
+	; SendInput, {scB}
+; Return
+;==============================================
+Vortex:
 	IfWinNotActive, ("ahk_class POEWindowClass")
 		{
 			WinWaitActive, Path of Exile
 		}
-	; SendInput, {scA}						Бонармор временно отключен
 	Sleep, % Sleepfunction(40, 60)
 	SendInput, {scB}
 Return
+;==============================================
+IC:
+	IfWinNotActive, ("ahk_class POEWindowClass")
+		{
+			WinWaitActive, Path of Exile
+		}
+	Sleep, % Sleepfunction(40, 60)
+	SendInput, {scA}
+Return
+;==============================================
 ;============
 ;============
 ; Левый бинд, что б скрипт не закрывался
