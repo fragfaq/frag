@@ -448,66 +448,49 @@ sc11::
 if Vkeys > 0
 {
 	SendInput, {sc11}
+	; Sleep, % Sleepfunction(35, 50)
+	; SendInput, {MButton}
 	Sleep, % Sleepfunction(35, 50)
-	SendInput, {sc13}
+	; SendInput, {sc13}
+	SendInput, {MButton}
 }
-else if Var_autoflask_bind = 1
+else if Vkeys = 0
 {
 	SendInput, {sc11}
 }
 return 
 ; ==============================================
 ; 7::
-; msgbox, %Vkeys%
+; msgbox, Var_FRBA = %Var_FRBA%
 ; return
 ;=========== бинд на Shift+9 ===================
 ; Автопрожатие бонармора и фэйсрана на Shift+9
 ; Бонармор временно отключен, т.к. имеет общий кд с иммортал колом
-~+scA::
-If Vkeys > 0
-{
-	if Var_FRBA = 0
+; ~+scA::
+autocast() {
+	If Vkeys > 0
 	{
-		Run, %A_ScriptDir%\FRBA.ahk
-		Var_FRBA := 1
+		if Var_FRBA = 0
+		{
+			Run, %A_ScriptDir%\FRBA.ahk
+			Var_FRBA := 1
+		}
+		else if Var_FRBA = 1
+		{
+			SetTitleMatchMode, 2
+			DetectHiddenWindows, On
+			WinClose, FRBA.ahk - AutoHotkey v
+			Var_FRBA := 0
+		}
 	}
-	else if Var_FRBA = 1
+	else
 	{
-		SetTitleMatchMode, 2
-		DetectHiddenWindows, On
-		WinClose, FRBA.ahk - AutoHotkey v
-		Var_FRBA := 0
+		Sleep, 10
 	}
-}
-else
-{
-	; SendInput, {scB}
-	Sleep, 10
 }
 return
 ;=========== бинд на Mouse2 ===================
-; Brand & Curse on mouse2
-; Выпилено, т.к. на практике не удобно, керсит когда не надо
-; И тратит слишком много маны, т.к. кидает керс после каждого бранда
-; ~RButton::									; Нажатие\зажатие mouse2
-; If Vkeys > 0
-; {
-	; Loop									; Начало цикла
-	; {
-		; Click, right
-		; Sleep, % Sleepfunction(45, 80)
-		; if (!GetKeyState("RButton", "P"))	; Проверка на зажатие mouse1, если зажат - то снова на Click, right
-		; {									; Если отпущен - керса и дроп цикла.
-			; SendInput, {sc13}
-			; break
-		; }
-	; }
-; }
-; else
-; {
-	; Sleep, 10
-; }
-; return
+
 ;==============================================
 ;=====================
 #IfWinActive
@@ -518,7 +501,8 @@ return
 ;======;======;======;======;======;======
 ; Смена биндов и вывод GUI с их описанием, но сперва закрытиие цикла, если он работает.
 F8::
-Vkeys := 8 ; Закомментировать для доступности всех биндов. Раскомменетировать или указать Vkeys для одного варианта.
+~+scA::
+Vkeys := 8 ; Закомментировать для доступности всех биндов. Раскомменетировать или указать Vkeys для одного варианта
 Sleep, % Sleepfunction(40, 60)
 SetTitleMatchMode, 2
 DetectHiddenWindows, On
@@ -545,6 +529,8 @@ else if Vkeys > 0
 		Vkeys := 0
 	}
 }
+Sleep, % Sleepfunction(30, 50)
+autocast()
 Sleep, % Sleepfunction(30, 50)
 if Vkeys = 0
 {
@@ -686,6 +672,7 @@ DetectHiddenWindows, On
 WinClose, Loop HP All flask.ahk - AutoHotkey v
 WinClose, FRBA.ahk - AutoHotkey v
 Sleep, 20
+Var_FRBA := 0
 Var_autoflask_bind := 0
 VautoButton := 0
 Vkeys := 0
@@ -708,6 +695,45 @@ WinSet, TransColor, 000001
 Gui, -Caption
 
 return
+;=============================================
+~WheelDown::
+~WheelUp::
+if Vkeys > 0
+{
+	SetTitleMatchMode, 2
+	DetectHiddenWindows, On
+	WinClose, Loop HP All flask.ahk - AutoHotkey v
+	WinClose, FRBA.ahk - AutoHotkey v
+	Sleep, 20
+	Var_FRBA := 0
+	Var_autoflask_bind := 0
+	VautoButton := 0
+	Vkeys := 0
+	Gui, Destroy
+	Gui, 2:Destroy
+	Gui, 3:Destroy
+
+	Gui, +LastFound +AlwaysOnTop +ToolWindow +OwnDialogs
+	Gui, Font, S16 W900, Verdana
+	Gui, Add, Text, x215 y80 c000000 BackgroundTrans, keys %Vkeys%
+	Gui, Add, Text, x215 y86 c000000 BackgroundTrans, keys %Vkeys%
+	Gui, Add, Text, x221 y80 c000000 BackgroundTrans, keys %Vkeys%
+	Gui, Add, Text, x221 y86 c000000 BackgroundTrans, keys %Vkeys%
+	Gui, Add, Text, x219 y83 ca0a0a0 BackgroundTrans, keys %Vkeys%
+	; показ и положение Gui
+	Gui, Show, x220 y870 NoActivate, Flask
+	; прозрачность
+	Gui, Color, 000001
+	WinSet, TransColor, 000001
+	Gui, -Caption
+
+}
+else if Vkeys = 0
+{
+	; SendInput, {WheelDown}
+	Sleep, 10
+}
+return 
 ;=============================================
 Autoflask:
 !sc21::
