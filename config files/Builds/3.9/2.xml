@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PathOfBuilding>
-	<Build level="90" targetVersion="3_0" banditNormal="None" bandit="None" banditMerciless="None" className="Witch" ascendClassName="Necromancer" mainSocketGroup="1" viewMode="SKILLS" banditCruel="None">
+	<Build level="90" targetVersion="3_0" banditNormal="None" bandit="None" banditMerciless="None" className="Witch" ascendClassName="Necromancer" mainSocketGroup="1" viewMode="TREE" banditCruel="None">
 		<Spectre id="Metadata/Monsters/TemplarSlaveDriver/TemplarSlaveDriver"/>
 		<Spectre id="Metadata/Monsters/HolyFireElemental/HolyFireElementalSolarisBeam"/>
 		<PlayerStat stat="ActiveMinionLimit" value="4"/>
@@ -20,7 +20,7 @@
 		<PlayerStat stat="ReqStr" value="159"/>
 		<PlayerStat stat="Dex" value="82"/>
 		<PlayerStat stat="ReqDex" value="79"/>
-		<PlayerStat stat="Int" value="298"/>
+		<PlayerStat stat="Int" value="278"/>
 		<PlayerStat stat="ReqInt" value="242"/>
 		<PlayerStat stat="Life" value="7142"/>
 		<PlayerStat stat="Spec:LifeInc" value="204"/>
@@ -28,13 +28,13 @@
 		<PlayerStat stat="LifeUnreservedPercent" value="100"/>
 		<PlayerStat stat="LifeRegen" value="1320.6596"/>
 		<PlayerStat stat="LifeLeechGainRate" value="0"/>
-		<PlayerStat stat="Mana" value="1104"/>
-		<PlayerStat stat="Spec:ManaInc" value="33"/>
-		<PlayerStat stat="ManaUnreserved" value="71"/>
-		<PlayerStat stat="ManaUnreservedPercent" value="6.4311594202899"/>
-		<PlayerStat stat="ManaRegen" value="27"/>
+		<PlayerStat stat="Mana" value="1184"/>
+		<PlayerStat stat="Spec:ManaInc" value="48"/>
+		<PlayerStat stat="ManaUnreserved" value="83"/>
+		<PlayerStat stat="ManaUnreservedPercent" value="7.0101351351351"/>
+		<PlayerStat stat="ManaRegen" value="29"/>
 		<PlayerStat stat="ManaLeechGainRate" value="0"/>
-		<PlayerStat stat="EnergyShield" value="454"/>
+		<PlayerStat stat="EnergyShield" value="410"/>
 		<PlayerStat stat="Spec:EnergyShieldInc" value="10"/>
 		<PlayerStat stat="EnergyShieldRegen" value="0"/>
 		<PlayerStat stat="EnergyShieldLeechGainRate" value="0"/>
@@ -48,7 +48,7 @@
 		<PlayerStat stat="PhysicalDamageReduction" value="61"/>
 		<PlayerStat stat="EffectiveMovementSpeedMod" value="2.41"/>
 		<PlayerStat stat="BlockChance" value="75"/>
-		<PlayerStat stat="SpellBlockChance" value="45"/>
+		<PlayerStat stat="SpellBlockChance" value="51"/>
 		<PlayerStat stat="AttackDodgeChance" value="10"/>
 		<PlayerStat stat="SpellDodgeChance" value="10"/>
 		<PlayerStat stat="FireResist" value="77"/>
@@ -117,11 +117,12 @@
 			<Gem enableGlobal2="nil" skillMinionSkillCalcs="1" quality="20" level="19" gemId="Metadata/Items/Gems/SkillGemAnimateArmour" skillId="AnimateArmour" skillMinionSkill="1" skillMinionItemSet="1" enableGlobal1="true" enabled="true" nameSpec="Animate Guardian" skillMinion="AnimatedArmour"/>
 			<Gem enableGlobal2="nil" skillMinionSkillCalcs="1" quality="20" level="19" gemId="Metadata/Items/Gems/SkillGemRaiseZombie" skillId="RaiseZombie" skillMinionSkill="1" enableGlobal1="true" enabled="true" nameSpec="Raise Zombie" skillMinion="RaisedZombie"/>
 		</Skill>
-		<Skill mainActiveSkillCalcs="nil" label="" enabled="true" slot="Boots" mainActiveSkill="nil">
+		<Skill mainActiveSkillCalcs="3" label="" enabled="true" slot="Boots" mainActiveSkill="3">
 			<Gem enableGlobal2="nil" quality="12" level="1" gemId="Metadata/Items/Gems/SkillGemNewPhaseRun" skillId="NewPhaseRun" enableGlobal1="true" enabled="true" nameSpec="Phase Run"/>
-			<Gem enableGlobal2="nil" quality="9" level="8" gemId="Metadata/Items/Gems/SupportGemFasterCast" skillId="SupportFasterCast" enableGlobal1="true" enabled="true" nameSpec="Faster Casting"/>
-			<Gem enableGlobal2="nil" quality="20" level="19" gemId="Metadata/Items/Gems/SkillGemFlameDash" skillId="FlameDash" enableGlobal1="true" enabled="true" nameSpec="Flame Dash"/>
-			<Gem enableGlobal2="nil" quality="10" level="1" gemId="Metadata/Items/Gems/SkillGemArmageddonBrand" skillId="CataclysmSigil" enableGlobal1="true" enabled="true" nameSpec="Armageddon Brand"/>
+			<Gem enableGlobal2="nil" quality="9" level="8" gemId="Metadata/Items/Gems/SupportGemFasterCast" skillId="SupportFasterCast" skillPart="1" enableGlobal1="true" enabled="true" nameSpec="Faster Casting" skillMinion="SummonedChaosGolem"/>
+			<Gem enableGlobal2="nil" quality="20" level="19" gemId="Metadata/Items/Gems/SkillGemFlameDash" skillId="FlameDash" enableGlobal1="true" enabled="true" nameSpec="Flame Dash" skillMinion="SummonedPhantasm"/>
+			<Gem enableGlobal2="nil" quality="10" level="1" gemId="Metadata/Items/Gems/SkillGemArmageddonBrand" skillId="CataclysmSigil" enableGlobal1="true" enabled="true" nameSpec="Armageddon Brand" skillMinion="SummonedPhantasm"/>
+			<Gem enableGlobal2="nil" quality="9" level="17" gemId="Metadata/Items/Gems/SupportGemFasterCast" skillId="SupportFasterCast" enableGlobal1="true" enabled="false" nameSpec="Faster Casting"/>
 		</Skill>
 		<Skill mainActiveSkillCalcs="nil" label="" enabled="true" slot="Weapon 2" mainActiveSkill="nil">
 			<Gem enableGlobal2="nil" quality="20" level="19" gemId="Metadata/Items/Gems/SkillGemConvocation" skillId="Convocation" enableGlobal1="true" enabled="true" nameSpec="Convocation"/>
@@ -143,7 +144,7 @@
 	<Tree activeSpec="1">
 		<Spec treeVersion="3_9">
 			<URL>
-				https://www.pathofexile.com/passive-skill-tree/AAAABAMDABzc2WGboRRNAecNzY8a_EtakRiRakOiAB4IK1CbijWSvk8abNP7_o9o8v5U_gqQM3fCHM6YrfuqhWDGrlXG8wavpwthLJy4k4IHOQvsijwt8B_v618_Oljsg2qsksHvDj0PBLN8g7yfi3bZXhv6TLPfsNi9Bklg-DbpvOrSIdAfz36IQFcNCPSqqcT2wQRFncBm049Nubc-zLwGOYPbFCCqxCftKpgkqsaKg1-ofREtVbUy0acwOumnCKas42pHhWNBGS6ezXHzmuCPRo6-U1KvbAQHVi5r21Fg8kFFR62Ng8wo-iXfFm_-gfJFbRnr7qQZ
+				https://www.pathofexile.com/passive-skill-tree/AAAABAMDABzc2WGboRRNAecNzY8a_EvPflqRGJFqQ6IAHggrUJuKNZK-Txps0_v-j2jy_lT-CpAzd8Iczpit-6qFYMauVcbzBq-nC2EsnLiTggc5C-yKPC3wH-_rXz86WOyDaqySwe8OPQ8Es3yDvJ-LdtleG_pMs9-w2L0GSWD4Num86tIh0B9G_ohAVw0I9KqpxPbBBEWdwGbTj025tz7MvAY5g9sUIKrEJ-0qmCSqxoqDX6h9ES1VtTLRpzA66acIpqzjakeFY0EZLp7NcfOa4I9Gjr5TUq9sBAdWLmvbUWDyQUVHrY2DzCj6Jd8Wb_6B8kXr7qQZ
 			</URL>
 			<Sockets>
 				<Socket nodeId="7960" itemId="0"/>
@@ -173,7 +174,7 @@
 	<Notes>
 		
 	</Notes>
-	<TreeView searchStr="" zoomY="868.85894375858" showHeatMap="false" zoomLevel="5" showStatDifferences="true" zoomX="181.66405349795"/>
+	<TreeView searchStr="" zoomY="645.85894375858" showHeatMap="false" zoomLevel="5" showStatDifferences="true" zoomX="162.66405349795"/>
 	<Items activeItemSet="1" useSecondWeaponSet="false">
 		<Item id="17">
 			Rarity: RARE
