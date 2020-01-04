@@ -443,32 +443,19 @@ return
 ; Если бинды на фласки включены - то на w сперва прожимается w, а потом сразу R, что б кастануть керсу.
 ; UPD: Выпилено т.к. керс он хит. Но потом все переосмыслили и вернули лучше чем было.
 ; UPD2: И снова выпилено, т.к. керс он хит убираем, а маны мало.
-; sc11::
-; if Vkeys > 0
-; {
-	; SendInput, {sc11}
-	; Sleep, % Sleepfunction(15, 30)
-	; Click, right
-	; Sleep, % Sleepfunction(15, 30)
-	; Random, Rnd,1,7
-	; if (Rnd = 1 or Rnd = 2)
-	; {
-		; SendInput, 2
-	; }
-	; else if (Rnd = 3 or Rnd = 4)
-	; {
-		; SendInput, 3
-	; }
-	; else if (Rnd > 4 and Rnd < 8)
-	; {
-		; SendInput, 4
-	; }
-; }
-; else if Vkeys = 0
-; {
-	; SendInput, {sc11}
-; }
-; return
+; UPD3: Возвращено, т.к. лучше керсу привязать к конвокейшену, чем к бранду.
+sc11::
+if Vkeys > 0
+{
+	SendInput, {sc11}
+	Sleep, % Sleepfunction(35, 50)
+	SendInput, {sc13}
+}
+else if Var_autoflask_bind = 1
+{
+	SendInput, {sc11}
+}
+return 
 ; ==============================================
 ; 7::
 ; msgbox, %Vkeys%
@@ -500,25 +487,27 @@ else
 return
 ;=========== бинд на Mouse2 ===================
 ; Brand & Curse on mouse2
-~RButton::									; Нажатие\зажатие mouse2
-If Vkeys > 0
-{
-	Loop									; Начало цикла
-	{
-		Click, right
-		Sleep, % Sleepfunction(45, 80)
-		if (!GetKeyState("RButton", "P"))	; Проверка на зажатие mouse1, если зажат - то снова на Click, right
-		{									; Если отпущен - керса и дроп цикла.
-			SendInput, {sc13}
-			break
-		}
-	}
-}
-else
-{
-	Sleep, 10
-}
-return
+; Выпилено, т.к. на практике не удобно, керсит когда не надо
+; И тратит слишком много маны, т.к. кидает керс после каждого бранда
+; ~RButton::									; Нажатие\зажатие mouse2
+; If Vkeys > 0
+; {
+	; Loop									; Начало цикла
+	; {
+		; Click, right
+		; Sleep, % Sleepfunction(45, 80)
+		; if (!GetKeyState("RButton", "P"))	; Проверка на зажатие mouse1, если зажат - то снова на Click, right
+		; {									; Если отпущен - керса и дроп цикла.
+			; SendInput, {sc13}
+			; break
+		; }
+	; }
+; }
+; else
+; {
+	; Sleep, 10
+; }
+; return
 ;==============================================
 ;=====================
 #IfWinActive
