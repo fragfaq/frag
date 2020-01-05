@@ -68,43 +68,45 @@ if Var_conv_cd = 0
 {
 	SendInput, {sc11}
 	SetTimer, Conv, % Sleepfunction(2550, 2650)
-	Var_conv_cd := 1
-	Progress, b w150, ON, Convocation, My Title
+		Progress, b w150, ON, Convocation, My Title
 	Progress, 100 ; Set the position of the bar to 50%.
 	Sleep, 750
 	Progress, Off
+	Var_conv_cd := 1
 }
 else if Var_conv_cd = 1
 {
 	SetTimer, Conv, off
-	Var_conv_cd := 0
-	Progress, b w150, OFF, Convocation, My Title
+		Progress, b w150, OFF, Convocation, My Title
 	Progress, 10 ; Set the position of the bar to 50%.
 	Sleep, 750
 	Progress, Off
+	Var_conv_cd := 0
 }
 return
 ;==============================================
 ; Всплывашка состояния автоквиксильвера, потом доделать
-; ~^scB::
-; if Var_QS = 0
-; {
-	; Var_QS := 1
-	; Progress, b w150, ON, Quicksilver, My Title
-	; Progress, 100 ; Set the position of the bar to 50%.
-	; Sleep, 750
-	; Progress, Off
-; }
-; else if Var_QS = 1
-; {
-	; SetTimer, Conv, off
-	; Var_QS := 0
-	; Progress, b w150, OFF, Quicksilver, My Title
-	; Progress, 10 ; Set the position of the bar to 50%.
-	; Sleep, 750
-	; Progress, Off
-; }
-; return
+~+MButton::
+if Var_QS = 0
+{
+	SendInput, 5
+	SetTimer, AutoQS, % Sleepfunction(3550, 6650)
+		Progress, b w150, ON, Quicksilver, My Title
+	Progress, 100 ; Set the position of the bar to 50%.
+	Sleep, 750
+	Progress, Off
+	Var_QS := 1
+}
+else if Var_QS = 1
+{
+	SetTimer, AutoQS, off
+	Progress, b w150, OFF, Quicksilver, My Title
+	Progress, 10 ; Set the position of the bar to 50%.
+	Sleep, 750
+	Progress, Off
+	Var_QS := 0
+}
+return
 ;==============================================
 Vortex:
 	IfWinNotActive, ("ahk_class POEWindowClass")
@@ -131,6 +133,15 @@ Conv:
 		}
 	Sleep, % Sleepfunction(40, 60)
 	SendInput, {sc11}
+Return
+;==============================================
+AutoQS:
+	IfWinNotActive, ("ahk_class POEWindowClass")
+		{
+			WinWaitActive, Path of Exile
+		}
+	Sleep, % Sleepfunction(40, 60)
+	SendInput, 5
 Return
 ;==============================================
 ;============
