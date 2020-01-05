@@ -3,6 +3,9 @@
 #SingleInstance force
 Menu, Tray, Icon, %A_ScriptDir%\res\2.ico, 1
 ;==============================================
+Global Var_conv_cd = 0
+Global Var_QS = 0
+;==============================================
 ; Активируем нужное нам окно
 IfWinNotActive, ("ahk_class POEWindowClass")
 		{
@@ -59,17 +62,49 @@ SetTimer, Vortex, % Sleepfunction(1150, 1250)
 SetTimer, IC, % Sleepfunction(5500, 5900)
 Return
 ;==============================================
-; Описываем, что таймер будет делать, тут так же добавляем проверку активности окна
-; фэйсран слишком мало действует т.к. касты по кд.
-; FRBATimer:
-	; IfWinNotActive, ("ahk_class POEWindowClass")
-		; {
-			; WinWaitActive, Path of Exile
-		; }
-	; SendInput, {scA}
-	; Sleep, % Sleepfunction(40, 60)
-	; SendInput, {scB}
-; Return
+; Запуск и остановка цикла конвокейжна, без керсы (для делва)
+~+scB::
+if Var_conv_cd = 0
+{
+	SendInput, {sc11}
+	SetTimer, Conv, % Sleepfunction(2550, 2650)
+	Var_conv_cd := 1
+	Progress, b w150, ON, Convocation, My Title
+	Progress, 100 ; Set the position of the bar to 50%.
+	Sleep, 750
+	Progress, Off
+}
+else if Var_conv_cd = 1
+{
+	SetTimer, Conv, off
+	Var_conv_cd := 0
+	Progress, b w150, OFF, Convocation, My Title
+	Progress, 10 ; Set the position of the bar to 50%.
+	Sleep, 750
+	Progress, Off
+}
+return
+;==============================================
+; Всплывашка состояния автоквиксильвера, потом доделать
+; ~^scB::
+; if Var_QS = 0
+; {
+	; Var_QS := 1
+	; Progress, b w150, ON, Quicksilver, My Title
+	; Progress, 100 ; Set the position of the bar to 50%.
+	; Sleep, 750
+	; Progress, Off
+; }
+; else if Var_QS = 1
+; {
+	; SetTimer, Conv, off
+	; Var_QS := 0
+	; Progress, b w150, OFF, Quicksilver, My Title
+	; Progress, 10 ; Set the position of the bar to 50%.
+	; Sleep, 750
+	; Progress, Off
+; }
+; return
 ;==============================================
 Vortex:
 	IfWinNotActive, ("ahk_class POEWindowClass")
@@ -87,6 +122,15 @@ IC:
 		}
 	Sleep, % Sleepfunction(40, 60)
 	SendInput, {scA}
+Return
+;==============================================
+Conv:
+	IfWinNotActive, ("ahk_class POEWindowClass")
+		{
+			WinWaitActive, Path of Exile
+		}
+	Sleep, % Sleepfunction(40, 60)
+	SendInput, {sc11}
 Return
 ;==============================================
 ;============
