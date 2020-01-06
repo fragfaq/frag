@@ -91,7 +91,7 @@ if Var_QS = 0
 {
 	SendInput, 5
 	SetTimer, AutoQS, % Sleepfunction(3550, 6650)
-		Progress, b w150, ON, Quicksilver, My Title
+	Progress, b w150, ON, Quicksilver, My Title
 	Progress, 100 ; Set the position of the bar to 50%.
 	Sleep, 750
 	Progress, Off
@@ -108,6 +108,9 @@ else if Var_QS = 1
 }
 return
 ;==============================================
+; Таймеры:
+;==============================================
+; Для вортекса
 Vortex:
 	IfWinNotActive, ("ahk_class POEWindowClass")
 		{
@@ -117,6 +120,7 @@ Vortex:
 	SendInput, {scB}
 Return
 ;==============================================
+; Для Иммортал кола
 IC:
 	IfWinNotActive, ("ahk_class POEWindowClass")
 		{
@@ -126,6 +130,7 @@ IC:
 	SendInput, {scA}
 Return
 ;==============================================
+; Для конвокейжена
 Conv:
 	IfWinNotActive, ("ahk_class POEWindowClass")
 		{
@@ -135,6 +140,7 @@ Conv:
 	SendInput, {sc11}
 Return
 ;==============================================
+; Для автопрожатия квиксильвера
 AutoQS:
 	IfWinNotActive, ("ahk_class POEWindowClass")
 		{
