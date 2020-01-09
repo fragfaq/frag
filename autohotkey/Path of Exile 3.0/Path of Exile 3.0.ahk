@@ -46,7 +46,7 @@ Menu, MousePodMenu4, Add, VERTICAL, AutosellY
 Menu, MousePodMenu4, Add
 Menu, MousePodMenu4, Add, AURS_ON, Aurs_on
 Menu, MousePodMenu4, Add
-Menu, MousePodMenu4, Add, AURS_ON_OLD, Aurs_on_old
+Menu, MousePodMenu4, Add, CRAFT, Craft
 Menu, MousePodMenu4, Default, AURS_ON
 ; Меню для этих подменюшек
 Menu, MouseMenu, Add, FLASK, :MousePodMenu1
@@ -167,9 +167,9 @@ sleep, 30
 Run, %A_ScriptDir%\res\ahk\other\Aurs_3.7.1.ahk
 return
 ;==============================================
-Aurs_on_old:
+Craft:
 sleep, 30
-Run, %A_ScriptDir%\res\ahk\other\Aurs_3.7.0.ahk
+Run, %A_ScriptDir%\res\ahk\other\Craft.ahk
 return
 ;==============================================
 F3::
