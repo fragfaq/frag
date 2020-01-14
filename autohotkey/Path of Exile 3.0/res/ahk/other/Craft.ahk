@@ -24,6 +24,7 @@ MsgBox, , Hotkeys for craft magic items, B = Use Alt orb`nN = Use Aug orb`nM = E
 ;==================================================
 ; Кинуть Альт на B
 sc30::
+sc14D::
 MouseMove, % randpos(97, 131), % randpos(318, 344), % mousespeed(2, 4)
 Sleep, % Sleepfunction(40, 60)
 Click Right
@@ -36,6 +37,7 @@ return
 ;==================================================
 ; Кинуть Ауг на N
 sc31::
+sc52::
 MouseMove, % randpos(216, 245), % randpos(369, 395), % mousespeed(2, 4)
 Sleep, % Sleepfunction(40, 60)
 Click Right
