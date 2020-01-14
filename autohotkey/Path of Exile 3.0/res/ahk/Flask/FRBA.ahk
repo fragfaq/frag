@@ -59,7 +59,7 @@ IfWinNotActive, ("ahk_class POEWindowClass")
 SetTimer, Vortex, % Sleepfunction(1150, 1250)
 ;============
 ; Устанавливаем таймер на примерно 4,7 секунды для ИК
-SetTimer, IC, % Sleepfunction(5600, 5900)
+SetTimer, IC, % Sleepfunction(5950, 6100)
 Return
 ;==============================================
 ; Запуск и остановка цикла конвокейжна, без керсы (для делва)
