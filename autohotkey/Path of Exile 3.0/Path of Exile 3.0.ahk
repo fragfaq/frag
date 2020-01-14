@@ -427,6 +427,21 @@ return
 ; }
 ; return
 ;=============================================
+; Автокликер на Ctrl+Mouse3
+^MButton::
+If GetKeyState("MButton", "P")
+loop
+{
+	SendInput, ^{Click}
+	Sleep, % Sleepfunction(40, 60)
+	if (!GetKeyState("MButton", "P"))
+	{
+		SendInput, {Ctrl up}
+		break
+	}
+}
+return
+;=============================================
 #IfWinActive
 ;=============================================
 ; Рестарт PoE-Wingman
