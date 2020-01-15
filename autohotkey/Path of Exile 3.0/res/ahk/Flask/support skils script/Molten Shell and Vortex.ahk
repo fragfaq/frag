@@ -77,7 +77,7 @@ SetTimer, Molten, % Sleepfunction(450, 550)
 Return
 ;==============================================
 ; Запуск и остановка цикла конвокейжна, без керсы (для делва), на Shift+0
-~+scB::
+~^scB::
 if Var_conv_cd = 0
 {
 	SendInput, {sc11}
