@@ -430,8 +430,8 @@ else if Vkeys = 6
 return
 
 ;=========== бинд на F1 =================================
-F1::
-SendInput, {F1}
+~F1::
+; SendInput, {F1}
 Sleep, % Sleepfunction(45, 80)
 if Var_autoflask_bind = 2
 {
@@ -445,12 +445,17 @@ if Var_autoflask_bind = 2
 }
 else if Var_autoflask_bind = 1
 {
-	Sleep, 20
+	Sleep, 20	
+}
+else if Var_autoflask_bind = 0
+{
+	SendInput, {sc14}
+	Sleep, 20	
 }
 return
 ;=========== бинд на F2 =================================
-F2::
-SendInput, {F2}
+~F2::
+; SendInput, {F2}
 Sleep, % Sleepfunction(45, 80)
 if Var_autoflask_bind = 2
 {
@@ -464,6 +469,11 @@ if Var_autoflask_bind = 2
 }
 else if Var_autoflask_bind = 1
 {
+	Sleep, 20
+}
+else if Var_autoflask_bind = 0
+{
+	SendInput, {sc14}
 	Sleep, 20
 }
 return
@@ -486,7 +496,7 @@ return
 #IfWinActive
 ;=====================
 ; 6::
-; MsgBox, VautoButton = %VautoButton%`nVautoButton1 = %VautoButton1%`nVar_autoflask_bind = %Var_autoflask_bind%
+; MsgBox, Var_autoflask_bind = %Var_autoflask_bind%
 ; return
 ;======;======;======;======;======;======
 ; Смена биндов и вывод GUI с их описанием, но сперва закрытиие цикла, если он работает.
