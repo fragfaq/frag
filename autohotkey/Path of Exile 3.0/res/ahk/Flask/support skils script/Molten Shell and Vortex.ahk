@@ -24,7 +24,8 @@ Gui, +LastFound +AlwaysOnTop +ToolWindow +OwnDialogs
 Gui, Font, S16 W900, Verdana
 Gui, Add, Text, x10 y3 c000000 BackgroundTrans, Auto
 Gui, Add, Text, x6 y0 c00ff00 BackgroundTrans, Auto
-Gui, Show, x1635 y1020 NoActivate, Auto_Phase_Run
+; Gui, Show, x1635 y1020 NoActivate, Autocast
+Gui, Show, x1535 y1040 NoActivate, Autocast
 Gui, Color, 000001
 WinSet, TransColor, 000001
 Gui, -Caption
@@ -48,9 +49,11 @@ IfWinNotActive, ("ahk_class POEWindowClass")
 		{
 			WinWaitActive, Path of Exile
 		}
-	SendInput, {scA}
+	; SendInput, {scA}
+	SendInput, {sc13}
 	Sleep, % Sleepfunction(40, 60)
-	SendInput, {scB}
+	; SendInput, {scB}
+	SendInput, {scA}
 ;==============================================
 ; Табличка заголовок
 ; Progress, b H70 W250 Y200 fs18 WM1000 WS1000 CT00FFFF CW000000 zh0, Molten Shell`nand Vortex, , , Tahoma
@@ -105,7 +108,8 @@ Vortex:
 			WinWaitActive, Path of Exile
 		}
 	Sleep, % Sleepfunction(40, 60)
-	SendInput, {scB}
+	; SendInput, {scB}
+	SendInput, {sc13}
 Return
 ;==============================================
 ; Для Молтен Шела:
@@ -139,7 +143,7 @@ Return
 ;============
 ;============
 ; Левый бинд, что б скрипт не закрывался
-^!+sc1B::
+^!+F22::
 Sleep, 50
 return
 ; ==================
