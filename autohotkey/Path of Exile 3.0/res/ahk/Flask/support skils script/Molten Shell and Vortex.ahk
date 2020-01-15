@@ -1,7 +1,11 @@
 ;==============================================
+; Progress, b H70 W250 Y200 fs18 WM1000 WS1000 CT00FF00 CW808080 zh0, Molten Shell and`nVortex, , , Tahoma
+; Sleep, 1750
+; Progress, Off
+;==============================================
 ; Заводим шарманку: устанавливаем иконку, настройку перезапуска скрипта, если вдруг что
 #SingleInstance force
-Menu, Tray, Icon, %A_ScriptDir%\res\2.ico, 1
+Menu, Tray, Icon, %A_ScriptDir%\res\pic\2.ico, 1
 ;==============================================
 Global Var_conv_cd = 0
 ;==============================================
@@ -47,6 +51,11 @@ IfWinNotActive, ("ahk_class POEWindowClass")
 	SendInput, {scA}
 	Sleep, % Sleepfunction(40, 60)
 	SendInput, {scB}
+;==============================================
+; Табличка заголовок
+Progress, b H70 W250 Y200 fs18 WM1000 WS1000 CT00FFFF CW000000 zh0, Molten Shell`nand Vortex, , , Tahoma
+Sleep, 2500
+Progress, Off
 ;==============================================
 ; Устанавливаем таймер на секундe с копьем, с разбросом в 0.1 секунды для Вортекса.
 ; Исходим из того, что кд вортекса 1,02 секунды и добавляем рандомный промежуток.
@@ -134,21 +143,4 @@ Return
 Sleep, 50
 return
 ; ==================
-#IfWinActive
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #IfWinActive
