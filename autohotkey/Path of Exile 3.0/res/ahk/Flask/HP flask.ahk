@@ -24,6 +24,7 @@ Menu, Tray, Icon, %A_ScriptDir%\res\Life_flask1.png, 1
 ;=============================================
 #IfWinActive ahk_group poe
 ;==========================================================================================
+Vtest1 = 0
 global Vkeys := 0
 global Vdvehilki := 1
 global Vtrihilki := 1
@@ -32,8 +33,12 @@ global Vspeed := 4
 global Vspeed_dmg := 3
 global VautoButton := 0
 global Var_autoflask_bind := 0
-global Var_FRBA := 0
-Vtest1 = 0
+global Var_auto_skils := 0
+global Var_skils_script1 := "support skils script\Immortal Call and Vortex.ahk"
+global Var_skils_script2 := "support skils script\Molten Shell and Vortex.ahk"
+;==============================================
+; Тут задается, какой скил будет работать на автокасте. Указать 1 раз из вариантов выше.
+global Var_skils := Var_skils_script2
 ;==============================================
 ; Стартовый Gui, который показывает только что Vkeys = 0
 Gui, Destroy
@@ -64,6 +69,29 @@ Sleepfunction(min, max)
 }
 return
 ;==============================================
+; Функция для запуска автопрожатия скилов
+autocast() {
+	If Vkeys > 0
+	{
+		if Var_auto_skils = 0
+		{
+			Run, %A_ScriptDir%\%Var_skils%
+			Var_auto_skils := 1
+		}
+		else if Var_auto_skils = 1
+		{
+			SetTitleMatchMode, 2
+			DetectHiddenWindows, On
+			WinClose, %Var_skils% - AutoHotkey v
+			Var_auto_skils := 0
+		}
+	}
+	else
+	{
+		Sleep, 10
+	}
+}
+return
 ;=========== бинд на 1 =================================
 sc2:: 
 If Vkeys = 0 
@@ -440,18 +468,12 @@ else if Var_autoflask_bind = 1
 }
 return
 ;=========== бинд на W =================================
-; Если бинды на фласки включены - то на w сперва прожимается w, а потом сразу R, что б кастануть керсу.
-; UPD: Выпилено т.к. керс он хит. Но потом все переосмыслили и вернули лучше чем было.
-; UPD2: И снова выпилено, т.к. керс он хит убираем, а маны мало.
-; UPD3: Возвращено, т.к. лучше керсу привязать к конвокейшену, чем к бранду.
+; Если бинды на фласки включены - то на w сперва прожимается w, а потом сразу Mouse3, что б кастануть керсу.
 sc11::
 if Vkeys > 0
 {
 	SendInput, {sc11}
-	; Sleep, % Sleepfunction(35, 50)
-	; SendInput, {MButton}
 	Sleep, % Sleepfunction(35, 50)
-	; SendInput, {sc13}
 	SendInput, {MButton}
 }
 else if Vkeys = 0
@@ -459,38 +481,6 @@ else if Vkeys = 0
 	SendInput, {sc11}
 }
 return 
-; ==============================================
-; 7::
-; msgbox, Var_FRBA = %Var_FRBA%
-; return
-;=========== бинд на Shift+9 ===================
-; Автопрожатие бонармора и фэйсрана на Shift+9
-; Бонармор временно отключен, т.к. имеет общий кд с иммортал колом
-; ~+scA::
-autocast() {
-	If Vkeys > 0
-	{
-		if Var_FRBA = 0
-		{
-			Run, %A_ScriptDir%\FRBA.ahk
-			Var_FRBA := 1
-		}
-		else if Var_FRBA = 1
-		{
-			SetTitleMatchMode, 2
-			DetectHiddenWindows, On
-			WinClose, FRBA.ahk - AutoHotkey v
-			Var_FRBA := 0
-		}
-	}
-	else
-	{
-		Sleep, 10
-	}
-}
-return
-;=========== бинд на Mouse2 ===================
-
 ;==============================================
 ;=====================
 #IfWinActive
@@ -500,6 +490,7 @@ return
 ; return
 ;======;======;======;======;======;======
 ; Смена биндов и вывод GUI с их описанием, но сперва закрытиие цикла, если он работает.
+; Хоткеи: F8 и Shift+0
 F8::
 ~+scA::
 Vkeys := 8 ; Закомментировать для доступности всех биндов. Раскомменетировать или указать Vkeys для одного варианта
@@ -661,18 +652,16 @@ WinSet, TransColor, 000001
 Gui, -Caption
 return
 ;==============================================
-+F8::
-Vkeys := 0
-return
-;==============================================
-; сброс биндов на дефолтные
+; Сброс биндов на дефолтные и отключение автокаста при нажатии F7, Enter и Ctrl+Enter
 F7::
+~sc1C::
+~^sc1C::
 SetTitleMatchMode, 2
 DetectHiddenWindows, On
 WinClose, Loop HP All flask.ahk - AutoHotkey v
-WinClose, FRBA.ahk - AutoHotkey v
+WinClose, %Var_skils% - AutoHotkey v
 Sleep, 20
-Var_FRBA := 0
+Var_auto_skils := 0
 Var_autoflask_bind := 0
 VautoButton := 0
 Vkeys := 0
@@ -696,6 +685,7 @@ Gui, -Caption
 
 return
 ;=============================================
+; Сброс биндов на дефолтные и отключение автокаста при скроле мышкой
 ~WheelDown::
 ~WheelUp::
 if Vkeys > 0
@@ -703,9 +693,9 @@ if Vkeys > 0
 	SetTitleMatchMode, 2
 	DetectHiddenWindows, On
 	WinClose, Loop HP All flask.ahk - AutoHotkey v
-	WinClose, FRBA.ahk - AutoHotkey v
+	WinClose, %Var_skils% - AutoHotkey v
 	Sleep, 20
-	Var_FRBA := 0
+	Var_auto_skils := 0
 	Var_autoflask_bind := 0
 	VautoButton := 0
 	Vkeys := 0
@@ -730,7 +720,6 @@ if Vkeys > 0
 }
 else if Vkeys = 0
 {
-	; SendInput, {WheelDown}
 	Sleep, 10
 }
 return 
@@ -776,4 +765,5 @@ else if VautoButton = 1 ; если биндом клавиши является 
 	VautoButton := 0
 }
 return
+;==============================================
 ;==============================================
