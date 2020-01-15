@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PathOfBuilding>
-	<Build level="93" targetVersion="3_0" banditNormal="None" bandit="None" banditMerciless="None" className="Witch" ascendClassName="Necromancer" mainSocketGroup="1" viewMode="CALCS" banditCruel="None">
+	<Build level="93" targetVersion="3_0" banditNormal="None" bandit="None" banditMerciless="None" className="Witch" ascendClassName="Necromancer" mainSocketGroup="1" viewMode="ITEMS" banditCruel="None">
 		<Spectre id="Metadata/Monsters/TemplarSlaveDriver/TemplarSlaveDriver"/>
 		<Spectre id="Metadata/Monsters/HolyFireElemental/HolyFireElementalSolarisBeam"/>
 		<PlayerStat stat="ActiveMinionLimit" value="5"/>
@@ -18,27 +18,27 @@
 		<PlayerStat stat="ManaCost" value="113"/>
 		<PlayerStat stat="Str" value="355"/>
 		<PlayerStat stat="ReqStr" value="159"/>
-		<PlayerStat stat="Dex" value="90"/>
+		<PlayerStat stat="Dex" value="82"/>
 		<PlayerStat stat="ReqDex" value="68"/>
-		<PlayerStat stat="Int" value="377"/>
+		<PlayerStat stat="Int" value="369"/>
 		<PlayerStat stat="ReqInt" value="242"/>
-		<PlayerStat stat="Life" value="7226"/>
+		<PlayerStat stat="Life" value="7328"/>
 		<PlayerStat stat="Spec:LifeInc" value="199"/>
-		<PlayerStat stat="LifeUnreserved" value="7226"/>
+		<PlayerStat stat="LifeUnreserved" value="7328"/>
 		<PlayerStat stat="LifeUnreservedPercent" value="100"/>
-		<PlayerStat stat="LifeRegen" value="1192.0428"/>
+		<PlayerStat stat="LifeRegen" value="1206.0984"/>
 		<PlayerStat stat="LifeLeechGainRate" value="0"/>
-		<PlayerStat stat="Mana" value="1446"/>
+		<PlayerStat stat="Mana" value="1440"/>
 		<PlayerStat stat="Spec:ManaInc" value="48"/>
 		<PlayerStat stat="ManaUnreserved" value="86"/>
-		<PlayerStat stat="ManaUnreservedPercent" value="5.9474412171508"/>
-		<PlayerStat stat="ManaRegen" value="35.4"/>
+		<PlayerStat stat="ManaUnreservedPercent" value="5.9722222222222"/>
+		<PlayerStat stat="ManaRegen" value="35.3"/>
 		<PlayerStat stat="ManaLeechGainRate" value="0"/>
-		<PlayerStat stat="EnergyShield" value="481"/>
+		<PlayerStat stat="EnergyShield" value="478"/>
 		<PlayerStat stat="Spec:EnergyShieldInc" value="10"/>
-		<PlayerStat stat="EnergyShieldRegen" value="0"/>
+		<PlayerStat stat="EnergyShieldRegen" value="10.4"/>
 		<PlayerStat stat="EnergyShieldLeechGainRate" value="0"/>
-		<PlayerStat stat="Evasion" value="392"/>
+		<PlayerStat stat="Evasion" value="385"/>
 		<PlayerStat stat="Spec:EvasionInc" value="0"/>
 		<PlayerStat stat="MeleeEvadeChance" value="0"/>
 		<PlayerStat stat="MeleeEvadeChance" value="0"/>
@@ -66,11 +66,11 @@
 		<PlayerStat stat="EnduranceCharges" value="0"/>
 		<PlayerStat stat="EnduranceChargesMax" value="3"/>
 		<PlayerStat stat="ActiveMinionLimit" value="5"/>
-		<MinionStat stat="AverageDamage" value="383981.275656"/>
-		<MinionStat stat="Speed" value="3.64"/>
-		<MinionStat stat="TotalDPS" value="1397691.8433878"/>
+		<MinionStat stat="AverageDamage" value="356609.366817"/>
+		<MinionStat stat="Speed" value="4.04"/>
+		<MinionStat stat="TotalDPS" value="1440701.8419407"/>
 		<MinionStat stat="TotalDot" value="0"/>
-		<MinionStat stat="WithPoisonDPS" value="1397691.8433878"/>
+		<MinionStat stat="WithPoisonDPS" value="1440701.8419407"/>
 		<MinionStat stat="Life" value="52341"/>
 		<MinionStat stat="LifeRegen" value="523.41"/>
 		<MinionStat stat="LifeLeechGainRate" value="10468.2"/>
@@ -112,10 +112,10 @@
 			<Gem enableGlobal2="false" quality="20" level="20" gemId="Metadata/Items/Gems/SupportGemConcentratedEffect" skillId="SupportConcentratedEffect" enableGlobal1="true" enabled="true" nameSpec="Concentrated Effect"/>
 			<Gem enableGlobal2="false" quality="20" level="20" gemId="Metadata/Items/Gems/SupportGemFeedingFrenzy" skillId="SupportMinionOffensiveStance" enableGlobal1="true" enabled="true" nameSpec="Feeding Frenzy"/>
 		</Skill>
-		<Skill mainActiveSkillCalcs="3" label="" enabled="true" slot="Helmet" mainActiveSkill="1">
+		<Skill mainActiveSkillCalcs="2" label="" enabled="true" slot="Helmet" mainActiveSkill="1">
 			<Gem enableGlobal2="false" skillMinionSkillCalcs="2" skillMinionCalcs="SummonedStoneGolem" quality="20" level="20" gemId="Metadata/Items/Gems/SkillGemSummonRockGolem" skillId="SummonRockGolem" skillMinionSkill="1" enableGlobal1="true" enabled="true" nameSpec="Summon Stone Golem" skillMinion="SummonedStoneGolem"/>
 			<Gem enableGlobal2="false" quality="0" level="3" gemId="Metadata/Items/Gems/SupportGemAdditionalLevel" skillId="SupportAdditionalLevel" enableGlobal1="true" enabled="true" nameSpec="Empower"/>
-			<Gem enableGlobal2="false" skillMinionSkillCalcs="1" quality="20" level="20" gemId="Metadata/Items/Gems/SkillGemAnimateArmour" skillId="AnimateArmour" skillMinionSkill="1" skillMinionItemSet="1" enableGlobal1="true" enabled="true" nameSpec="Animate Guardian" skillMinion="AnimatedArmour"/>
+			<Gem enableGlobal2="false" skillMinionItemSetCalcs="3" skillMinionSkillCalcs="1" skillMinionCalcs="AnimatedArmour" quality="20" level="20" gemId="Metadata/Items/Gems/SkillGemAnimateArmour" skillId="AnimateArmour" skillMinionSkill="1" skillMinionItemSet="1" enableGlobal1="true" enabled="true" nameSpec="Animate Guardian" skillMinion="AnimatedArmour"/>
 			<Gem enableGlobal2="false" skillMinionSkillCalcs="1" skillMinionCalcs="RaisedZombie" quality="14" level="20" gemId="Metadata/Items/Gems/SkillGemRaiseZombie" skillId="RaiseZombie" skillMinionSkill="1" enableGlobal1="true" enabled="true" nameSpec="Raise Zombie" skillMinion="RaisedZombie"/>
 		</Skill>
 		<Skill mainActiveSkillCalcs="1" label="" enabled="true" slot="Boots" mainActiveSkill="1">
@@ -140,8 +140,8 @@
 			<Gem enableGlobal2="false" quality="20" level="3" gemId="Metadata/Items/Gems/SupportGemAdditionalXP" skillId="SupportAdditionalXP" enableGlobal1="true" enabled="true" nameSpec="Enlighten"/>
 			<Gem enableGlobal2="false" quality="20" level="20" gemId="Metadata/Items/Gems/SupportGemGenerosity" skillId="SupportGenerosity" enableGlobal1="true" enabled="true" nameSpec="Generosity"/>
 		</Skill>
-		<Skill source="Item:21:Pandemonium Caress, Sorcerer Gloves" mainActiveSkillCalcs="1" label="" enabled="true" slot="Gloves" mainActiveSkill="1">
-			<Gem enableGlobal2="false" quality="0" level="20" skillId="BirdAspect" enableGlobal1="true" enabled="true" nameSpec="Aspect of the Avian"/>
+		<Skill source="Item:21:Pandemonium Caress, Sorcerer Gloves" mainActiveSkillCalcs="nil" label="" enabled="true" slot="Gloves" mainActiveSkill="nil">
+			<Gem enableGlobal2="nil" quality="0" level="20" skillId="BirdAspect" enableGlobal1="true" enabled="true" nameSpec=""/>
 			<Gem enableGlobal2="false" quality="20" level="3" gemId="Metadata/Items/Gems/SupportGemAdditionalXP" skillId="SupportAdditionalXP" enableGlobal1="true" enabled="true" nameSpec="Enlighten"/>
 			<Gem enableGlobal2="false" quality="20" level="20" gemId="Metadata/Items/Gems/SupportGemGenerosity" skillId="SupportGenerosity" enableGlobal1="true" enabled="true" nameSpec="Generosity"/>
 		</Skill>
@@ -149,7 +149,7 @@
 	<Tree activeSpec="2">
 		<Spec treeVersion="3_9">
 			<URL>
-				https://www.pathofexile.com/passive-skill-tree/AAAABAMDABzc2WGboRRNAecNzVYujxr-j_xLGmwb-hiRakOiAB4IK1CbijWSvk_7qhzOd8JakSycqsSQM1FgwGaYrSj6hWDGrlXGOQu3Pjrh0_u4k4IHvOrsijwtXz_wH-_r0iEWb2qsksHvDj0PxPYLYbyfi3bZXjbpTLPQH3yDBklg-GjyBjmmV6cIRv6IQFcNjr4EB6cwz37-CoPb049Nuf5UzLyezTpY7IM66SftKpjfsMaKwQSofREtVbUy0aasj0aDXySq42pHhWNBGS5FnXHzqqma4PMGU1KvbASz2L1r2xQg8kFFR62Ng8xN4yXfr6f-gfJFCPTr7qQZ
+				https://www.pathofexile.com/passive-skill-tree/AAAABAMDABzc2WGboRRNAecNzaZXjxoWb_xLd8Ib-hiRakOiAB4IK1CbijWSvk8abAthxPavp4VgLJyQM1FgwGaYrSj6OuHGrlXG0iG3PqrE0_u4k4IHXz_sijwtFCA5C-_r2L1akWqsksHvDj0PBLN8g7yfi3bZXv6PTLPQH_uqBklg-GjypwiOvp7NRv6IQFcNg9tWLqcwBjlFnQQH049NuTrpzLzPfjpYES3-VCftKpgkqsaKg19VteyDqH0y0aasj0bBBN-w42pHhWNBGS7-CnHzqqma4DbpU1KvbPMGCPRr2_Af8kFFR62Ng8xN4yXfvOr-gfJFHM7r7qQZ
 			</URL>
 			<Sockets>
 				<Socket nodeId="7960" itemId="0"/>
@@ -157,27 +157,27 @@
 				<Socket nodeId="28475" itemId="0"/>
 				<Socket nodeId="26196" itemId="0"/>
 				<Socket nodeId="36634" itemId="0"/>
-				<Socket nodeId="33989" itemId="0"/>
+				<Socket nodeId="34483" itemId="0"/>
 				<Socket nodeId="21984" itemId="0"/>
 				<Socket nodeId="46882" itemId="0"/>
 				<Socket nodeId="61419" itemId="0"/>
-				<Socket nodeId="54127" itemId="0"/>
-				<Socket nodeId="6230" itemId="0"/>
+				<Socket nodeId="41263" itemId="0"/>
+				<Socket nodeId="31683" itemId="0"/>
 				<Socket nodeId="55190" itemId="0"/>
 				<Socket nodeId="48768" itemId="0"/>
-				<Socket nodeId="2491" itemId="0"/>
 				<Socket nodeId="61834" itemId="0"/>
-				<Socket nodeId="41263" itemId="0"/>
+				<Socket nodeId="2491" itemId="0"/>
+				<Socket nodeId="54127" itemId="0"/>
 				<Socket nodeId="60735" itemId="0"/>
 				<Socket nodeId="33631" itemId="0"/>
-				<Socket nodeId="31683" itemId="0"/>
-				<Socket nodeId="34483" itemId="0"/>
+				<Socket nodeId="6230" itemId="0"/>
+				<Socket nodeId="33989" itemId="0"/>
 				<Socket nodeId="26725" itemId="0"/>
 			</Sockets>
 		</Spec>
 		<Spec title="1" treeVersion="3_9">
 			<URL>
-				https://www.pathofexile.com/passive-skill-tree/AAAABAMDABzc2WGboRZvFE0B5w3NVi6PGlqR_EsksBv6GJFqQ6IAHggrUJuKNZK-TxpsqqkXLyycCPSQM1FgwGaYrYCkhWDGrlXG7-u3PoPM0_u4k4IHxPbsijwt8wa86l8_pqz-CmqsksHvDj0PBLMLYbyf2L3ZXgY5TLOezdAfBklg-JrgwQTsg_rSRv6IQFcNOlgkqqcw-6pFnacI04-OvjbpzLzPfgQH_lSqxCftKpjfsMaKg198gxEtqH0y0VW1j0bSIfAf42pHhWNBGS4cznHzd8KD2zrpU1KvbIt2Tblr22jy8kFFR62NOQso-iXfFCD-gfJFr6fr7qQZ
+				https://www.pathofexile.com/passive-skill-tree/AAAABAMDABzc2WGboRRNAecNzdAfjxoI9PxLJLBakRiRakOiAB4IK1CbijWSvk8abPMGLJwXLxZvvOqQM1FgwGaYrYCkhWDGrlXGqqmvpxQg0_u4k4IHg8zsijwt2L23Pl8_G_r7qmqsksHvDj0PBLMLYbyfi3bZXjbpTLOnCI6-Bklg-GjyHM7PfgQHRv6IQFcN_lSezd-w8B9Fnacw049NucEEzLwGOYPb-tIRLSftKpgkqsaKg19VteyDqH0y0aasOumPRtIh42pHhWNBGS46WHHzfINWLv4KU1KvbKrEd8Jr25rg8kFFR62NOQso-iXf7-v-gfJFxPbr7qQZ
 			</URL>
 			<Sockets>
 				<Socket nodeId="7960" itemId="0"/>
@@ -185,22 +185,22 @@
 				<Socket nodeId="28475" itemId="0"/>
 				<Socket nodeId="26196" itemId="0"/>
 				<Socket nodeId="36634" itemId="2"/>
-				<Socket nodeId="33989" itemId="0"/>
+				<Socket nodeId="34483" itemId="0"/>
 				<Socket nodeId="21984" itemId="0"/>
 				<Socket nodeId="46882" itemId="0"/>
 				<Socket nodeId="61419" itemId="3"/>
-				<Socket nodeId="41263" itemId="0"/>
-				<Socket nodeId="6230" itemId="0"/>
+				<Socket nodeId="54127" itemId="0"/>
+				<Socket nodeId="31683" itemId="0"/>
 				<Socket nodeId="55190" itemId="0"/>
 				<Socket nodeId="48768" itemId="0"/>
 				<Socket nodeId="26725" itemId="0"/>
-				<Socket nodeId="34483" itemId="0"/>
-				<Socket nodeId="31683" itemId="0"/>
+				<Socket nodeId="33989" itemId="0"/>
+				<Socket nodeId="6230" itemId="0"/>
 				<Socket nodeId="60735" itemId="0"/>
-				<Socket nodeId="33631" itemId="1"/>
-				<Socket nodeId="54127" itemId="0"/>
-				<Socket nodeId="2491" itemId="0"/>
+				<Socket nodeId="33631" itemId="10"/>
+				<Socket nodeId="41263" itemId="0"/>
 				<Socket nodeId="61834" itemId="0"/>
+				<Socket nodeId="2491" itemId="0"/>
 			</Sockets>
 		</Spec>
 	</Tree>
@@ -209,25 +209,6 @@
 	</Notes>
 	<TreeView searchStr="" zoomY="256.53752434128" showHeatMap="false" zoomLevel="3" showStatDifferences="true" zoomX="-13.613481080596"/>
 	<Items activeItemSet="1" useSecondWeaponSet="false">
-		<Item id="20">
-			Rarity: RARE
-Doom Cry
-Convoking Wand
-Unique ID: 192cdc545a6cefce05e09a16fe0e66bbb234ebff38d11f4e0e3689d227b38519
-Item Level: 84
-Quality: 20
-Sockets: B-G-B
-LevelReq: 72
-Implicits: 1
-Can roll Minion Modifiers
-Adds 9 to 18 Cold Damage to Spells
-14% increased Attack Speed
-+1 to Level of all Minion Skill Gems
-Minions deal 57% increased Damage
-Minions have 18% increased Attack Speed
-Minions have 19% increased Cast Speed
-{crafted}Trigger a Socketed Spell when you Use a Skill
-		</Item>
 		<Item variant="2" id="22">
 			Rarity: UNIQUE
 Kingmaker
@@ -252,6 +233,25 @@ Nearby Allies have 30% increased Item Rarity
 			<ModRange range="0.5" id="3"/>
 			<ModRange range="0.5" id="4"/>
 		</Item>
+		<Item id="20">
+			Rarity: RARE
+Doom Cry
+Convoking Wand
+Unique ID: 192cdc545a6cefce05e09a16fe0e66bbb234ebff38d11f4e0e3689d227b38519
+Item Level: 84
+Quality: 20
+Sockets: B-G-B
+LevelReq: 72
+Implicits: 1
+Can roll Minion Modifiers
+Adds 9 to 18 Cold Damage to Spells
+14% increased Attack Speed
++1 to Level of all Minion Skill Gems
+Minions deal 57% increased Damage
+Minions have 18% increased Attack Speed
+Minions have 19% increased Cast Speed
+{crafted}Trigger a Socketed Spell when you Use a Skill
+		</Item>
 		<Item id="18">
 			Rarity: UNIQUE
 Lioneye&apos;s Remorse
@@ -269,6 +269,24 @@ Implicits: 1
 20% increased Stun and Block Recovery
 -25 Physical Damage taken from Projectile Attacks
 +5% Chance to Block
+		</Item>
+		<Item id="25">
+			Rarity: RARE
+Soul Dome
+Eternal Burgonet
+Item Level: 76
+Quality: 20
+Sockets: R-G-G
+LevelReq: 69
+Implicits: 0
++2 to Level of Socketed Minion Gems
+11% increased Global Accuracy Rating
++90 to maximum Life
++30% to Lightning Resistance
+5% increased Light Radius
+Nearby Enemies have -9% to Lightning Resistance
+{crafted}21% increased Armour
+{crafted}+15 to maximum Life
 		</Item>
 		<Item id="6">
 			Rarity: RARE
@@ -290,49 +308,6 @@ Minions have 24% increased maximum Life
 31% increased Burning Damage
 4% reduced Mana Reserved
 {crafted}+70 to maximum Life
-		</Item>
-		<Item id="25">
-			Rarity: RARE
-Soul Dome
-Eternal Burgonet
-Item Level: 76
-Quality: 20
-Sockets: R-G-G
-LevelReq: 69
-Implicits: 0
-+2 to Level of Socketed Minion Gems
-11% increased Global Accuracy Rating
-+90 to maximum Life
-+30% to Lightning Resistance
-5% increased Light Radius
-Nearby Enemies have -9% to Lightning Resistance
-{crafted}21% increased Armour
-{crafted}+15 to maximum Life
-		</Item>
-		<Item id="12">
-			Rarity: RARE
-Behemoth Coat
-Necromancer Silks
-Unique ID: 028a85df09758e5d9a69f35ef84019fdb0ed760c352ad9cfddc064be0e512d3a
-Item Level: 83
-Quality: 20
-Sockets: B-B-B-B-B-B
-LevelReq: 59
-Implicits: 0
-+43 to Intelligence
-+64 to maximum Mana
-+32% to Cold Resistance
-20% increased Stun and Block Recovery
-+1 to maximum number of Spectres
-{crafted}+75 to maximum Life
-#### Kingmaker Critical Strike Multiplier:
-Socketed Spells have +50% to Critical Strike Multiplier
-#### Bone Barrier Ascendancy
-10% additional Physical Damage Reduction
-+30% to all Elemental Resistances
-30% increased Life Recovery rate
-30% increased Energy Shield Recovery rate
-####
 		</Item>
 		<Item variant="2" id="8">
 			Rarity: UNIQUE
@@ -360,6 +335,31 @@ Your Spells are disabled
 			<ModRange range="0.756" id="4"/>
 			<ModRange range="0.5" id="5"/>
 		</Item>
+		<Item id="12">
+			Rarity: RARE
+Behemoth Coat
+Necromancer Silks
+Unique ID: 028a85df09758e5d9a69f35ef84019fdb0ed760c352ad9cfddc064be0e512d3a
+Item Level: 83
+Quality: 20
+Sockets: B-B-B-B-B-B
+LevelReq: 59
+Implicits: 0
++43 to Intelligence
++64 to maximum Mana
++32% to Cold Resistance
+20% increased Stun and Block Recovery
++1 to maximum number of Spectres
+{crafted}+75 to maximum Life
+#### Kingmaker Critical Strike Multiplier:
+Socketed Spells have +50% to Critical Strike Multiplier
+#### Bone Barrier Ascendancy
+10% additional Physical Damage Reduction
++30% to all Elemental Resistances
+30% increased Life Recovery rate
+30% increased Energy Shield Recovery rate
+####
+		</Item>
 		<Item id="21">
 			Rarity: RARE
 Pandemonium Caress
@@ -377,26 +377,22 @@ Grants Level 20 Aspect of the Avian Skill
 +45% to Cold Resistance
 {crafted}Minions deal 20% increased Damage
 		</Item>
-		<Item variant="2" id="7">
+		<Item id="23">
 			Rarity: UNIQUE
-Southbound
-Soldier Gloves
-Variant: Pre 2.6.0
-Variant: Current
-Selected Variant: 2
+Victario&apos;s Flight
+Goathide Boots
+Item Level: 74
 Quality: 20
-Sockets: B-B-B-B
-LevelReq: 51
-Implicits: 0
-{range:0.415}Adds (30-36) to (44-50) Cold Damage to Attacks
-{range:1}(12-16)% increased maximum Life
-{range:0.5}+(40-50)% to Cold Resistance
-{variant:2}50% increased Herald of Ice Damage
-25% increased Freeze Duration on Enemies
-Your Hits can only Kill Frozen enemies
-			<ModRange range="0.415" id="1"/>
-			<ModRange range="1" id="2"/>
-			<ModRange range="0.5" id="3"/>
+Sockets: R-B-G-R
+LevelReq: 12
+Implicits: 1
+{crafted}6% Chance to Dodge Attack Hits if you&apos;ve taken a Critical Strike Recently
++15 to Dexterity
++15 to Intelligence
+131% increased Evasion Rating
+15% increased Movement Speed
+10% of Damage taken gained as Mana over 4 seconds when Hit
+10% increased Movement Speed for you and nearby Allies
 		</Item>
 		<Item id="15">
 			Rarity: RARE
@@ -415,23 +411,6 @@ Implicits: 1
 35% increased Movement Speed
 {crafted}20% increased Armour
 {crafted}+13 to maximum Life
-		</Item>
-		<Item id="23">
-			Rarity: UNIQUE
-Victario&apos;s Flight
-Goathide Boots
-Item Level: 74
-Quality: 20
-Sockets: R-B-G-R
-LevelReq: 12
-Implicits: 1
-{crafted}6% Chance to Dodge Attack Hits if you&apos;ve taken a Critical Strike Recently
-+15 to Dexterity
-+15 to Intelligence
-131% increased Evasion Rating
-15% increased Movement Speed
-10% of Damage taken gained as Mana over 4 seconds when Hit
-10% increased Movement Speed for you and nearby Allies
 		</Item>
 		<Item id="16">
 			Rarity: UNIQUE
@@ -560,29 +539,17 @@ Implicits: 0
 25% increased effect
 33% reduced Duration
 		</Item>
-		<Item id="13">
+		<Item id="10">
 			Rarity: RARE
-Hollow Glare
+Whispering Leer 25c
 Ghastly Eye Jewel
-Unique ID: 27f80e0a416249a513614cb0646ad3185eb91c4ed2189aeb28e95466086898bc
-Item Level: 81
+Item Level: 84
+LevelReq: 28
 Implicits: 0
-+8 to Dexterity and Intelligence
-+25 to maximum Life
-Minions deal 20% increased Damage if you&apos;ve used a Minion Skill Recently
-Minions deal 1 to 4 additional Lightning Damage
-		</Item>
-		<Item id="1">
-			Rarity: RARE
-Morbid Sight
-Ghastly Eye Jewel
-Unique ID: c54070f4521ec0d320c9878c7d8be40c785eb9246be80181d969e8220b9576f0
-Item Level: 79
-LevelReq: 31
-Implicits: 0
-Minions deal 19% increased Damage if you&apos;ve used a Minion Skill Recently
-Minions deal 1 to 8 additional Lightning Damage
-Minions have 8% increased Attack and Cast Speed if you or your Minions have Killed Recently
++29 to maximum Life
+Minions have 5% increased Attack Speed
+Minions have 6% increased Cast Speed
+Minions have 6% increased Attack and Cast Speed if you or your Minions have Killed Recently
 		</Item>
 		<Item id="2">
 			Rarity: UNIQUE
@@ -608,13 +575,69 @@ Implicits: 0
 Minions have 8% increased Area of Effect
 With at least 40 Intelligence in Radius, Raised Spectres have a 50% chance to gain Soul Eater for 20 seconds on Kill
 		</Item>
+		<Item id="9">
+			Rarity: RARE
+Foul Lens 7c
+Ghastly Eye Jewel
+Item Level: 69
+LevelReq: 28
+Implicits: 0
++28 to maximum Life
+Minions have 5% increased Attack Speed
+Minions have 6% increased Cast Speed
+Regenerate 8 Energy Shield per second
+Minions have 6% increased Attack and Cast Speed if you or your Minions have Killed Recently
+Corrupted
+		</Item>
+		<Item id="13">
+			Rarity: RARE
+Hollow Glare
+Ghastly Eye Jewel
+Unique ID: 27f80e0a416249a513614cb0646ad3185eb91c4ed2189aeb28e95466086898bc
+Item Level: 81
+Implicits: 0
++8 to Dexterity and Intelligence
++25 to maximum Life
+Minions deal 20% increased Damage if you&apos;ve used a Minion Skill Recently
+Minions deal 1 to 4 additional Lightning Damage
+		</Item>
+		<Item id="1">
+			Rarity: RARE
+Morbid Sight
+Ghastly Eye Jewel
+Unique ID: c54070f4521ec0d320c9878c7d8be40c785eb9246be80181d969e8220b9576f0
+Item Level: 79
+LevelReq: 31
+Implicits: 0
+Minions deal 19% increased Damage if you&apos;ve used a Minion Skill Recently
+Minions deal 1 to 8 additional Lightning Damage
+Minions have 8% increased Attack and Cast Speed if you or your Minions have Killed Recently
+		</Item>
+		<Item id="7">
+			Rarity: UNIQUE
+Southbound
+Soldier Gloves
+Item Level: 83
+Quality: 20
+Sockets: B B R B
+LevelReq: 51
+Implicits: 1
+6% increased maximum Life
+Adds 33 to 44 Cold Damage to Attacks
+15% increased maximum Life
++47% to Cold Resistance
+25% increased Freeze Duration on Enemies
+Your Hits can only Kill Frozen Enemies
+50% increased Herald of Ice Damage
+Corrupted
+		</Item>
 		<Slot name="Gloves" itemId="21"/>
 		<Slot name="Weapon 1" itemId="20"/>
 		<Slot active="true" name="Flask 3" itemId="11"/>
 		<Slot name="Amulet" itemId="16"/>
 		<Slot name="Flask 1" itemId="24"/>
 		<Slot active="true" name="Flask 5" itemId="5"/>
-		<Slot name="Belt Abyssal Socket 1" itemId="13"/>
+		<Slot name="Belt Abyssal Socket 1" itemId="9"/>
 		<Slot active="true" name="Flask 2" itemId="19"/>
 		<Slot name="Weapon 2" itemId="18"/>
 		<Slot name="Body Armour" itemId="12"/>
@@ -635,7 +658,7 @@ With at least 40 Intelligence in Radius, Raised Spectres have a 50% chance to ga
 			<Slot name="Flask 1" itemId="24"/>
 			<Slot name="Weapon 2Swap Abyssal Socket 1" itemId="0"/>
 			<Slot active="true" name="Flask 5" itemId="5"/>
-			<Slot name="Belt Abyssal Socket 1" itemId="13"/>
+			<Slot name="Belt Abyssal Socket 1" itemId="9"/>
 			<Slot active="true" name="Flask 2" itemId="19"/>
 			<Slot name="Helmet Abyssal Socket 2" itemId="0"/>
 			<Slot name="Weapon 2 Swap" itemId="0"/>
@@ -737,8 +760,8 @@ With at least 40 Intelligence in Radius, Raised Spectres have a 50% chance to ga
 		</ItemSet>
 	</Items>
 	<Config>
-		<Input name="conditionBeenHitRecently" boolean="true"/>
 		<Input name="enemyConditionHitByColdDamage" boolean="true"/>
+		<Input name="enemyLightningResist" number="-9"/>
 		<Input name="conditionEnemyChilled" boolean="true"/>
 		<Input name="winterOrbStages" number="3"/>
 		<Input name="conditionOnConsecratedGround" boolean="true"/>
@@ -752,6 +775,6 @@ With at least 40 Intelligence in Radius, Raised Spectres have a 50% chance to ga
 		<Input name="feedingFrenzyFeedingFrenzyActive" boolean="true"/>
 		<Input name="aspectOfTheAvianAviansMight" boolean="true"/>
 		<Input name="conditionEnemyShocked" boolean="true"/>
-		<Input name="enemyLightningResist" number="-9"/>
+		<Input name="conditionBeenHitRecently" boolean="true"/>
 	</Config>
 </PathOfBuilding>
