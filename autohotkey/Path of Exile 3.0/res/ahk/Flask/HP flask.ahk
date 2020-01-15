@@ -683,9 +683,9 @@ Gui, Color, 000001
 WinSet, TransColor, 000001
 Gui, -Caption
 
-Progress, b H70 W250 Y200 fs18 WM1000 WS1000 CT00FFFF CW000000 zh0, Autocast`nOFF, , , Tahoma
-Sleep, 1050
-Progress, Off
+; Progress, b H70 W250 Y200 fs18 WM1000 WS1000 CT00FFFF CW000000 zh0, Autocast`nOFF, , , Tahoma
+; Sleep, 1050
+; Progress, Off
 
 return
 ;=============================================
@@ -721,9 +721,9 @@ if Vkeys > 0
 	WinSet, TransColor, 000001
 	Gui, -Caption
 	
-	Progress, b H70 W250 Y200 fs18 WM1000 WS1000 CT00FFFF CW000000 zh0, Autocast`nOFF, , , Tahoma
-	Sleep, 1050
-	Progress, Off
+	; Progress, b H70 W250 Y200 fs18 WM1000 WS1000 CT00FFFF CW000000 zh0, Autocast`nOFF, , , Tahoma
+	; Sleep, 1050
+	; Progress, Off
 	
 }
 else if Vkeys = 0

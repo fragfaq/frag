@@ -53,9 +53,9 @@ IfWinNotActive, ("ahk_class POEWindowClass")
 	SendInput, {scB}
 ;==============================================
 ; Табличка заголовок
-Progress, b H70 W250 Y200 fs18 WM1000 WS1000 CT00FFFF CW000000 zh0, Molten Shell`nand Vortex, , , Tahoma
-Sleep, 1050
-Progress, Off
+; Progress, b H70 W250 Y200 fs18 WM1000 WS1000 CT00FFFF CW000000 zh0, Molten Shell`nand Vortex, , , Tahoma
+; Sleep, 1050
+; Progress, Off
 ;==============================================
 ; Устанавливаем таймер на секундe с копьем, с разбросом в 0.1 секунды для Вортекса.
 ; Исходим из того, что кд вортекса 1,02 секунды и добавляем рандомный промежуток.
