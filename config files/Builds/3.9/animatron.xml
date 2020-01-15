@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PathOfBuilding>
 	<Build level="1" targetVersion="3_0" banditNormal="None" bandit="None" banditMerciless="None" className="Scion" ascendClassName="None" mainSocketGroup="1" viewMode="ITEMS" banditCruel="None">
-		<PlayerStat stat="AverageDamage" value="690.545"/>
+		<PlayerStat stat="AverageDamage" value="690.028125"/>
 		<PlayerStat stat="Speed" value="1.43"/>
 		<PlayerStat stat="Speed" value="1.43"/>
 		<PlayerStat stat="PreEffectiveCritChance" value="6.75"/>
 		<PlayerStat stat="CritChance" value="6.75"/>
 		<PlayerStat stat="CritMultiplier" value="1.5"/>
 		<PlayerStat stat="HitChance" value="100"/>
-		<PlayerStat stat="TotalDPS" value="987.47935"/>
+		<PlayerStat stat="TotalDPS" value="986.74021875"/>
 		<PlayerStat stat="TotalDot" value="0"/>
-		<PlayerStat stat="WithPoisonDPS" value="987.47935"/>
+		<PlayerStat stat="WithPoisonDPS" value="986.74021875"/>
 		<PlayerStat stat="ManaCost" value="0"/>
 		<PlayerStat stat="Str" value="20"/>
 		<PlayerStat stat="ReqStr" value="140"/>
@@ -18,11 +18,11 @@
 		<PlayerStat stat="ReqDex" value="86"/>
 		<PlayerStat stat="Int" value="35"/>
 		<PlayerStat stat="ReqInt" value="40"/>
-		<PlayerStat stat="Life" value="458"/>
+		<PlayerStat stat="Life" value="478"/>
 		<PlayerStat stat="Spec:LifeInc" value="0"/>
-		<PlayerStat stat="LifeUnreserved" value="458"/>
+		<PlayerStat stat="LifeUnreserved" value="478"/>
 		<PlayerStat stat="LifeUnreservedPercent" value="100"/>
-		<PlayerStat stat="LifeRegen" value="22.9"/>
+		<PlayerStat stat="LifeRegen" value="23.9"/>
 		<PlayerStat stat="LifeLeechGainRate" value="0"/>
 		<PlayerStat stat="Mana" value="58"/>
 		<PlayerStat stat="Spec:ManaInc" value="0"/>
@@ -48,7 +48,7 @@
 		<PlayerStat stat="AttackDodgeChance" value="0"/>
 		<PlayerStat stat="SpellDodgeChance" value="0"/>
 		<PlayerStat stat="FireResist" value="-60"/>
-		<PlayerStat stat="ColdResist" value="15"/>
+		<PlayerStat stat="ColdResist" value="17"/>
 		<PlayerStat stat="LightningResist" value="-30"/>
 		<PlayerStat stat="ChaosResist" value="-60"/>
 		<PlayerStat stat="FireResistOverCap" value="0"/>
@@ -101,22 +101,22 @@
 				<Socket nodeId="28475" itemId="0"/>
 				<Socket nodeId="26196" itemId="0"/>
 				<Socket nodeId="36634" itemId="0"/>
-				<Socket nodeId="33989" itemId="0"/>
+				<Socket nodeId="34483" itemId="0"/>
 				<Socket nodeId="21984" itemId="0"/>
 				<Socket nodeId="46882" itemId="0"/>
 				<Socket nodeId="61419" itemId="0"/>
 				<Socket nodeId="41263" itemId="0"/>
-				<Socket nodeId="6230" itemId="0"/>
+				<Socket nodeId="31683" itemId="0"/>
 				<Socket nodeId="55190" itemId="0"/>
 				<Socket nodeId="48768" itemId="0"/>
-				<Socket nodeId="26725" itemId="0"/>
-				<Socket nodeId="31683" itemId="0"/>
-				<Socket nodeId="34483" itemId="0"/>
+				<Socket nodeId="61834" itemId="0"/>
+				<Socket nodeId="2491" itemId="0"/>
+				<Socket nodeId="54127" itemId="0"/>
 				<Socket nodeId="60735" itemId="0"/>
 				<Socket nodeId="33631" itemId="0"/>
-				<Socket nodeId="54127" itemId="0"/>
-				<Socket nodeId="2491" itemId="0"/>
-				<Socket nodeId="61834" itemId="0"/>
+				<Socket nodeId="6230" itemId="0"/>
+				<Socket nodeId="33989" itemId="0"/>
+				<Socket nodeId="26725" itemId="0"/>
 			</Sockets>
 		</Spec>
 	</Tree>
@@ -125,6 +125,48 @@
 	</Notes>
 	<TreeView searchStr="" zoomY="0" showHeatMap="false" zoomLevel="3" showStatDifferences="true" zoomX="0"/>
 	<Items activeItemSet="1" useSecondWeaponSet="false">
+		<Item variant="2" id="5">
+			Rarity: UNIQUE
+Kingmaker
+Despot Axe
+Variant: Pre 2.6.0
+Variant: Current
+Selected Variant: 2
+Quality: 20
+Sockets: R-R-R-R-R-R
+LevelReq: 66
+Implicits: 0
+{range:0.5}(200-250)% increased Physical Damage
+{range:0.5}(7-12)% increased Attack Speed
+{variant:2}{range:0.5}(30-40)% increased Critical Strike Chance
+{variant:1}{range:0.5}+(100-150) to maximum Mana
+{variant:2}Insufficient Mana doesn&apos;t prevent your Melee Attacks
+Nearby Allies have 30% increased Item Rarity
+{variant:1}Nearby Allies&apos; spells have Culling Strike
+{variant:2}Nearby Allies have Culling Strike
+			<ModRange range="0.5" id="1"/>
+			<ModRange range="0.5" id="2"/>
+			<ModRange range="0.5" id="3"/>
+			<ModRange range="0.5" id="4"/>
+		</Item>
+		<Item id="2">
+			Rarity: RARE
+Soul Dome
+Eternal Burgonet
+Item Level: 76
+Quality: 20
+Sockets: R-G-G
+LevelReq: 69
+Implicits: 0
++2 to Level of Socketed Minion Gems
+11% increased Global Accuracy Rating
++90 to maximum Life
++30% to Lightning Resistance
+5% increased Light Radius
+Nearby Enemies have -9% to Lightning Resistance
+{crafted}21% increased Armour
+{crafted}+15 to maximum Life
+		</Item>
 		<Item variant="2" id="1">
 			Rarity: UNIQUE
 Gruthkul&apos;s Pelt
@@ -151,68 +193,23 @@ Your Spells are disabled
 			<ModRange range="0.756" id="4"/>
 			<ModRange range="0.5" id="5"/>
 		</Item>
-		<Item id="2">
-			Rarity: RARE
-Soul Dome
-Eternal Burgonet
-Item Level: 76
-Quality: 20
-Sockets: R-G-G
-LevelReq: 69
-Implicits: 0
-+2 to Level of Socketed Minion Gems
-11% increased Global Accuracy Rating
-+90 to maximum Life
-+30% to Lightning Resistance
-5% increased Light Radius
-Nearby Enemies have -9% to Lightning Resistance
-{crafted}21% increased Armour
-{crafted}+15 to maximum Life
-		</Item>
-		<Item variant="2" id="3">
+		<Item id="6">
 			Rarity: UNIQUE
 Southbound
 Soldier Gloves
-Variant: Pre 2.6.0
-Variant: Current
-Selected Variant: 2
+Item Level: 83
 Quality: 20
-Sockets: B-B-B-B
+Sockets: B B R B
 LevelReq: 51
-Implicits: 0
-{range:0.415}Adds (30-36) to (44-50) Cold Damage to Attacks
-{range:1}(12-16)% increased maximum Life
-{range:0.5}+(40-50)% to Cold Resistance
-{variant:2}50% increased Herald of Ice Damage
+Implicits: 1
+6% increased maximum Life
+Adds 33 to 44 Cold Damage to Attacks
+15% increased maximum Life
++47% to Cold Resistance
 25% increased Freeze Duration on Enemies
-Your Hits can only Kill Frozen enemies
-			<ModRange range="0.415" id="1"/>
-			<ModRange range="1" id="2"/>
-			<ModRange range="0.5" id="3"/>
-		</Item>
-		<Item variant="2" id="5">
-			Rarity: UNIQUE
-Kingmaker
-Despot Axe
-Variant: Pre 2.6.0
-Variant: Current
-Selected Variant: 2
-Quality: 20
-Sockets: R-R-R-R-R-R
-LevelReq: 66
-Implicits: 0
-{range:0.5}(200-250)% increased Physical Damage
-{range:0.5}(7-12)% increased Attack Speed
-{variant:2}{range:0.5}(30-40)% increased Critical Strike Chance
-{variant:1}{range:0.5}+(100-150) to maximum Mana
-{variant:2}Insufficient Mana doesn&apos;t prevent your Melee Attacks
-Nearby Allies have 30% increased Item Rarity
-{variant:1}Nearby Allies&apos; spells have Culling Strike
-{variant:2}Nearby Allies have Culling Strike
-			<ModRange range="0.5" id="1"/>
-			<ModRange range="0.5" id="2"/>
-			<ModRange range="0.5" id="3"/>
-			<ModRange range="0.5" id="4"/>
+Your Hits can only Kill Frozen Enemies
+50% increased Herald of Ice Damage
+Corrupted
 		</Item>
 		<Item id="4">
 			Rarity: UNIQUE
@@ -231,13 +228,13 @@ Implicits: 1
 10% of Damage taken gained as Mana over 4 seconds when Hit
 10% increased Movement Speed for you and nearby Allies
 		</Item>
-		<Slot name="Gloves" itemId="3"/>
+		<Slot name="Gloves" itemId="6"/>
 		<Slot name="Weapon 1" itemId="5"/>
 		<Slot name="Body Armour" itemId="1"/>
 		<Slot name="Boots" itemId="4"/>
 		<Slot name="Helmet" itemId="2"/>
 		<ItemSet useSecondWeaponSet="false" id="1">
-			<Slot name="Gloves" itemId="3"/>
+			<Slot name="Gloves" itemId="6"/>
 			<Slot name="Weapon 1" itemId="5"/>
 			<Slot name="Weapon 2Swap Abyssal Socket 2" itemId="0"/>
 			<Slot name="Belt Abyssal Socket 2" itemId="0"/>
