@@ -32,18 +32,18 @@ MsgBox, , Hotkeys for craft Rare items:, B or RightArrow = Use Orb of Scouring`,
 ; Кинуть в шмотку Скуринг, а потом Алч на B или стрелку вправо.
 sc30::
 sc14D::
-MouseMove, % randpos(417, 445), % randpos(461, 488), % mousespeed(1, 2)
+MouseMove, % randpos(417, 445), % randpos(461, 488), % mousespeed(0, 1)
 Sleep, % Sleepfunction(40, 60)
 Click Right
-MouseMove, % randpos(300, 367), % randpos(444, 590), % mousespeed(1, 2)
+MouseMove, % randpos(300, 367), % randpos(444, 590), % mousespeed(0, 1)
 Sleep, % Sleepfunction(40, 60)
 Click Left
 Sleep, % Sleepfunction(40, 60)
-MouseMove, % randpos(476, 503), % randpos(319, 346), % mousespeed(1, 2)
+MouseMove, % randpos(476, 503), % randpos(319, 346), % mousespeed(0, 1)
 Sleep, % Sleepfunction(40, 60)
 Click Right
 Sleep, % Sleepfunction(40, 60)
-MouseMove, % randpos(300, 367), % randpos(444, 590), % mousespeed(1, 2)
+MouseMove, % randpos(300, 367), % randpos(444, 590), % mousespeed(0, 1)
 Sleep, % Sleepfunction(40, 60)
 Click Left
 Sleep, % Sleepfunction(140, 160)
