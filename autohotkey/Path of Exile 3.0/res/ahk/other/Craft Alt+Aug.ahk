@@ -1,6 +1,11 @@
 ﻿;==============================================
 Menu, Tray, Icon, %A_ScriptDir%\res\pic\play3.png, 1
 ;==============================================
+GroupAdd, poe, ahk_exe PathOfExile.exe
+GroupAdd, poe, ahk_exe PathOfExile_x64.exe
+; ==============================================
+#IfWinActive ahk_group poe
+; ==============================================
 ; Вводим функцию для создания случайного временного промежутка
 sleepfunction(min, max)
 {
@@ -22,7 +27,7 @@ randpos(min, max)
 	return randc
 }
 ;==================================================
-MsgBox, , Hotkeys for craft Magic items, B or RightArrow = Use Alt orb`nN or Numpad0 = Use Aug orb`nM = Exit script
+MsgBox, , Hotkeys for craft Magic items, B or RightArrow = Use Alt orb`nN or Numpad0 = Use Aug orb`nM = Exit script, 2
 ;==================================================
 ; Кинуть в шмотку Альт на B
 sc30::
@@ -55,5 +60,7 @@ sc32::
 ExitApp
 return
 return
+;==================================================
+#IfWinActive ahk_group poe
 
 
