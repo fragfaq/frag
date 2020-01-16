@@ -491,6 +491,19 @@ else if Vkeys = 0
 	SendInput, {sc11}
 }
 return 
+;=========== бинды на T и H================================
+sc22::
+sc14::
+if Vkeys > 0
+{
+	SendInput, +{scB}
+	Sleep, % Sleepfunction(35, 50)
+}
+else if Vkeys = 0
+{
+	SendInput, % "{" A_ThisHotkey "}"
+}
+return 
 ;==============================================
 ;=====================
 #IfWinActive
