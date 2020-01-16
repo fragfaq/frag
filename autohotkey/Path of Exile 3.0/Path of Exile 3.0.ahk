@@ -51,6 +51,8 @@ Menu, MousePodMenu4, Add, CRAFT MAGIC, Craft_magic
 Menu, MousePodMenu4, Add
 Menu, MousePodMenu4, Add, CRAFT RARE, Craft_rare
 Menu, MousePodMenu4, Add
+Menu, MousePodMenu4, Add, CRAFT ALL, Craft_all
+Menu, MousePodMenu4, Add
 Menu, MousePodMenu4, Default, AURS_ON
 ; Меню для этих подменюшекCraft_magic
 Menu, MouseMenu, Add, FLASK, :MousePodMenu1
@@ -179,6 +181,11 @@ return
 Craft_rare:
 sleep, 30
 Run, %A_ScriptDir%\res\ahk\other\Craft Alch+Scour.ahk
+return
+;==============================================
+Craft_All:
+sleep, 30
+Run, %A_ScriptDir%\res\ahk\other\Craft.ahk
 return
 ;==============================================
 F3::
