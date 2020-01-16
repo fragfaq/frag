@@ -53,7 +53,8 @@ Sleep, % Sleepfunction(40, 60)
 MouseMove, % randpos(300, 367), % randpos(444, 590), % mousespeed(1, 2)
 Sleep, % Sleepfunction(40, 60)
 Click Left
-Sleep, % Sleepfunction(40, 60)
+Sleep, % Sleepfunction(140, 160)
+SendInput, ^{sc2E}
 return
 ;==================================================
 ; Кинуть в шмотку Ауг на N
@@ -65,7 +66,8 @@ Sleep, % Sleepfunction(40, 60)
 MouseMove, % randpos(300, 367), % randpos(444, 590), % mousespeed(1, 2)
 Sleep, % Sleepfunction(40, 60)
 Click Left
-Sleep, % Sleepfunction(40, 60)
+Sleep, % Sleepfunction(140, 160)
+SendInput, ^{sc2E}
 return
 ;==================================================
 ; Кинуть в шмотку только Скуринг на Numpad0
@@ -76,7 +78,8 @@ Click Right
 MouseMove, % randpos(300, 367), % randpos(444, 590), % mousespeed(0, 1)
 Sleep, % Sleepfunction(40, 60)
 Click Left
-Sleep, % Sleepfunction(40, 60)
+Sleep, % Sleepfunction(140, 160)
+SendInput, ^{sc2E}
 return
 ;==================================================
 ; Кинуть в шмотку Скуринг, а потом Алч на RightArrow
@@ -107,7 +110,8 @@ Click Right
 MouseMove, % randpos(300, 367), % randpos(444, 590), % mousespeed(0, 1)
 Sleep, % Sleepfunction(40, 60)
 Click Left
-Sleep, % Sleepfunction(40, 60)
+Sleep, % Sleepfunction(140, 160)
+SendInput, ^{sc2E}
 return
 ;==================================================
 ; Кинуть в шмотку Регал на R
@@ -118,7 +122,8 @@ Click Right
 MouseMove, % randpos(300, 367), % randpos(444, 590), % mousespeed(0, 1)
 Sleep, % Sleepfunction(40, 60)
 Click Left
-Sleep, % Sleepfunction(40, 60)
+Sleep, % Sleepfunction(140, 160)
+SendInput, ^{sc2E}
 return
 ;==================================================
 ; Выход на M
