@@ -1,0 +1,48 @@
+﻿;==============================================
+; Вводим функцию для создания случайного временного промежутка
+sleepfunction(min, max)
+{
+	random, randa, min, max
+	return randa
+}
+;==================================================
+; Вводим функцию для создания случайной скорости мышки
+mousespeed(min, max)
+{
+	random, randb, min, max
+	return randb
+}
+;==================================================
+; Вводим функцию для создания случайных координат
+randpos(min, max)
+{
+	random, randc, min, max
+	return randc
+}
+;==================================================
+MsgBox, , Hotkeys for craft Rare items:, B or RightArrow = Use Orb of Scouring`,`nFor reset item and immediately using`nOrb of Alchemy`, for greate new Rare item.`nM = ExitApp.
+;==================================================
+; Кинуть в шмотку Скуринг, а потом Алч на B или стрелку вправо.
+sc30::
+sc14D::
+MouseMove, % randpos(417, 445), % randpos(461, 488), % mousespeed(1, 2)
+Sleep, % Sleepfunction(40, 60)
+Click Right
+MouseMove, % randpos(300, 367), % randpos(444, 590), % mousespeed(1, 2)
+Sleep, % Sleepfunction(40, 60)
+Click Left
+Sleep, % Sleepfunction(40, 60)
+MouseMove, % randpos(476, 503), % randpos(319, 346), % mousespeed(1, 2)
+Sleep, % Sleepfunction(40, 60)
+Click Right
+Sleep, % Sleepfunction(40, 60)
+MouseMove, % randpos(300, 367), % randpos(444, 590), % mousespeed(1, 2)
+Sleep, % Sleepfunction(40, 60)
+Click Left
+Sleep, % Sleepfunction(40, 60)
+return
+;==================================================
+; Выход на M
+sc32::
+ExitApp
+return
