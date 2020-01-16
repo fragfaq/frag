@@ -1,4 +1,6 @@
 ﻿;==============================================
+Menu, Tray, Icon, %A_ScriptDir%\res\pic\play3.png, 1
+;==============================================
 ; Вводим функцию для создания случайного временного промежутка
 sleepfunction(min, max)
 {
@@ -40,6 +42,7 @@ MouseMove, % randpos(300, 367), % randpos(444, 590), % mousespeed(1, 2)
 Sleep, % Sleepfunction(40, 60)
 Click Left
 Sleep, % Sleepfunction(40, 60)
+SendInput, ^{sc2E}
 return
 ;==================================================
 ; Выход на M
