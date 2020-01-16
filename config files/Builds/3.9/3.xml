@@ -140,8 +140,8 @@
 			<Gem enableGlobal2="false" quality="20" level="3" gemId="Metadata/Items/Gems/SupportGemAdditionalXP" skillId="SupportAdditionalXP" enableGlobal1="true" enabled="true" nameSpec="Enlighten"/>
 			<Gem enableGlobal2="false" quality="20" level="20" gemId="Metadata/Items/Gems/SupportGemGenerosity" skillId="SupportGenerosity" enableGlobal1="true" enabled="true" nameSpec="Generosity"/>
 		</Skill>
-		<Skill source="Item:21:Pandemonium Caress, Sorcerer Gloves" mainActiveSkillCalcs="nil" label="" enabled="true" slot="Gloves" mainActiveSkill="nil">
-			<Gem enableGlobal2="nil" quality="0" level="20" skillId="BirdAspect" enableGlobal1="true" enabled="true" nameSpec=""/>
+		<Skill source="Item:21:Pandemonium Caress, Sorcerer Gloves" mainActiveSkillCalcs="1" label="" enabled="true" slot="Gloves" mainActiveSkill="1">
+			<Gem enableGlobal2="false" quality="0" level="20" skillId="BirdAspect" enableGlobal1="true" enabled="true" nameSpec="Aspect of the Avian"/>
 			<Gem enableGlobal2="false" quality="20" level="3" gemId="Metadata/Items/Gems/SupportGemAdditionalXP" skillId="SupportAdditionalXP" enableGlobal1="true" enabled="true" nameSpec="Enlighten"/>
 			<Gem enableGlobal2="false" quality="20" level="20" gemId="Metadata/Items/Gems/SupportGemGenerosity" skillId="SupportGenerosity" enableGlobal1="true" enabled="true" nameSpec="Generosity"/>
 		</Skill>
@@ -149,7 +149,7 @@
 	<Tree activeSpec="2">
 		<Spec treeVersion="3_9">
 			<URL>
-				https://www.pathofexile.com/passive-skill-tree/AAAABAMDABzc2WGboRRNAecNzaZXjxoWb_xLd8Ib-hiRakOiAB4IK1CbijWSvk8abAthxPavp4VgLJyQM1FgwGaYrSj6OuHGrlXG0iG3PqrE0_u4k4IHXz_sijwtFCA5C-_r2L1akWqsksHvDj0PBLN8g7yfi3bZXv6PTLPQH_uqBklg-GjypwiOvp7NRv6IQFcNg9tWLqcwBjlFnQQH049NuTrpzLzPfjpYES3-VCftKpgkqsaKg19VteyDqH0y0aasj0bBBN-w42pHhWNBGS7-CnHzqqma4DbpU1KvbPMGCPRr2_Af8kFFR62Ng8xN4yXfvOr-gfJFHM7r7qQZ
+				https://www.pathofexile.com/passive-skill-tree/AAAABAMDABzc2WGboRRNAecNzRZvjxoI9PxLGJEb-rzqakOiAB4IK1CbijWSvk_7qv6PfIPAZq-nFCCQM1FgHM6YrSj6OuHGrlXGOQu3PtIh0_u4k4IH8B_sijwtqsSmV-_rBLPYvWqsksHvDj0PxPYLYbyfi3bZXnfCTLPQH1qRBklg-DbppwhWLs9-Rv6IQFcNBAeOvqcwns3-CoPb049Nuf5UzLwGOTpY7IM66SftKpjfsMaKwQSofREtVbUy0aasj0aDXySq42pHhWNBGS5FnXHzqqma4GjyU1KvbBpsLJxr218_8kFFR62Ng8xN4yXfhWD-gfJF8wbr7qQZ
 			</URL>
 			<Sockets>
 				<Socket nodeId="7960" itemId="0"/>
@@ -157,27 +157,27 @@
 				<Socket nodeId="28475" itemId="0"/>
 				<Socket nodeId="26196" itemId="0"/>
 				<Socket nodeId="36634" itemId="0"/>
-				<Socket nodeId="34483" itemId="0"/>
+				<Socket nodeId="33989" itemId="0"/>
 				<Socket nodeId="21984" itemId="0"/>
 				<Socket nodeId="46882" itemId="0"/>
 				<Socket nodeId="61419" itemId="0"/>
-				<Socket nodeId="41263" itemId="0"/>
-				<Socket nodeId="31683" itemId="0"/>
+				<Socket nodeId="54127" itemId="0"/>
+				<Socket nodeId="6230" itemId="0"/>
 				<Socket nodeId="55190" itemId="0"/>
 				<Socket nodeId="48768" itemId="0"/>
-				<Socket nodeId="61834" itemId="0"/>
 				<Socket nodeId="2491" itemId="0"/>
-				<Socket nodeId="54127" itemId="0"/>
+				<Socket nodeId="61834" itemId="0"/>
+				<Socket nodeId="41263" itemId="0"/>
 				<Socket nodeId="60735" itemId="0"/>
 				<Socket nodeId="33631" itemId="0"/>
-				<Socket nodeId="6230" itemId="0"/>
-				<Socket nodeId="33989" itemId="0"/>
+				<Socket nodeId="31683" itemId="0"/>
+				<Socket nodeId="34483" itemId="0"/>
 				<Socket nodeId="26725" itemId="0"/>
 			</Sockets>
 		</Spec>
 		<Spec title="1" treeVersion="3_9">
 			<URL>
-				https://www.pathofexile.com/passive-skill-tree/AAAABAMDABzc2WGboRRNAecNzdAfjxoI9PxLJLBakRiRakOiAB4IK1CbijWSvk8abPMGLJwXLxZvvOqQM1FgwGaYrYCkhWDGrlXGqqmvpxQg0_u4k4IHg8zsijwt2L23Pl8_G_r7qmqsksHvDj0PBLMLYbyfi3bZXjbpTLOnCI6-Bklg-GjyHM7PfgQHRv6IQFcN_lSezd-w8B9Fnacw049NucEEzLwGOYPb-tIRLSftKpgkqsaKg19VteyDqH0y0aasOumPRtIh42pHhWNBGS46WHHzfINWLv4KU1KvbKrEd8Jr25rg8kFFR62NOQso-iXf7-v-gfJFxPbr7qQZ
+				https://www.pathofexile.com/passive-skill-tree/AAAABAMDABzc2WGboRRNAecNzdAfjxqnCPxLCPRakRiRakOiAB4IK1CbijWSvk_7qvMGBLMXLyycG_qQM3fCwGaYrYCkhWDGrlXGFm-3Pu_r0_u4k6rEg8zsijwtqqnE9l8_2L0ksGqsksHvDj0PFCALYbyfi3bZXhpsTLNo8hzOBklg-JrgfIPwH025Rv6IQFcNBjnPfiSq0iH-Cqcw049WLsEEzLyezYPb-tKofSftKpjfsMaKg1-mrOyDVbUy0f5Uj0Y66REt42pHhWNBGS4EB3Hzjr5FnTpYU1KvbDbpvOpr26-n8kFFR62NOQso-iXfggf-gfJFUWDr7qQZ
 			</URL>
 			<Sockets>
 				<Socket nodeId="7960" itemId="0"/>
@@ -185,22 +185,22 @@
 				<Socket nodeId="28475" itemId="0"/>
 				<Socket nodeId="26196" itemId="0"/>
 				<Socket nodeId="36634" itemId="2"/>
-				<Socket nodeId="34483" itemId="0"/>
+				<Socket nodeId="33989" itemId="0"/>
 				<Socket nodeId="21984" itemId="0"/>
 				<Socket nodeId="46882" itemId="0"/>
 				<Socket nodeId="61419" itemId="3"/>
-				<Socket nodeId="54127" itemId="0"/>
-				<Socket nodeId="31683" itemId="0"/>
+				<Socket nodeId="41263" itemId="0"/>
+				<Socket nodeId="6230" itemId="0"/>
 				<Socket nodeId="55190" itemId="0"/>
 				<Socket nodeId="48768" itemId="0"/>
 				<Socket nodeId="26725" itemId="0"/>
-				<Socket nodeId="33989" itemId="0"/>
-				<Socket nodeId="6230" itemId="0"/>
+				<Socket nodeId="34483" itemId="0"/>
+				<Socket nodeId="31683" itemId="0"/>
 				<Socket nodeId="60735" itemId="0"/>
 				<Socket nodeId="33631" itemId="10"/>
-				<Socket nodeId="41263" itemId="0"/>
-				<Socket nodeId="61834" itemId="0"/>
+				<Socket nodeId="54127" itemId="0"/>
 				<Socket nodeId="2491" itemId="0"/>
+				<Socket nodeId="61834" itemId="0"/>
 			</Sockets>
 		</Spec>
 	</Tree>
@@ -209,6 +209,25 @@
 	</Notes>
 	<TreeView searchStr="" zoomY="256.53752434128" showHeatMap="false" zoomLevel="3" showStatDifferences="true" zoomX="-13.613481080596"/>
 	<Items activeItemSet="1" useSecondWeaponSet="false">
+		<Item id="20">
+			Rarity: RARE
+Doom Cry
+Convoking Wand
+Unique ID: 192cdc545a6cefce05e09a16fe0e66bbb234ebff38d11f4e0e3689d227b38519
+Item Level: 84
+Quality: 20
+Sockets: B-G-B
+LevelReq: 72
+Implicits: 1
+Can roll Minion Modifiers
+Adds 9 to 18 Cold Damage to Spells
+14% increased Attack Speed
++1 to Level of all Minion Skill Gems
+Minions deal 57% increased Damage
+Minions have 18% increased Attack Speed
+Minions have 19% increased Cast Speed
+{crafted}Trigger a Socketed Spell when you Use a Skill
+		</Item>
 		<Item variant="2" id="22">
 			Rarity: UNIQUE
 Kingmaker
@@ -233,25 +252,6 @@ Nearby Allies have 30% increased Item Rarity
 			<ModRange range="0.5" id="3"/>
 			<ModRange range="0.5" id="4"/>
 		</Item>
-		<Item id="20">
-			Rarity: RARE
-Doom Cry
-Convoking Wand
-Unique ID: 192cdc545a6cefce05e09a16fe0e66bbb234ebff38d11f4e0e3689d227b38519
-Item Level: 84
-Quality: 20
-Sockets: B-G-B
-LevelReq: 72
-Implicits: 1
-Can roll Minion Modifiers
-Adds 9 to 18 Cold Damage to Spells
-14% increased Attack Speed
-+1 to Level of all Minion Skill Gems
-Minions deal 57% increased Damage
-Minions have 18% increased Attack Speed
-Minions have 19% increased Cast Speed
-{crafted}Trigger a Socketed Spell when you Use a Skill
-		</Item>
 		<Item id="18">
 			Rarity: UNIQUE
 Lioneye&apos;s Remorse
@@ -269,24 +269,6 @@ Implicits: 1
 20% increased Stun and Block Recovery
 -25 Physical Damage taken from Projectile Attacks
 +5% Chance to Block
-		</Item>
-		<Item id="25">
-			Rarity: RARE
-Soul Dome
-Eternal Burgonet
-Item Level: 76
-Quality: 20
-Sockets: R-G-G
-LevelReq: 69
-Implicits: 0
-+2 to Level of Socketed Minion Gems
-11% increased Global Accuracy Rating
-+90 to maximum Life
-+30% to Lightning Resistance
-5% increased Light Radius
-Nearby Enemies have -9% to Lightning Resistance
-{crafted}21% increased Armour
-{crafted}+15 to maximum Life
 		</Item>
 		<Item id="6">
 			Rarity: RARE
@@ -308,6 +290,49 @@ Minions have 24% increased maximum Life
 31% increased Burning Damage
 4% reduced Mana Reserved
 {crafted}+70 to maximum Life
+		</Item>
+		<Item id="25">
+			Rarity: RARE
+Soul Dome
+Eternal Burgonet
+Item Level: 76
+Quality: 20
+Sockets: R-G-G
+LevelReq: 69
+Implicits: 0
++2 to Level of Socketed Minion Gems
+11% increased Global Accuracy Rating
++90 to maximum Life
++30% to Lightning Resistance
+5% increased Light Radius
+Nearby Enemies have -9% to Lightning Resistance
+{crafted}21% increased Armour
+{crafted}+15 to maximum Life
+		</Item>
+		<Item id="12">
+			Rarity: RARE
+Behemoth Coat
+Necromancer Silks
+Unique ID: 028a85df09758e5d9a69f35ef84019fdb0ed760c352ad9cfddc064be0e512d3a
+Item Level: 83
+Quality: 20
+Sockets: B-B-B-B-B-B
+LevelReq: 59
+Implicits: 0
++43 to Intelligence
++64 to maximum Mana
++32% to Cold Resistance
+20% increased Stun and Block Recovery
++1 to maximum number of Spectres
+{crafted}+75 to maximum Life
+#### Kingmaker Critical Strike Multiplier:
+Socketed Spells have +50% to Critical Strike Multiplier
+#### Bone Barrier Ascendancy
+10% additional Physical Damage Reduction
++30% to all Elemental Resistances
+30% increased Life Recovery rate
+30% increased Energy Shield Recovery rate
+####
 		</Item>
 		<Item variant="2" id="8">
 			Rarity: UNIQUE
@@ -335,31 +360,6 @@ Your Spells are disabled
 			<ModRange range="0.756" id="4"/>
 			<ModRange range="0.5" id="5"/>
 		</Item>
-		<Item id="12">
-			Rarity: RARE
-Behemoth Coat
-Necromancer Silks
-Unique ID: 028a85df09758e5d9a69f35ef84019fdb0ed760c352ad9cfddc064be0e512d3a
-Item Level: 83
-Quality: 20
-Sockets: B-B-B-B-B-B
-LevelReq: 59
-Implicits: 0
-+43 to Intelligence
-+64 to maximum Mana
-+32% to Cold Resistance
-20% increased Stun and Block Recovery
-+1 to maximum number of Spectres
-{crafted}+75 to maximum Life
-#### Kingmaker Critical Strike Multiplier:
-Socketed Spells have +50% to Critical Strike Multiplier
-#### Bone Barrier Ascendancy
-10% additional Physical Damage Reduction
-+30% to all Elemental Resistances
-30% increased Life Recovery rate
-30% increased Energy Shield Recovery rate
-####
-		</Item>
 		<Item id="21">
 			Rarity: RARE
 Pandemonium Caress
@@ -377,22 +377,23 @@ Grants Level 20 Aspect of the Avian Skill
 +45% to Cold Resistance
 {crafted}Minions deal 20% increased Damage
 		</Item>
-		<Item id="23">
+		<Item id="7">
 			Rarity: UNIQUE
-Victario&apos;s Flight
-Goathide Boots
-Item Level: 74
+Southbound
+Soldier Gloves
+Item Level: 83
 Quality: 20
-Sockets: R-B-G-R
-LevelReq: 12
+Sockets: B B R B
+LevelReq: 51
 Implicits: 1
-{crafted}6% Chance to Dodge Attack Hits if you&apos;ve taken a Critical Strike Recently
-+15 to Dexterity
-+15 to Intelligence
-131% increased Evasion Rating
-15% increased Movement Speed
-10% of Damage taken gained as Mana over 4 seconds when Hit
-10% increased Movement Speed for you and nearby Allies
+6% increased maximum Life
+Adds 33 to 44 Cold Damage to Attacks
+15% increased maximum Life
++47% to Cold Resistance
+25% increased Freeze Duration on Enemies
+Your Hits can only Kill Frozen Enemies
+50% increased Herald of Ice Damage
+Corrupted
 		</Item>
 		<Item id="15">
 			Rarity: RARE
@@ -411,6 +412,23 @@ Implicits: 1
 35% increased Movement Speed
 {crafted}20% increased Armour
 {crafted}+13 to maximum Life
+		</Item>
+		<Item id="23">
+			Rarity: UNIQUE
+Victario&apos;s Flight
+Goathide Boots
+Item Level: 74
+Quality: 20
+Sockets: R-B-G-R
+LevelReq: 12
+Implicits: 1
+{crafted}6% Chance to Dodge Attack Hits if you&apos;ve taken a Critical Strike Recently
++15 to Dexterity
++15 to Intelligence
+131% increased Evasion Rating
+15% increased Movement Speed
+10% of Damage taken gained as Mana over 4 seconds when Hit
+10% increased Movement Speed for you and nearby Allies
 		</Item>
 		<Item id="16">
 			Rarity: UNIQUE
@@ -539,6 +557,20 @@ Implicits: 0
 25% increased effect
 33% reduced Duration
 		</Item>
+		<Item id="9">
+			Rarity: RARE
+Foul Lens 7c
+Ghastly Eye Jewel
+Item Level: 69
+LevelReq: 28
+Implicits: 0
++28 to maximum Life
+Minions have 5% increased Attack Speed
+Minions have 6% increased Cast Speed
+Regenerate 8 Energy Shield per second
+Minions have 6% increased Attack and Cast Speed if you or your Minions have Killed Recently
+Corrupted
+		</Item>
 		<Item id="10">
 			Rarity: RARE
 Whispering Leer 25c
@@ -575,20 +607,6 @@ Implicits: 0
 Minions have 8% increased Area of Effect
 With at least 40 Intelligence in Radius, Raised Spectres have a 50% chance to gain Soul Eater for 20 seconds on Kill
 		</Item>
-		<Item id="9">
-			Rarity: RARE
-Foul Lens 7c
-Ghastly Eye Jewel
-Item Level: 69
-LevelReq: 28
-Implicits: 0
-+28 to maximum Life
-Minions have 5% increased Attack Speed
-Minions have 6% increased Cast Speed
-Regenerate 8 Energy Shield per second
-Minions have 6% increased Attack and Cast Speed if you or your Minions have Killed Recently
-Corrupted
-		</Item>
 		<Item id="13">
 			Rarity: RARE
 Hollow Glare
@@ -613,23 +631,20 @@ Minions deal 19% increased Damage if you&apos;ve used a Minion Skill Recently
 Minions deal 1 to 8 additional Lightning Damage
 Minions have 8% increased Attack and Cast Speed if you or your Minions have Killed Recently
 		</Item>
-		<Item id="7">
-			Rarity: UNIQUE
-Southbound
-Soldier Gloves
-Item Level: 83
+		<Item id="27">
+			Rarity: RARE
+iiiiiiiiiiiii
+Eternal Burgonet
+Item Level: 76
 Quality: 20
-Sockets: B B R B
-LevelReq: 51
-Implicits: 1
-6% increased maximum Life
-Adds 33 to 44 Cold Damage to Attacks
-15% increased maximum Life
-+47% to Cold Resistance
-25% increased Freeze Duration on Enemies
-Your Hits can only Kill Frozen Enemies
-50% increased Herald of Ice Damage
-Corrupted
+Sockets: R-G-G
+LevelReq: 69
+Implicits: 0
++2 to Level of Socketed Minion Gems
+11% increased Global Accuracy Rating
++30% to Lightning Resistance
+5% increased Light Radius
+Nearby Enemies have -9% to Lightning Resistance
 		</Item>
 		<Slot name="Gloves" itemId="21"/>
 		<Slot name="Weapon 1" itemId="20"/>
@@ -760,8 +775,8 @@ Corrupted
 		</ItemSet>
 	</Items>
 	<Config>
-		<Input name="enemyConditionHitByColdDamage" boolean="true"/>
 		<Input name="enemyLightningResist" number="-9"/>
+		<Input name="conditionBeenHitRecently" boolean="true"/>
 		<Input name="conditionEnemyChilled" boolean="true"/>
 		<Input name="winterOrbStages" number="3"/>
 		<Input name="conditionOnConsecratedGround" boolean="true"/>
@@ -775,6 +790,6 @@ Corrupted
 		<Input name="feedingFrenzyFeedingFrenzyActive" boolean="true"/>
 		<Input name="aspectOfTheAvianAviansMight" boolean="true"/>
 		<Input name="conditionEnemyShocked" boolean="true"/>
-		<Input name="conditionBeenHitRecently" boolean="true"/>
+		<Input name="enemyConditionHitByColdDamage" boolean="true"/>
 	</Config>
 </PathOfBuilding>

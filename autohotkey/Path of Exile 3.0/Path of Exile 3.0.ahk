@@ -169,7 +169,7 @@ return
 ;==============================================
 Craft:
 sleep, 30
-Run, %A_ScriptDir%\res\ahk\other\Craft.ahk
+Run, %A_ScriptDir%\res\ahk\other\Craft Alt+Aug.ahk
 return
 ;==============================================
 F3::
