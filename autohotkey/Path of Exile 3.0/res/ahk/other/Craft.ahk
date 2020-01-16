@@ -38,7 +38,7 @@ Gui, Add, Text,, B = Alt
 Gui, Add, Text,, N = Aug
 Gui, Add, Text,, RightArrow = Scouring and Alchemy
 Gui, Add, Text,, Numpad0 = Only Scouring
-Gui, Add, Text,, C = Trans
+Gui, Add, Text,, T = Trans
 Gui, Add, Text,, R = Regal
 Gui, Add, Text,, M = Exit
 Gui, Show, NoActivate, Autocast
@@ -99,8 +99,8 @@ Sleep, % Sleepfunction(140, 160)
 SendInput, ^{sc2E}
 return
 ;==================================================
-; Кинуть в шмотку Транс на С
-sc2E::
+; Кинуть в шмотку Транс на T
+sc14::
 MouseMove, % randpos(43, 71), % randpos(313, 345), % mousespeed(0, 1)
 Sleep, % Sleepfunction(40, 60)
 Click Right
