@@ -46,9 +46,13 @@ Menu, MousePodMenu4, Add, VERTICAL, AutosellY
 Menu, MousePodMenu4, Add
 Menu, MousePodMenu4, Add, AURS_ON, Aurs_on
 Menu, MousePodMenu4, Add
-Menu, MousePodMenu4, Add, CRAFT, Craft
+Menu, MousePodMenu4, Add
+Menu, MousePodMenu4, Add, CRAFT MAGIC, Craft_magic
+Menu, MousePodMenu4, Add
+Menu, MousePodMenu4, Add, CRAFT RARE, Craft_rare
+Menu, MousePodMenu4, Add
 Menu, MousePodMenu4, Default, AURS_ON
-; Меню для этих подменюшек
+; Меню для этих подменюшекCraft_magic
 Menu, MouseMenu, Add, FLASK, :MousePodMenu1
 Menu, MouseMenu, Add
 Menu, MouseMenu, Add, GUI, :MousePodMenu2
@@ -167,9 +171,14 @@ sleep, 30
 Run, %A_ScriptDir%\res\ahk\other\Aurs_3.7.1.ahk
 return
 ;==============================================
-Craft:
+Craft_magic:
 sleep, 30
 Run, %A_ScriptDir%\res\ahk\other\Craft Alt+Aug.ahk
+return
+;==============================================
+Craft_rare:
+sleep, 30
+Run, %A_ScriptDir%\res\ahk\other\Craft Alch+Scour.ahk
 return
 ;==============================================
 F3::
