@@ -491,19 +491,33 @@ else if Vkeys = 0
 	SendInput, {sc11}
 }
 return 
-;=========== бинды на T и H================================
-sc22::
-sc14::
-if Vkeys > 0
-{
-	SendInput, +{scB}
-	Sleep, % Sleepfunction(35, 50)
-}
-else if Vkeys = 0
-{
-	SendInput, % "{" A_ThisHotkey "}"
-}
-return 
+;=========== бинды на T и H ================================
+; Если бинды активны - то H = T
+; sc22::
+; if Vkeys > 0
+; {
+	; SendInput, {sc14}
+	; Sleep, % Sleepfunction(35, 50)
+; }
+; else if Vkeys = 0
+; {
+	; SendInput, % "{" A_ThisHotkey "}"
+; }
+; return 
+;=========== бинды на 6 и 7 ================================
+; Если бинды активны - то 6 и 7 включают ваал скелетов на Shift+9
+; 6::
+; 7::
+; if Vkeys > 0
+; {
+	; SendInput, +{scB}
+	; Sleep, % Sleepfunction(35, 50)
+; }
+; else if Vkeys = 0
+; {
+	; SendInput, % "{" A_ThisHotkey "}"
+; }
+; return 
 ;==============================================
 ;=====================
 #IfWinActive
