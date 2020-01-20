@@ -314,17 +314,18 @@ return
 $^1::
 $^2::
 $^3::
-Varbo := RegExReplace(A_ThisHotkey, "[^0-9]", "")
-Sleep, % Sleepfunction(100, 150)
-SendInput, ^{sc1E}
-Sleep, % Sleepfunction(100, 150)
-SendInput, {~} ;+{sc29}
-Sleep, % Sleepfunction(100, 150)
-SendInput, b
-Sleep, % Sleepfunction(100, 150)
-SendInput, {/}
-Sleep, % Sleepfunction(100, 150)
-SendInput, o %Varbo% chaos
+run, %A_ScriptDir%\res\ahk\gui\Fast_Price.ahk
+; Varbo := RegExReplace(A_ThisHotkey, "[^0-9]", "")
+; Sleep, % Sleepfunction(100, 150)
+; SendInput, ^{sc1E}
+; Sleep, % Sleepfunction(100, 150)
+; SendInput, {~} ;+{sc29}
+; Sleep, % Sleepfunction(100, 150)
+; SendInput, b
+; Sleep, % Sleepfunction(100, 150)
+; SendInput, {/}
+; Sleep, % Sleepfunction(100, 150)
+; SendInput, o %Varbo% chaos
 return
 ;===============================================
 ; ty на Insert
