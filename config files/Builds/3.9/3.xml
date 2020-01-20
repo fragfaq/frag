@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PathOfBuilding>
-	<Build level="93" targetVersion="3_0" banditNormal="None" bandit="None" banditMerciless="None" className="Witch" ascendClassName="Necromancer" mainSocketGroup="1" viewMode="ITEMS" banditCruel="None">
+	<Build level="93" targetVersion="3_0" banditNormal="None" bandit="None" banditMerciless="None" className="Witch" ascendClassName="Necromancer" mainSocketGroup="1" viewMode="CONFIG" banditCruel="None">
 		<Spectre id="Metadata/Monsters/TemplarSlaveDriver/TemplarSlaveDriver"/>
 		<Spectre id="Metadata/Monsters/HolyFireElemental/HolyFireElementalSolarisBeam"/>
 		<PlayerStat stat="ActiveMinionLimit" value="5"/>
@@ -77,8 +77,8 @@
 	</Build>
 	<Import lastAccountHash="614149b0096bca834f44b9fd02f7e0d2382e954c" lastRealm="PC" lastCharacterHash="cd33bfbb55dcb57a4cca0fd681a9b7d6f30cd481"/>
 	<Calcs>
-		<Input name="showMinion" boolean="true"/>
-		<Input name="skill_number" number="1"/>
+		<Input name="showMinion" boolean="false"/>
+		<Input name="skill_number" number="2"/>
 		<Input name="misc_buffMode" string="EFFECTIVE"/>
 		<Section collapsed="false" id="SkillSelect"/>
 		<Section collapsed="false" id="HitDamage"/>
@@ -149,7 +149,7 @@
 	<Tree activeSpec="2">
 		<Spec treeVersion="3_9">
 			<URL>
-				https://www.pathofexile.com/passive-skill-tree/AAAABAMDABzc2WGboRRNAecNzRZvjxoI9PxLGJEb-rzqakOiAB4IK1CbijWSvk_7qv6PfIPAZq-nFCCQM1FgHM6YrSj6OuHGrlXGOQu3PtIh0_u4k4IH8B_sijwtqsSmV-_rBLPYvWqsksHvDj0PxPYLYbyfi3bZXnfCTLPQH1qRBklg-DbppwhWLs9-Rv6IQFcNBAeOvqcwns3-CoPb049Nuf5UzLwGOTpY7IM66SftKpjfsMaKwQSofREtVbUy0aasj0aDXySq42pHhWNBGS5FnXHzqqma4GjyU1KvbBpsLJxr218_8kFFR62Ng8xN4yXfhWD-gfJF8wbr7qQZ
+				https://www.pathofexile.com/passive-skill-tree/AAAABAMDABzc2WGboRRNAecNzacIjxoYkfxL_o8b-rzqakOiAB4IK1CbijWSvk8abAthd8LAZq-nqsSQM1FgHM6YrSj6OuHGrlXGOQu3PuyK0_u4k4IHLJzwHzwt7-sUIF8_0iHYvWqsksHvDj0PxPZ8g7yfi3bZXgj0TLPQHxZvBklg-Gjyjr6qqYPbRv6IQFcN_gqnMFYuz35FnTrp049NuREtzLyezTpY_lRVtSftKpgkqsaKg1-mrOyDqH0y0cEEj0bfsAQH42pHhWNBGS4GOXHzmuA26VqRU1KvbPMGBLNr26ZX8kFFR62Ng8xN4yXfhWD-gfJF-6rr7qQZ
 			</URL>
 			<Sockets>
 				<Socket nodeId="7960" itemId="0"/>
@@ -157,27 +157,27 @@
 				<Socket nodeId="28475" itemId="0"/>
 				<Socket nodeId="26196" itemId="0"/>
 				<Socket nodeId="36634" itemId="0"/>
-				<Socket nodeId="33989" itemId="0"/>
+				<Socket nodeId="34483" itemId="0"/>
 				<Socket nodeId="21984" itemId="0"/>
 				<Socket nodeId="46882" itemId="0"/>
 				<Socket nodeId="61419" itemId="0"/>
-				<Socket nodeId="54127" itemId="0"/>
-				<Socket nodeId="6230" itemId="0"/>
+				<Socket nodeId="41263" itemId="0"/>
+				<Socket nodeId="31683" itemId="0"/>
 				<Socket nodeId="55190" itemId="0"/>
 				<Socket nodeId="48768" itemId="0"/>
-				<Socket nodeId="2491" itemId="0"/>
 				<Socket nodeId="61834" itemId="0"/>
-				<Socket nodeId="41263" itemId="0"/>
+				<Socket nodeId="2491" itemId="0"/>
+				<Socket nodeId="54127" itemId="0"/>
 				<Socket nodeId="60735" itemId="0"/>
 				<Socket nodeId="33631" itemId="0"/>
-				<Socket nodeId="31683" itemId="0"/>
-				<Socket nodeId="34483" itemId="0"/>
+				<Socket nodeId="6230" itemId="0"/>
+				<Socket nodeId="33989" itemId="0"/>
 				<Socket nodeId="26725" itemId="0"/>
 			</Sockets>
 		</Spec>
 		<Spec title="1" treeVersion="3_9">
 			<URL>
-				https://www.pathofexile.com/passive-skill-tree/AAAABAMDABzc2WGboRRNAecNzdAfjxqnCPxLCPRakRiRakOiAB4IK1CbijWSvk_7qvMGBLMXLyycG_qQM3fCwGaYrYCkhWDGrlXGFm-3Pu_r0_u4k6rEg8zsijwtqqnE9l8_2L0ksGqsksHvDj0PFCALYbyfi3bZXhpsTLNo8hzOBklg-JrgfIPwH025Rv6IQFcNBjnPfiSq0iH-Cqcw049WLsEEzLyezYPb-tKofSftKpjfsMaKg1-mrOyDVbUy0f5Uj0Y66REt42pHhWNBGS4EB3Hzjr5FnTpYU1KvbDbpvOpr26-n8kFFR62NOQso-iXfggf-gfJFUWDr7qQZ
+				https://www.pathofexile.com/passive-skill-tree/AAAABAMDABzc2WGboRRNAecNzdAfjxoYkfxLpwgb-rzqakOiAB4IK1CbijWSvk_7qhZvd8IXL8T20_uQM1FgHM6YrYCkhWDGrlXG7-u3Pq-nLJy4k4IHg8zsijwtqqkUIF8_2L3zBmqsksHvDj0PBLMLYbyfi3bZXlqRTLMI9JrgBklg-DbpfIPwH89-Rv6IQFcN0iFNuZ7NJKpFnacw04-OvsEEzLwGOTpY-tJVtSftKpjfsMaKg1_-VBEtqH0y0aasOumPRuyD42pHhWNBGS6D23Hz_goEB1YuU1KvbGjyGmxr28Bm8kFFR62NOQso-iXfqsT-gfJFJLDr7qQZ
 			</URL>
 			<Sockets>
 				<Socket nodeId="7960" itemId="0"/>
@@ -185,22 +185,22 @@
 				<Socket nodeId="28475" itemId="0"/>
 				<Socket nodeId="26196" itemId="0"/>
 				<Socket nodeId="36634" itemId="2"/>
-				<Socket nodeId="33989" itemId="0"/>
+				<Socket nodeId="34483" itemId="0"/>
 				<Socket nodeId="21984" itemId="0"/>
 				<Socket nodeId="46882" itemId="0"/>
 				<Socket nodeId="61419" itemId="3"/>
-				<Socket nodeId="41263" itemId="0"/>
-				<Socket nodeId="6230" itemId="0"/>
+				<Socket nodeId="54127" itemId="0"/>
+				<Socket nodeId="31683" itemId="0"/>
 				<Socket nodeId="55190" itemId="0"/>
 				<Socket nodeId="48768" itemId="0"/>
 				<Socket nodeId="26725" itemId="0"/>
-				<Socket nodeId="34483" itemId="0"/>
-				<Socket nodeId="31683" itemId="0"/>
+				<Socket nodeId="33989" itemId="0"/>
+				<Socket nodeId="6230" itemId="0"/>
 				<Socket nodeId="60735" itemId="0"/>
 				<Socket nodeId="33631" itemId="10"/>
-				<Socket nodeId="54127" itemId="0"/>
-				<Socket nodeId="2491" itemId="0"/>
+				<Socket nodeId="41263" itemId="0"/>
 				<Socket nodeId="61834" itemId="0"/>
+				<Socket nodeId="2491" itemId="0"/>
 			</Sockets>
 		</Spec>
 	</Tree>
@@ -308,6 +308,21 @@ Implicits: 0
 Nearby Enemies have -9% to Lightning Resistance
 {crafted}21% increased Armour
 {crafted}+15 to maximum Life
+		</Item>
+		<Item id="27">
+			Rarity: RARE
+iiiiiiiiiiiii
+Eternal Burgonet
+Item Level: 76
+Quality: 20
+Sockets: R-G-G
+LevelReq: 69
+Implicits: 0
++2 to Level of Socketed Minion Gems
+11% increased Global Accuracy Rating
++30% to Lightning Resistance
+5% increased Light Radius
+Nearby Enemies have -9% to Lightning Resistance
 		</Item>
 		<Item id="12">
 			Rarity: RARE
@@ -631,21 +646,6 @@ Minions deal 19% increased Damage if you&apos;ve used a Minion Skill Recently
 Minions deal 1 to 8 additional Lightning Damage
 Minions have 8% increased Attack and Cast Speed if you or your Minions have Killed Recently
 		</Item>
-		<Item id="27">
-			Rarity: RARE
-iiiiiiiiiiiii
-Eternal Burgonet
-Item Level: 76
-Quality: 20
-Sockets: R-G-G
-LevelReq: 69
-Implicits: 0
-+2 to Level of Socketed Minion Gems
-11% increased Global Accuracy Rating
-+30% to Lightning Resistance
-5% increased Light Radius
-Nearby Enemies have -9% to Lightning Resistance
-		</Item>
 		<Slot name="Gloves" itemId="21"/>
 		<Slot name="Weapon 1" itemId="20"/>
 		<Slot active="true" name="Flask 3" itemId="11"/>
@@ -775,8 +775,8 @@ Nearby Enemies have -9% to Lightning Resistance
 		</ItemSet>
 	</Items>
 	<Config>
-		<Input name="enemyLightningResist" number="-9"/>
 		<Input name="conditionBeenHitRecently" boolean="true"/>
+		<Input name="enemyConditionHitByColdDamage" boolean="true"/>
 		<Input name="conditionEnemyChilled" boolean="true"/>
 		<Input name="winterOrbStages" number="3"/>
 		<Input name="conditionOnConsecratedGround" boolean="true"/>
@@ -790,6 +790,6 @@ Nearby Enemies have -9% to Lightning Resistance
 		<Input name="feedingFrenzyFeedingFrenzyActive" boolean="true"/>
 		<Input name="aspectOfTheAvianAviansMight" boolean="true"/>
 		<Input name="conditionEnemyShocked" boolean="true"/>
-		<Input name="enemyConditionHitByColdDamage" boolean="true"/>
+		<Input name="enemyLightningResist" number="-9"/>
 	</Config>
 </PathOfBuilding>
