@@ -1,4 +1,4 @@
-###  **[Ahk](https://gitlab.com/fragfaq/frag/tree/master#ahk-scripts) |  [PoE file](https://gitlab.com/fragfaq/frag/tree/master#poe-file) | [Other](https://gitlab.com/fragfaq/frag/tree/master#other) | [Links](https://gitlab.com/fragfaq/frag/tree/master#links)**
+###  **[Ahk](https://github.com/fragfaq/frag/tree/master#ahk-scripts) |  [PoE file](https://github.com/fragfaq/frag/tree/master#poe-file) | [Other](https://github.com/fragfaq/frag/tree/master#other) | [Links](https://github.com/fragfaq/frag/tree/master#links)**
 ![Govnocode](1.png)
 
 ### **Ahk scripts:**
