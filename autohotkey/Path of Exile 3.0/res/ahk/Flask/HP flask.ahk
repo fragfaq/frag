@@ -36,9 +36,12 @@ global Var_autoflask_bind := 0
 global Var_auto_skils := 0
 global Var_skils_script1 := "support skils script\Immortal Call and Vortex.ahk"
 global Var_skils_script2 := "support skils script\Molten Shell and Vortex.ahk"
+global Var_skils_script3 := "support skils script\Focus.ahk"
 ;==============================================
 ; Тут задается, какой скил будет работать на автокасте. Указать 1 раз из вариантов выше.
-global Var_skils := Var_skils_script2
+global Var_skils1 := Var_skils_script1
+global Var_skils2 := Var_skils_script2
+global Var_skils2 := Var_skils_script3
 ;==============================================
 ; Стартовый Gui, который показывает только что Vkeys = 0
 Gui, Destroy
@@ -67,6 +70,64 @@ Sleepfunction(min, max)
 	random, randb, min, max
 	return randb
 }
+; return
+;==============================================
+SetTimer, NoFocus1, % Sleepfunction(100, 150)
+SetTimer, NoFocus2, % Sleepfunction(200, 250)
+return
+;==============================================
+; Для полоски кд шокающего фокуса
+NoFocus1:
+if Vkeys > 0
+{
+	PixelSearch, Px, Py, 1668, 1047, 1668, 1047, 0x5A0800, 0, Fast RGB
+	if ErrorLevel
+	{
+		Sleep, 20
+	}
+	else
+	{
+		Wait(8100)
+
+		Wait(time){
+			static MyProgress
+			tick := A_TickCount + time
+			Gui, 4:New, hwndMyGui
+			Gui, 4: -Caption +AlwaysOnTop +ToolWindow
+			Gui, 4:Margin, 0, 0
+			Gui, 4:Add, Progress, w250 h15 Range%A_TickCount%-%tick% vMyProgress
+			Gui, 4:Show, x555 y1045 NA
+			While A_TickCount<=tick {
+				GuiControl,,MyProgress,% A_TickCount
+				Sleep, 16
+			}
+			Gui, 4:Destroy
+		}
+	}
+}
+else
+{
+	Sleep, 20
+}
+return
+;=======
+NoFocus2:
+if Vkeys > 0
+{
+	PixelSearch, Px, Py, 1669, 1029, 1669, 1029, 0x3F3602, 0, Fast RGB
+	if ErrorLevel
+	{
+		Sleep, 20
+	}
+	else
+	{
+		Gui, 4:Destroy
+	}
+}
+else
+{
+	Sleep, 20
+}
 return
 ;==============================================
 ; Функция для запуска автопрожатия скилов
@@ -75,14 +136,14 @@ autocast() {
 	{
 		if Var_auto_skils = 0
 		{
-			Run, %A_ScriptDir%\%Var_skils%
+			Run, %A_ScriptDir%\support skils script\Molten Shell and Vortex.ahk
 			Var_auto_skils := 1
 		}
 		else if Var_auto_skils = 1
 		{
 			SetTitleMatchMode, 2
 			DetectHiddenWindows, On
-			WinClose, %Var_skils% - AutoHotkey v
+			WinClose, support skils script\Molten Shell and Vortex.ahk - AutoHotkey v
 			Var_auto_skils := 0
 		}
 	}
@@ -491,33 +552,6 @@ else if Vkeys = 0
 	SendInput, {sc11}
 }
 return 
-;=========== бинды на T и H ================================
-; Если бинды активны - то H = T
-; sc22::
-; if Vkeys > 0
-; {
-	; SendInput, {sc14}
-	; Sleep, % Sleepfunction(35, 50)
-; }
-; else if Vkeys = 0
-; {
-	; SendInput, % "{" A_ThisHotkey "}"
-; }
-; return 
-;=========== бинды на 6 и 7 ================================
-; Если бинды активны - то 6 и 7 включают ваал скелетов на Shift+9
-; 6::
-; 7::
-; if Vkeys > 0
-; {
-	; SendInput, +{scB}
-	; Sleep, % Sleepfunction(35, 50)
-; }
-; else if Vkeys = 0
-; {
-	; SendInput, % "{" A_ThisHotkey "}"
-; }
-; return 
 ;==============================================
 ;=====================
 #IfWinActive
@@ -679,7 +713,6 @@ Gui, Add, Text, x221 y80 c000000 BackgroundTrans, keys %Vkeys%
 Gui, Add, Text, x221 y86 c000000 BackgroundTrans, keys %Vkeys%
 Gui, Add, Text, x219 y83 ca0a0a0 BackgroundTrans, keys %Vkeys%
 ; автопрожатие хп фласок
-; Gui, add, Picture, x310 y80 w40 h40 gAutoflask, %A_ScriptDir%\res\hp.png
 Gui, add, Picture, x308 y88 w22 h25 gAutoflask, %A_ScriptDir%\res\hp-A.png
 ; показ и положение Gui
 Gui, Show, x220 y870 NoActivate, Flask
@@ -693,10 +726,11 @@ return
 F7::
 ~sc1C::
 ~^sc1C::
+~^sc11C::
 SetTitleMatchMode, 2
 DetectHiddenWindows, On
 WinClose, Loop HP All flask.ahk - AutoHotkey v
-WinClose, %Var_skils% - AutoHotkey v
+WinClose, support skils script\Molten Shell and Vortex.ahk - AutoHotkey v
 Sleep, 20
 Var_auto_skils := 0
 Var_autoflask_bind := 0
@@ -720,10 +754,6 @@ Gui, Color, 000001
 WinSet, TransColor, 000001
 Gui, -Caption
 
-; Progress, b H70 W250 Y200 fs18 WM1000 WS1000 CT00FFFF CW000000 zh0, Autocast`nOFF, , , Tahoma
-; Sleep, 1050
-; Progress, Off
-
 return
 ;=============================================
 ; Сброс биндов на дефолтные и отключение автокаста при скроле мышкой
@@ -734,7 +764,8 @@ if Vkeys > 0
 	SetTitleMatchMode, 2
 	DetectHiddenWindows, On
 	WinClose, Loop HP All flask.ahk - AutoHotkey v
-	WinClose, %Var_skils% - AutoHotkey v
+	Sleep, % Sleepfunction(60, 80)
+	WinClose, support skils script\Molten Shell and Vortex.ahk - AutoHotkey v
 	Sleep, 20
 	Var_auto_skils := 0
 	Var_autoflask_bind := 0
@@ -757,11 +788,6 @@ if Vkeys > 0
 	Gui, Color, 000001
 	WinSet, TransColor, 000001
 	Gui, -Caption
-	
-	; Progress, b H70 W250 Y200 fs18 WM1000 WS1000 CT00FFFF CW000000 zh0, Autocast`nOFF, , , Tahoma
-	; Sleep, 1050
-	; Progress, Off
-	
 }
 else if Vkeys = 0
 {
