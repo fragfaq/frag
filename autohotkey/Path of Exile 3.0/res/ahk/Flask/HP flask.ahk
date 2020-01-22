@@ -79,6 +79,7 @@ autocast() {
 		if Var_auto_skils = 0
 		{
 			Run, %A_ScriptDir%\support skils script\Molten Shell and Vortex.ahk
+			Run, %A_ScriptDir%\support skils script\Poloska.ahk
 			Var_auto_skils := 1
 		}
 		else if Var_auto_skils = 1
@@ -86,6 +87,7 @@ autocast() {
 			SetTitleMatchMode, 2
 			DetectHiddenWindows, On
 			WinClose, support skils script\Molten Shell and Vortex.ahk - AutoHotkey v
+			WinClose, support skils script\Poloska.ahk - AutoHotkey v
 			Var_auto_skils := 0
 		}
 	}
@@ -506,11 +508,12 @@ return
 ; Хоткеи: F8 и Shift+0
 F8::
 ~+scA::
-Vkeys := 8 ; Закомментировать для доступности всех биндов. Раскомменетировать или указать Vkeys для одного варианта
+; Vkeys := 8 ; Закомментировать для доступности всех биндов. Раскомменетировать или указать Vkeys для одного варианта
 Sleep, % Sleepfunction(40, 60)
 SetTitleMatchMode, 2
 DetectHiddenWindows, On
 WinClose, Loop HP All flask.ahk - AutoHotkey v
+WinClose, poloska.ahk - AutoHotkey v
 Sleep, 20
 Var_autoflask_bind := 0
 VautoButton := 0
@@ -672,6 +675,7 @@ F7::
 SetTitleMatchMode, 2
 DetectHiddenWindows, On
 WinClose, Loop HP All flask.ahk - AutoHotkey v
+WinClose, poloska.ahk - AutoHotkey v
 WinClose, support skils script\Molten Shell and Vortex.ahk - AutoHotkey v
 Sleep, 20
 Var_auto_skils := 0
@@ -708,6 +712,7 @@ if Vkeys > 0
 	WinClose, Loop HP All flask.ahk - AutoHotkey v
 	Sleep, % Sleepfunction(60, 80)
 	WinClose, support skils script\Molten Shell and Vortex.ahk - AutoHotkey v
+	WinClose, support skils script\Poloska.ahk - AutoHotkey v
 	Sleep, 20
 	Var_auto_skils := 0
 	Var_autoflask_bind := 0
