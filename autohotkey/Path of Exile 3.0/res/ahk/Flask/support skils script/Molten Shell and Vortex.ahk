@@ -69,9 +69,12 @@ IfWinNotActive, ("ahk_class POEWindowClass")
 ; А потом таймер для отката фокуса
 ;
 
-SetTimer, Molten, % Sleepfunction(450, 550)
-SetTimer, Vortex, % Sleepfunction(1150, 1250)
-SetTimer, Focus, % Sleepfunction(1450, 1550)
+; SetTimer, Molten, % Sleepfunction(450, 550)
+; SetTimer, Vortex, % Sleepfunction(1150, 1250)
+; SetTimer, Focus, % Sleepfunction(1450, 1550)
+SetTimer, Molten, % Sleepfunction(150, 250)
+SetTimer, Vortex, % Sleepfunction(350, 450)
+SetTimer, Focus, % Sleepfunction(750, 650)
 return
 ;==============================================
 ; Таймеры:
