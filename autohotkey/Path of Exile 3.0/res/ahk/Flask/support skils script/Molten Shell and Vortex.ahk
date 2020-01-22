@@ -1,8 +1,4 @@
 ;==============================================
-; Progress, b H70 W250 Y200 fs18 WM1000 WS1000 CT00FF00 CW808080 zh0, Molten Shell and`nVortex, , , Tahoma
-; Sleep, 1750
-; Progress, Off
-;==============================================
 ; Заводим шарманку: устанавливаем иконку, настройку перезапуска скрипта, если вдруг что
 #SingleInstance force
 Menu, Tray, Icon, %A_ScriptDir%\res\pic\2.ico, 1
@@ -24,7 +20,6 @@ Gui, +LastFound +AlwaysOnTop +ToolWindow +OwnDialogs
 Gui, Font, S16 W900, Verdana
 Gui, Add, Text, x10 y3 c000000 BackgroundTrans, Auto
 Gui, Add, Text, x6 y0 c00ff00 BackgroundTrans, Auto
-; Gui, Show, x1635 y1020 NoActivate, Autocast
 Gui, Show, x1535 y1040 NoActivate, Autocast
 Gui, Color, 000001
 WinSet, TransColor, 000001
@@ -49,21 +44,15 @@ IfWinNotActive, ("ahk_class POEWindowClass")
 		{
 			WinWaitActive, Path of Exile
 		}
-	; SendInput, {scA}
 	SendInput, {sc13}
 	Sleep, % Sleepfunction(40, 60)
-	; SendInput, {scB}
 	SendInput, {scA}
-;==============================================
-; Табличка заголовок
-; Progress, b H70 W250 Y200 fs18 WM1000 WS1000 CT00FFFF CW000000 zh0, Molten Shell`nand Vortex, , , Tahoma
-; Sleep, 1050
-; Progress, Off
+	Sleep, % Sleepfunction(40, 60)
+	SendInput, {scB}
 ;==============================================
 ; Устанавливаем таймер на секундe с копьем, с разбросом в 0.1 секунды для Вортекса.
 ; Исходим из того, что кд вортекса 1,02 секунды и добавляем рандомный промежуток.
-;=
-SetTimer, Vortex, % Sleepfunction(1150, 1250)
+;
 ;============
 ; Для Молтен Шела устанавливаем таймер в плюс-минус пол секунды. Такой промежуток выбран т.к.:
 ; У Молтен Шела кд не фиксированный, он зависит от того, как быстро закончится прочность от бафа,
@@ -72,31 +61,17 @@ SetTimer, Vortex, % Sleepfunction(1150, 1250)
 ; Используюя команду PixelSearch, таймер постоянно ищет пиксель заданного цвета на иконке Молтена.
 ; Если цвет не совпадает - значит скил еще активен, либо в кулдауне. Если совпадает - Скил готов
 ; К использованию. И уже тогда таймер прожимает хоткей.
-;=
+;
+;============
+; И таймер для фокуса, что б шокать от крафта всех вокруг. Стабильный кд в 12 секунд, изи.
+;
+;============
+; А потом таймер для отката фокуса
+;
+
 SetTimer, Molten, % Sleepfunction(450, 550)
-Return
-;==============================================
-; Запуск и остановка цикла конвокейжна, без керсы (для делва), на Shift+0
-~^scB::
-if Var_conv_cd = 0
-{
-	SendInput, {sc11}
-	SetTimer, Conv, % Sleepfunction(2550, 2650)
-		Progress, b w150, ON, Convocation, My Title
-	Progress, 100 ; Set the position of the bar to 50%.
-	Sleep, 750
-	Progress, Off
-	Var_conv_cd := 1
-}
-else if Var_conv_cd = 1
-{
-	SetTimer, Conv, off
-		Progress, b w150, OFF, Convocation, My Title
-	Progress, 10 ; Set the position of the bar to 50%.
-	Sleep, 750
-	Progress, Off
-	Var_conv_cd := 0
-}
+SetTimer, Vortex, % Sleepfunction(1150, 1250)
+SetTimer, Focus, % Sleepfunction(1450, 1550)
 return
 ;==============================================
 ; Таймеры:
@@ -108,7 +83,6 @@ Vortex:
 			WinWaitActive, Path of Exile
 		}
 	Sleep, % Sleepfunction(40, 60)
-	; SendInput, {scB}
 	SendInput, {sc13}
 Return
 ;==============================================
@@ -130,14 +104,21 @@ else																; Если пиксель найден, то:
 }
 return
 ;==============================================
-; Для конвокейжена:
-Conv:
-	IfWinNotActive, ("ahk_class POEWindowClass")
-		{
-			WinWaitActive, Path of Exile
-		}
-	Sleep, % Sleepfunction(40, 60)
-	SendInput, {sc11}
+; Для шокающего фокуса
+Focus:
+
+IfWinNotActive, ("ahk_class POEWindowClass")
+	{
+		WinWaitActive, Path of Exile
+	}
+Sleep, % Sleepfunction(40, 60)
+SendInput, {scB}
+Sleep, 20
+Return
+;==============================================
+; Авторебут скрипта
+Reboot:
+	Reload
 Return
 ;==============================================
 ;============
