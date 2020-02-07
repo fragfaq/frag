@@ -72,9 +72,9 @@ IfWinNotActive, ("ahk_class POEWindowClass")
 ; SetTimer, Molten, % Sleepfunction(450, 550)
 ; SetTimer, Vortex, % Sleepfunction(1150, 1250)
 ; SetTimer, Focus, % Sleepfunction(1450, 1550)
-SetTimer, Molten, % Sleepfunction(150, 250)
-SetTimer, Vortex, % Sleepfunction(350, 450)
-SetTimer, Focus, % Sleepfunction(750, 650)
+SetTimer, Molten, % Sleepfunction(900, 1000)
+SetTimer, Vortex, % Sleepfunction(1150, 1125)
+SetTimer, Focus, % Sleepfunction(650, 750)
 return
 ;==============================================
 ; Таймеры:
