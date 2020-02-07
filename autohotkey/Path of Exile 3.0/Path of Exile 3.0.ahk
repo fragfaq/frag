@@ -428,20 +428,10 @@ return
 Send 6лядь
 return
 ;=============================================
-; автокликер на b+mouse3
-; If GetKeyState("sc30", "P")
-; ~MButton::
-; SendInput, {Ctrl down}
-; loop
-; {
-	; SendInput, {Click}
-	; Sleep, % Sleepfunction(100, 150)
-	; if (!GetKeyState("sc30", "P"))
-	; {
-		; SendInput, {Ctrl up}
-		; break
-	; }
-; }
+; Дымовая мина
+; ~sc10::
+; Sleep, 300
+; SendInput, 6
 ; return
 ;=============================================
 ; Автокликер на Ctrl+Mouse3
@@ -457,6 +447,21 @@ loop
 		break
 	}
 }
+return
+;=============================================
+; Написать дисе на Ctrl+del
+^sc153::
+ClipSaved := ClipboardAll
+Sleep, % Sleepfunction(40, 60)
+SendInput, {sc147}
+Sleep, % Sleepfunction(40, 60)
+Clipboard = @Ryan_Madison 
+Sleep, % Sleepfunction(40, 60)
+SendInput, ^{sc2F}
+Sleep, % Sleepfunction(40, 60)
+SendInput, {Space}
+Sleep, % Sleepfunction(40, 60)
+Clipboard := ClipSaved
 return
 ;=============================================
 #IfWinActive
