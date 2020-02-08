@@ -505,10 +505,19 @@ return
 ^sc4D::
 if VarBlightClicker = 0
 {
+	Gui, Arrow:Destroy
+	Sleep, 20
+	Gui, Arrow:+LastFound +AlwaysOnTop +ToolWindow +OwnDialogs
+	Gui, Arrow:Add, Picture, x1 y1 w50 h50, %A_ScriptDir%\res\pic\Arrow.png
+	Gui, Arrow:Show, x890 y20 NoActivate, Autocast
+	Gui, Arrow:Color, 000001
+	WinSet, TransColor, 000001
+	Gui, Arrow:-Caption
 	VarBlightClicker := 1
 }
 else if VarBlightClicker = 1
 {
+	Gui, Arrow:Destroy
 	VarBlightClicker := 0
 }
 return
