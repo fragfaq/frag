@@ -349,27 +349,27 @@ Send Hi, after map
 return
 ;===============================================
 ; При двойном нажатии на 6 появляются - исчезают цифры на вкладке с мапами
-~6::
-if (A_PriorHotkey <> "~6" or A_TimeSincePriorHotkey > 500)	; Макс. промежуток между нажатиями для срабатывания
-{
-	KeyWait, 6
-	return
-}
-if VarMapsTierGui = 0
-{
-	Run, %A_ScriptDir%\res\ahk\gui\MapStashTabTiers.ahk
-	Sleep, 20
-	VarMapsTierGui := 1
-}
-else if VarMapsTierGui = 1
-{
-	SetTitleMatchMode, 2
-	DetectHiddenWindows, On
-	WinClose, MapStashTabTiers.ahk - AutoHotkey v
-	Sleep, 20
-	VarMapsTierGui := 0
-}
-return
+; ~6::
+; if (A_PriorHotkey <> "~6" or A_TimeSincePriorHotkey > 500)	; Макс. промежуток между нажатиями для срабатывания
+; {
+	; KeyWait, 6
+	; return
+; }
+; if VarMapsTierGui = 0
+; {
+	; Run, %A_ScriptDir%\res\ahk\gui\MapStashTabTiers.ahk
+	; Sleep, 20
+	; VarMapsTierGui := 1
+; }
+; else if VarMapsTierGui = 1
+; {
+	; SetTitleMatchMode, 2
+	; DetectHiddenWindows, On
+	; WinClose, MapStashTabTiers.ahk - AutoHotkey v
+	; Sleep, 20
+	; VarMapsTierGui := 0
+; }
+; return
 ;===============================================
 ;=====================
 #IfWinActive
