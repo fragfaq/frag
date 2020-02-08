@@ -6,6 +6,7 @@ SetDefaultMouseSpeed, 3
 VarMapsTierGui := 0
 VarDopBinds := 0
 VarAntiAfk := 0
+VarBlightClicker := 0
 ;==============================================
 GroupAdd, poe, ahk_exe PathOfExile.exe
 GroupAdd, poe, ahk_exe PathOfExile_x64.exe
@@ -446,6 +447,69 @@ loop
 		SendInput, {Ctrl up}
 		break
 	}
+}
+return
+;=============================================
+; Автокликер на Ctrl+Mouse1
+; ^LButton::
+; If GetKeyState("LButton", "P")
+; loop
+; {
+	; SendInput, ^{Click}
+	; Sleep, % Sleepfunction(40, 60)
+	; if (!GetKeyState("LButton", "P"))
+	; {
+		; SendInput, {Ctrl up}
+		; break
+	; }
+; }
+; return
+;=============================================
+; Автокликер на X
+; sc2D::
+; If GetKeyState("sc2D", "P")
+; loop
+; {
+	; SendInput, ^{Click}
+	; Sleep, % Sleepfunction(40, 60)
+	; if (!GetKeyState("sc2D", "P"))
+	; {
+		; SendInput, {Ctrl up}
+		; break
+	; }
+; }
+; return
+;=============================================
+; Авто кликер для блайт мап. Переключатель на Ctrl+Numpad6, бинд на W.
+sc11::
+if VarBlightClicker = 0
+{
+	SendInput, {sc11}
+}
+else if VarBlightClicker = 1
+{
+	If GetKeyState("sc11", "P")
+	loop
+	{
+		SendInput, ^{Click}
+		Sleep, % Sleepfunction(40, 60)
+		if (!GetKeyState("sc11", "P"))
+		{
+			SendInput, {Ctrl up}
+			break
+		}
+	}
+}
+return
+;====================
+^sc4D::
+if VarBlightClicker = 0
+{
+	VarBlightClicker := 1
+}
+else if VarBlightClicker = 1
+{
+	VarBlightClicker := 0
 }
 return
 ;=============================================
