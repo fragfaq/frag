@@ -24,7 +24,6 @@ Menu, Tray, Icon, %A_ScriptDir%\res\Life_flask1.png, 1
 ;=============================================
 #IfWinActive ahk_group poe
 ;==========================================================================================
-Vtest1 = 0
 global Vkeys := 0
 global Vdvehilki := 1
 global Vtrihilki := 1
@@ -37,6 +36,7 @@ global Var_auto_skils := 0
 global Var_skils_script1 := "support skils script\Immortal Call and Vortex.ahk"
 global Var_skils_script2 := "support skils script\Molten Shell and Vortex.ahk"
 global Var_skils_script3 := "support skils script\Focus.ahk"
+Vtest1 = 0
 ;==============================================
 ; Тут задается, какой скил будет работать на автокасте. Указать 1 раз из вариантов выше.
 global Var_skils1 := Var_skils_script1
@@ -165,7 +165,7 @@ else if (Vkeys = 7 or Vkeys = 8) 	; 1 или 2 в зависимости от Vd
 		Vdvehilki := 1
 	}
 }
-else if Vkeys = 9			; 1
+else if (Vkeys = 9 or Vkeys = 10)	; 1
 {
 	SendInput, 1
 }
@@ -234,7 +234,7 @@ else if (Vkeys = 7 or Vkeys = 8)			; 1 или 2 в зависимости от V
 		Vdvehilki := 1
 	}
 }
-else if Vkeys = 9			; 1
+else if (Vkeys = 9 or Vkeys = 10)			; 1
 {
 	SendInput, 1
 }
@@ -308,7 +308,7 @@ else if (Vkeys = 7 or Vkeys = 8)			; 3 = 3+4
 	Sleep, % Sleepfunction(45, 80)
 	SendInput, 4
 }
-else if Vkeys = 9			; 3 = 2+3+4
+else if (Vkeys = 9 or Vkeys = 10)			; 3 = 2+3+4
 {
 	SendInput, 2
 	Sleep, % Sleepfunction(45, 80)
@@ -422,6 +422,15 @@ else if (Vkeys < 1 and Vkeys > 9)
 {
 	SendInput, {sc20}
 }
+else if Vkeys = 10
+{
+	Sleep, % Sleepfunction(45, 80)
+	SendInput, 3
+	Sleep, % Sleepfunction(45, 80)
+	SendInput, 4
+	Sleep, % Sleepfunction(45, 80)
+	SendInput, 5
+}
 return
 ;=========== бинд на Tilde =============================
 ; Пятерка на тильду всегда, кроме варианта с одной хп флаской. Тогда добавляется еще и тройка.
@@ -437,55 +446,54 @@ else if Vkeys = 6
 	SendInput, 5
 }
 return
-
-;=========== бинд на F1 =================================
-~F1::
+;=========== бинд на F1 ================================= Тут какой-то баг на эфки.
+; ~F1::
 ; SendInput, {F1}
-Sleep, % Sleepfunction(45, 80)
-if Var_autoflask_bind = 2
-{
-	Gui, 3:Destroy
-	SoundBeep, 60, 50
-	SetTitleMatchMode, 2
-	DetectHiddenWindows, On
-	WinClose, Loop HP All flask.ahk - AutoHotkey v
-	Sleep, 20
-	Var_autoflask_bind := 1
-}
-else if Var_autoflask_bind = 1
-{
-	Sleep, 20	
-}
-else if Var_autoflask_bind = 0
-{
-	SendInput, {sc14}
-	Sleep, 20	
-}
-return
+; Sleep, % Sleepfunction(45, 80)
+; if Var_autoflask_bind = 2
+; {
+	; Gui, 3:Destroy
+	; SoundBeep, 60, 50
+	; SetTitleMatchMode, 2
+	; DetectHiddenWindows, On
+	; WinClose, Loop HP All flask.ahk - AutoHotkey v
+	; Sleep, 20
+	; Var_autoflask_bind := 1
+; }
+; else if Var_autoflask_bind = 1
+; {
+	; Sleep, 20	
+; }
+; else if Var_autoflask_bind = 0
+; {
+	; SendInput, {sc14}
+	; Sleep, 20	
+; }
+; return
 ;=========== бинд на F2 =================================
-~F2::
+; ~F2::
 ; SendInput, {F2}
-Sleep, % Sleepfunction(45, 80)
-if Var_autoflask_bind = 2
-{
-	Gui, 3:Destroy
-	SoundBeep, 60, 50
-	SetTitleMatchMode, 2
-	DetectHiddenWindows, On
-	WinClose, Loop HP All flask.ahk - AutoHotkey v
-	Sleep, 20
-	Var_autoflask_bind := 1
-}
-else if Var_autoflask_bind = 1
-{
-	Sleep, 20
-}
-else if Var_autoflask_bind = 0
-{
-	SendInput, {sc14}
-	Sleep, 20
-}
-return
+; Sleep, % Sleepfunction(45, 80)
+; if Var_autoflask_bind = 2
+; {
+	; Gui, 3:Destroy
+	; SoundBeep, 60, 50
+	; SetTitleMatchMode, 2
+	; DetectHiddenWindows, On
+	; WinClose, Loop HP All flask.ahk - AutoHotkey v
+	; Sleep, 20
+	; Var_autoflask_bind := 1
+; }
+; else if Var_autoflask_bind = 1
+; {
+	; Sleep, 20
+; }
+; else if Var_autoflask_bind = 0
+; {
+	; SendInput, {sc14}
+	; Sleep, 20
+; }
+; return
 ;=========== бинд на W =================================
 ; Если бинды на фласки включены - то на w сперва прожимается w, а потом сразу Mouse3, что б кастануть керсу.
 sc11::
@@ -505,15 +513,18 @@ return
 #IfWinActive
 ;=====================
 ; 6::
-; MsgBox, Var_autoflask_bind = %Var_autoflask_bind%
+; MsgBox, Vkeys = %Vkeys%
 ; return
 ;======;======;======;======;======;======
 ; Смена биндов и вывод GUI с их описанием, но сперва закрытиие цикла, если он работает.
 ; Хоткеи: F8 и Shift+0
+; global Vkeys := 8
+; ==========
 F8::
 ~+scA::
 ; Vkeys := 4 ; Закомментировать для доступности всех биндов. Раскомменетировать или указать Vkeys для одного варианта
 Vkeys := 8 ; Закомментировать для доступности всех биндов. Раскомменетировать или указать Vkeys для одного варианта
+; Vkeys := 9 ; Закомментировать для доступности всех биндов. Раскомменетировать или указать Vkeys для одного варианта
 Sleep, % Sleepfunction(40, 60)
 SetTitleMatchMode, 2
 DetectHiddenWindows, On
@@ -531,10 +542,11 @@ if Vkeys = 0
 	Sleep, % Sleepfunction(30, 50)
 	Vkeys := 1
 }
+
 else if Vkeys > 0
 {
 	Vkeys += 1
-	if Vkeys > 9
+	if Vkeys > 10
 	{	
 		Sleep, % Sleepfunction(30, 50)
 		Vkeys := 0
@@ -626,11 +638,20 @@ else if Vkeys = 8
 }
 else if Vkeys = 9
 {
-	VHeal := "Хилки по очереди"
+	VHeal := "Хилка на 1 и 2"
 	Vutil := "Утилитки одновременно"
 	VHealnumder := 1
 	Vutilnumber := 3
 	VText1 := "d = 5"
+	VText2 := ""
+}
+else if Vkeys = 10
+{
+	VHeal := "Хилка на 1 и 2"
+	Vutil := "Утилитки одновременно"
+	VHealnumder := 1
+	Vutilnumber := 3
+	VText1 := "d = 345"
 	VText2 := ""
 }
 Sleep, % Sleepfunction(30, 50)
@@ -673,9 +694,6 @@ return
 ;==============================================
 ; Сброс биндов на дефолтные и отключение автокаста при нажатии F7, Enter и Ctrl+Enter
 F7::
-~sc1C::
-~^sc1C::
-~^sc11C::
 SetTitleMatchMode, 2
 DetectHiddenWindows, On
 WinClose, Loop HP All flask.ahk - AutoHotkey v
