@@ -473,15 +473,12 @@ Sleep, % Sleepfunction(40, 60)
 Clipboard := ClipSaved
 return
 ;=============================================
-; ~sc20::
-; Sleep, % Sleepfunction(40, 60)
-; SendInput, 3
-; return
-; =======
-; ~8::
-; +MButton::
-; SendInput, +{0}
-; return
+; Gui для прайса на Win+Mouse3	
+#Mbutton::	
+; SendInput, ^!+{F12}	
+; Sleep, 100	
+run, %A_ScriptDir%\res\ahk\gui\Price.ahk	
+return	
 ;=============================================
 #IfWinActive
 ;=============================================
