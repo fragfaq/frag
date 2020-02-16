@@ -1,0 +1,12 @@
+.main-frame {
+	background: url(http://i.imgur.com/wj2rQvp.jpg) !important;
+	background-position: center top 0 !important;
+	background-attachment: fixed !important;
+	background-repeat: no-repeat !important; top: 0;
+	}
+.main-frame {
+	top: 0 !important;
+	}
+#bg-link {
+	display: none !important;
+	}

@@ -1,0 +1,54 @@
+/* CSS for http://xezzco.de/poetools/#/expCalc */
+
+body {
+    background-color: #000;
+    color: #3d8b0d;
+}
+.jumbotron {
+    background-color: #000
+}
+body > div > div.row.marketing.ng-scope > div > div:nth-child(2) > table > tbody > tr > td:nth-child(2) > input {
+    font-weight: 900;
+    background-color: #000;
+}
+
+
+
+/* CSS for http://sekundomer.net/ */
+
+body,  #links, #links span, div.content {
+    background: #000000;
+}
+div.head, div.footer {
+    display: none;
+}
+
+
+/* CSS for https://poemap.live/ */
+
+/* u have */
+mat-expansion-panel.mat-expansion-panel.ng-tns-c21-245.ng-star-inserted,
+mat-expansion-panel.mat-expansion-panel.ng-tns-c21-247.ng-star-inserted,
+mat-expansion-panel.mat-expansion-panel.ng-tns-c21-249.ng-star-inserted,
+mat-expansion-panel.mat-expansion-panel.ng-tns-c21-251.ng-star-inserted,
+mat-expansion-panel.mat-expansion-panel.ng-tns-c21-253.ng-star-inserted,
+mat-expansion-panel.mat-expansion-panel.ng-tns-c21-255.ng-star-inserted,
+mat-expansion-panel.mat-expansion-panel.ng-tns-c21-257.ng-star-inserted,
+mat-expansion-panel.mat-expansion-panel.ng-tns-c21-259.ng-star-inserted,
+mat-expansion-panel.mat-expansion-panel.ng-tns-c21-261.ng-star-inserted {
+    display: none;
+}
+
+/* u want */
+
+mat-expansion-panel.mat-expansion-panel.ng-tns-c21-281.ng-star-inserted,
+mat-expansion-panel.mat-expansion-panel.ng-tns-c21-283.ng-star-inserted,
+mat-expansion-panel.mat-expansion-panel.ng-tns-c21-285.ng-star-inserted,
+mat-expansion-panel.mat-expansion-panel.ng-tns-c21-287.ng-star-inserted,
+mat-expansion-panel.mat-expansion-panel.ng-tns-c21-289.ng-star-inserted,
+mat-expansion-panel.mat-expansion-panel.ng-tns-c21-291.ng-star-inserted,
+mat-expansion-panel.mat-expansion-panel.ng-tns-c21-293.ng-star-inserted,
+mat-expansion-panel.mat-expansion-panel.ng-tns-c21-295.ng-star-inserted,
+mat-expansion-panel.mat-expansion-panel.ng-tns-c21-297.ng-star-inserted {
+    display: none;
+}

@@ -1,0 +1,378 @@
+﻿# Script edited with Filtration - https://github.com/ben-wallis/Filtration
+# start
+
+# Section: 0000 # UTILITY AND JUST-IN-CASE
+
+Show
+    Class "Microtransactions"
+
+Show
+    Class "Quest" "Items"
+    BaseType "Shaper's Orb"
+    SetBorderColor 74 230 58
+    SetFontSize 44
+    PlayAlertSound 2 79
+
+Show
+    Class "Quest" "Items"
+    SetBorderColor 74 230 58
+    SetFontSize 40
+
+# Section: 0300 # CURRENCY
+
+Show
+    Class "Currency"
+    BaseType "Eternal Orb" "Divine Orb" "Exalted Orb" "Albino Rhoa Feather" "Deafening Essence of"
+    SetTextColor 255 0 0
+    SetBackgroundColor 255 255 255
+    SetBorderColor 255 0 0
+    SetFontSize 45
+    PlayAlertSound 6 300
+
+Show
+    Class "Currency"
+    BaseType "Shrieking Essence of" "Essence of Hysteria" "Essence of Insanity" "Essence of Horror" "Essence of Delirium" "Stacked Deck" "Master Cartographer" "Unshaping Orb"
+    SetTextColor 0 0 0
+    SetBackgroundColor 255 120 0
+    SetBorderColor 0 0 0
+    SetFontSize 45
+    PlayAlertSound 6 300
+
+Show
+    Class "Currency"
+    BaseType "Regal Orb" "Orb of Regret" "Chaos Orb" "Blessed Orb" "Gemcutter's Prism" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Vaal Orb" "Cartographer's Chisel" "Glassblower's Bauble" "Cartographer's Seal" "Cartographer's Sextant" "Remnant of Corruption"
+    SetTextColor 0 0 0
+    SetBackgroundColor 213 159 15
+    SetBorderColor 0 0 0
+    SetFontSize 40
+    PlayAlertSound 2 300
+
+Show
+    Class "Currency"
+    BaseType "Screaming Essence of"
+    SetTextColor 0 0 0
+    SetBackgroundColor 15 180 200
+    SetBorderColor 0 0 0
+    SetFontSize 40
+    PlayAlertSound 2 300
+
+Show
+    Class "Currency"
+    BaseType "Wailing Essence of"
+    SetTextColor 0 0 0
+    SetBackgroundColor 30 159 200
+    SetBorderColor 0 0 0
+    SetFontSize 38
+    PlayAlertSound 2 300
+
+Show
+    Class "Currency"
+    BaseType "Weeping Essence of"
+    SetTextColor 0 0 0
+    SetBackgroundColor 30 159 200 225
+    SetBorderColor 0 0 0
+    SetFontSize 36
+    PlayAlertSound 2 300
+
+Show
+    Class "Currency"
+    BaseType "Muttering Essence of"
+    SetTextColor 0 0 0
+    SetBackgroundColor 30 159 200 200
+    SetBorderColor 0 0 0
+    SetFontSize 36
+    PlayAlertSound 2 300
+
+Show
+    Class "Currency"
+    BaseType "Whispering Essence of"
+    SetTextColor 0 0 0
+    SetBackgroundColor 30 159 200 175
+    SetBorderColor 0 0 0
+    SetFontSize 34
+    PlayAlertSound 2 300
+
+Show
+    Class "Currency"
+    BaseType "Orb of Chance" "Orb of Alteration" "Chromatic Orb" "Jeweller's Orb"
+    SetTextColor 190 178 135
+    SetBackgroundColor 0 0 0
+    SetBorderColor 190 178 135 185
+    SetFontSize 38
+    PlayAlertSound 1 300
+
+Show
+    Class "Currency"
+    BaseType "Orb of Transmutation" "Blacksmith's" "Armourer's Scrap" "Orb of Augmentation"
+    SetTextColor 190 178 135
+    SetBackgroundColor 0 0 0
+    SetBorderColor 190 178 135 185
+    SetFontSize 34
+    PlayAlertSound 1 300
+
+Show
+    Class "Currency"
+    BaseType "Portal Scroll" "Scroll of Wisdom"
+    SetTextColor 170 158 130 220
+    SetBackgroundColor 0 0 0
+    SetBorderColor 60 50 30
+
+Show
+    Class "Currency"
+    BaseType "Scroll Fragment"
+    SetTextColor 170 158 130 165
+    SetFontSize 28
+
+# EXCEPTIONS - This line is here to prevent the "The Wolf" entry from making the cheap Wolf's Shadow card appear huge and expensive.
+Show
+    Class "Divination"
+    BaseType "The Wolf's Shadow"
+    SetTextColor 0 0 0
+    SetBackgroundColor 145 215 230 225
+    SetBorderColor 0 100 215
+    SetFontSize 38
+    PlayAlertSound 2 300
+
+# TIER 1: 15C+++
+Show
+    Class "Divination"
+    BaseType "The Surveyor" "The Penitent" "Lucky Deck" "House of Mirrors" "Wealth and Power" "The Dragon's Heart" "The Brittle Emperor" "Celestial Justicar" "Dark Mage" "Doctor" "Fiend" "The Queen" "The Artist" "The Last One Standing" "The Artist" "Bowyer's Dream" "Hunter's Reward" "The Thaumaturgist" "The Warlord" "The Offering" "The Ethereal" "The Dapper Prodigy" "Abandoned Wealth" "The Enlightened" "Last Hope" "The Devastator" "The Immortal" "The Aesthete" "The Hunger" "Pride Before the Fall" "The King's Heart" "Lysah's Respite" "Cursed King" "Time-Lost Relic" "Formless Sea" "Sephirot" "The Valkyrie" "The Wolf"
+    SetTextColor 0 0 255
+    SetBackgroundColor 255 255 255
+    SetBorderColor 0 0 255
+    SetFontSize 45
+    PlayAlertSound 6 300
+
+Show
+    Class "Divination"
+    BaseType "Dialla's Subjugation" "Death" "Earth Drinker" "The Trial" "The Stormcaller" "Vinia's Token" "The Risk" "Chains that Bind" "The Road to Power" "The Watcher" "Merciless Armament" "Rats" "The Vast" "Chaotic Disposition" "Heterochromia" "The Harvester" "The Wind" "Emperor of Purity" "The Mercenary" "Scavenger" "The Calling" "Mawr Blaidd"
+    SetTextColor 0 0 0
+    SetBackgroundColor 0 210 255
+    SetBorderColor 0 0 255
+    SetFontSize 44
+    PlayAlertSound 2 300
+
+Show
+    Class "Divination"
+    BaseType "Treasure Hunter" "Fox" "The Throne" "Tranquillity" "The Pack Leader" "The Spoiled Prince" "Glimmer" "The Demoness" "The Drunken Aristocrat" "The Fletcher" "Avenger" "The Arena Champion" "Grave Knowledge" "Encroaching Darkness" "Doedre's Madness" "Humility" "The Union" "Lucky Connections" "Jack in the Box" "The Inventor" "Hope" "The Hoarder" "Gemcutter's Promise" "The Explorer" "Blind Venture" "The Cartographer" "Scholar of the Seas" "Volatile Power" "Lost Worlds" "The Body" "Birth of the Three" "The Sigil" "Boundless Realms" "The Lunaris Priestess" "The Jester" "Cartographer's Delight" "Penitent" "The Soul" "The Tyrant"
+    SetTextColor 0 0 0
+    SetBackgroundColor 110 215 230 235
+    SetBorderColor 0 110 255
+    SetFontSize 40
+    PlayAlertSound 2 300
+
+Show
+    Class "Divination"
+    BaseType "Carrion Crow" "Other Cheek"
+    SetTextColor 0 0 0
+    SetBackgroundColor 175 215 230 200
+    SetBorderColor 0 0 0
+    SetFontSize 32
+
+Show
+    Class "Divination"
+    BaseType "The Void"
+    SetTextColor 0 0 0
+    SetBackgroundColor 150 0 255
+    SetBorderColor 0 0 0
+    SetFontSize 42
+    PlayAlertSound 2 300
+
+Show
+    Class "Divination"
+    SetTextColor 0 0 0
+    SetBackgroundColor 145 215 230 225
+    SetBorderColor 0 100 215
+    SetFontSize 38
+    PlayAlertSound 2 300
+
+Show
+    Class "Currency"
+    BaseType "Prophecy"
+    SetTextColor 0 0 0
+    SetBackgroundColor 159 15 213
+    SetBorderColor 0 0 0
+    SetFontSize 40
+    PlayAlertSound 2 300
+
+Show
+    Class "Currency"
+    BaseType "Silver Coin"
+    SetTextColor 0 0 0
+    SetBackgroundColor 190 178 135
+    SetBorderColor 0 0 0
+    SetFontSize 40
+    PlayAlertSound 1 200
+
+Show
+    Class "Currency"
+    BaseType "Perandus"
+    SetTextColor 255 178 135
+    SetBorderColor 255 178 135 135
+    SetFontSize 38
+
+Show
+    Class "Currency"
+    SetBorderColor 0 0 0
+
+Show
+    Class "Stackable" "Currency"
+    SetBorderColor 0 0 0
+
+# Section: 0400 # SOCKET/LINK BASED stuff
+
+# 5-links (6 links are handled at the start)
+Show
+    LinkedSockets = 5
+    SetBorderColor 0 255 255
+    SetFontSize 39
+    PlayAlertSound 1 300
+
+# 6-Sockets
+Show
+    Sockets = 6
+    Rarity = Rare
+    ItemLevel >= 75
+    SetTextColor 255 190 0
+    SetBackgroundColor 75 75 75
+    SetBorderColor 250 250 250
+    SetFontSize 40
+    PlayAlertSound 1 300
+
+Show
+    Sockets = 6
+    SetTextColor 30 144 255
+    SetBackgroundColor 184 218 242
+    SetBorderColor 54 100 146
+    SetFontSize 45
+    PlayAlertSound 4 300
+
+# Corrupted items with white sockets for offhand gem leveling.
+Show
+    Sockets >= 3
+    SocketGroup "W"
+    Class "Wands" "Daggers" "One" "Hand" "Shields" "Thrusting" "Sceptre" "Claws"
+
+# Section: 0500 # SKILL GEMS
+
+Show
+    Quality >= 15
+    Class "Gem"
+    BaseType "Empower" "Enlighten"
+    SetTextColor 30 150 180
+    SetBackgroundColor 255 255 255
+    SetBorderColor 30 150 180
+    SetFontSize 45
+    PlayAlertSound 6 300
+
+Show
+    Quality = 20
+    Class "Active Skill Gems" "Support Skill Gems"
+    SetTextColor 30 150 180
+    SetBackgroundColor 255 255 255
+    SetBorderColor 30 150 180
+    SetFontSize 45
+    PlayAlertSound 6 300
+
+Show
+    Quality >= 15
+    Quality < 20
+    Class "Active Skill Gems" "Support Skill Gems"
+    SetTextColor 255 255 255
+    SetBackgroundColor 16 104 201
+    SetBorderColor 255 255 255
+    SetFontSize 40
+
+Show
+    Quality >= 1
+    Class "Active Skill Gems" "Support Skill Gems"
+    SetTextColor 255 255 255
+    SetBackgroundColor 16 104 201
+    SetBorderColor 255 255 255
+    SetFontSize 34
+
+Show # Drop only good gems
+    Class "Gem"
+    BaseType "Portal" "Empower" "Enlighten" "Enhance" "Vaal Haste"
+    SetBorderColor 30 150 180
+    SetFontSize 41
+    PlayAlertSound 6 300
+
+Show # Drop only meh gems
+    Class "Gem"
+    BaseType "Detonate Mines" "Added Chaos Damage" "Vaal"
+    SetBorderColor 30 150 180 150
+    SetFontSize 38
+
+Show
+    Class "Gems"
+
+# Section: 0700 # NORMAL AND MAGIC ITEM RULES
+
+Show
+    SocketGroup "RGB"
+    Height <= 2
+    Width <= 2
+    SetTextColor 46 46 255
+    SetBackgroundColor 158 158 158
+    SetBorderColor 255 0 5
+    SetFontSize 35
+
+Show
+    SocketGroup "RGB"
+    Height <= 3
+    Width <= 1
+    SetTextColor 46 46 255
+    SetBackgroundColor 158 158 158
+    SetBorderColor 255 0 5
+    SetFontSize 35
+
+Show
+    SocketGroup "RGB"
+    SetTextColor 46 46 255
+    SetBackgroundColor 158 158 158
+    SetBorderColor 255 0 5
+    SetFontSize 30
+
+Show
+    Quality >= 0
+    Class "Utility Flasks"
+    BaseType "Quicksilver Flask" "Silver Flask"
+    Rarity >= Normal
+    SetTextColor 74 230 58
+    SetBackgroundColor 108 3 112
+    SetBorderColor 74 230 58
+    SetFontSize 38
+    PlayAlertSound 7 300
+
+Show # $flask, recipe, glass, top
+    Quality = 20
+    BaseType "Flask"
+    Rarity = Normal
+    SetTextColor 255 255 255
+    SetBackgroundColor 75 75 75
+    SetBorderColor 250 250 250
+    SetFontSize 38
+
+Show # $flask, recipe, glass, top
+    Quality = 20
+    BaseType "Flask"
+    Rarity = Magic
+    SetTextColor 100 100 255
+    SetBackgroundColor 75 75 75
+    SetBorderColor 250 250 250
+    SetFontSize 38
+
+Show # $flask, recipe, glass
+    Quality >= 15
+    BaseType "Flask"
+    SetBackgroundColor 75 75 75
+    SetBorderColor 150 150 150
+    SetFontSize 38
+
+Show
+    BaseType "Gavel" "Rock Breaker" "Stone Hammer"
+    SetTextColor 255 255 0
+    SetBackgroundColor 128 128 128
+    SetBorderColor 200 200 200
+

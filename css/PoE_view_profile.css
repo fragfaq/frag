@@ -1,0 +1,13 @@
+/* В https://www.pathofexile.com/account/view-profile/accaunt убирает лишние вкладки и выделяет вкладку с чарами */
+
+body > div.container > div.content > div.wrapper > div.layoutBox1.layoutBoxFull.defaultTheme > div > div > div.profile-top > div > a:nth-child(n+2):nth-child(-n+6) {
+    display: none
+}
+body > div.container > div.content > div.wrapper > div.layoutBox1.layoutBoxFull.defaultTheme > div > div > div.profile-top > div > a:nth-child(8) {
+    display: none
+}
+body > div.container > div.content > div.wrapper > div.layoutBox1.layoutBoxFull.defaultTheme > div > div > div.profile-top > div > a:nth-child(7) {
+    color: #00bf00;
+    font-weight: 700;
+    font-size: 16px;
+}
