@@ -1,0 +1,2 @@
+Bind frequently used sc2tv.ru smiles on hotkeys. You can change smiles and hotkey as you want.
+Script also allows switching tabs on Ctrl+scroll in google chrome and mozilla firefox.
