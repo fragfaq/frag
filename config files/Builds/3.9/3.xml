@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PathOfBuilding>
-	<Build level="94" targetVersion="3_0" banditNormal="None" bandit="None" banditMerciless="None" className="Witch" ascendClassName="Necromancer" mainSocketGroup="1" viewMode="SKILLS" banditCruel="None">
+	<Build level="95" targetVersion="3_0" banditNormal="None" bandit="None" banditMerciless="None" className="Witch" ascendClassName="Necromancer" mainSocketGroup="1" viewMode="ITEMS" banditCruel="None">
 		<Spectre id="Metadata/Monsters/TemplarSlaveDriver/TemplarSlaveDriver"/>
 		<Spectre id="Metadata/Monsters/HolyFireElemental/HolyFireElementalSolarisBeam"/>
 		<PlayerStat stat="ActiveMinionLimit" value="5"/>
 		<PlayerStat stat="AverageHit" value="0"/>
 		<PlayerStat stat="AverageDamage" value="0"/>
-		<PlayerStat stat="Speed" value="2.6823529411765"/>
-		<PlayerStat stat="Speed" value="2.6823529411765"/>
+		<PlayerStat stat="Speed" value="2.4705882352941"/>
+		<PlayerStat stat="Speed" value="2.4705882352941"/>
 		<PlayerStat stat="PreEffectiveCritChance" value="0"/>
 		<PlayerStat stat="CritChance" value="0"/>
 		<PlayerStat stat="CritMultiplier" value="1.5"/>
@@ -16,48 +16,48 @@
 		<PlayerStat stat="TotalDot" value="0"/>
 		<PlayerStat stat="WithPoisonDPS" value="0"/>
 		<PlayerStat stat="ManaCost" value="113"/>
-		<PlayerStat stat="Str" value="518"/>
+		<PlayerStat stat="Str" value="555"/>
 		<PlayerStat stat="ReqStr" value="180"/>
 		<PlayerStat stat="Dex" value="79"/>
 		<PlayerStat stat="ReqDex" value="70"/>
-		<PlayerStat stat="Int" value="280"/>
+		<PlayerStat stat="Int" value="270"/>
 		<PlayerStat stat="ReqInt" value="242"/>
-		<PlayerStat stat="Life" value="8281"/>
-		<PlayerStat stat="Spec:LifeInc" value="224"/>
-		<PlayerStat stat="LifeUnreserved" value="8281"/>
+		<PlayerStat stat="Life" value="8357"/>
+		<PlayerStat stat="Spec:LifeInc" value="219"/>
+		<PlayerStat stat="LifeUnreserved" value="8357"/>
 		<PlayerStat stat="LifeUnreservedPercent" value="100"/>
-		<PlayerStat stat="LifeRegen" value="1034.786"/>
+		<PlayerStat stat="LifeRegen" value="1355.6946"/>
 		<PlayerStat stat="LifeLeechGainRate" value="0"/>
-		<PlayerStat stat="Mana" value="1324"/>
+		<PlayerStat stat="Mana" value="1334"/>
 		<PlayerStat stat="Spec:ManaInc" value="48"/>
 		<PlayerStat stat="ManaUnreserved" value="26"/>
-		<PlayerStat stat="ManaUnreservedPercent" value="1.963746223565"/>
-		<PlayerStat stat="ManaRegen" value="32.4"/>
+		<PlayerStat stat="ManaUnreservedPercent" value="1.9490254872564"/>
+		<PlayerStat stat="ManaRegen" value="32.7"/>
 		<PlayerStat stat="ManaLeechGainRate" value="0"/>
-		<PlayerStat stat="EnergyShield" value="106"/>
+		<PlayerStat stat="EnergyShield" value="105"/>
 		<PlayerStat stat="Spec:EnergyShieldInc" value="10"/>
-		<PlayerStat stat="EnergyShieldRegen" value="8"/>
+		<PlayerStat stat="EnergyShieldRegen" value="22.1"/>
 		<PlayerStat stat="EnergyShieldLeechGainRate" value="0"/>
-		<PlayerStat stat="Evasion" value="557"/>
+		<PlayerStat stat="Evasion" value="560"/>
 		<PlayerStat stat="Spec:EvasionInc" value="0"/>
 		<PlayerStat stat="MeleeEvadeChance" value="0"/>
 		<PlayerStat stat="MeleeEvadeChance" value="0"/>
 		<PlayerStat stat="ProjectileEvadeChance" value="0"/>
-		<PlayerStat stat="Armour" value="13938"/>
+		<PlayerStat stat="Armour" value="13839"/>
 		<PlayerStat stat="Spec:ArmourInc" value="94"/>
-		<PlayerStat stat="PhysicalDamageReduction" value="58"/>
+		<PlayerStat stat="PhysicalDamageReduction" value="68"/>
 		<PlayerStat stat="EffectiveMovementSpeedMod" value="2.13"/>
 		<PlayerStat stat="BlockChance" value="74"/>
 		<PlayerStat stat="SpellBlockChance" value="57"/>
 		<PlayerStat stat="AttackDodgeChance" value="10"/>
 		<PlayerStat stat="SpellDodgeChance" value="10"/>
 		<PlayerStat stat="FireResist" value="77"/>
-		<PlayerStat stat="ColdResist" value="50"/>
+		<PlayerStat stat="ColdResist" value="76"/>
 		<PlayerStat stat="LightningResist" value="76"/>
 		<PlayerStat stat="ChaosResist" value="-11"/>
-		<PlayerStat stat="FireResistOverCap" value="5"/>
-		<PlayerStat stat="ColdResistOverCap" value="0"/>
-		<PlayerStat stat="LightningResistOverCap" value="34"/>
+		<PlayerStat stat="FireResistOverCap" value="35"/>
+		<PlayerStat stat="ColdResistOverCap" value="5"/>
+		<PlayerStat stat="LightningResistOverCap" value="42"/>
 		<PlayerStat stat="ChaosResistOverCap" value="0"/>
 		<PlayerStat stat="PowerCharges" value="0"/>
 		<PlayerStat stat="PowerChargesMax" value="3"/>
@@ -66,14 +66,14 @@
 		<PlayerStat stat="EnduranceCharges" value="0"/>
 		<PlayerStat stat="EnduranceChargesMax" value="3"/>
 		<PlayerStat stat="ActiveMinionLimit" value="5"/>
-		<MinionStat stat="AverageDamage" value="450013.9903875"/>
-		<MinionStat stat="Speed" value="4.86"/>
-		<MinionStat stat="TotalDPS" value="2187067.9932833"/>
+		<MinionStat stat="AverageDamage" value="357516.84208432"/>
+		<MinionStat stat="Speed" value="4.72"/>
+		<MinionStat stat="TotalDPS" value="1687479.494638"/>
 		<MinionStat stat="TotalDot" value="0"/>
-		<MinionStat stat="WithPoisonDPS" value="2187067.9932833"/>
-		<MinionStat stat="Life" value="57513"/>
-		<MinionStat stat="LifeRegen" value="1150.26"/>
-		<MinionStat stat="LifeLeechGainRate" value="11502.6"/>
+		<MinionStat stat="WithPoisonDPS" value="1687479.494638"/>
+		<MinionStat stat="Life" value="52548"/>
+		<MinionStat stat="LifeRegen" value="525.48"/>
+		<MinionStat stat="LifeLeechGainRate" value="10509.6"/>
 	</Build>
 	<Import lastAccountHash="614149b0096bca834f44b9fd02f7e0d2382e954c" lastRealm="PC" lastCharacterHash="cd33bfbb55dcb57a4cca0fd681a9b7d6f30cd481"/>
 	<Calcs>
@@ -105,110 +105,52 @@
 	</Calcs>
 	<Skills defaultGemQuality="20" defaultGemLevel="20" showSupportGemTypes="ALL" sortGemsByDPS="true">
 		<Skill mainActiveSkillCalcs="1" label="" enabled="true" slot="Body Armour" mainActiveSkill="1">
-			<Gem enableGlobal2="false" skillMinionSkillCalcs="2" skillMinionCalcs="Metadata/Monsters/TemplarSlaveDriver/TemplarSlaveDriver" quality="20" level="21" gemId="Metadata/Items/Gems/SkillGemRaiseSpectre" skillId="RaiseSpectre" skillMinionSkill="2" enableGlobal1="true" enabled="true" nameSpec="Raise Spectre" skillMinion="Metadata/Monsters/TemplarSlaveDriver/TemplarSlaveDriver"/>
-			<Gem enableGlobal2="false" quality="20" level="5" gemId="Metadata/Items/Gems/SupportGemSpellEchoPlus" skillId="SupportSpellEchoPlus" enableGlobal1="true" enabled="true" nameSpec="Awakened Spell Echo"/>
-			<Gem enableGlobal2="false" quality="20" level="5" gemId="Metadata/Items/Gems/SupportGemMinionDamagePlus" skillId="SupportMinionDamagePlus" enableGlobal1="true" enabled="true" nameSpec="Awakened Minion Damage"/>
-			<Gem enableGlobal2="false" quality="20" level="20" gemId="Metadata/Items/Gems/SupportGemElementalFocus" skillId="SupportElementalFocus" enableGlobal1="true" enabled="false" nameSpec="Elemental Focus"/>
-			<Gem enableGlobal2="false" quality="20" level="20" gemId="Metadata/Items/Gems/SupportGemConcentratedEffect" skillId="SupportConcentratedEffect" enableGlobal1="true" enabled="true" nameSpec="Concentrated Effect"/>
-			<Gem enableGlobal2="false" quality="0" level="21" gemId="Metadata/Items/Gems/SupportGemFeedingFrenzy" skillId="SupportMinionOffensiveStance" enableGlobal1="true" enabled="false" nameSpec="Feeding Frenzy"/>
-			<Gem enableGlobal2="nil" quality="20" level="5" gemId="Metadata/Items/Gems/SupportGemControlledDestructionPlus" skillId="SupportControlledDestructionPlus" skillPart="1" enableGlobal1="true" enabled="true" nameSpec="Awakened Controlled Destruction" skillMinion="SummonedChaosGolem"/>
-			<Gem enableGlobal2="nil" quality="20" level="5" gemId="Metadata/Items/Gems/SupportGemElementalFocusPlus" skillId="SupportElementalFocusPlus" skillPart="1" enableGlobal1="true" enabled="true" nameSpec="Awakened Elemental Focus"/>
+			<Gem enableGlobal2="nil" skillMinionSkillCalcs="2" skillMinionCalcs="Metadata/Monsters/TemplarSlaveDriver/TemplarSlaveDriver" quality="20" level="21" gemId="Metadata/Items/Gems/SkillGemRaiseSpectre" skillId="RaiseSpectre" skillMinionSkill="2" enableGlobal1="true" enabled="true" nameSpec="Raise Spectre" skillMinion="Metadata/Monsters/TemplarSlaveDriver/TemplarSlaveDriver"/>
+			<Gem enableGlobal2="nil" quality="20" level="5" gemId="Metadata/Items/Gems/SupportGemSpellEchoPlus" skillId="SupportSpellEchoPlus" enableGlobal1="true" enabled="true" nameSpec="Awakened Spell Echo"/>
+			<Gem enableGlobal2="nil" quality="20" level="5" gemId="Metadata/Items/Gems/SupportGemMinionDamagePlus" skillId="SupportMinionDamagePlus" enableGlobal1="true" enabled="true" nameSpec="Awakened Minion Damage"/>
+			<Gem enableGlobal2="nil" quality="20" level="20" gemId="Metadata/Items/Gems/SupportGemElementalFocus" skillId="SupportElementalFocus" enableGlobal1="true" enabled="true" nameSpec="Elemental Focus"/>
+			<Gem enableGlobal2="nil" quality="20" level="20" gemId="Metadata/Items/Gems/SupportGemConcentratedEffect" skillId="SupportConcentratedEffect" enableGlobal1="true" enabled="true" nameSpec="Concentrated Effect"/>
+			<Gem enableGlobal2="nil" quality="0" level="21" gemId="Metadata/Items/Gems/SupportGemFeedingFrenzy" skillId="SupportMinionOffensiveStance" enableGlobal1="true" enabled="true" nameSpec="Feeding Frenzy"/>
 		</Skill>
-		<Skill mainActiveSkillCalcs="2" label="" enabled="true" slot="Helmet" mainActiveSkill="1">
-			<Gem enableGlobal2="false" skillMinionSkillCalcs="1" skillMinionCalcs="RaisedZombie" quality="14" level="20" gemId="Metadata/Items/Gems/SkillGemRaiseZombie" skillId="RaiseZombie" skillMinionSkill="1" enableGlobal1="true" enabled="true" nameSpec="Raise Zombie" skillMinion="RaisedZombie"/>
-			<Gem enableGlobal2="false" skillMinionItemSetCalcs="1" skillMinionSkillCalcs="1" skillMinionCalcs="AnimatedArmour" quality="20" level="20" gemId="Metadata/Items/Gems/SkillGemAnimateArmour" skillId="AnimateArmour" skillMinionSkill="1" skillMinionItemSet="1" enableGlobal1="true" enabled="true" nameSpec="Animate Guardian" skillMinion="AnimatedArmour"/>
-			<Gem enableGlobal2="false" skillMinionSkillCalcs="2" skillMinionCalcs="SummonedStoneGolem" quality="12" level="21" gemId="Metadata/Items/Gems/SkillGemSummonRockGolem" skillId="SummonRockGolem" skillMinionSkill="1" enableGlobal1="true" enabled="true" nameSpec="Summon Stone Golem" skillMinion="SummonedStoneGolem"/>
-			<Gem enableGlobal2="false" quality="0" level="3" gemId="Metadata/Items/Gems/SupportGemAdditionalLevel" skillId="SupportAdditionalLevel" enableGlobal1="true" enabled="true" nameSpec="Empower"/>
+		<Skill mainActiveSkillCalcs="3" label="" enabled="true" slot="Helmet" mainActiveSkill="1">
+			<Gem enableGlobal2="nil" skillMinionSkillCalcs="1" skillMinionCalcs="RaisedZombie" quality="14" level="20" gemId="Metadata/Items/Gems/SkillGemRaiseZombie" skillId="RaiseZombie" skillMinionSkill="1" enableGlobal1="true" enabled="true" nameSpec="Raise Zombie" skillMinion="RaisedZombie"/>
+			<Gem enableGlobal2="nil" skillMinionSkillCalcs="1" quality="20" level="20" gemId="Metadata/Items/Gems/SkillGemAnimateArmour" skillId="AnimateArmour" skillMinionSkill="1" skillMinionItemSet="1" enableGlobal1="true" enabled="true" nameSpec="Animate Guardian" skillMinion="AnimatedArmour"/>
+			<Gem enableGlobal2="nil" skillMinionSkillCalcs="2" skillMinionCalcs="SummonedStoneGolem" quality="12" level="21" gemId="Metadata/Items/Gems/SkillGemSummonRockGolem" skillId="SummonRockGolem" skillMinionSkill="1" enableGlobal1="true" enabled="true" nameSpec="Summon Stone Golem" skillMinion="SummonedStoneGolem"/>
+			<Gem enableGlobal2="nil" quality="0" level="3" gemId="Metadata/Items/Gems/SupportGemAdditionalLevel" skillId="SupportAdditionalLevel" enableGlobal1="true" enabled="true" nameSpec="Empower"/>
 		</Skill>
-		<Skill mainActiveSkillCalcs="3" label="" enabled="true" slot="Boots" mainActiveSkill="3">
-			<Gem enableGlobal2="false" quality="20" level="20" gemId="Metadata/Items/Gems/SkillGemConvocation" skillId="Convocation" enableGlobal1="true" enabled="true" nameSpec="Convocation"/>
-			<Gem enableGlobal2="false" quality="23" level="20" gemId="Metadata/Items/Gems/SkillGemFrostBoltNova" skillId="FrostBoltNova" enableGlobal1="true" enabled="true" nameSpec="Vortex"/>
-			<Gem enableGlobal2="false" quality="10" level="1" gemId="Metadata/Items/Gems/SkillGemArmageddonBrand" skillId="CataclysmSigil" enableGlobal1="true" enabled="true" nameSpec="Armageddon Brand"/>
-			<Gem enableGlobal2="false" quality="14" level="19" gemId="Metadata/Items/Gems/SkillGemVaalMoltenShell" skillId="VaalMoltenShell" enableGlobal1="true" enabled="true" nameSpec="Vaal Molten Shell"/>
+		<Skill mainActiveSkillCalcs="nil" label="" enabled="true" slot="Boots" mainActiveSkill="nil">
+			<Gem enableGlobal2="nil" quality="20" level="20" gemId="Metadata/Items/Gems/SkillGemConvocation" skillId="Convocation" enableGlobal1="true" enabled="true" nameSpec="Convocation"/>
+			<Gem enableGlobal2="nil" quality="23" level="20" gemId="Metadata/Items/Gems/SkillGemFrostBoltNova" skillId="FrostBoltNova" enableGlobal1="true" enabled="true" nameSpec="Vortex"/>
+			<Gem enableGlobal2="nil" quality="10" level="1" gemId="Metadata/Items/Gems/SkillGemArmageddonBrand" skillId="CataclysmSigil" enableGlobal1="true" enabled="true" nameSpec="Armageddon Brand"/>
+			<Gem enableGlobal2="nil" quality="14" level="19" gemId="Metadata/Items/Gems/SkillGemVaalMoltenShell" skillId="VaalMoltenShell" enableGlobal1="true" enabled="true" nameSpec="Vaal Molten Shell"/>
 		</Skill>
-		<Skill mainActiveSkillCalcs="1" label="" enabled="true" slot="Weapon 1" mainActiveSkill="1">
-			<Gem enableGlobal2="false" skillMinionSkillCalcs="1" quality="12" level="20" gemId="Metadata/Items/Gems/SkillGemVaalSummonSkeletons" skillId="VaalSummonSkeletons" skillMinionSkill="1" enableGlobal1="true" enabled="true" nameSpec="Vaal Summon Skeletons" skillMinion="RaisedSkeleton"/>
-			<Gem enableGlobal2="false" quality="0" level="1" gemId="Metadata/Items/Gems/SkillGemDesecrate" skillId="Desecrate" enableGlobal1="true" enabled="true" nameSpec="Desecrate"/>
-			<Gem enableGlobal2="false" quality="23" level="20" gemId="Metadata/Items/Gems/SkillGemBoneOffering" skillId="BoneOffering" enableGlobal1="true" enabled="true" nameSpec="Bone Offering"/>
+		<Skill mainActiveSkillCalcs="nil" label="" enabled="true" slot="Weapon 1" mainActiveSkill="nil">
+			<Gem enableGlobal2="nil" skillMinionSkillCalcs="1" quality="12" level="20" gemId="Metadata/Items/Gems/SkillGemVaalSummonSkeletons" skillId="VaalSummonSkeletons" skillMinionSkill="1" enableGlobal1="true" enabled="true" nameSpec="Vaal Summon Skeletons" skillMinion="RaisedSkeleton"/>
+			<Gem enableGlobal2="nil" quality="0" level="1" gemId="Metadata/Items/Gems/SkillGemDesecrate" skillId="Desecrate" enableGlobal1="true" enabled="true" nameSpec="Desecrate"/>
+			<Gem enableGlobal2="nil" quality="23" level="20" gemId="Metadata/Items/Gems/SkillGemBoneOffering" skillId="BoneOffering" enableGlobal1="true" enabled="true" nameSpec="Bone Offering"/>
 		</Skill>
-		<Skill mainActiveSkillCalcs="1" label="" enabled="true" slot="Weapon 2" mainActiveSkill="1">
-			<Gem enableGlobal2="false" quality="22" level="20" gemId="Metadata/Items/Gems/SkillGemWrath" skillId="Wrath" enableGlobal1="true" enabled="true" nameSpec="Wrath"/>
-			<Gem enableGlobal2="false" quality="20" level="20" gemId="Metadata/Items/Gems/SkillGemSummonSkitterbots" skillId="Skitterbots" enableGlobal1="true" enabled="true" nameSpec="Summon Skitterbots"/>
-			<Gem enableGlobal2="false" quality="20" level="20" gemId="Metadata/Items/Gems/SupportGemGenerosity" skillId="SupportGenerosity" enableGlobal1="true" enabled="true" nameSpec="Generosity"/>
+		<Skill mainActiveSkillCalcs="nil" label="" enabled="true" slot="Weapon 2" mainActiveSkill="nil">
+			<Gem enableGlobal2="nil" quality="22" level="20" gemId="Metadata/Items/Gems/SkillGemWrath" skillId="Wrath" enableGlobal1="true" enabled="true" nameSpec="Wrath"/>
+			<Gem enableGlobal2="nil" quality="20" level="20" gemId="Metadata/Items/Gems/SkillGemSummonSkitterbots" skillId="Skitterbots" enableGlobal1="true" enabled="true" nameSpec="Summon Skitterbots"/>
+			<Gem enableGlobal2="nil" quality="20" level="20" gemId="Metadata/Items/Gems/SupportGemGenerosity" skillId="SupportGenerosity" enableGlobal1="true" enabled="true" nameSpec="Generosity"/>
 		</Skill>
-		<Skill mainActiveSkillCalcs="1" label="" enabled="true" slot="Gloves" mainActiveSkill="1">
-			<Gem enableGlobal2="false" quality="20" level="20" gemId="Metadata/Items/Gems/SkillGemConductivity" skillId="Conductivity" enableGlobal1="true" enabled="true" nameSpec="Conductivity"/>
-			<Gem enableGlobal2="false" quality="22" level="20" gemId="Metadata/Items/Gems/SupportGemFasterCast" skillId="SupportFasterCast" enableGlobal1="true" enabled="true" nameSpec="Faster Casting"/>
-			<Gem enableGlobal2="false" quality="20" level="20" gemId="Metadata/Items/Gems/SkillGemFlameDash" skillId="FlameDash" enableGlobal1="true" enabled="true" nameSpec="Flame Dash"/>
-			<Gem enableGlobal2="false" quality="15" level="5" gemId="Metadata/Items/Gems/SupportGemBloodMagic" skillId="SupportBloodMagic" enableGlobal1="true" enabled="true" nameSpec="Blood Magic"/>
+		<Skill mainActiveSkillCalcs="nil" label="" enabled="true" slot="Gloves" mainActiveSkill="nil">
+			<Gem enableGlobal2="nil" quality="20" level="20" gemId="Metadata/Items/Gems/SkillGemConductivity" skillId="Conductivity" enableGlobal1="true" enabled="true" nameSpec="Conductivity"/>
+			<Gem enableGlobal2="nil" quality="22" level="20" gemId="Metadata/Items/Gems/SupportGemFasterCast" skillId="SupportFasterCast" enableGlobal1="true" enabled="true" nameSpec="Faster Casting"/>
+			<Gem enableGlobal2="nil" quality="20" level="20" gemId="Metadata/Items/Gems/SkillGemFlameDash" skillId="FlameDash" enableGlobal1="true" enabled="true" nameSpec="Flame Dash"/>
+			<Gem enableGlobal2="nil" quality="15" level="18" gemId="Metadata/Items/Gems/SupportGemBloodMagic" skillId="SupportBloodMagic" enableGlobal1="true" enabled="true" nameSpec="Blood Magic"/>
 		</Skill>
-		<Skill source="Item:18:Blight Claw, Dragonscale Gauntlets" mainActiveSkillCalcs="1" label="" enabled="true" slot="Gloves" mainActiveSkill="1">
-			<Gem enableGlobal2="false" quality="0" level="1" skillId="EnchantmentOfFrostOnKill4" enableGlobal1="true" enabled="true" nameSpec="Commandment of Frost"/>
+		<Skill source="Item:18:Blight Claw, Dragonscale Gauntlets" mainActiveSkillCalcs="nil" label="" enabled="true" slot="Gloves" mainActiveSkill="nil">
+			<Gem enableGlobal2="nil" quality="0" level="1" skillId="EnchantmentOfFrostOnKill4" enableGlobal1="true" enabled="true" nameSpec=""/>
 		</Skill>
-		<Skill source="Item:12:Foe Urge, Titan Greaves" mainActiveSkillCalcs="1" label="" enabled="true" slot="Boots" mainActiveSkill="1">
-			<Gem enableGlobal2="false" quality="0" level="20" skillId="SpiderAspect" enableGlobal1="true" enabled="true" nameSpec="Aspect of the Spider"/>
+		<Skill source="Item:12:Foe Urge, Titan Greaves" mainActiveSkillCalcs="nil" label="" enabled="true" slot="Boots" mainActiveSkill="nil">
+			<Gem enableGlobal2="nil" quality="0" level="20" skillId="SpiderAspect" enableGlobal1="true" enabled="true" nameSpec=""/>
 		</Skill>
 	</Skills>
-	<Tree activeSpec="3">
-		<Spec treeVersion="3_9">
+	<Tree activeSpec="2">
+		<Spec title="95 LvL" treeVersion="3_9">
 			<URL>
-				https://www.pathofexile.com/passive-skill-tree/AAAABAMDABzc2WGboRRNAecNzRpsjxoWb_xLCPQb-rzqakOiAB4IK1CbijWSvk_-j_uqUWAczgSzr6eQM3fCwGaYrU3jOuHGrlXGple3Piyc0_u4k4IHxPbwHzwt0iFfP-_r7IqqxGqsksHvDj0PFCB8g7yfi3bZXlqRTLOvbPMGBklg-GjyNuma4J7NRv6IQFcNRZ2OvmNBz37-CjpY049Nuf5UzLwGOYPb37CPRiftKpgkqsaKg1_BBBEtVbUy0ah9Ounsg6as42pHhacwGS4EB3HzVi6qqacIU1LQHxiR2L1r24PM8kFFR62NOQso-iXfhWD-gfJFC2Hr7qQZ
-			</URL>
-			<Sockets>
-				<Socket nodeId="7960" itemId="0"/>
-				<Socket nodeId="32763" itemId="0"/>
-				<Socket nodeId="28475" itemId="0"/>
-				<Socket nodeId="26196" itemId="0"/>
-				<Socket nodeId="36634" itemId="0"/>
-				<Socket nodeId="34483" itemId="0"/>
-				<Socket nodeId="21984" itemId="0"/>
-				<Socket nodeId="46882" itemId="0"/>
-				<Socket nodeId="61419" itemId="0"/>
-				<Socket nodeId="54127" itemId="0"/>
-				<Socket nodeId="31683" itemId="0"/>
-				<Socket nodeId="55190" itemId="0"/>
-				<Socket nodeId="48768" itemId="0"/>
-				<Socket nodeId="26725" itemId="0"/>
-				<Socket nodeId="33989" itemId="0"/>
-				<Socket nodeId="6230" itemId="0"/>
-				<Socket nodeId="60735" itemId="0"/>
-				<Socket nodeId="33631" itemId="0"/>
-				<Socket nodeId="41263" itemId="0"/>
-				<Socket nodeId="61834" itemId="0"/>
-				<Socket nodeId="2491" itemId="0"/>
-			</Sockets>
-		</Spec>
-		<Spec title="1" treeVersion="3_9">
-			<URL>
-				https://www.pathofexile.com/passive-skill-tree/AAAABAMDABzc2WGboU25FE0B5w3NJLCPGvuq_EuqxFqRvOpqQ6IAHggrUJuKNZK-T_6P0_vwHxcvGJHv65AzUWAczpitgKSFYMauVcYabK-n0iEsnLiTggcb-uyKPC3E9gthXz-3PnfCaqySwe8OPQ8Es3yDvJ_YvdleCPRMszbp0B8GSWD4muDPfqqp_gpG_ohAVw0GOYPbOumnMEWd37DTj46--tLMvJ7NBAfsg6h9J-0qmCSqxorBBKasES1VtTLRpwj-VI9Gg1_jakeFY0EZLjpYcfNWLhZvZOdTUq9saPLzBmvbi3byQUVHrY2DzCj6Jd8UIP6BOQvAZuvupBk=
-			</URL>
-			<Sockets>
-				<Socket nodeId="7960" itemId="0"/>
-				<Socket nodeId="32763" itemId="0"/>
-				<Socket nodeId="28475" itemId="0"/>
-				<Socket nodeId="26196" itemId="0"/>
-				<Socket nodeId="36634" itemId="0"/>
-				<Socket nodeId="33989" itemId="0"/>
-				<Socket nodeId="21984" itemId="0"/>
-				<Socket nodeId="46882" itemId="0"/>
-				<Socket nodeId="61419" itemId="0"/>
-				<Socket nodeId="54127" itemId="0"/>
-				<Socket nodeId="6230" itemId="0"/>
-				<Socket nodeId="55190" itemId="0"/>
-				<Socket nodeId="48768" itemId="0"/>
-				<Socket nodeId="2491" itemId="0"/>
-				<Socket nodeId="61834" itemId="0"/>
-				<Socket nodeId="41263" itemId="0"/>
-				<Socket nodeId="60735" itemId="0"/>
-				<Socket nodeId="33631" itemId="0"/>
-				<Socket nodeId="31683" itemId="0"/>
-				<Socket nodeId="34483" itemId="0"/>
-				<Socket nodeId="26725" itemId="0"/>
-			</Sockets>
-		</Spec>
-		<Spec title="1_1" treeVersion="3_9">
-			<URL>
-				https://www.pathofexile.com/passive-skill-tree/AAAABAMDABzc2WGboRZvFE0I9AHnDc2mrI8aG_r8S3fCWpEYkWpDogAeCCtQm4o1kr5PpwgabASz0_so-tIhkDNRYBzOmK3sijrhxq5VxsBmr6fv6yycuJOCBxQg8B88LYt2NulfPzkL0B9qrJLB7w49D8T2C2G8n9i92V4GSUyzUEeD2_MGYPia4KZXjr5FnUb-iEBXDf5Uns2nMDpYrJgQl9OPVi7Pfsy8BjkEB8EEOukn7SqYJKrGioNf37Dsg6h9MtFVtY9GES1EBONqR4VjQRkuTblx8_4Kqqlo8lNSr2y3PnyDa9u86vJBRUetjYPMTeMl3_uq_oHyRf6P6-6kGQ==
+				https://www.pathofexile.com/passive-skill-tree/AAAABAMDABzc2WGbodAfFE0B5w3N_o-PGlYu_Ev-VBv6GJFqQ6IAHggrUJuKNZK-Txps_gr7qvMGWpEo-pAzd8Iczpit8B864cauVcbv66-n2L0snLiTggfsg-yKPC1RYJ7NXz_fsNP7aqySwe8OPQ8Es3yDvJ-Ldtleg9tMs1BH0iEGSWD4NunPfqrEpzBG_ohAVw3E9sEEwGa86kWdtz7Tj025OQvMvAY5Oliqqah9J-0qmCSqxoqDX6cIES1VtTLRpqw66aZXaPLjakeFY0EZLprgcfOPRo6-hWBTUq9sCPQEB2vbFCDyQUVHrY2DzE3jJd8Wb_6B8kULYevupBk=
 			</URL>
 			<Sockets>
 				<Socket nodeId="7960" itemId="0"/>
@@ -216,57 +158,57 @@
 				<Socket nodeId="28475" itemId="0"/>
 				<Socket nodeId="26196" itemId="0"/>
 				<Socket nodeId="36634" itemId="1"/>
-				<Socket nodeId="34483" itemId="0"/>
+				<Socket nodeId="33989" itemId="0"/>
 				<Socket nodeId="21984" itemId="0"/>
 				<Socket nodeId="46882" itemId="0"/>
 				<Socket nodeId="61419" itemId="3"/>
-				<Socket nodeId="41263" itemId="0"/>
-				<Socket nodeId="31683" itemId="0"/>
+				<Socket nodeId="54127" itemId="0"/>
+				<Socket nodeId="6230" itemId="0"/>
 				<Socket nodeId="55190" itemId="0"/>
 				<Socket nodeId="48768" itemId="0"/>
-				<Socket nodeId="61834" itemId="0"/>
 				<Socket nodeId="2491" itemId="0"/>
-				<Socket nodeId="54127" itemId="0"/>
+				<Socket nodeId="61834" itemId="0"/>
+				<Socket nodeId="41263" itemId="0"/>
 				<Socket nodeId="60735" itemId="0"/>
 				<Socket nodeId="33631" itemId="2"/>
-				<Socket nodeId="6230" itemId="0"/>
-				<Socket nodeId="33989" itemId="0"/>
+				<Socket nodeId="31683" itemId="0"/>
+				<Socket nodeId="34483" itemId="0"/>
 				<Socket nodeId="26725" itemId="0"/>
 			</Sockets>
 		</Spec>
-		<Spec title="2" treeVersion="3_9">
+		<Spec title="1" treeVersion="3_9">
 			<URL>
-				https://www.pathofexile.com/passive-skill-tree/AAAABAMDABzc2WGbof5UvOoUTRZvAecNzf6Pjxr7qvxLCPQb-hiRakOiAB4IK1CbijWSvk8abNP7tz4XL18_KPqQM3fCwGaYrYCkhWDGrlXGOQuvpyycuJOqxFqR7Io8LQZJFCDv6wthaPJqrJLB7w49D8T2fIO8n9i92V7-CkyzUEevbPMGYPia4CSwi3amrEb-iEBXDQQHOliDX2NBRZ0Es9OPTbn60sy8z36D2ySqqqkn7SqY37DGisEEj0YRLVW1MtHSITrpqH3sg-NqR4WnMBku8B9x857NBjlWLlNS0B-CB6cIa9s26fJBRUetjYPMTeMl346-_oEczlFg6-6kGQ==
+				https://www.pathofexile.com/passive-skill-tree/AAAABAMDABzc2WGbofObakMUTQHnDc3-j48aUWD8SzrhWpEYkWhlogAeCCtQm4o1kr5PGmz7ql8_LJwo-tIhkDN3whzOmK3sioVgxq5VxsT2r6cI9NP7uJOCB6rE8B88LXyDwGbv67zq0B9qrJLB7w49DxQgC2G8n9i92V4GOUyztz5NufMGYPg26TkLVi46WEb-iEBXDZ7NpzCD26ZXRZ2nCNOPjr4RLcy8z34EB_5UVbUn7SqYJKrGioNfpqzsg6h9MtHBBI9G37A66eNqR4VjQRkuaPJx8_4Kqqma4FNSr2wGSYt2a9sEs_JBRUetjYPMTeMl3xv6_oHyRRZv6-6kGQ==
 			</URL>
 			<Sockets>
 				<Socket nodeId="7960" itemId="0"/>
 				<Socket nodeId="32763" itemId="0"/>
 				<Socket nodeId="28475" itemId="0"/>
 				<Socket nodeId="26196" itemId="0"/>
-				<Socket nodeId="36634" itemId="0"/>
-				<Socket nodeId="34483" itemId="0"/>
+				<Socket nodeId="36634" itemId="1"/>
+				<Socket nodeId="33989" itemId="0"/>
 				<Socket nodeId="21984" itemId="0"/>
 				<Socket nodeId="46882" itemId="0"/>
-				<Socket nodeId="61419" itemId="0"/>
-				<Socket nodeId="54127" itemId="0"/>
-				<Socket nodeId="31683" itemId="0"/>
+				<Socket nodeId="61419" itemId="3"/>
+				<Socket nodeId="41263" itemId="0"/>
+				<Socket nodeId="6230" itemId="0"/>
 				<Socket nodeId="55190" itemId="0"/>
 				<Socket nodeId="48768" itemId="0"/>
-				<Socket nodeId="26725" itemId="0"/>
-				<Socket nodeId="33989" itemId="0"/>
-				<Socket nodeId="6230" itemId="0"/>
+				<Socket nodeId="26725" itemId="7"/>
+				<Socket nodeId="34483" itemId="0"/>
+				<Socket nodeId="31683" itemId="0"/>
 				<Socket nodeId="60735" itemId="0"/>
-				<Socket nodeId="33631" itemId="0"/>
-				<Socket nodeId="41263" itemId="0"/>
-				<Socket nodeId="61834" itemId="0"/>
+				<Socket nodeId="33631" itemId="2"/>
+				<Socket nodeId="54127" itemId="0"/>
 				<Socket nodeId="2491" itemId="0"/>
+				<Socket nodeId="61834" itemId="0"/>
 			</Sockets>
 		</Spec>
 	</Tree>
 	<Notes>
 		
 	</Notes>
-	<TreeView searchStr="" zoomY="96.585150814235" showHeatMap="false" zoomLevel="2" showStatDifferences="true" zoomX="-191.53544548211"/>
+	<TreeView searchStr="" zoomY="-305.72699752592" showHeatMap="false" zoomLevel="7" showStatDifferences="true" zoomX="759.44748029796"/>
 	<Items activeItemSet="1" useSecondWeaponSet="false">
 		<Item id="16">
 			Rarity: RARE
@@ -314,7 +256,8 @@ Item Level: 100
 Quality: 20
 Sockets: B-R-R-R
 LevelReq: 73
-Implicits: 1
+Implicits: 2
+{crafted}40% increased Bladefall Damage
 Minions deal 20% increased Damage
 +3 to Level of Socketed Minion Gems
 Socketed Gems are Supported by Level 20 Minion Life
@@ -335,11 +278,13 @@ Sockets: B-W-B-W-B-W
 LevelReq: 62
 Implicits: 1
 +12% to all Elemental Resistances
-+92 to maximum Life
-14% increased Stun and Block Recovery
++93 to maximum Life
+15% increased Stun and Block Recovery
 +1 to maximum number of Spectres
+{crafted}Can have up to 3 Crafted Modifiers
+{crafted}+27 to Strength
 {crafted}8% increased maximum Life
-{crafted}7% increased maximum Mana
+{crafted}8% increased maximum Mana
 		</Item>
 		<Item id="18">
 			Rarity: RARE
@@ -375,10 +320,9 @@ Grants Level 20 Aspect of the Spider Skill
 +1 to Level of all Raise Spectre Gems
 +35% to Fire Resistance
 35% increased Movement Speed
-{crafted}21% increased Armour
-{crafted}+14 to maximum Life
+{crafted}Cannot be Frozen
 		</Item>
-		<Item id="13">
+		<Item id="14">
 			Rarity: UNIQUE
 The Jinxed Juju
 Citrine Amulet
@@ -393,6 +337,22 @@ Implicits: 2
 15% increased Effect of your Curses
 15% increased effect of Non-Curse Auras from your Skills
 10% of Damage from Hits is taken from your Spectres&apos; Life before you
+		</Item>
+		<Item id="6">
+			Rarity: RARE
+aaa  Miracle Gorget
+Amber Amulet
+Item Level: 85
+LevelReq: 68
+Implicits: 2
+{crafted}Allocates Ravenous Horde
++36 to Strength
++39 to all Attributes
++66 to Strength
+12% increased Cast Speed
++77 to maximum Life
+5% increased maximum Life
+{crafted}+29 to maximum Energy Shield
 		</Item>
 		<Item id="21">
 			Rarity: RARE
@@ -424,8 +384,16 @@ Implicits: 2
 +94 to maximum Life
 +78 to maximum Mana
 {crafted}Can have up to 3 Crafted Modifiers
-{crafted}+23% to Lightning Resistance
-{crafted}+15% to Cold and Lightning Resistances
+{crafted}+16% to Cold and Lightning Resistances
+{crafted}Shock nearby Enemies for 4 Seconds when you Focus
+#### Kingmaker Critical Strike Multiplier:
+Socketed Spells have +50% to Critical Strike Multiplier
+#### Bone Barrier Ascendancy
+10% additional Physical Damage Reduction
++30% to all Elemental Resistances
+30% increased Life Recovery rate
+30% increased Energy Shield Recovery rate
+####
 		</Item>
 		<Item id="11">
 			Rarity: RARE
@@ -480,17 +448,17 @@ Immunity to Bleeding during Flask effect
 Removes Bleeding on use
 32% increased Duration
 		</Item>
-		<Item id="14">
+		<Item id="13">
 			Rarity: MAGIC
-Experimenter&apos;s Sulphur Flask of Heat
-Unique ID: ad617eece96c8cc7699f21843b05afb415df5086684f062314079bfdd3cd8240
-Item Level: 78
+Experimenter&apos;s Sulphur Flask of Dousing
+Unique ID: 18311f1f773dd84619b298ace80825e2718c62e0dcd08eee97bd22a80465e65e
+Item Level: 63
 Quality: 20
 LevelReq: 35
 Implicits: 1
 Creates Consecrated Ground on Use
-Immunity to Freeze and Chill during Flask effect
-Removes Freeze and Chill on use
+Immunity to Ignite during Flask effect
+Removes Burning on use
 40% increased Duration
 		</Item>
 		<Item id="5">
@@ -517,6 +485,22 @@ Implicits: 0
 Minions have 5% increased Attack Speed
 Minions have 6% increased Cast Speed
 Minions have 6% increased Attack and Cast Speed if you or your Minions have Killed Recently
+		</Item>
+		<Item id="7">
+			Rarity: RARE
+2 Foul Globe
+Ghastly Eye Jewel
+Item Level: 85
+LevelReq: 65
+Implicits: 0
++38 to maximum Life
+Minions deal 20% increased Damage if you&apos;ve used a Minion Skill Recently
+Regenerate 9 Energy Shield per second
+Minions have 6% increased Attack and Cast Speed if you or your Minions have Killed Recently
+###
+Minions have 6% increased Attack Speed
+Minions have 6% increased Cast Speed
+###
 		</Item>
 		<Item id="2">
 			Rarity: RARE
@@ -560,14 +544,14 @@ With at least 40 Intelligence in Radius, Raised Spectres have a 50% chance to ga
 		<Slot name="Gloves" itemId="18"/>
 		<Slot name="Weapon 1" itemId="16"/>
 		<Slot active="true" name="Flask 3" itemId="9"/>
-		<Slot name="Amulet" itemId="13"/>
+		<Slot name="Amulet" itemId="14"/>
 		<Slot name="Flask 1" itemId="20"/>
 		<Slot active="true" name="Flask 5" itemId="5"/>
 		<Slot name="Belt Abyssal Socket 1" itemId="10"/>
 		<Slot active="true" name="Flask 2" itemId="15"/>
 		<Slot name="Weapon 2" itemId="17"/>
 		<Slot name="Body Armour" itemId="19"/>
-		<Slot active="true" name="Flask 4" itemId="14"/>
+		<Slot active="true" name="Flask 4" itemId="13"/>
 		<Slot name="Ring 2" itemId="4"/>
 		<Slot name="Boots" itemId="12"/>
 		<Slot name="Ring 1" itemId="21"/>
@@ -580,7 +564,7 @@ With at least 40 Intelligence in Radius, Raised Spectres have a 50% chance to ga
 			<Slot name="Belt Abyssal Socket 2" itemId="0"/>
 			<Slot active="true" name="Flask 3" itemId="9"/>
 			<Slot name="Body Armour Abyssal Socket 2" itemId="0"/>
-			<Slot name="Amulet" itemId="13"/>
+			<Slot name="Amulet" itemId="14"/>
 			<Slot name="Flask 1" itemId="20"/>
 			<Slot name="Weapon 2Swap Abyssal Socket 1" itemId="0"/>
 			<Slot active="true" name="Flask 5" itemId="5"/>
@@ -591,7 +575,7 @@ With at least 40 Intelligence in Radius, Raised Spectres have a 50% chance to ga
 			<Slot name="Weapon 1 Abyssal Socket 1" itemId="0"/>
 			<Slot name="Weapon 2" itemId="17"/>
 			<Slot name="Body Armour" itemId="19"/>
-			<Slot active="true" name="Flask 4" itemId="14"/>
+			<Slot active="true" name="Flask 4" itemId="13"/>
 			<Slot name="Weapon 1 Abyssal Socket 2" itemId="0"/>
 			<Slot name="Weapon 2 Abyssal Socket 2" itemId="0"/>
 			<Slot name="Weapon 1 Swap" itemId="0"/>
