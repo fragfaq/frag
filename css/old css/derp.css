@@ -1,7 +1,0 @@
-img[src*='derp.png'] {
-	background-image: url('http://i.hizliresim.com/kB3rnA.png');
-	width: 27px;
-	display:inline-block;
-	padding: 10px 0 0 0;
-	height: 0px !important;
-}
