@@ -215,17 +215,6 @@ return
 ;==========================================================================================
 ;         Скрипты на хоткеи                   =============================================
 ;==========================================================================================
-; Logout на F4 и F5
-; F4::
-; F5::
-; Process close, PathOfExile.exe
-; Process close, PathOfExile_x64.exe
-; Sleep, 20
-; SoundPlay, %A_ScriptDir%\res\pic\2.mp3
-; Sleep, 20
-; Run, %A_ScriptDir%\res\ahk\gui\Logout.ahk
-; return
-;==========================================================================================
 ; Logout на Alt+CapsLock и на Shift+CapsLock
 !sc3A::
 +sc3A::
@@ -304,29 +293,11 @@ Sleep, % Sleepfunction(50, 80)
 MouseMove, VportalX, VportalY, %Vspeed2%	; возвращает курсор на место
 return
 ;============================================= 
-; Gui для прайса на Win+Mouse3
-#Mbutton::
-; SendInput, ^!+{F12}
-; Sleep, 100
-run, %A_ScriptDir%\res\ahk\gui\Price.ahk
-return
-;============================================= 
 ; вписывать цены в 1 клик на Crtl+(1-3)
 $^1::
 $^2::
 $^3::
 run, %A_ScriptDir%\res\ahk\gui\Fast_Price.ahk
-; Varbo := RegExReplace(A_ThisHotkey, "[^0-9]", "")
-; Sleep, % Sleepfunction(100, 150)
-; SendInput, ^{sc1E}
-; Sleep, % Sleepfunction(100, 150)
-; SendInput, {~} ;+{sc29}
-; Sleep, % Sleepfunction(100, 150)
-; SendInput, b
-; Sleep, % Sleepfunction(100, 150)
-; SendInput, {/}
-; Sleep, % Sleepfunction(100, 150)
-; SendInput, o %Varbo% chaos
 return
 ;===============================================
 ; ty на Insert
@@ -348,29 +319,6 @@ return
 :*:mnm::
 Send Hi, after map
 return
-;===============================================
-; При двойном нажатии на 6 появляются - исчезают цифры на вкладке с мапами
-; ~6::
-; if (A_PriorHotkey <> "~6" or A_TimeSincePriorHotkey > 500)	; Макс. промежуток между нажатиями для срабатывания
-; {
-	; KeyWait, 6
-	; return
-; }
-; if VarMapsTierGui = 0
-; {
-	; Run, %A_ScriptDir%\res\ahk\gui\MapStashTabTiers.ahk
-	; Sleep, 20
-	; VarMapsTierGui := 1
-; }
-; else if VarMapsTierGui = 1
-; {
-	; SetTitleMatchMode, 2
-	; DetectHiddenWindows, On
-	; WinClose, MapStashTabTiers.ahk - AutoHotkey v
-	; Sleep, 20
-	; VarMapsTierGui := 0
-; }
-; return
 ;===============================================
 ;=====================
 #IfWinActive
@@ -425,8 +373,24 @@ return
 Send xуй
 return
 ;========
+:*:хуйню::
+Send xуйню
+return
+;========
+:*:хуйня::
+Send xуйня
+return
+;========
 :*:блядь::
 Send 6лядь
+return
+;========
+:*:проебал::
+Send прое6ал
+return
+;========
+:*:нихуя::
+Send ниxуя
 return
 ;=============================================
 ; Дымовая мина
@@ -450,37 +414,8 @@ loop
 }
 return
 ;=============================================
-; Автокликер на Ctrl+Mouse1
-; ^LButton::
-; If GetKeyState("LButton", "P")
-; loop
-; {
-	; SendInput, ^{Click}
-	; Sleep, % Sleepfunction(40, 60)
-	; if (!GetKeyState("LButton", "P"))
-	; {
-		; SendInput, {Ctrl up}
-		; break
-	; }
-; }
-; return
-;=============================================
-; Автокликер на X
-; sc2D::
-; If GetKeyState("sc2D", "P")
-; loop
-; {
-	; SendInput, ^{Click}
-	; Sleep, % Sleepfunction(40, 60)
-	; if (!GetKeyState("sc2D", "P"))
-	; {
-		; SendInput, {Ctrl up}
-		; break
-	; }
-; }
-; return
-;=============================================
 ; Авто кликер для блайт мап. Переключатель на Ctrl+Numpad6, бинд на W.
+; ~sc11::
 sc11::
 if VarBlightClicker = 0
 {
@@ -502,7 +437,8 @@ else if VarBlightClicker = 1
 }
 return
 ;====================
-^sc4D::
+; ^sc4D::
+^sc29::
 if VarBlightClicker = 0
 {
 	Gui, Arrow:Destroy
@@ -536,6 +472,16 @@ SendInput, {Space}
 Sleep, % Sleepfunction(40, 60)
 Clipboard := ClipSaved
 return
+;=============================================
+; ~sc20::
+; Sleep, % Sleepfunction(40, 60)
+; SendInput, 3
+; return
+; =======
+; ~8::
+; +MButton::
+; SendInput, +{0}
+; return
 ;=============================================
 #IfWinActive
 ;=============================================
