@@ -437,8 +437,12 @@ else if VarBlightClicker = 1
 }
 return
 ;====================
+
+;=============================================
+#IfWinActive
+;=============================================
 ; Переключатель автокликера на Ctrl+~
-^sc29::
+~^sc29::
 if VarBlightClicker = 0
 {
 	Gui, Arrow:Destroy
@@ -480,12 +484,46 @@ return
 run, %A_ScriptDir%\res\ahk\gui\Price.ahk	
 return	
 ;=============================================
-#IfWinActive
-;=============================================
-; Рестарт PoE-Wingman
-F9::
-Run, D:\PoE soft\ярлыки\PoE-Wingman.lnk
+/*
+; ^sc4B::
+; 8::
+BlockInput On
+IfWinNotActive, ("ahk_class POEWindowClass")
+{
+	WinActivate, Path of Exile
+}
+MouseGetPos VmouseposX, VmouseposY
+sleep, % Sleepfunction(40, 80)
+MouseMove, 660, 1079, 5
+sleep, % Sleepfunction(40, 80)
+MouseMove, -493, -1069, % Sleepfunction(1, 2), R
+; MouseMove, 0, -1069, 1% Sleepfunction(1, 2), R
+sleep, % Sleepfunction(40, 80)
+Click left
+MouseMove, 445, 390, % Sleepfunction(1, 2), R
+; MouseMove, 0, 390, % Sleepfunction(1, 2), R
+sleep, % Sleepfunction(40, 80)
+Click left
+sleep, % Sleepfunction(40, 80)
+MouseMove, 714, -116, % Sleepfunction(1, 2), R
+; MouseMove, 0, -116, % Sleepfunction(1, 2), R
+sleep, % Sleepfunction(40, 80)
+Click left
+sleep, % Sleepfunction(40, 80)
+MouseMove, 26, -37, % Sleepfunction(1, 2), R
+; MouseMove, 0, -37, % Sleepfunction(1, 2), R
+sleep, % Sleepfunction(40, 80)
+Click left
+sleep, % Sleepfunction(40, 80)
+IfWinNotActive, ("ahk_class POEWindowClass")
+{
+	WinActivate, Path of Exile
+}
+BlockInput Off
+Sleep, 100
 return
+*/
+
 ;=============================================
 
 
