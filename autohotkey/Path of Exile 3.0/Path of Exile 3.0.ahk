@@ -365,32 +365,13 @@ return
 #IfWinActive ahk_group poe
 ;=============================================
 ; антиматфильтр
-:*:ебать::
-Send е6ать
-return
-;========
-:*:хуй::
-Send xуй
-return
-;========
-:*:хуйню::
-Send xуйню
-return
-;========
-:*:хуйня::
-Send xуйня
-return
-;========
-:*:блядь::
-Send 6лядь
-return
-;========
-:*:проебал::
-Send прое6ал
-return
-;========
-:*:нихуя::
-Send ниxуя
+:*:ебать::е6ать
+:*:хуй::xуй
+:*:хуйню::xуйню
+:*:хуйня::xуйня
+:*:блядь::6лядь
+:*:проебал::прое6ал
+:*:нихуя::ниxуя
 return
 ;=============================================
 ; Дымовая мина
@@ -478,10 +459,17 @@ Clipboard := ClipSaved
 return
 ;=============================================
 ; Gui для прайса на Win+Mouse3	
-#Mbutton::	
+#Mbutton::
+!+Mbutton::
+!Mbutton::
+SetTitleMatchMode, 2
+DetectHiddenWindows, On
+WinClose, %A_ScriptDir%\res\ahk\gui\Price.ahk - AutoHotkey v ; Закрывает скрипт, если он открыт, а то он тупит, если перезапускать с открытым.
+Sleep, 20
+SetTitleMatchMode, 1
 ; SendInput, ^!+{F12}	
 ; Sleep, 100	
-run, %A_ScriptDir%\res\ahk\gui\Price.ahk	
+run, %A_ScriptDir%\res\ahk\gui\Price.ahk
 return	
 ;=============================================
 /*
