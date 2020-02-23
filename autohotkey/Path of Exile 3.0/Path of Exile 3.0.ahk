@@ -329,21 +329,6 @@ return
 ;        тут ПоЕ-онли заканчиваеца            =============================================
 ;==========================================================================================
 ;===============================================
-; ^!sc52::
-^sc52::
-if VarDopBinds = 0
-{
-	Run, %A_ScriptDir%\res\ahk\other\Fhase Run and vaal gems.ahk
-	VarDopBinds := 1
-}
-else if VarDopBinds = 1
-{
-	SetTitleMatchMode, 2
-	DetectHiddenWindows, On
-	WinClose, Fhase Run and vaal gems.ahk - AutoHotkey v
-	VarDopBinds := 0
-}
-return
 ;==========================================================================================
 ;скролл браузера
 #IfWinActive ahk_group browser
@@ -513,6 +498,7 @@ return
 */
 
 ;=============================================
-
-
-
+^sc52::
+Sleep, 40
+Run, %A_ScriptDir%\reload.ahk
+return
