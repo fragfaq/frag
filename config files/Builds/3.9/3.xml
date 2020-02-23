@@ -66,11 +66,11 @@
 		<PlayerStat stat="EnduranceCharges" value="0"/>
 		<PlayerStat stat="EnduranceChargesMax" value="3"/>
 		<PlayerStat stat="ActiveMinionLimit" value="5"/>
-		<MinionStat stat="AverageDamage" value="442688.8591125"/>
+		<MinionStat stat="AverageDamage" value="455731.4309625"/>
 		<MinionStat stat="Speed" value="4.72"/>
-		<MinionStat stat="TotalDPS" value="2089491.415011"/>
+		<MinionStat stat="TotalDPS" value="2151052.354143"/>
 		<MinionStat stat="TotalDot" value="0"/>
-		<MinionStat stat="WithPoisonDPS" value="2089491.415011"/>
+		<MinionStat stat="WithPoisonDPS" value="2151052.354143"/>
 		<MinionStat stat="Life" value="52548"/>
 		<MinionStat stat="LifeRegen" value="525.48"/>
 		<MinionStat stat="LifeLeechGainRate" value="10509.6"/>
@@ -132,10 +132,10 @@
 			<Gem enableGlobal2="false" quality="23" level="20" gemId="Metadata/Items/Gems/SkillGemBoneOffering" skillId="BoneOffering" enableGlobal1="true" enabled="true" nameSpec="Bone Offering"/>
 		</Skill>
 		<Skill mainActiveSkillCalcs="1" label="" enabled="true" slot="Weapon 2" mainActiveSkill="1">
-			<Gem enableGlobal2="false" quality="22" level="20" gemId="Metadata/Items/Gems/SkillGemWrath" skillId="Wrath" enableGlobal1="true" enabled="true" nameSpec="Wrath"/>
+			<Gem enableGlobal2="false" quality="20" level="22" gemId="Metadata/Items/Gems/SkillGemWrath" skillId="Wrath" enableGlobal1="true" enabled="true" nameSpec="Wrath"/>
 			<Gem enableGlobal2="false" quality="20" level="20" gemId="Metadata/Items/Gems/SkillGemSummonSkitterbots" skillId="Skitterbots" enableGlobal1="true" enabled="true" nameSpec="Summon Skitterbots" skillMinion="SummonedPhantasm"/>
-			<Gem enableGlobal2="false" quality="20" level="20" gemId="Metadata/Items/Gems/SupportGemGenerosity" skillId="SupportGenerosity" enableGlobal1="true" enabled="true" nameSpec="Generosity"/>
-			<Gem enableGlobal2="nil" quality="20" level="5" gemId="Metadata/Items/Gems/SupportGemGenerosityPlus" skillId="SupportGenerosityPlus" enableGlobal1="true" enabled="false" nameSpec="Awakened Generosity"/>
+			<Gem enableGlobal2="false" quality="20" level="20" gemId="Metadata/Items/Gems/SupportGemGenerosity" skillId="SupportGenerosity" enableGlobal1="true" enabled="false" nameSpec="Generosity"/>
+			<Gem enableGlobal2="false" quality="20" level="5" gemId="Metadata/Items/Gems/SupportGemGenerosityPlus" skillId="SupportGenerosityPlus" enableGlobal1="true" enabled="true" nameSpec="Awakened Generosity"/>
 		</Skill>
 		<Skill mainActiveSkillCalcs="1" label="" enabled="true" slot="Gloves" mainActiveSkill="1">
 			<Gem enableGlobal2="false" quality="20" level="20" gemId="Metadata/Items/Gems/SkillGemConductivity" skillId="Conductivity" enableGlobal1="true" enabled="true" nameSpec="Conductivity"/>
@@ -153,7 +153,7 @@
 	<Tree activeSpec="2">
 		<Spec title="95 LvL" treeVersion="3_9">
 			<URL>
-				https://www.pathofexile.com/passive-skill-tree/AAAABAMDABzc2WGbobc-FE0B5w3N_o-PGvuq_EtRYFqRGJFqQ6IAHggrUJuKNZK-TxpsG_qFYF8_8B8o-pAzd8Iczpit0iE64cauVcYUIK-nxPYsnLiTggcI9OyKPC2qxBZv7-vAZrzqaqySwe8OPQ8EswthvJ-Ldtle0B9Ms1BHmuAGSWD4NulNuTkLaPJG_ohAVw06WIPbpzCmV0WdOunTj46-pwjMvM9-BAcRLf5UJ-0qmCSqxoqDX1W17IOofTLRpqyPRsEE37DjakeFY0EZLp7NcfNWLv4KqqlTUq9sBjnzBmvb2L3yQUVHrY2DzE3jJd_T-_6B8kV8g-vupBk=
+				https://www.pathofexile.com/passive-skill-tree/AAAABAMDABzc2WGboaqpFE0B5w3NWpGPGvuq_Et8gxv6GJFqQ6IAHggrUJuKNZK-TxpsHM7E9tP7CPRN45Azd8LAZpitg8w64cauVcbwH6-nvOosnLiTggfv6-yKPC3YvarEXz_zBgY5aqySwe8OPQ8UIAthvJ-Ldtler2xMs1BH_o8GSWD4muD-ClYug9tG_ohAVw2ezY6-Y0GnCEWdBAfTj02537DMvM9-OljBBI9GJ-0qmCSqxoqDX6asES1VtTLRqH066eyD_lTjakeFpzAZLqZXcfNo8jkLNulTUtAfUWC3PmvbFm_yQUVHrY3SISj6Jd-FYP6B8kUEs-vupBk=
 			</URL>
 			<Sockets>
 				<Socket nodeId="7960" itemId="0"/>
@@ -165,23 +165,23 @@
 				<Socket nodeId="21984" itemId="0"/>
 				<Socket nodeId="46882" itemId="0"/>
 				<Socket nodeId="61419" itemId="3"/>
-				<Socket nodeId="41263" itemId="0"/>
+				<Socket nodeId="54127" itemId="0"/>
 				<Socket nodeId="31683" itemId="0"/>
 				<Socket nodeId="55190" itemId="0"/>
 				<Socket nodeId="48768" itemId="0"/>
-				<Socket nodeId="61834" itemId="0"/>
-				<Socket nodeId="2491" itemId="0"/>
-				<Socket nodeId="54127" itemId="0"/>
+				<Socket nodeId="26725" itemId="0"/>
+				<Socket nodeId="33989" itemId="0"/>
+				<Socket nodeId="6230" itemId="0"/>
 				<Socket nodeId="60735" itemId="0"/>
 				<Socket nodeId="33631" itemId="2"/>
-				<Socket nodeId="6230" itemId="0"/>
-				<Socket nodeId="33989" itemId="0"/>
-				<Socket nodeId="26725" itemId="0"/>
+				<Socket nodeId="41263" itemId="0"/>
+				<Socket nodeId="61834" itemId="0"/>
+				<Socket nodeId="2491" itemId="0"/>
 			</Sockets>
 		</Spec>
 		<Spec title="1" treeVersion="3_9">
 			<URL>
-				https://www.pathofexile.com/passive-skill-tree/AAAABAMDABzc2WGboVYuWpEUTRZvAecNzf6PjxoUIPxLOuEb-hiRaGWiAB4IK1CbijWSvk_7qq-nLJzzmyj60iGQM3fCHM6YreyKhWDGrlXGksG3Przq0_u4k6rEfIPwHzwti3aCB-_rUWDQH2qsqqnvDj0PxPYLYbyf2L3ZXkyzakM5CwZJYPia4KZXg9tFnUb-iEBXDacwTbmPRs9-_goEB9OPjr7-VMy8ns06WKasES0n7SqY37DGisEEVbXsg6h9MtGDXzrpJKoGOeNqR4VjQRkupwhx82jyNunzBlNSr2wI9Bpsa9tfP_JBRUetjYPMTeMl3wSz_oHyRcBm6-6kGQ==
+				https://www.pathofexile.com/passive-skill-tree/AAAABAMDABzc2WGboWjyFE0WbwHnDc1oZY8awGb8S7zqWpEYkWpDogAeCCtQm4o1kr5P-6qvpwSz85tN44PMkDN3whzOmK1RYDrhxq5VxoVgtz7wH9P7uJOCB18_7Io8LZLBGmzv6wj0r2xqrKqp7w49D8T2C2G8n9i92V6Ldkyz8wY26QZJYPia4E25pwgEB0b-iEBXDWNBjr7-VAY5RZ0kqtOPVi466cy8z36D24Nf7IMn7SqY37DGisEEqH0RLVW1MtGmrI9GOliezeNqR4WnMBku_gpx86ZX0iEb-lNS0B-qxBQga9t8g_JBRUetjTkLKPol3yyc_oHyRf6P6-6kGQ==
 			</URL>
 			<Sockets>
 				<Socket nodeId="7960" itemId="0"/>
@@ -189,22 +189,22 @@
 				<Socket nodeId="28475" itemId="0"/>
 				<Socket nodeId="26196" itemId="0"/>
 				<Socket nodeId="36634" itemId="1"/>
-				<Socket nodeId="34483" itemId="0"/>
+				<Socket nodeId="33989" itemId="0"/>
 				<Socket nodeId="21984" itemId="0"/>
 				<Socket nodeId="46882" itemId="0"/>
 				<Socket nodeId="61419" itemId="3"/>
 				<Socket nodeId="54127" itemId="0"/>
-				<Socket nodeId="31683" itemId="0"/>
+				<Socket nodeId="6230" itemId="0"/>
 				<Socket nodeId="55190" itemId="0"/>
 				<Socket nodeId="48768" itemId="0"/>
-				<Socket nodeId="26725" itemId="7"/>
-				<Socket nodeId="33989" itemId="0"/>
-				<Socket nodeId="6230" itemId="0"/>
+				<Socket nodeId="2491" itemId="0"/>
+				<Socket nodeId="61834" itemId="0"/>
+				<Socket nodeId="41263" itemId="0"/>
 				<Socket nodeId="60735" itemId="0"/>
 				<Socket nodeId="33631" itemId="2"/>
-				<Socket nodeId="41263" itemId="0"/>
-				<Socket nodeId="61834" itemId="0"/>
-				<Socket nodeId="2491" itemId="0"/>
+				<Socket nodeId="31683" itemId="0"/>
+				<Socket nodeId="34483" itemId="0"/>
+				<Socket nodeId="26725" itemId="7"/>
 			</Sockets>
 		</Spec>
 	</Tree>
@@ -605,16 +605,16 @@ With at least 40 Intelligence in Radius, Raised Spectres have a 50% chance to ga
 		<Input name="conditionUsingFlask" boolean="true"/>
 		<Input name="overrideFrenzyCharges" number="0"/>
 		<Input name="conditionBeenCritRecently" boolean="true"/>
-		<Input name="enemyConditionHitByFireDamage" boolean="true"/>
+		<Input name="enemyLightningResist" number="-9"/>
 		<Input name="conditionEnemyChilled" boolean="true"/>
 		<Input name="aspectOfTheAvianAviansFlight" boolean="true"/>
 		<Input name="aspectOfTheAvianAviansMight" boolean="true"/>
 		<Input name="igniteMode" string="AVERAGE"/>
-		<Input name="conditionBeenHitRecently" boolean="true"/>
+		<Input name="aspectOfTheSpiderWebStacks" number="3"/>
+		<Input name="enemyConditionHitByFireDamage" boolean="true"/>
 		<Input name="enemyConditionHitByColdDamage" boolean="true"/>
-		<Input name="enemyLightningResist" number="-9"/>
 		<Input name="buffFortify" boolean="true"/>
 		<Input name="conditionEnemyShocked" boolean="true"/>
-		<Input name="aspectOfTheSpiderWebStacks" number="3"/>
+		<Input name="conditionBeenHitRecently" boolean="true"/>
 	</Config>
 </PathOfBuilding>
