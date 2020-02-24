@@ -8,6 +8,7 @@ VarDopBinds := 0
 VarAntiAfk := 0
 VarBlightClicker := 0
 ;==============================================
+;==============================================
 GroupAdd, poe, ahk_exe PathOfExile.exe
 GroupAdd, poe, ahk_exe PathOfExile_x64.exe
 GroupAdd, poe, ahk_exe notepad.exe ; for test
@@ -297,6 +298,7 @@ return
 $^1::
 $^2::
 $^3::
+sc149::
 run, %A_ScriptDir%\res\ahk\gui\Fast_Price.ahk
 return
 ;===============================================
@@ -357,7 +359,11 @@ return
 :*:блядь::6лядь
 :*:проебал::прое6ал
 :*:нихуя::ниxуя
+;=============================================
+:*:сдача::can you give change if i pay only exalts?
+:*:sdacha::can you give change if i pay only exalts?
 return
+;=============================================
 ;=============================================
 ; Дымовая мина
 ; ~sc10::
@@ -457,48 +463,20 @@ SetTitleMatchMode, 1
 run, %A_ScriptDir%\res\ahk\gui\Price.ahk
 return	
 ;=============================================
-/*
-; ^sc4B::
-; 8::
-BlockInput On
-IfWinNotActive, ("ahk_class POEWindowClass")
-{
-	WinActivate, Path of Exile
-}
-MouseGetPos VmouseposX, VmouseposY
-sleep, % Sleepfunction(40, 80)
-MouseMove, 660, 1079, 5
-sleep, % Sleepfunction(40, 80)
-MouseMove, -493, -1069, % Sleepfunction(1, 2), R
-; MouseMove, 0, -1069, 1% Sleepfunction(1, 2), R
-sleep, % Sleepfunction(40, 80)
-Click left
-MouseMove, 445, 390, % Sleepfunction(1, 2), R
-; MouseMove, 0, 390, % Sleepfunction(1, 2), R
-sleep, % Sleepfunction(40, 80)
-Click left
-sleep, % Sleepfunction(40, 80)
-MouseMove, 714, -116, % Sleepfunction(1, 2), R
-; MouseMove, 0, -116, % Sleepfunction(1, 2), R
-sleep, % Sleepfunction(40, 80)
-Click left
-sleep, % Sleepfunction(40, 80)
-MouseMove, 26, -37, % Sleepfunction(1, 2), R
-; MouseMove, 0, -37, % Sleepfunction(1, 2), R
-sleep, % Sleepfunction(40, 80)
-Click left
-sleep, % Sleepfunction(40, 80)
-IfWinNotActive, ("ahk_class POEWindowClass")
-{
-	WinActivate, Path of Exile
-}
-BlockInput Off
-Sleep, 100
-return
-*/
-
-;=============================================
 ^sc52::
+SoundBeep, 1600, 200
+SoundBeep, 1300, 100
+SoundBeep, 1000, 100
+SoundBeep, 500, 100
 Sleep, 40
 Run, %A_ScriptDir%\reload.ahk
 return
+;=============================================
+:*:r123::
+; ::r123::
+SoundBeep, 1600, 200
+SoundBeep, 1300, 100
+SoundBeep, 1000, 100
+SoundBeep, 500, 100
+Sleep, 40
+Run, %A_ScriptDir%\reload.ahk
