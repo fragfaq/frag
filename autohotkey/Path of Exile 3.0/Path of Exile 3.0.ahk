@@ -464,19 +464,34 @@ run, %A_ScriptDir%\res\ahk\gui\Price.ahk
 return	
 ;=============================================
 ^sc52::
-SoundBeep, 1600, 200
-SoundBeep, 1300, 100
+; SoundBeep, 1600, 200
+; SoundBeep, 1300, 100
 SoundBeep, 1000, 100
 SoundBeep, 500, 100
 Sleep, 40
 Run, %A_ScriptDir%\reload.ahk
 return
 ;=============================================
-:*:r123::
+:*:123123::
 ; ::r123::
-SoundBeep, 1600, 200
-SoundBeep, 1300, 100
+; SoundBeep, 1600, 200
+; SoundBeep, 1300, 100
 SoundBeep, 1000, 100
 SoundBeep, 500, 100
 Sleep, 40
 Run, %A_ScriptDir%\reload.ahk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
