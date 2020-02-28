@@ -187,9 +187,9 @@ ShowToolTip({controls: { WHAT_I_GET: edit1, Currency: list1, CopyandClose: butto
 Return
 ;========================================================================----------------------------------------------------------------
 ; Дебаг, потом убрать
-F8::
-MsgBox,,, Currency_List = %Currency_List%`n===`nCurrency = %Currency%`n===`nCurrencyShow = %CurrencyShow%`n===`nCurrencyISell = %CurrencyISell%`n===`nItem_Copy_Full_Cut = %Item_Copy_Full_Cut%`n===`n`n===`n`n===`n
-Return
+; F8::
+; MsgBox,,, Currency_List = %Currency_List%`n===`nCurrency = %Currency%`n===`nCurrencyShow = %CurrencyShow%`n===`nCurrencyISell = %CurrencyISell%`n===`nItem_Copy_Full_Cut = %Item_Copy_Full_Cut%`n===`n`n===`n`n===`n
+; Return
 ;========================================================================
 ; Функционал подгона ratio:
 ; Превью ratio
