@@ -8,6 +8,7 @@ Menu, Tray, Icon, %A_ScriptDir%\res\1.ico, 1
 ;==============================================
 menu, tray, add, CHANGE CHARACTER NAME, char_name
 menu, tray, add, DIV EXALT, ExCalc
+menu, tray, add, CURRENCY CALC, Currency_Calc
 menu, tray, add, RELOAD SCRIPT, reboot
 Menu, Tray, Add,
 Menu, tray, Default, CHANGE CHARACTER NAME
@@ -124,6 +125,11 @@ else  if Var = 3
 }
 return
 ;=============================================
+; Быстрый прайс на Ctrl+1
+^sc2::
+Run, %A_ScriptDir%\res\Fast_Price.ahk
+return
+;=============================================
 #IfWinActive
 ;=============================================
 F3::
@@ -175,6 +181,11 @@ If ErrorLevel = 0
 	Sleep, 100
 	Reload
 }
+return
+;==============================================
+; Прайс для валютки на Ctrl+F5
+Currency_Calc:
+Run, %A_ScriptDir%\res\currency_price.ahk
 return
 ;==============================================
 ; Перезапуск скрипта на Control+r
