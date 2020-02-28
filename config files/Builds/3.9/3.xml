@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PathOfBuilding>
-	<Build level="95" targetVersion="3_0" banditNormal="None" bandit="None" banditMerciless="None" className="Witch" ascendClassName="Necromancer" mainSocketGroup="1" viewMode="CALCS" banditCruel="None">
+	<Build level="95" targetVersion="3_0" banditNormal="None" bandit="None" banditMerciless="None" className="Witch" ascendClassName="Necromancer" mainSocketGroup="1" viewMode="ITEMS" banditCruel="None">
 		<Spectre id="Metadata/Monsters/TemplarSlaveDriver/TemplarSlaveDriver"/>
 		<Spectre id="Metadata/Monsters/HolyFireElemental/HolyFireElementalSolarisBeam"/>
 		<PlayerStat stat="ActiveMinionLimit" value="5"/>
@@ -16,29 +16,29 @@
 		<PlayerStat stat="TotalDot" value="0"/>
 		<PlayerStat stat="WithPoisonDPS" value="0"/>
 		<PlayerStat stat="ManaCost" value="113"/>
-		<PlayerStat stat="Str" value="527"/>
+		<PlayerStat stat="Str" value="555"/>
 		<PlayerStat stat="ReqStr" value="180"/>
-		<PlayerStat stat="Dex" value="51"/>
+		<PlayerStat stat="Dex" value="79"/>
 		<PlayerStat stat="ReqDex" value="70"/>
-		<PlayerStat stat="Int" value="222"/>
+		<PlayerStat stat="Int" value="270"/>
 		<PlayerStat stat="ReqInt" value="242"/>
-		<PlayerStat stat="Life" value="8308"/>
+		<PlayerStat stat="Life" value="8357"/>
 		<PlayerStat stat="Spec:LifeInc" value="219"/>
-		<PlayerStat stat="LifeUnreserved" value="8308"/>
+		<PlayerStat stat="LifeUnreserved" value="8357"/>
 		<PlayerStat stat="LifeUnreservedPercent" value="100"/>
-		<PlayerStat stat="LifeRegen" value="1348.9424"/>
+		<PlayerStat stat="LifeRegen" value="1355.6946"/>
 		<PlayerStat stat="LifeLeechGainRate" value="0"/>
-		<PlayerStat stat="Mana" value="1296"/>
+		<PlayerStat stat="Mana" value="1334"/>
 		<PlayerStat stat="Spec:ManaInc" value="48"/>
-		<PlayerStat stat="ManaUnreserved" value="25"/>
-		<PlayerStat stat="ManaUnreservedPercent" value="1.929012345679"/>
-		<PlayerStat stat="ManaRegen" value="31.8"/>
+		<PlayerStat stat="ManaUnreserved" value="26"/>
+		<PlayerStat stat="ManaUnreservedPercent" value="1.9490254872564"/>
+		<PlayerStat stat="ManaRegen" value="32.7"/>
 		<PlayerStat stat="ManaLeechGainRate" value="0"/>
-		<PlayerStat stat="EnergyShield" value="99"/>
+		<PlayerStat stat="EnergyShield" value="105"/>
 		<PlayerStat stat="Spec:EnergyShieldInc" value="10"/>
 		<PlayerStat stat="EnergyShieldRegen" value="22.1"/>
 		<PlayerStat stat="EnergyShieldLeechGainRate" value="0"/>
-		<PlayerStat stat="Evasion" value="531"/>
+		<PlayerStat stat="Evasion" value="560"/>
 		<PlayerStat stat="Spec:EvasionInc" value="0"/>
 		<PlayerStat stat="MeleeEvadeChance" value="0"/>
 		<PlayerStat stat="MeleeEvadeChance" value="0"/>
@@ -54,7 +54,7 @@
 		<PlayerStat stat="FireResist" value="77"/>
 		<PlayerStat stat="ColdResist" value="76"/>
 		<PlayerStat stat="LightningResist" value="76"/>
-		<PlayerStat stat="ChaosResist" value="-40"/>
+		<PlayerStat stat="ChaosResist" value="-11"/>
 		<PlayerStat stat="FireResistOverCap" value="35"/>
 		<PlayerStat stat="ColdResistOverCap" value="5"/>
 		<PlayerStat stat="LightningResistOverCap" value="42"/>
@@ -66,11 +66,11 @@
 		<PlayerStat stat="EnduranceCharges" value="0"/>
 		<PlayerStat stat="EnduranceChargesMax" value="3"/>
 		<PlayerStat stat="ActiveMinionLimit" value="5"/>
-		<MinionStat stat="AverageDamage" value="415178.89875"/>
-		<MinionStat stat="Speed" value="4.98"/>
-		<MinionStat stat="TotalDPS" value="2067590.915775"/>
+		<MinionStat stat="AverageDamage" value="455731.4309625"/>
+		<MinionStat stat="Speed" value="5.14"/>
+		<MinionStat stat="TotalDPS" value="2342459.5551472"/>
 		<MinionStat stat="TotalDot" value="0"/>
-		<MinionStat stat="WithPoisonDPS" value="2067590.915775"/>
+		<MinionStat stat="WithPoisonDPS" value="2342459.5551472"/>
 		<MinionStat stat="Life" value="52548"/>
 		<MinionStat stat="LifeRegen" value="525.48"/>
 		<MinionStat stat="LifeLeechGainRate" value="10509.6"/>
@@ -153,7 +153,7 @@
 	<Tree activeSpec="2">
 		<Spec title="95 LvL" treeVersion="3_9">
 			<URL>
-				https://www.pathofexile.com/passive-skill-tree/AAAABAMDABzc2WGboTbpFE0B5w3NCPSPGvMG_EsEsxv6GJFqQ6IAHggrUJuKNZK-T_6PvOoLYYVg0_so-pAzd8Iczpit0iE64cauVcZfP6-nqsQsnLiTggeqqeyKPC0Wb_Af7-u3PlFgaqySwe8OPQ8UIHyDvJ-Ldtle0B9Ms1BH-6oGSWD4muA5C2jyRZ1G_ohAVw2mV025pzDPfv4KOljTj1Yu_lTMvAY5g9vsgzrpJ-0qmN-wxorBBKh9ES1VtTLRpqyPRoNfJKrjakeFY0EZLgQHcfOnCI6-ns1TUq9sWpHYvWvbxPbyQUVHrY2DzE3jJd_AZv6B8kUabOvupBk=
+				https://www.pathofexile.com/passive-skill-tree/AAAABAMDABzc2WGboZ7NFE0B5w3NCPSPGvMG_EsabBv6GJFqQ6IAHggrUJuKNZK-T_uqvOqFYMBm0_tN45Azd8Iczpitg8w64cauVcYWb7c-UWAsnLiTggfv6-yKPC3E9qqpXz_YvVqRaqySwe8OPQ8UIHyDvJ-Ldtler2xMs1BHC2EGSWD4NumOvqcIpldG_ohAVw0EB1YuY0EGOUWdg9vTj025JKrMvM9-OliDX49GJ-0qmN-wxorBBKas7IOofTLRVbX-VBEtOunjakeFpzAZLv4KcfNo8jkLmuBTUtAfqsQEs2vb8B_yQUVHrY3SISj6Jd-vp_6B8kX-j-vupBk=
 			</URL>
 			<Sockets>
 				<Socket nodeId="7960" itemId="0"/>
@@ -165,23 +165,23 @@
 				<Socket nodeId="21984" itemId="0"/>
 				<Socket nodeId="46882" itemId="0"/>
 				<Socket nodeId="61419" itemId="3"/>
-				<Socket nodeId="54127" itemId="0"/>
+				<Socket nodeId="41263" itemId="0"/>
 				<Socket nodeId="6230" itemId="0"/>
 				<Socket nodeId="55190" itemId="0"/>
 				<Socket nodeId="48768" itemId="0"/>
-				<Socket nodeId="2491" itemId="0"/>
-				<Socket nodeId="61834" itemId="0"/>
-				<Socket nodeId="41263" itemId="0"/>
+				<Socket nodeId="26725" itemId="0"/>
+				<Socket nodeId="34483" itemId="0"/>
+				<Socket nodeId="31683" itemId="0"/>
 				<Socket nodeId="60735" itemId="0"/>
 				<Socket nodeId="33631" itemId="2"/>
-				<Socket nodeId="31683" itemId="0"/>
-				<Socket nodeId="34483" itemId="0"/>
-				<Socket nodeId="26725" itemId="0"/>
+				<Socket nodeId="54127" itemId="0"/>
+				<Socket nodeId="2491" itemId="0"/>
+				<Socket nodeId="61834" itemId="0"/>
 			</Sockets>
 		</Spec>
 		<Spec title="1" treeVersion="3_9">
 			<URL>
-				https://www.pathofexile.com/passive-skill-tree/AAAABAMDABzc2WGboaZXFm8UTQHnDc3E9o8a_o_8SxzOWpG86mhlogAeCCtQm4o1kr5P-6o64Syc8B8o-jkLkDNRYMBmmK0abIVgxq5VxriTtz6SwdP785uCB3yD7Io8LQj0FCDv66rE0B9qrKqp7w49DwSzC2G8n4t22V4YkUyzG_rSIfMGYPg26acI_gpWLkb-iEBXDacwOunPfp7NRZ06WNOPTbmPRsy8BjkEB6asES0n7SqYJKrGioNfVbXsg6h9MtHBBP5U37CD2-NqR4VjQRkujr5x85rgBklo8lNSr2xqQ9i9a9tfP_JBRUetjYPMTeMl36-n_oHyRXfC6-6kGQ==
+				https://www.pathofexile.com/passive-skill-tree/AAAABAMDABzc2WGboZrgWpEUTRZvAecNzbzqjxp3wvxLGmwb-hiRaGWiAB4IK1CbijWSvk_7qsBmr6d8g03jg8yQM1FgHM6YrbiThWDGrlXGFCC3PqrE0_vzm4IHXz_wHzwt7IrYve_rakOvbGqsqqnvDj0PBLMLYbyfi3bZXiycTLNo8gZJ8wZg-DbppwiOvkWdRv6IQFcNY0FNuY9Gg9v-Ct-w049WLv5UzLzPfjpYwQTsgyftKpgkqsaKg1-ofREtVbUy0aasOukEBwY542pHhacwGS6ezXHzOQumV1NS0B_E9pLBa9sI9PJBRUetjdIhKPol3zrh_oHyRf6P6-6kGQ==
 			</URL>
 			<Sockets>
 				<Socket nodeId="7960" itemId="0"/>
@@ -189,22 +189,22 @@
 				<Socket nodeId="28475" itemId="0"/>
 				<Socket nodeId="26196" itemId="0"/>
 				<Socket nodeId="36634" itemId="1"/>
-				<Socket nodeId="33989" itemId="0"/>
+				<Socket nodeId="34483" itemId="0"/>
 				<Socket nodeId="21984" itemId="0"/>
 				<Socket nodeId="46882" itemId="0"/>
 				<Socket nodeId="61419" itemId="3"/>
 				<Socket nodeId="41263" itemId="0"/>
-				<Socket nodeId="6230" itemId="0"/>
+				<Socket nodeId="31683" itemId="0"/>
 				<Socket nodeId="55190" itemId="0"/>
 				<Socket nodeId="48768" itemId="0"/>
-				<Socket nodeId="26725" itemId="7"/>
-				<Socket nodeId="34483" itemId="0"/>
-				<Socket nodeId="31683" itemId="0"/>
+				<Socket nodeId="61834" itemId="0"/>
+				<Socket nodeId="2491" itemId="0"/>
+				<Socket nodeId="54127" itemId="0"/>
 				<Socket nodeId="60735" itemId="0"/>
 				<Socket nodeId="33631" itemId="2"/>
-				<Socket nodeId="54127" itemId="0"/>
-				<Socket nodeId="2491" itemId="0"/>
-				<Socket nodeId="61834" itemId="0"/>
+				<Socket nodeId="6230" itemId="0"/>
+				<Socket nodeId="33989" itemId="0"/>
+				<Socket nodeId="26725" itemId="7"/>
 			</Sockets>
 		</Spec>
 	</Tree>
@@ -547,6 +547,7 @@ Minions have 8% increased Cast Speed
 		<Slot name="Gloves" itemId="18"/>
 		<Slot name="Weapon 1" itemId="16"/>
 		<Slot active="true" name="Flask 3" itemId="9"/>
+		<Slot name="Amulet" itemId="14"/>
 		<Slot name="Flask 1" itemId="20"/>
 		<Slot active="true" name="Flask 5" itemId="5"/>
 		<Slot name="Belt Abyssal Socket 1" itemId="10"/>
@@ -566,7 +567,7 @@ Minions have 8% increased Cast Speed
 			<Slot name="Belt Abyssal Socket 2" itemId="0"/>
 			<Slot active="true" name="Flask 3" itemId="9"/>
 			<Slot name="Body Armour Abyssal Socket 2" itemId="0"/>
-			<Slot name="Amulet" itemId="0"/>
+			<Slot name="Amulet" itemId="14"/>
 			<Slot name="Flask 1" itemId="20"/>
 			<Slot name="Weapon 2Swap Abyssal Socket 1" itemId="0"/>
 			<Slot active="true" name="Flask 5" itemId="5"/>
@@ -604,16 +605,16 @@ Minions have 8% increased Cast Speed
 		<Input name="conditionUsingFlask" boolean="true"/>
 		<Input name="overrideFrenzyCharges" number="0"/>
 		<Input name="conditionBeenCritRecently" boolean="true"/>
-		<Input name="enemyConditionHitByColdDamage" boolean="true"/>
+		<Input name="enemyConditionHitByFireDamage" boolean="true"/>
 		<Input name="conditionEnemyChilled" boolean="true"/>
 		<Input name="aspectOfTheAvianAviansFlight" boolean="true"/>
 		<Input name="aspectOfTheAvianAviansMight" boolean="true"/>
 		<Input name="igniteMode" string="AVERAGE"/>
-		<Input name="conditionBeenHitRecently" boolean="true"/>
+		<Input name="aspectOfTheSpiderWebStacks" number="3"/>
+		<Input name="enemyConditionHitByColdDamage" boolean="true"/>
 		<Input name="enemyLightningResist" number="-9"/>
-		<Input name="enemyConditionHitByFireDamage" boolean="true"/>
 		<Input name="buffFortify" boolean="true"/>
 		<Input name="conditionEnemyShocked" boolean="true"/>
-		<Input name="aspectOfTheSpiderWebStacks" number="3"/>
+		<Input name="conditionBeenHitRecently" boolean="true"/>
 	</Config>
 </PathOfBuilding>
