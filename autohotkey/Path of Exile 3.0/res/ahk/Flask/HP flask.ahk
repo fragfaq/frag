@@ -1,4 +1,5 @@
-﻿; ==============================================
+﻿; #SingleInstance Force
+; ==============================================
 GroupAdd, poe, ahk_exe PathOfExile.exe
 GroupAdd, poe, ahk_exe PathOfExile_x64.exe
 ; ==============================================
@@ -33,15 +34,8 @@ global Vspeed_dmg := 3
 global VautoButton := 0
 global Var_autoflask_bind := 0
 global Var_auto_skils := 0
-global Var_skils_script1 := "support skils script\Immortal Call and Vortex.ahk"
-global Var_skils_script2 := "support skils script\Molten Shell and Vortex.ahk"
-global Var_skils_script3 := "support skils script\Focus.ahk"
+VarBlightClicker := 0
 Vtest1 = 0
-;==============================================
-; Тут задается, какой скил будет работать на автокасте. Указать 1 раз из вариантов выше.
-global Var_skils1 := Var_skils_script1
-global Var_skils2 := Var_skils_script2
-global Var_skils2 := Var_skils_script3
 ;==============================================
 ; Стартовый Gui, который показывает только что Vkeys = 0
 Gui, Destroy
@@ -503,11 +497,46 @@ if Vkeys > 0
 	Sleep, % Sleepfunction(35, 50)
 	SendInput, {MButton}
 }
-else if Vkeys = 0
+else if (Vkeys = 0 and VarBlightClicker = 0)
 {
 	SendInput, {sc11}
 }
+else if (Vkeys = 0 and VarBlightClicker = 1)
+{
+	If GetKeyState("sc11", "P")
+	loop
+	{
+		SendInput, ^{Click}
+		Sleep, % Sleepfunction(40, 60)
+		if (!GetKeyState("sc11", "P"))
+		{
+			SendInput, {Ctrl up}
+			break
+		}
+	}
+}
 return 
+;==============================================
+; Переключатель автокликера на Ctrl+~
+~^sc29::
+if VarBlightClicker = 0
+{
+	Gui, Arrow:Destroy
+	Sleep, 20
+	Gui, Arrow:+LastFound +AlwaysOnTop +ToolWindow +OwnDialogs
+	Gui, Arrow:Add, Picture, x1 y1 w50 h50, %A_ScriptDir%\res\Arrow.png
+	Gui, Arrow:Show, x890 y20 NoActivate, Autocast
+	Gui, Arrow:Color, 000001
+	WinSet, TransColor, 000001
+	Gui, Arrow:-Caption
+	VarBlightClicker := 1
+}
+else if VarBlightClicker = 1
+{
+	Gui, Arrow:Destroy
+	VarBlightClicker := 0
+}
+return
 ;==============================================
 ;=====================
 #IfWinActive
@@ -804,4 +833,7 @@ else if VautoButton = 1 ; если биндом клавиши является 
 }
 return
 ;==============================================
+:*:111111::
+reload
+return
 ;==============================================

@@ -2,6 +2,7 @@
 #include %A_ScriptDir%\res\ahk\gui\res\ToolTipFont.ahk
 CoordMode, Mouse, Screen
 SetDefaultMouseSpeed, 3
+; #SingleInstance Force
 ;==============================================
 VarMapsTierGui := 0
 VarDopBinds := 0
@@ -386,53 +387,12 @@ loop
 }
 return
 ;=============================================
-; Авто кликер для блайт мап. Кликает на W.
-; ~sc11::
-sc11::
-if VarBlightClicker = 0
-{
-	SendInput, {sc11}
-}
-else if VarBlightClicker = 1
-{
-	If GetKeyState("sc11", "P")
-	loop
-	{
-		SendInput, ^{Click}
-		Sleep, % Sleepfunction(40, 60)
-		if (!GetKeyState("sc11", "P"))
-		{
-			SendInput, {Ctrl up}
-			break
-		}
-	}
-}
-return
-;====================
-
+; 8::
+; Msgbox,,, VarBlightClicker = %VarBlightClicker%
+; return
 ;=============================================
 #IfWinActive
 ;=============================================
-; Переключатель автокликера на Ctrl+~
-~^sc29::
-if VarBlightClicker = 0
-{
-	Gui, Arrow:Destroy
-	Sleep, 20
-	Gui, Arrow:+LastFound +AlwaysOnTop +ToolWindow +OwnDialogs
-	Gui, Arrow:Add, Picture, x1 y1 w50 h50, %A_ScriptDir%\res\pic\Arrow.png
-	Gui, Arrow:Show, x890 y20 NoActivate, Autocast
-	Gui, Arrow:Color, 000001
-	WinSet, TransColor, 000001
-	Gui, Arrow:-Caption
-	VarBlightClicker := 1
-}
-else if VarBlightClicker = 1
-{
-	Gui, Arrow:Destroy
-	VarBlightClicker := 0
-}
-return
 ;=============================================
 ; Написать дисе на Ctrl+del
 ^sc153::
@@ -458,14 +418,11 @@ DetectHiddenWindows, On
 WinClose, %A_ScriptDir%\res\ahk\gui\Price.ahk - AutoHotkey v ; Закрывает скрипт, если он открыт, а то он тупит, если перезапускать с открытым.
 Sleep, 20
 SetTitleMatchMode, 1
-; SendInput, ^!+{F12}	
-; Sleep, 100	
+Sleep, 20
 run, %A_ScriptDir%\res\ahk\gui\Price.ahk
 return	
 ;=============================================
 ^sc52::
-; SoundBeep, 1600, 200
-; SoundBeep, 1300, 100
 SoundBeep, 1000, 100
 SoundBeep, 500, 100
 Sleep, 40
@@ -473,15 +430,12 @@ Run, %A_ScriptDir%\reload.ahk
 return
 ;=============================================
 :*:123123::
-; ::r123::
-; SoundBeep, 1600, 200
-; SoundBeep, 1300, 100
 SoundBeep, 1000, 100
 SoundBeep, 500, 100
 Sleep, 40
 Run, %A_ScriptDir%\reload.ahk
-
-
+return
+;=============================================
 
 
 
