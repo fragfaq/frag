@@ -16,7 +16,8 @@ GroupAdd, poe, ahk_exe notepad.exe ; for test
 GroupAdd, browser, ahk_exe firefox.exe
 GroupAdd, browser, ahk_exe chrome.exe
 GroupAdd, trade, ahk_exe Awakened PoE Trade.exe
-GroupAdd, trade, ahk_exe chrome.exe
+GroupAdd, browser_and_trade, ahk_exe chrome.exe
+GroupAdd, browser_and_trade, ahk_exe Awakened PoE Trade.exe
 ;==============================================
 Menu, Tray, Icon, %A_ScriptDir%\res\pic\1.ico, 1
 ; Подменюшки под курсор
@@ -396,15 +397,8 @@ return
 return
 #IfWinActive
 ;=============================================
-#IfWinActive ahk_group trade
-;Enter на Ctrl+D на поетрейде и Awakened PoE Trade
-^sc20::
-BlockInput On
-SendInput, {Enter}
-BlockInput Off
-return
-;=============================================
 ; Изменение статов для Advanced Price Check в Awakened PoE Trade
+#IfWinActive ahk_group trade
 ~WheelUp::
 SendInput, {sc148}
 Sleep, 50
@@ -413,7 +407,15 @@ return
 SendInput, {sc150}
 Sleep, 50
 return
+#IfWinActive
 ;=============================================
+;Enter на Ctrl+D на поетрейде и Awakened PoE Trade
+#IfWinActive ahk_group browser_and_trade
+^sc20::
+BlockInput On
+SendInput, {Enter}
+BlockInput Off
+return
 #IfWinActive
 ;=============================================
 ; Gui для прайса на Win+Mouse3	
