@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PathOfBuilding>
-	<Build level="95" targetVersion="3_0" banditNormal="None" bandit="None" banditMerciless="None" className="Witch" ascendClassName="Necromancer" mainSocketGroup="1" viewMode="SKILLS" banditCruel="None">
+	<Build level="95" targetVersion="3_0" banditNormal="None" bandit="None" banditMerciless="None" className="Witch" ascendClassName="Necromancer" mainSocketGroup="1" viewMode="ITEMS" banditCruel="None">
 		<Spectre id="Metadata/Monsters/TemplarSlaveDriver/TemplarSlaveDriver"/>
 		<Spectre id="Metadata/Monsters/HolyFireElemental/HolyFireElementalSolarisBeam"/>
 		<PlayerStat stat="ActiveMinionLimit" value="5"/>
@@ -152,7 +152,7 @@
 	<Tree activeSpec="2">
 		<Spec title="95 LvL" treeVersion="3_9">
 			<URL>
-				https://www.pathofexile.com/passive-skill-tree/AAAABAMDABzc2WGboZrgFE0B5w3NCPSPGvuq_Ev-jxv6GJFqQ6IAHggrUJuKNZK-TxpsHM4Wb6-nUWAo-pAzd8LAZpit0iE64cauVcZfP7c-LJzT-7iTggeqqeyKPC3wH8T27-sEs6rEaqySwe8OPQ8UIAthvJ-Ldtle0B9Ms1BH8wYGSWD4Nuk5C2jyBjlG_ohAVw3-Ck25pzDPfkWdOljTj46-OunMvJ7NBAcRLf5UJ-0qmCSqxoqDX1W17IOofTLRpqyPRsEE37DjakeFY0EZLoPbcfNWLqZXpwhTUq9svOrYvWvbWpHyQUVHrY2DzE3jJd-FYP6B8kV8g-vupBk=
+				https://www.pathofexile.com/passive-skill-tree/AAAABAMDABzc2WGboacIFE0B5w3N8waPGhZv_Et8gxv6GJFqQ6IAHggrUJuKNZK-T_6PGmwUIIVgwGZN45AzUWAczpitg8w64cauVcbsirc-qsTT-7iTggfv6_AfPC1akaqpXz_YvbzqaqySwe8OPQ8EswthvJ-Ldtler2xMs1BHCPQGSWD4muCmV1Yuz35G_ohAVw2D246-Y0Gezf4KBAfTj02537DMvAY5OljBBI9GJ-0qmCSqxoqDX6asES1VtTLRqH066eyD_lTjakeFpzAZLkWdcfNo8jkLNulTUtAfr6csnGvbxPbyQUVHrY3SISj6Jd93wv6B8kX7quvupBk=
 			</URL>
 			<Sockets>
 				<Socket nodeId="7960" itemId="0"/>
@@ -164,23 +164,23 @@
 				<Socket nodeId="21984" itemId="0"/>
 				<Socket nodeId="46882" itemId="0"/>
 				<Socket nodeId="61419" itemId="3"/>
-				<Socket nodeId="41263" itemId="0"/>
+				<Socket nodeId="54127" itemId="0"/>
 				<Socket nodeId="31683" itemId="0"/>
 				<Socket nodeId="55190" itemId="0"/>
 				<Socket nodeId="48768" itemId="0"/>
-				<Socket nodeId="61834" itemId="0"/>
-				<Socket nodeId="2491" itemId="0"/>
-				<Socket nodeId="54127" itemId="0"/>
+				<Socket nodeId="26725" itemId="0"/>
+				<Socket nodeId="33989" itemId="0"/>
+				<Socket nodeId="6230" itemId="0"/>
 				<Socket nodeId="60735" itemId="0"/>
 				<Socket nodeId="33631" itemId="2"/>
-				<Socket nodeId="6230" itemId="0"/>
-				<Socket nodeId="33989" itemId="0"/>
-				<Socket nodeId="26725" itemId="0"/>
+				<Socket nodeId="41263" itemId="0"/>
+				<Socket nodeId="61834" itemId="0"/>
+				<Socket nodeId="2491" itemId="0"/>
 			</Sockets>
 		</Spec>
 		<Spec title="1" treeVersion="3_9">
 			<URL>
-				https://www.pathofexile.com/passive-skill-tree/AAAABAMDABzc2WGboTbpFm8UTQHnDc286o8a_o_8S1FgG_oYkWhlogAeCCtQm4o1kr5PGmzAZjrhWpEo-tIhkDN3whzOmK1qQ4Vgxq5Vxl8_tz7siiyc85uqxAj08B88LbiTksHv68T20B9qrKqp7w49DwSzC2G8n4t22V77qkyzplc5CwZJYPho8p7NTbmnMEb-iEBXDf4KVi4GOQQHRZ066dOPjr6mrMy8z36D24NfVbUn7SqY37DGisEEES3sg6h9MtEkqo9GOlj-VONqR4VjQRkupwhx8_MGmuB8g1NSr2zYvdP7a9uCB_JBRUetjYPMTeMl36-n_oHyRRQg6-6kGQ==
+				https://www.pathofexile.com/passive-skill-tree/AAAABAMDABzc2WGbofMGplcUTRZvAecNzY8aFCD8S_6PWpG86mhlogAeCCtQm4o1kr5P-6pqQ6-nHM5N44PMkDNRYMBmmK3sioVgxq5VxsT2tz5fPyyc85uqxIIH8B88LbiT0_vv69i9r2xqrKqp7w49DwSzC2G8n4t22V464UyzfIOa4AZJYPg26VYupwhFnUb-iEBXDWNBjr6mrP5U_go6WNOPTbmPRsy8ns0EBySq7IMn7SqY37DGioNfqH0RLVW1MtHBBDrpg9vPfuNqR4WnMBkuBjlx82jyG_oabFNS0B_SIZLBa9sI9PJBRUetjTkLKPol33fC_oHyRRiR6-6kGQ==
 			</URL>
 			<Sockets>
 				<Socket nodeId="7960" itemId="0"/>
@@ -188,22 +188,22 @@
 				<Socket nodeId="28475" itemId="0"/>
 				<Socket nodeId="26196" itemId="0"/>
 				<Socket nodeId="36634" itemId="1"/>
-				<Socket nodeId="34483" itemId="0"/>
+				<Socket nodeId="33989" itemId="0"/>
 				<Socket nodeId="21984" itemId="0"/>
 				<Socket nodeId="46882" itemId="0"/>
 				<Socket nodeId="61419" itemId="3"/>
 				<Socket nodeId="54127" itemId="0"/>
-				<Socket nodeId="31683" itemId="0"/>
+				<Socket nodeId="6230" itemId="0"/>
 				<Socket nodeId="55190" itemId="0"/>
 				<Socket nodeId="48768" itemId="0"/>
-				<Socket nodeId="26725" itemId="7"/>
-				<Socket nodeId="33989" itemId="0"/>
-				<Socket nodeId="6230" itemId="0"/>
+				<Socket nodeId="2491" itemId="0"/>
+				<Socket nodeId="61834" itemId="0"/>
+				<Socket nodeId="41263" itemId="0"/>
 				<Socket nodeId="60735" itemId="0"/>
 				<Socket nodeId="33631" itemId="2"/>
-				<Socket nodeId="41263" itemId="0"/>
-				<Socket nodeId="61834" itemId="0"/>
-				<Socket nodeId="2491" itemId="0"/>
+				<Socket nodeId="31683" itemId="0"/>
+				<Socket nodeId="34483" itemId="0"/>
+				<Socket nodeId="26725" itemId="7"/>
 			</Sockets>
 		</Spec>
 	</Tree>
@@ -474,7 +474,7 @@ Minions have 6% increased Attack and Cast Speed if you or your Minions have Kill
 		</Item>
 		<Item id="7">
 			Rarity: RARE
-2 Foul Globe
+Foul Globe
 Ghastly Eye Jewel
 Item Level: 85
 LevelReq: 65
@@ -526,22 +526,6 @@ Limited to: 2
 Implicits: 0
 Minions have 8% increased Area of Effect
 With at least 40 Intelligence in Radius, Raised Spectres have a 50% chance to gain Soul Eater for 20 seconds on Kill
-		</Item>
-		<Item id="6">
-			Rarity: RARE
-1111Hollow Oculus
-Ghastly Eye Jewel
-Item Level: 83
-LevelReq: 59
-Implicits: 0
-+32 to maximum Life
-Regenerate 0.7 Mana per second
-Minions deal 20% increased Damage if you&apos;ve used a Minion Skill Recently
-Minions have 8% increased Attack and Cast Speed if you or your Minions have Killed Recently
-###
-Minions have 8% increased Attack Speed
-Minions have 8% increased Cast Speed
-###
 		</Item>
 		<Slot name="Gloves" itemId="18"/>
 		<Slot name="Weapon 1" itemId="16"/>
@@ -604,16 +588,16 @@ Minions have 8% increased Cast Speed
 		<Input name="conditionUsingFlask" boolean="true"/>
 		<Input name="overrideFrenzyCharges" number="0"/>
 		<Input name="conditionBeenCritRecently" boolean="true"/>
-		<Input name="enemyLightningResist" number="-9"/>
+		<Input name="enemyConditionHitByColdDamage" boolean="true"/>
 		<Input name="conditionEnemyChilled" boolean="true"/>
 		<Input name="aspectOfTheAvianAviansFlight" boolean="true"/>
 		<Input name="aspectOfTheAvianAviansMight" boolean="true"/>
 		<Input name="igniteMode" string="AVERAGE"/>
-		<Input name="conditionBeenHitRecently" boolean="true"/>
+		<Input name="aspectOfTheSpiderWebStacks" number="3"/>
+		<Input name="enemyLightningResist" number="-9"/>
 		<Input name="enemyConditionHitByFireDamage" boolean="true"/>
-		<Input name="enemyConditionHitByColdDamage" boolean="true"/>
 		<Input name="buffFortify" boolean="true"/>
 		<Input name="conditionEnemyShocked" boolean="true"/>
-		<Input name="aspectOfTheSpiderWebStacks" number="3"/>
+		<Input name="conditionBeenHitRecently" boolean="true"/>
 	</Config>
 </PathOfBuilding>
