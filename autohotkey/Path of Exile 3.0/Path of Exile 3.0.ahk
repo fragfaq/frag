@@ -405,6 +405,12 @@ return
 SendInput, {sc150}
 Sleep, 50
 return
+
+;=============================================
+; Это что б окно трэйда пробелом закрывать.
+Space::
+SendInput, {Esc}
+return
 #IfWinActive
 ;=============================================
 ;Enter на Ctrl+D на поетрейде и Awakened PoE Trade
