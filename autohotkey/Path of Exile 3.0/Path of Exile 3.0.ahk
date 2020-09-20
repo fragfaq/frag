@@ -1,5 +1,6 @@
 ﻿#Persistent
 #include %A_ScriptDir%\res\ahk\gui\res\ToolTipFont.ahk
+; #include %A_ScriptDir%\res\ahk\other\Stash_jump.ahk
 CoordMode, Mouse, Screen
 SetDefaultMouseSpeed, 3
 ; #SingleInstance Force
@@ -8,6 +9,7 @@ VarMapsTierGui := 0
 VarDopBinds := 0
 VarAntiAfk := 0
 VarBlightClicker := 0
+Var_stash_jump := 0
 ;==============================================
 ;==============================================
 GroupAdd, poe, ahk_exe PathOfExile.exe
@@ -236,15 +238,16 @@ Sleep, % Sleepfunction(150, 200)
 SendInput, {sc14F}
 return
 ;==========================================================================================
-;скролл сундука на 8 вкладок на Shift+Scroll
+; скролл сундука на 8 вкладок на Shift+Scroll
 +WheelUp::
-SendInput, {Left 17}
-Sleep, 1000
+SendInput, {Left 6}
+Sleep, 200
 return
 +WheelDown::
-SendInput, {Right 8}
-Sleep, 500
+SendInput, {Right 6} 
+Sleep, 200
 return
+; ===================
 ;=============================================
 ;Shift+Alt+q - Shift+mouse1 10 раз (автозаточка)
 +!sc10::
@@ -332,13 +335,17 @@ return
 ;=============================================
 :*:сдача::can you give change if i pay only exalts?
 :*:sdacha::can you give change if i pay only exalts?
+:*:alll::Do you have more? I can buy everything
+:*:bmmm::Sorry, I busy on Blighted Map. Ask Chris to make trade possible while mapping.
+:*:blll::Sorry, I busy on Blighted Map. Ask Chris to make trade possible while mapping.
 return
 ;=============================================
+
 ; Дымовая мина
-; ~sc10::
-; Sleep, 300
-; SendInput, 6
-; return
+~sc10::
+Sleep, 300
+SendInput, 6
+return
 ;=============================================
 ; Автокликер на Ctrl+Mouse3
 ^MButton::
@@ -354,9 +361,10 @@ loop
 	}
 }
 return
+
 ;=============================================
 ; 8::
-; Msgbox,,, VarBlightClicker = %VarBlightClicker%
+; MsgBox,,, % testfunc(Rnd(11, 12), Rnd(13, 14), Sleepfunction(10, 20))
 ; return
 ;=============================================
 

@@ -82,17 +82,17 @@ Gui, 1:Add, Text, xs+390 ys+65 vCurrency_count_in_my_ratio, Sum..
 Gui, 1:Font, S22 W700, Verdana
 Gui, 1:Add, Text, xs+340 ys+55 gMoveratio, ▲
 ; Восьмая строка элементов Guiб расчет десятых экзальта
-Gui, 1:Font, S18 W700, Verdana
-Gui, 1:Add, Text, x10 y340, Ex=
-Gui, 1:Font, S14 W700, Verdana
-Gui, 1:Add, Edit, x65 y335 w80 r1 vFullex, 
-Gui, 1:Add, UpDown, Range1-999, 150
-Gui, 1:Font, S18 W700, Verdana
-Gui, 1:Add, Text, x180 y340, 0,      =
-Gui, 1:Font, S14 W700, Verdana
-Gui, 1:Add, DropDownList, x210 y335 w40 vExPart, 1|2||3|4|5|6|7|8|9
-Gui, 1:Font, S18 W700, Verdana
-Gui, 1:Add, Text, x280 y340 gExpart vPartresult, 0....
+; Gui, 1:Font, S18 W700, Verdana
+; Gui, 1:Add, Text, x10 y340, Ex=
+; Gui, 1:Font, S14 W700, Verdana
+; Gui, 1:Add, Edit, x65 y335 w80 r1 vFullex, 
+; Gui, 1:Add, UpDown, Range1-999, 150
+; Gui, 1:Font, S18 W700, Verdana
+; Gui, 1:Add, Text, x180 y340, 0,      =
+; Gui, 1:Font, S14 W700, Verdana
+; Gui, 1:Add, DropDownList, x210 y335 w40 vExPart, 1|2||3|4|5|6|7|8|9
+; Gui, 1:Font, S18 W700, Verdana
+; Gui, 1:Add, Text, x280 y340 gExpart vPartresult, 0....
 ; Отображение Gui
 Gui, 1:Show, x700 y270 w500, Price
 Return
@@ -150,22 +150,22 @@ exitapp
 return
 ;========================================================================
 ; Расчет десятых долей Экзальта
-Expart:
-GuiControlGet, Fullex
-GuiControlGet, ExPart
-Sleep, 20
-GuiControl,, Partresult, % ExaltPart(Fullex, ExPart)
-return
+; Expart:
+; GuiControlGet, Fullex
+; GuiControlGet, ExPart
+; Sleep, 20
+; GuiControl,, Partresult, % ExaltPart(Fullex, ExPart)
+; return
 ;========================================================================
 ; Порабощает скролл, если скрипт запущен. При редактировании кода комментить.
-;WheelDown::
-;VWinname := 1
-;SendInput, {sc150}
-;return
-;WheelUp::
-;VWinname := 1
-;SendInput, {sc148}
-;return
+WheelDown::
+VWinname := 1
+SendInput, {sc150}
+return
+WheelUp::
+VWinname := 1
+SendInput, {sc148}
+return
 ;========================================================================
 GuiClose:
 ExitApp
