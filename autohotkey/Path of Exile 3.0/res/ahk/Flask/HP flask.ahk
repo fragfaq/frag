@@ -109,7 +109,6 @@ Sleepfunction(min, max)
 autocast() {
 	if Var_auto_skils = 0
 	{
-		; Run, %A_ScriptDir%\support skils script\Molten Shell and Vortex.ahk
 		Run, %A_ScriptDir%\%Var_path_auto_skils%
 		Var_auto_skils := 1
 	}
@@ -117,7 +116,6 @@ autocast() {
 	{
 		SetTitleMatchMode, 2
 		DetectHiddenWindows, On
-		; WinClose, support skils script\Molten Shell and Vortex.ahk - AutoHotkey v
 		WinClose, %Var_path_auto_skils% - AutoHotkey v
 		Var_auto_skils := 0
 	}
