@@ -342,10 +342,10 @@ return
 ;=============================================
 
 ; Дымовая мина
-~sc10::
-Sleep, 300
-SendInput, 6
-return
+; ~sc10::
+; Sleep, 300
+; SendInput, 6
+; return
 ;=============================================
 ; Автокликер на Ctrl+Mouse3
 ^MButton::
@@ -400,24 +400,6 @@ return
 ^WheelDown:: SendInput, ^{Tab}
 return
 ^WheelUp:: SendInput, ^+{Tab}
-return
-#IfWinActive
-;=============================================
-; Изменение статов для Advanced Price Check в Awakened PoE Trade
-#IfWinActive ahk_group trade
-~WheelUp::
-SendInput, {sc148}
-Sleep, 50
-return
-~WheelDown::
-SendInput, {sc150}
-Sleep, 50
-return
-
-;=============================================
-; Это что б окно трэйда пробелом закрывать.
-Space::
-SendInput, {Esc}
 return
 #IfWinActive
 ;=============================================
