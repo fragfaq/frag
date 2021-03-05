@@ -13,7 +13,7 @@ GroupAdd, poe, ahk_exe PathOfExile_x64.exe
 ;=======================================
 #include %A_ScriptDir%\gui\res\ToolTipFont.ahk
 ;=======================================
-#NoTrayIcon
+;#NoTrayIcon
 ;=======================================
 Var_links = 0
 VarFromIni = %A_ScriptDir%\other\Send_Phase_Run.txt
