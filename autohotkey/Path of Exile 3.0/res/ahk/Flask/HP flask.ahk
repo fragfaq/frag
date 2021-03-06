@@ -464,7 +464,7 @@ else if Vkeys = 10
 	Sleep, % Sleepfunction(45, 80)
 	SendInput, 5
 }
-else if (Vkeys < 1 or Vkeys > 10)
+else if Vkeys > 10
 {
 	SendInput, {sc20}
 }
@@ -757,6 +757,7 @@ F7::
 ~sc1C::
 ~^sc1C::
 ~+RButton::
+~+LButton::
 ; --------------------------------------------------------------------------------
 ; Отключение автофласок (предположительно, еще не разбирал их)
 ; SetTitleMatchMode, 2
