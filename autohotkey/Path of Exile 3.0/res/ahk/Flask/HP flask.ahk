@@ -488,7 +488,7 @@ sc11::
 if (Vkeys > 0 and Vkeys <= 10)				; W + mouse3
 {
 	SendInput, {sc11}
-	Sleep, % Sleepfunction(25, 35)
+	Sleep, % Sleepfunction(35, 50)
 	SendInput, {MButton}
 }
 else if (Vkeys <= 0 or Vkeys > 10)		; W (дефолт)
