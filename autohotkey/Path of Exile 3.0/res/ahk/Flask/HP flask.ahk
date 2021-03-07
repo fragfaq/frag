@@ -766,6 +766,8 @@ return
 	if Vkeys > 0
 	{
 		SoundPlay, %A_ScriptDir%\res\off.wav
+		Sleep, 400
+		SoundPlay, %A_ScriptDir%\res\off.wav
 		SendInput, {F7}
 	}
 return
