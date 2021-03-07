@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PathOfBuilding>
-	<Build level="69" targetVersion="3_0" pantheonMajorGod="None" bandit="None" className="Witch" ascendClassName="Necromancer" mainSocketGroup="1" viewMode="SKILLS" pantheonMinorGod="None">
+	<Build level="90" targetVersion="3_0" pantheonMajorGod="None" bandit="None" className="Witch" ascendClassName="Necromancer" mainSocketGroup="1" viewMode="ITEMS" pantheonMinorGod="None">
 		<PlayerStat stat="ActiveMinionLimit" value="10"/>
 		<PlayerStat stat="AverageHit" value="0"/>
 		<PlayerStat stat="AverageDamage" value="0"/>
@@ -20,37 +20,37 @@
 		<PlayerStat stat="CombinedDPS" value="0"/>
 		<PlayerStat stat="CombinedAvg" value="0"/>
 		<PlayerStat stat="ManaCost" value="198"/>
-		<PlayerStat stat="Str" value="588"/>
+		<PlayerStat stat="Str" value="830"/>
 		<PlayerStat stat="ReqStr" value="151"/>
 		<PlayerStat stat="Dex" value="91"/>
 		<PlayerStat stat="ReqDex" value="78"/>
-		<PlayerStat stat="Int" value="272"/>
+		<PlayerStat stat="Int" value="172"/>
 		<PlayerStat stat="ReqInt" value="153"/>
 		<PlayerStat stat="Devotion" value="0"/>
-		<PlayerStat stat="Life" value="4816"/>
+		<PlayerStat stat="Life" value="6104"/>
 		<PlayerStat stat="Spec:LifeInc" value="163"/>
-		<PlayerStat stat="LifeUnreserved" value="4816"/>
+		<PlayerStat stat="LifeUnreserved" value="6104"/>
 		<PlayerStat stat="LifeUnreservedPercent" value="100"/>
-		<PlayerStat stat="LifeRegen" value="231.168"/>
+		<PlayerStat stat="LifeRegen" value="292.992"/>
 		<PlayerStat stat="LifeLeechGainRate" value="0"/>
-		<PlayerStat stat="Mana" value="832"/>
-		<PlayerStat stat="Spec:ManaInc" value="28"/>
-		<PlayerStat stat="ManaUnreserved" value="124"/>
-		<PlayerStat stat="ManaUnreservedPercent" value="14.903846153846"/>
-		<PlayerStat stat="ManaRegen" value="14.6"/>
+		<PlayerStat stat="Mana" value="1133"/>
+		<PlayerStat stat="Spec:ManaInc" value="56"/>
+		<PlayerStat stat="ManaUnreserved" value="-68"/>
+		<PlayerStat stat="ManaUnreservedPercent" value="-6.0017652250662"/>
+		<PlayerStat stat="ManaRegen" value="25.1"/>
 		<PlayerStat stat="ManaLeechGainRate" value="0"/>
-		<PlayerStat stat="EnergyShield" value="220"/>
+		<PlayerStat stat="EnergyShield" value="237"/>
 		<PlayerStat stat="Spec:EnergyShieldInc" value="10"/>
 		<PlayerStat stat="EnergyShieldRegen" value="0"/>
 		<PlayerStat stat="EnergyShieldLeechGainRate" value="0"/>
-		<PlayerStat stat="Evasion" value="307"/>
+		<PlayerStat stat="Evasion" value="381"/>
 		<PlayerStat stat="Spec:EvasionInc" value="0"/>
 		<PlayerStat stat="MeleeEvadeChance" value="50"/>
 		<PlayerStat stat="MeleeEvadeChance" value="50"/>
 		<PlayerStat stat="ProjectileEvadeChance" value="50"/>
 		<PlayerStat stat="Armour" value="1080"/>
 		<PlayerStat stat="Spec:ArmourInc" value="48"/>
-		<PlayerStat stat="PhysicalDamageReduction" value="15"/>
+		<PlayerStat stat="PhysicalDamageReduction" value="8"/>
 		<PlayerStat stat="EffectiveMovementSpeedMod" value="1.15"/>
 		<PlayerStat stat="BlockChance" value="0"/>
 		<PlayerStat stat="SpellBlockChance" value="0"/>
@@ -61,7 +61,7 @@
 		<PlayerStat stat="ColdResist" value="75"/>
 		<PlayerStat stat="ColdResistOverCap" value="15"/>
 		<PlayerStat stat="LightningResist" value="75"/>
-		<PlayerStat stat="LightningResistOverCap" value="17"/>
+		<PlayerStat stat="LightningResistOverCap" value="56"/>
 		<PlayerStat stat="ChaosResist" value="60"/>
 		<PlayerStat stat="ChaosResistOverCap" value="0"/>
 		<PlayerStat stat="PowerCharges" value="3"/>
@@ -71,23 +71,23 @@
 		<PlayerStat stat="EnduranceCharges" value="0"/>
 		<PlayerStat stat="EnduranceChargesMax" value="3"/>
 		<PlayerStat stat="ActiveMinionLimit" value="10"/>
-		<MinionStat stat="AverageDamage" value="93590.004867091"/>
+		<MinionStat stat="AverageDamage" value="110961.69722819"/>
 		<MinionStat stat="Speed" value="2.5982905982906"/>
-		<MinionStat stat="TotalDPS" value="243174.02974013"/>
+		<MinionStat stat="TotalDPS" value="288310.73467837"/>
 		<MinionStat stat="TotalDot" value="0"/>
 		<MinionStat stat="BleedDPS" value="9396.116996"/>
-		<MinionStat stat="WithBleedDPS" value="252570.14673613"/>
-		<MinionStat stat="WithIgniteDPS" value="243174.02974013"/>
-		<MinionStat stat="WithPoisonDPS" value="243174.02974013"/>
+		<MinionStat stat="WithBleedDPS" value="297706.85167437"/>
+		<MinionStat stat="WithIgniteDPS" value="288310.73467837"/>
+		<MinionStat stat="WithPoisonDPS" value="288310.73467837"/>
 		<MinionStat stat="TotalDotDPS" value="9396.116996"/>
-		<MinionStat stat="ImpaleDPS" value="126827.41521097"/>
-		<MinionStat stat="WithImpaleDPS" value="370001.4449511"/>
-		<MinionStat stat="CombinedDPS" value="379397.5619471"/>
+		<MinionStat stat="ImpaleDPS" value="150368.4636715"/>
+		<MinionStat stat="WithImpaleDPS" value="438679.19834987"/>
+		<MinionStat stat="CombinedDPS" value="448075.31534587"/>
 		<MinionStat stat="Cooldown" value="2.9"/>
-		<MinionStat stat="Life" value="34736"/>
-		<MinionStat stat="LifeRegen" value="694.72"/>
-		<MinionStat stat="LifeLeechGainRate" value="486.34805948027"/>
-		<MinionStat stat="EnergyShield" value="3474"/>
+		<MinionStat stat="Life" value="34879"/>
+		<MinionStat stat="LifeRegen" value="697.58"/>
+		<MinionStat stat="LifeLeechGainRate" value="576.62146935673"/>
+		<MinionStat stat="EnergyShield" value="3488"/>
 		<MinionStat stat="EnergyShieldRegen" value="0"/>
 		<MinionStat stat="EnergyShieldLeechGainRate" value="0"/>
 	</Build>
@@ -136,7 +136,7 @@
 			<Gem enableGlobal2="false" level="19" gemId="Metadata/Items/Gems/SkillGemRaiseSpectre" skillId="RaiseSpectre" enableGlobal1="true" qualityId="Default" quality="0" enabled="true" nameSpec="Raise Spectre"/>
 			<Gem enableGlobal2="false" level="19" gemId="Metadata/Items/Gems/SupportGemMeatShield" skillId="SupportMinionDefensiveStance" enableGlobal1="true" qualityId="Default" quality="0" enabled="true" nameSpec="Meat Shield"/>
 			<Gem enableGlobal2="false" level="19" gemId="Metadata/Items/Gems/SupportGemBloodMagic" skillId="SupportBloodMagic" enableGlobal1="true" qualityId="Default" quality="0" enabled="true" nameSpec="Blood Magic"/>
-			<Gem enableGlobal2="false" skillMinionItemSetCalcs="2" skillMinionSkillCalcs="1" skillMinionCalcs="AnimatedArmour" level="19" gemId="Metadata/Items/Gems/SkillGemAnimateArmour" skillId="AnimateArmour" skillMinionSkill="1" skillMinionItemSet="2" enableGlobal1="true" qualityId="Default" quality="0" enabled="true" nameSpec="Animate Guardian" skillMinion="AnimatedArmour"/>
+			<Gem enableGlobal2="false" skillMinionItemSetCalcs="2" skillMinionSkillCalcs="1" skillMinionCalcs="AnimatedArmour" level="20" gemId="Metadata/Items/Gems/SkillGemAnimateArmour" skillId="AnimateArmour" skillMinionSkill="1" skillMinionItemSet="2" enableGlobal1="true" qualityId="Default" quality="0" enabled="true" nameSpec="Animate Guardian" skillMinion="AnimatedArmour"/>
 		</Skill>
 		<Skill mainActiveSkillCalcs="1" label="" enabled="true" slot="Boots" mainActiveSkill="1">
 			<Gem enableGlobal2="false" level="4" gemId="Metadata/Items/Gems/SkillGemConvocation" skillId="Convocation" enableGlobal1="true" qualityId="Default" quality="23" enabled="true" nameSpec="Convocation"/>
@@ -163,7 +163,7 @@
 		<Skill mainActiveSkillCalcs="1" label="" enabled="true" slot="Weapon 2 Swap" mainActiveSkill="1">
 			<Gem enableGlobal2="false" level="1" gemId="Metadata/Items/Gems/SupportGemMaim" skillId="SupportMaim" enableGlobal1="true" qualityId="Default" quality="20" enabled="true" nameSpec="Maim"/>
 		</Skill>
-		<Skill source="Item:23:Oblivion Fletch, Short Bow" mainActiveSkillCalcs="1" label="" enabled="false" slot="Weapon 1" mainActiveSkill="1">
+		<Skill source="Item:23:Oblivion Fletch, Short Bow" mainActiveSkillCalcs="1" label="" enabled="true" slot="Weapon 1" mainActiveSkill="1">
 			<Gem enableGlobal2="false" level="20" skillId="BirdAspect" enableGlobal1="true" qualityId="Default" quality="0" enabled="true" nameSpec="Aspect of the Avian"/>
 			<Gem enableGlobal2="false" level="19" gemId="Metadata/Items/Gems/SupportGemImpale" skillId="SupportImpale" enableGlobal1="true" qualityId="Default" quality="0" enabled="true" nameSpec="Impale"/>
 			<Gem enableGlobal2="false" level="19" gemId="Metadata/Items/Gems/SupportGemMeleePhysicalDamage" skillId="SupportMeleePhysicalDamage" enableGlobal1="true" qualityId="Default" quality="0" enabled="true" nameSpec="Melee Physical Damage"/>
@@ -173,10 +173,10 @@
 		</Skill>
 	</Skills>
 	<Tree activeSpec="1">
-		<Spec ascendClassId="3" nodes="39841,19103,54447,23027,23185,6289,63282,41472,7688,44606,26481,27659,2292,3644,19884,51517,49254,27929,58218,34144,50862,6685,14930,49772,8948,11420,49651,33287,44360,60554,15405,61471,38176,24383,49047,33740,27308,37569,61198,29381,5415,31875,25332,55485,2913,11551,19635,20551,36915,26523,30380,26866,60791,5233,29353,5456,21958,34880,15046,26270,27611,52412,1031,65034,43716,54159,36542,6712,63723,53118,33755,43689,27203,50422,10904,57264,9370,60547,36678,4397,43133,13009,36949,15081,19897,5152,64210,18309,29106,48362,58449,41190,29199,22062,42760,61982,44908,59928,25531,44202,36017,23090,17735,35702,55676,48287,54267,46910,65153,5743,42668,60398,1203" treeVersion="3_13" classId="3">
+		<Spec ascendClassId="3" nodes="7388,39841,19103,54447,23027,36634,36915,23185,6289,63282,41472,7688,26866,5415,44606,60554,26481,65153,27659,5935,46910,50422,19884,51517,49254,48287,55676,34144,50862,6685,14930,49772,8948,54267,55485,33287,44360,61471,15405,31875,5743,24383,21958,44202,27308,37569,61198,29381,1203,2913,25332,35702,43689,11551,19635,20551,59928,26523,30380,3644,60791,5233,29353,5456,53279,34880,15046,54159,36542,52412,27203,65034,42760,25531,19897,6712,63723,53118,33755,36678,29199,41190,10904,57264,9370,42668,58218,4397,43133,13009,36949,15081,5152,48362,64210,18309,65203,60547,58449,29106,22062,1031,25831,61982,44908,26270,27163,27611,36017,11420,17735,23090,33740,61419,43716,38176,49651,49047,2292,60398,27929" treeVersion="3_13" classId="3">
 			<EditedNodes/>
 			<URL>
-				https://www.pathofexile.com/passive-skill-tree/AAAABAMDAJuhSp9Z81qRGJH3MqIAHgiuPmdxbAsI9A48TazJPcBmbRnjaoVgxq4aHTpSwmwi9CycwfOCB61I7Io8LfAflSBfP7-Xg8xqrJLB7w5yxRUnfINi9Ni9C2EtH0yzUEeQM2ebdqxo8hRxcqkVUFXGiEA6xmaea9vMvAQH_gqqxNOPjr4aOPjrz36D26qpakPE9iqY37AkmuyDj0YRLah9MtGQVTrpTbkUIPrSR4Vxsrzq5FGg5nIPVi6nCPIer2zqGGO7rKqMsVoyRUeLdtl8vJ_T-7c-_oEWb6as6-4Esw==
+				https://www.pathofexile.com/passive-skill-tree/AAAABAMDABzcm6FKn1nzjxqQM1qRGJH3MqIAHgho8hUnrj7simdx_oFsCxcvtz7E9k2syT3AZryf2XyFYMauGh06UsJsIvTT-9i9ggetSPAfPC18gxZvXz9VxqyqaqySwe8OcsUEswthYvSLdqqpLR9Ms1BH6hhnm3asDjwUcXKpFVDQH4hAOsbTj46-zLxqQ_4Kpwhju025Gjj4689-g9uPRnIPoOYqmN-wJJqmrONqES2ofTLRkFU66RQgvOr60keF_rPsg-RRcbJWLgQHZOfyHq9sZp5qG2vbjLEsnEVHWjKDzO_rqsSVIMHzv5cI9OvubRk=
 			</URL>
 			<Sockets>
 				<Socket nodeId="16218" itemId="0"/>
@@ -187,63 +187,88 @@
 				<Socket nodeId="48679" itemId="0"/>
 				<Socket nodeId="2311" itemId="0"/>
 				<Socket nodeId="9408" itemId="0"/>
-				<Socket nodeId="36634" itemId="0"/>
-				<Socket nodeId="34483" itemId="0"/>
-				<Socket nodeId="21984" itemId="0"/>
-				<Socket nodeId="26725" itemId="0"/>
-				<Socket nodeId="54127" itemId="0"/>
-				<Socket nodeId="31683" itemId="0"/>
+				<Socket nodeId="36634" itemId="25"/>
 				<Socket nodeId="61305" itemId="0"/>
-				<Socket nodeId="55190" itemId="0"/>
-				<Socket nodeId="33753" itemId="0"/>
+				<Socket nodeId="21984" itemId="0"/>
 				<Socket nodeId="2491" itemId="0"/>
-				<Socket nodeId="6230" itemId="0"/>
-				<Socket nodeId="12613" itemId="0"/>
+				<Socket nodeId="54127" itemId="0"/>
+				<Socket nodeId="18436" itemId="0"/>
+				<Socket nodeId="31683" itemId="0"/>
+				<Socket nodeId="55190" itemId="0"/>
+				<Socket nodeId="26725" itemId="0"/>
+				<Socket nodeId="34483" itemId="0"/>
+				<Socket nodeId="9797" itemId="0"/>
+				<Socket nodeId="7960" itemId="0"/>
 				<Socket nodeId="46519" itemId="0"/>
+				<Socket nodeId="33631" itemId="0"/>
 				<Socket nodeId="40400" itemId="0"/>
-				<Socket nodeId="32763" itemId="0"/>
 				<Socket nodeId="3109" itemId="0"/>
-				<Socket nodeId="49080" itemId="0"/>
+				<Socket nodeId="33753" itemId="0"/>
 				<Socket nodeId="46393" itemId="0"/>
 				<Socket nodeId="23756" itemId="0"/>
 				<Socket nodeId="59585" itemId="0"/>
-				<Socket nodeId="14993" itemId="0"/>
-				<Socket nodeId="41876" itemId="0"/>
-				<Socket nodeId="28475" itemId="0"/>
+				<Socket nodeId="32763" itemId="0"/>
+				<Socket nodeId="12161" itemId="0"/>
+				<Socket nodeId="13170" itemId="0"/>
 				<Socket nodeId="29712" itemId="0"/>
 				<Socket nodeId="26196" itemId="0"/>
-				<Socket nodeId="18436" itemId="0"/>
 				<Socket nodeId="61288" itemId="0"/>
-				<Socket nodeId="10532" itemId="0"/>
+				<Socket nodeId="49080" itemId="0"/>
+				<Socket nodeId="24970" itemId="0"/>
 				<Socket nodeId="33989" itemId="0"/>
-				<Socket nodeId="61419" itemId="0"/>
-				<Socket nodeId="17219" itemId="0"/>
 				<Socket nodeId="23984" itemId="0"/>
+				<Socket nodeId="17219" itemId="0"/>
+				<Socket nodeId="46882" itemId="0"/>
 				<Socket nodeId="22748" itemId="0"/>
 				<Socket nodeId="44169" itemId="0"/>
 				<Socket nodeId="41263" itemId="0"/>
 				<Socket nodeId="51198" itemId="0"/>
 				<Socket nodeId="61666" itemId="0"/>
-				<Socket nodeId="46882" itemId="0"/>
-				<Socket nodeId="24970" itemId="0"/>
+				<Socket nodeId="61419" itemId="24"/>
+				<Socket nodeId="10532" itemId="0"/>
 				<Socket nodeId="49684" itemId="0"/>
 				<Socket nodeId="48768" itemId="0"/>
-				<Socket nodeId="12161" itemId="0"/>
+				<Socket nodeId="41876" itemId="0"/>
+				<Socket nodeId="14993" itemId="0"/>
+				<Socket nodeId="12613" itemId="0"/>
+				<Socket nodeId="6230" itemId="0"/>
 				<Socket nodeId="60735" itemId="0"/>
-				<Socket nodeId="33631" itemId="0"/>
-				<Socket nodeId="7960" itemId="0"/>
-				<Socket nodeId="9797" itemId="0"/>
 				<Socket nodeId="36931" itemId="0"/>
 				<Socket nodeId="6910" itemId="0"/>
-				<Socket nodeId="13170" itemId="0"/>
+				<Socket nodeId="28475" itemId="0"/>
 			</Sockets>
 		</Spec>
 	</Tree>
 	<Notes>
 		
 	</Notes>
-	<TreeView searchStr="" zoomY="233" showHeatMap="false" zoomLevel="3" showStatDifferences="true" zoomX="178"/>
+	<TreeView searchStr="" zoomY="387.76" showHeatMap="false" zoomLevel="5" showStatDifferences="true" zoomX="333.92"/>
 	<Items activeItemSet="1" useSecondWeaponSet="false">
+		<Item id="23">
+			Rarity: RARE
+Oblivion Fletch
+Short Bow
+Item Level: 50
+Quality: 20
+Sockets: R-B-R-W-G-W
+LevelReq: 5
+Implicits: 2
+{crafted}Quality does not increase Physical Damage
+{crafted}Grants 1% increased Area of Effect per 4% Quality
+Physical Damage: 6-16
+Critical Strike Chance: 5.00%
+Attacks per Second: 1.50
+Str: 108
+Dex: 68
+Int: 148
++1 to Level of Socketed Gems
+Grants Level 20 Aspect of the Avian Skill
+Minions deal 104% increased Damage
+{crafted}Can have up to 3 Crafted Modifiers
+{crafted}+2 to Level of Socketed Support Gems
+{crafted}Minions have 28% increased Attack Speed
+{crafted}Minions have 27% increased Cast Speed
+		</Item>
 		<Item variant="1" id="21">
 			Rarity: UNIQUE
 Dying Breath
@@ -273,6 +298,21 @@ Quality: 0
 Sockets: B-B
 Implicits: 1
 8% increased Spell Damage
+		</Item>
+		<Item id="26">
+			Rarity: RARE
+Beast Spike
+Blunt Arrow Quiver
+Warlord Item
+Item Level: 71
+LevelReq: 56
+Implicits: 1
+27% increased Stun Duration on Enemies
+Adds 1 to 2 Fire Damage to Attacks
++99 to maximum Life
++39% to Lightning Resistance
+8% chance to gain Phasing for 4 seconds on Kill
+{crafted}+24 to Strength
 		</Item>
 		<Item id="6">
 			Rarity: RARE
@@ -382,10 +422,10 @@ LevelReq: 43
 Implicits: 0
 {variant:1}{range:0.5}(80-100)% increased Armour and Energy Shield
 {variant:2}{range:0.5}(140-180)% increased Armour and Energy Shield
-{variant:4,3}{range:0.171}(180-220)% increased Armour and Energy Shield
+{variant:3,4}{range:0.171}(180-220)% increased Armour and Energy Shield
 {variant:4}{range:1}+(60-80) to maximum Life
 {variant:1,2}+10% to all Elemental Resistances
-{variant:4,3}+15% to all Elemental Resistances
+{variant:3,4}+15% to all Elemental Resistances
 Gain an Endurance Charge when you take a Critical Strike
 {variant:1,2,3}2% of Life Regenerated per Second while on Low Life
 {variant:4}2% of Life Regenerated per Second if you&apos;ve been Hit Recently
@@ -436,23 +476,23 @@ Corrupted
 			<ModRange range="1" id="3"/>
 			<ModRange range="0.305" id="4"/>
 		</Item>
-		<Item id="4">
+		<Item id="15">
 			Rarity: UNIQUE
-Bones of Ullr
-Silk Slippers
-Unique ID: a5b51540aa93097553b0a595a1ab73910d064cc41a5f4a6c0ab3f2c6638a2c8d
-Item Level: 86
+Alberon&apos;s Warpath
+Soldier Boots
 Quality: 20
-Sockets: B-B-B-R
-LevelReq: 22
-Implicits: 1
-{crafted}Adds 16 to 24 Fire Damage if you&apos;ve Killed Recently
-54% increased Energy Shield
-+20 to maximum Life
-+20 to maximum Mana
-+1 to Level of all Raise Zombie Gems
-+1 to Level of all Raise Spectre Gems
-15% increased Movement Speed
+Sockets: B-R-R-B
+LevelReq: 49
+Implicits: 0
+Adds 1 to 80 Chaos Damage to Attacks
+{range:0.756}+(180-220) to Armour
+{range:1}+(9-12)% to Chaos Resistance
+20% increased Movement Speed
++1 to Maximum number of Skeletons
+{range:1}(15-18)% increased Strength
+			<ModRange range="0.756" id="2"/>
+			<ModRange range="1" id="3"/>
+			<ModRange range="1" id="6"/>
 		</Item>
 		<Item variant="2" id="17">
 			Rarity: UNIQUE
@@ -475,6 +515,24 @@ Implicits: 0
 {range:0.5}(5-10)% of Damage taken Gained as Mana over 4 seconds when Hit
 			<ModRange range="0.341" id="3"/>
 			<ModRange range="0.5" id="7"/>
+		</Item>
+		<Item id="4">
+			Rarity: UNIQUE
+Bones of Ullr
+Silk Slippers
+Unique ID: a5b51540aa93097553b0a595a1ab73910d064cc41a5f4a6c0ab3f2c6638a2c8d
+Item Level: 86
+Quality: 20
+Sockets: B-B-B-R
+LevelReq: 22
+Implicits: 1
+{crafted}Adds 16 to 24 Fire Damage if you&apos;ve Killed Recently
+54% increased Energy Shield
++20 to maximum Life
++20 to maximum Mana
++1 to Level of all Raise Zombie Gems
++1 to Level of all Raise Spectre Gems
+15% increased Movement Speed
 		</Item>
 		<Item id="1">
 			Rarity: RARE
@@ -537,6 +595,10 @@ Implicits: 1
 +32% to Lightning Resistance
 +19% to Chaos Resistance
 {crafted}+15% to Cold and Chaos Resistances
+#########################
+Nearby Allies have +50% to Critical Strike Multiplier
+Nearby Allies have Fortify
+Nearby Allies have Culling Strike
 		</Item>
 		<Item id="2">
 			Rarity: MAGIC
@@ -593,48 +655,87 @@ Quality: 0
 LevelReq: 24
 Implicits: 0
 		</Item>
-		<Item id="23">
-			Rarity: RARE
-Oblivion Fletch
-Short Bow
-Item Level: 50
-Quality: 20
-Sockets: R-B-R-W-G-W
-LevelReq: 5
-Implicits: 2
-{crafted}Quality does not increase Physical Damage
-{crafted}Grants 1% increased Area of Effect per 4% Quality
-Physical Damage: 6-16
-Critical Strike Chance: 5.00%
-Attacks per Second: 1.50
-Str: 108
-Dex: 68
-Int: 148
-+1 to Level of Socketed Gems
-Grants Level 20 Aspect of the Avian Skill
-Minions deal 104% increased Damage
-{crafted}Can have up to 3 Crafted Modifiers
-{crafted}+2 to Level of Socketed Support Gems
-{crafted}Minions have 28% increased Attack Speed
-{crafted}Minions have 27% increased Cast Speed
-		</Item>
-		<Item id="15">
+		<Item id="25">
 			Rarity: UNIQUE
-Alberon&apos;s Warpath
-Soldier Boots
-Quality: 20
-Sockets: B-R-R-B
-LevelReq: 49
+Efficient Training
+Crimson Jewel
+Radius: Large
 Implicits: 0
-Adds 1 to 80 Chaos Damage to Attacks
-{range:0.756}+(180-220) to Armour
-{range:1}+(9-12)% to Chaos Resistance
-20% increased Movement Speed
-+1 to Maximum number of Skeletons
-{range:1}(15-18)% increased Strength
-			<ModRange range="0.756" id="2"/>
-			<ModRange range="1" id="3"/>
-			<ModRange range="1" id="6"/>
+{range:1}+(16-24) to Strength
+Intelligence from Passives in Radius is Transformed to Strength
+			<ModRange range="1" id="1"/>
+		</Item>
+		<Item id="24">
+			Rarity: UNIQUE
+Efficient Training
+Crimson Jewel
+Radius: Large
+Implicits: 0
+{range:1}+(16-24) to Strength
+Intelligence from Passives in Radius is Transformed to Strength
+			<ModRange range="1" id="1"/>
+		</Item>
+		<Item id="27">
+			Rarity: RARE
+Ancient Globe
+Ghastly Eye Jewel
+Item Level: 82
+LevelReq: 28
+Implicits: 0
++12 to Strength
++30 to maximum Life
+Minions Leech 0.44% of Damage as Life
+Minions deal 2 to 3 additional Physical Damage
+Note: ~price 15 chaos
+		</Item>
+		<Item id="28">
+			Rarity: RARE
+Foe Breath
+Cobalt Jewel
+Item Level: 84
+Implicits: 0
++16 to Strength
+8% increased Damage
+7% increased maximum Life
+Minions have 10% increased maximum Life
+Note: ~price 10 chaos
+Corrupted
+		</Item>
+		<Item id="29">
+			Rarity: RARE
+112
+Leather Belt
+Unique ID: 010883f4c6e0bd057bf64eed4b6c78a0c04ee343915bf8b21beee141d8ec0c8b
+Item Level: 66
+LevelReq: 64
+Implicits: 1
++30 to maximum Life
++84 to maximum Life
++46 to maximum Mana
++32% to Lightning Resistance
++19% to Chaos Resistance
+{crafted}+15% to Cold and Chaos Resistances
+		</Item>
+		<Item id="30">
+			Rarity: UNIQUE
+Kingmaker
+Despot Axe
+Item Level: 80
+Quality: 20
+Sockets: R G-R
+LevelReq: 66
+Implicits: 0
+Physical Damage: 259-351 (augmented)
+Critical Strike Chance: 6.95% (augmented)
+Attacks per Second: 1.53 (augmented)
+Weapon Range: 13
+Str: 140
+Dex: 86
+188% increased Physical Damage
+9% increased Attack Speed
+39% increased Critical Strike Chance
+Nearby Allies have 30% increased Item Rarity
+Nearby Allies have +50% to Critical Strike Multiplier
 		</Item>
 		<Slot name="Weapon 1" itemId="23"/>
 		<Slot name="Flask 3" itemId="10"/>
@@ -645,6 +746,7 @@ Adds 1 to 80 Chaos Damage to Attacks
 		<Slot name="Flask 1" itemId="2"/>
 		<Slot name="Flask 4" itemId="9"/>
 		<Slot name="Flask 2" itemId="3"/>
+		<Slot name="Weapon 2" itemId="26"/>
 		<Slot name="Weapon 2 Swap" itemId="6"/>
 		<Slot name="Weapon 1 Swap" itemId="5"/>
 		<Slot name="Ring 2" itemId="12"/>
@@ -703,7 +805,7 @@ Adds 1 to 80 Chaos Damage to Attacks
 			<Slot name="Flask 2" itemId="3"/>
 			<Slot name="Belt Abyssal Socket 5" itemId="0"/>
 			<Slot name="Weapon 1Swap Abyssal Socket 3" itemId="0"/>
-			<Slot name="Weapon 2" itemId="0"/>
+			<Slot name="Weapon 2" itemId="26"/>
 			<Slot name="Weapon 2Swap Abyssal Socket 6" itemId="0"/>
 			<Slot name="Boots Abyssal Socket 1" itemId="0"/>
 			<Slot name="Body Armour Abyssal Socket 4" itemId="0"/>
@@ -728,7 +830,7 @@ Adds 1 to 80 Chaos Damage to Attacks
 		<ItemSet useSecondWeaponSet="false" title="animatron" id="2">
 			<Slot name="Weapon 1Swap Abyssal Socket 5" itemId="0"/>
 			<Slot name="Weapon 1 Abyssal Socket 2" itemId="0"/>
-			<Slot name="Weapon 1" itemId="21"/>
+			<Slot name="Weapon 1" itemId="30"/>
 			<Slot name="Boots Abyssal Socket 5" itemId="0"/>
 			<Slot name="Weapon 1Swap Abyssal Socket 2" itemId="0"/>
 			<Slot name="Belt Abyssal Socket 2" itemId="0"/>
@@ -811,10 +913,10 @@ Adds 1 to 80 Chaos Damage to Attacks
 		<Input name="igniteMode" string="AVERAGE"/>
 		<Input name="usePowerCharges" boolean="true"/>
 		<Input name="meatShieldEnemyNearYou" boolean="true"/>
-		<Input name="enemyHasPhysicalReduction" number="0"/>
-		<Input name="conditionEnemyBleeding" boolean="true"/>
-		<Input name="armourCalculationMode" string="MIN"/>
-		<Input name="lifeRegenMode" string="MIN"/>
 		<Input name="conditionUsedMinionSkillRecently" boolean="true"/>
+		<Input name="conditionEnemyBleeding" boolean="true"/>
+		<Input name="lifeRegenMode" string="MIN"/>
+		<Input name="armourCalculationMode" string="MIN"/>
+		<Input name="enemyHasPhysicalReduction" number="0"/>
 	</Config>
 </PathOfBuilding>
