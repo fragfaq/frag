@@ -487,9 +487,9 @@ return
 sc11::
 if (Vkeys > 0 and Vkeys <= 10)				; W + mouse3
 {
-	SendInput, {MButton}
-	Sleep, % Sleepfunction(25, 35)
 	SendInput, {sc11}
+	Sleep, % Sleepfunction(25, 35)
+	SendInput, {MButton}
 }
 else if (Vkeys <= 0 or Vkeys > 10)		; W (дефолт)
 {
@@ -561,6 +561,8 @@ return
 ; Хоткеи: F8
 ; ==========
 F8::
+!+scB::
+!+scA::
 ; --------------------------------------------------------------------------------
 ; Нужное значение Vkeys, что б не нажимать F8 много раз:
 ; Закомментировать все в этом блоке для доступности всех биндов. 
