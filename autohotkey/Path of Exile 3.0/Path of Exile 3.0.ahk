@@ -10,6 +10,7 @@ VarDopBinds := 0
 VarAntiAfk := 0
 VarBlightClicker := 0
 Var_stash_jump := 0
+VarDClick := 0
 ;==============================================
 ;==============================================
 GroupAdd, poe, ahk_exe PathOfExile.exe
@@ -364,15 +365,24 @@ loop
 	}
 }
 return
-
 ;=============================================
-; 8::
-; MsgBox,,, % testfunc(Rnd(11, 12), Rnd(13, 14), Sleepfunction(10, 20))
-; return
-;=============================================
-
-;=============================================
-
+; Автокликер на любое сочетание с mouse1. Пока mouse1 зажата, в сочетании с каким-то ключем или нет - скрипт кликает левой кнопкой.
+; Включается и выключается на F4 пока что. Сам кликер в стороннем скрипте, что б сюда не городить
+; Нужно это для блайт мап
+F4::
+if VarBlightClicker = 0
+{
+	VarBlightClicker := 1
+	Run, %A_ScriptDir%\res\ahk\other\BlightClicker.ahk
+}
+else if VarBlightClicker = 1
+{
+	VarBlightClicker := 0
+	SetTitleMatchMode, 2
+	DetectHiddenWindows, On
+	WinClose, BlightClicker.ahk - AutoHotkey v
+}
+return
 ;=============================================
 ; Написать дисе на Ctrl+del
 ^sc153::
