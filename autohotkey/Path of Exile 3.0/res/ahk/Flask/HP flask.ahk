@@ -774,8 +774,15 @@ return
 		SoundPlay, %A_ScriptDir%\res\off.wav
 		SendInput, {F7}
 	}
-SendLevel  1 
-SendInput, {F4}
+; Так же в этот бинд добавлена отправка хоткея F4 в Path of Exile 3.0.ahk, что бы отключать автокликер нормально (сбрасывая значение переменной).
+SetTitleMatchMode, 2
+DetectHiddenWindows, On
+if WinExist("BlightClicker ahk_class AutoHotkey")
+{
+	SendLevel  1 
+	SendInput, {F4}
+}
+return
 #IfWinActive
 ;==============================================
 ;==============================================
