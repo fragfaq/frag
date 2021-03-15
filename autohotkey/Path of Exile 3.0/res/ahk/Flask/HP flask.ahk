@@ -774,8 +774,10 @@ return
 		SoundPlay, %A_ScriptDir%\res\off.wav
 		SendInput, {F7}
 	}
-return
+SendLevel  1 
+SendInput, {F4}
 #IfWinActive
+;==============================================
 ;==============================================
 ; Сброс биндов на дефолтные и отключение автокаста при нажатии F7, Enter и Ctrl+Enter
 F7::
