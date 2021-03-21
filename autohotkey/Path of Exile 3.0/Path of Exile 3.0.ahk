@@ -21,6 +21,9 @@ GroupAdd, browser, ahk_exe chrome.exe
 GroupAdd, trade, ahk_exe Awakened PoE Trade.exe
 GroupAdd, browser_and_trade, ahk_exe chrome.exe
 GroupAdd, browser_and_trade, ahk_exe Awakened PoE Trade.exe
+GroupAdd, discord_and_poe, ahk_exe PathOfExile.exe
+GroupAdd, discord_and_poe, ahk_exe PathOfExile_x64.exe
+GroupAdd, discord_and_poe, ahk_exe Discord.exe
 ;==============================================
 Menu, Tray, Icon, %A_ScriptDir%\res\pic\1.ico, 1
 ; Подменюшки под курсор
@@ -325,25 +328,7 @@ return
 Send Hi, after map
 return
 ;===============================================
-; антиматфильтр
-:*:ебать::е6ать
-:*:хуй::xуй
-:*:хуйню::xуйню
-:*:хуйня::xуйня
-:*:блядь::6лядь
-:*:проебал::прое6ал
-:*:нихуя::ниxуя
-:*:дохуя::доxуя
-:*:пиздец::пи3дец
-:*:дохуя::доxуя
-:*:заебал::зае6ал
-;=============================================
-:*:сдача::can you give change if i pay only exalts?
-:*:sdacha::can you give change if i pay only exalts?
-:*:alll::Do you have more? I can buy everything
-:*:bmmm::Sorry, I busy on Blighted Map. Ask Chris to make trade possible while mapping.
-:*:blll::Sorry, I busy on Blighted Map. Ask Chris to make trade possible while mapping.
-return
+
 ;=============================================
 
 ; Дымовая мина
@@ -403,6 +388,45 @@ return
 +MButton::
 Sleep, % Sleepfunction(40, 60)
 SendInput, {sc14}
+return
+;=============================================
+; антиматфильтр
+:*:ебать::е6ать
+:*:хуй::xуй
+:*:хуйню::xуйню
+:*:хуйня::xуйня
+:*:блядь::6лядь
+:*:проебал::прое6ал
+:*:нихуя::ниxуя
+:*:дохуя::доxуя
+:*:пиздец::пи3дец
+:*:дохуя::доxуя
+:*:заебал::зае6ал
+;=============================================
+:*:сдача::can you give change if i pay only exalts?
+:*:sdacha::can you give change if i pay only exalts?
+:*:alll::Do you have more? I can buy everything
+:*:bmmm::Sorry, I busy on Blighted Map. Ask Chris to make trade possible while mapping.
+:*:blll::Sorry, I busy on Blighted Map. Ask Chris to make trade possible while mapping.
+;=============================================
+;=====================
+#IfWinActive
+;=====================
+#IfWinActive ahk_group discord_and_poe
+;=============================================
+; Для ваучеров в дискорде и вообще для харвеста:
+:*:vach::Voucher plz
+:*:vahh::Voucher plz
+:*:vhvh::Voucher plz
+:*:neds::do u need stream ?
+:*:icans::do u need stream ?
+:*:dodo::i link item before and after
+:*:uitem::i link item before and after
+:*:oterrr::в: harvest-wts-other-rsc 
+:*:rddd::в: harvest-wts-rem-add-rsc 
+:*:remmm::в: harvest-wts-rem-rsc 
+:*:aagg::в: harvest-wts-aug-rsc 
+:*:agg::в: harvest-wts-aug-rsc 
 return
 ;=============================================
 ;=====================
