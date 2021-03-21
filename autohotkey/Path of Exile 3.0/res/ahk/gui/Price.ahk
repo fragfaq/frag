@@ -24,11 +24,11 @@ Sleep, 30
 ; Каренси по дефолту, в зависимости от итема (хаосы или экз, если хаосы продаю)
 If Item_Copy_Full_Cut != Chaos Orb  ; Если скопирован не хаос - в дроплисте ставим хаос
 {
-	Currency_List := "chaos||exa|alch|fuse|jew|chisel|vaal"
+	Currency_List := "chaos||exalted|alch|fuse|jew|chisel|vaal"
 }
 else If Item_Copy_Full_Cut = Chaos Orb ; Если скопирован хаос - в дроплисте ставим экзальт
 {
-	Currency_List := "chaos|exa||alch|fuse|jew|chisel|vaal"
+	Currency_List := "chaos|exalted||alch|fuse|jew|chisel|vaal"
 }
 if Item_Copy_Full_Cut = ; Если скопировалась какая-то херня, она превратится в пустое значение после обрезаний
 {
