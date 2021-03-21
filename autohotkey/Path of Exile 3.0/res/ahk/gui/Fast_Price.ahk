@@ -47,11 +47,11 @@ IfWinNotActive, ("ahk_class POEWindowClass")
 	WinActivate, Path of Exile
 }
 Sleep, 30
-Sleep, % Sleepfunction(150, 200)
+Sleep, % Sleepfunction(70, 150)
 SendInput, ^{sc1E}
-Sleep, % Sleepfunction(150, 200)
+Sleep, % Sleepfunction(70, 150)
 SendInput, {scE}
-Sleep, % Sleepfunction(150, 200)
+Sleep, % Sleepfunction(70, 150)
 SendInput, ^{sc2F}
 Sleep, 130
 exitapp
@@ -69,11 +69,11 @@ IfWinNotActive, ("ahk_class POEWindowClass")
 	WinActivate, Path of Exile
 }
 Sleep, 30
-Sleep, % Sleepfunction(150, 200)
+Sleep, % Sleepfunction(70, 150)
 SendInput, ^{sc1E}
-Sleep, % Sleepfunction(150, 200)
+Sleep, % Sleepfunction(70, 150)
 SendInput, {scE}
-Sleep, % Sleepfunction(150, 200)
+Sleep, % Sleepfunction(70, 150)
 SendInput, ^{sc2F}
 Sleep, 130
 exitapp
@@ -91,11 +91,11 @@ IfWinNotActive, ("ahk_class POEWindowClass")
 	WinActivate, Path of Exile
 }
 Sleep, 30
-Sleep, % Sleepfunction(150, 200)
+Sleep, % Sleepfunction(70, 150)
 SendInput, ^{sc1E}
-Sleep, % Sleepfunction(150, 200)
+Sleep, % Sleepfunction(70, 150)
 SendInput, {scE}
-Sleep, % Sleepfunction(150, 200)
+Sleep, % Sleepfunction(70, 150)
 SendInput, ^{sc2F}
 Sleep, 130
 exitapp
@@ -113,11 +113,11 @@ IfWinNotActive, ("ahk_class POEWindowClass")
 	WinActivate, Path of Exile
 }
 Sleep, 30
-Sleep, % Sleepfunction(150, 200)
+Sleep, % Sleepfunction(70, 150)
 SendInput, ^{sc1E}
-Sleep, % Sleepfunction(150, 200)
+Sleep, % Sleepfunction(70, 150)
 SendInput, {scE}
-Sleep, % Sleepfunction(150, 200)
+Sleep, % Sleepfunction(70, 150)
 SendInput, ^{sc2F}
 Sleep, 130
 exitapp
@@ -135,11 +135,11 @@ IfWinNotActive, ("ahk_class POEWindowClass")
 	WinActivate, Path of Exile
 }
 Sleep, 30
-Sleep, % Sleepfunction(150, 200)
+Sleep, % Sleepfunction(70, 150)
 SendInput, ^{sc1E}
-Sleep, % Sleepfunction(150, 200)
+Sleep, % Sleepfunction(70, 150)
 SendInput, {scE}
-Sleep, % Sleepfunction(150, 200)
+Sleep, % Sleepfunction(70, 150)
 SendInput, ^{sc2F}
 Sleep, 130
 exitapp
@@ -157,11 +157,11 @@ IfWinNotActive, ("ahk_class POEWindowClass")
 	WinActivate, Path of Exile
 }
 Sleep, 30
-Sleep, % Sleepfunction(150, 200)
+Sleep, % Sleepfunction(70, 150)
 SendInput, ^{sc1E}
-Sleep, % Sleepfunction(150, 200)
+Sleep, % Sleepfunction(70, 150)
 SendInput, {scE}
-Sleep, % Sleepfunction(150, 200)
+Sleep, % Sleepfunction(70, 150)
 SendInput, ^{sc2F}
 Sleep, 130
 exitapp
@@ -179,11 +179,11 @@ IfWinNotActive, ("ahk_class POEWindowClass")
 	WinActivate, Path of Exile
 }
 Sleep, 30
-Sleep, % Sleepfunction(150, 200)
+Sleep, % Sleepfunction(70, 150)
 SendInput, ^{sc1E}
-Sleep, % Sleepfunction(150, 200)
+Sleep, % Sleepfunction(70, 150)
 SendInput, {scE}
-Sleep, % Sleepfunction(150, 200)
+Sleep, % Sleepfunction(70, 150)
 SendInput, ^{sc2F}
 Sleep, 130
 exitapp
@@ -201,11 +201,11 @@ IfWinNotActive, ("ahk_class POEWindowClass")
 	WinActivate, Path of Exile
 }
 Sleep, 30
-Sleep, % Sleepfunction(150, 200)
+Sleep, % Sleepfunction(70, 150)
 SendInput, ^{sc1E}
-Sleep, % Sleepfunction(150, 200)
+Sleep, % Sleepfunction(70, 150)
 SendInput, {scE}
-Sleep, % Sleepfunction(150, 200)
+Sleep, % Sleepfunction(70, 150)
 SendInput, ^{sc2F}
 Sleep, 130
 exitapp
