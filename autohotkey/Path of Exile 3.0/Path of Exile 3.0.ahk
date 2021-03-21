@@ -391,7 +391,7 @@ ClipSaved := ClipboardAll
 Sleep, % Sleepfunction(40, 60)
 SendInput, {sc147}
 Sleep, % Sleepfunction(40, 60)
-Clipboard = @Ryan_Madison 
+Clipboard = @Chris_Strokes 
 Sleep, % Sleepfunction(40, 60)
 SendInput, ^{sc2F}
 Sleep, % Sleepfunction(40, 60)
