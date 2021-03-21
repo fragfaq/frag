@@ -400,6 +400,11 @@ Sleep, % Sleepfunction(40, 60)
 Clipboard := ClipSaved
 return
 ;=============================================
++MButton::
+Sleep, % Sleepfunction(40, 60)
+SendInput, {sc14}
+return
+;=============================================
 ;=====================
 #IfWinActive
 ;=====================
