@@ -336,6 +336,7 @@ return
 :*:дохуя::доxуя
 :*:пиздец::пи3дец
 :*:дохуя::доxуя
+:*:заебал::зае6ал
 ;=============================================
 :*:сдача::can you give change if i pay only exalts?
 :*:sdacha::can you give change if i pay only exalts?
