@@ -1,0 +1,3 @@
+Update 19.06.2020 - Version 1.05
+
+- Added a systray icon, so you can distinguish Mappy from all the other AHK-scripts you have running.

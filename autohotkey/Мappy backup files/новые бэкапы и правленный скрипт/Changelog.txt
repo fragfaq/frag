@@ -1,0 +1,59 @@
+Update 19.06.2020 - Version 1.05
+
+- Added a systray icon, so you can distinguish Mappy from all the other AHK-scripts you have running.
+
+Update 21.01.2020 - Version 1.04
+
+- Added an "Example.ini" which can be loaded. Contains keywords I use for my Quadtab as well as some informations on how to use the overlay.
+- Fixed a bug where shadow-save-files would not get deleted when canceling the process of saving an overlay in a new .ini
+- Fixed a bug where the positions of the GUI might become negative, thus disappearing from the screen
+- Fixed a bug where pressing a keyword would disable the Ctrl+Scroll function of PoE Trademacro
+- Fixed a bug where declining permission to the script on start up would result in an error message
+- Fixed a bug where the first button press on "Show Region" would not work
+
+Update 20.01.2020 - Version 1.03
+
+- Added a new setting to set the transparency of Mappy
+- Renamed the "Change Toggle-Key" to "Settings"
+- Fixed a bug where combinatations of characters weren't sent correctly
+- Fixed a bug where the position of Mappy was reset after downloading an update (Again)
+
+Update 19.01.2020 - Version 1.01 + 1.02
+
+- Added the need to execute the script as an Admin because files might not get created otherwise
+- Fixed a bug where choosing no hotkey while changing the hotkey would result in a non-crash error message
+- Fixed a bug where quotation marks weren't loaded correctly
+- Fixed a bug where the position of Mappy was reset after downloading an update
+
+Update 18.01.2020 - Version 1.0
+
+- You can now remove any category / keyword with a right-click on the category / keyword. There's also a new "-" button at the end of each category which removes the last keyword. There's also a new "-" button at the bottom of your categories which removes the last category (With all the keywords in them). 
+- You can now save multiple overlays. Create a new overlay with the "New Overlay" option and hit "Save As New Overlay" at the end to create a new *.ini with your new overlay. 
+- You can now load overlays. Click "Load Overlay" and select one of your *.ini files which you'd like to use.
+- Informations about Mappy like it's position, the currently selected .ini and the hotkey to show/hide it can now be found in the "Settings.ini"
+
+Update 13.01.2020 - Version 0.7.5
+
+- You can now add categories & keywords on the fly. Check out the new "+"-buttons on your overlay. No need to set up your whole overlay again just because you forgot one keyword/category!
+- Renamed "Create Keywords" to "New Overlay"
+
+Update 13.01.2020 - Version 0.7.2
+
+- You can add as many categories as you like with as many keywords as you like! But keep the visual cluster in mind.
+- Clicking on a keyword now checks if Path of Exile is open and only sends the keyword if it is. Won't do anything otherwise.
+- Saving your categories won't highlight the overlay-window anymore to prevent confusion. Same with adding keywords.
+- Fixed a bug where not all keywords were displayed under certain circumstances. 
+
+Update 12.01.2020 - Version 0.7.0 + 0.7.1
+
+- Customizable Hotkey => You can now change the hotkey to show / hide the overlay. Press the new button "Change Toggle-Key" -> press any key (or key-combination) and hit "Save new hotkey". You can now toggle the overlay via your new hotkey
+- Edit-fields which have no value will now be grayed out to reduce confusion
+- Fixed a bug which would result in ERROR-buttons when canceling the create-process
+
+Update 11.01.2020 - Version 0.6
+
+- Auto-updating => The script will now check if a newer version is available online and ask the user if he wants to download it
+
+Click + under me to add a new category
+Click + next to me to add a new keyword
+Right-click on any button to remove it
