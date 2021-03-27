@@ -386,10 +386,13 @@ Sleep, % Sleepfunction(40, 60)
 Clipboard := ClipSaved
 return
 ;=============================================
-+MButton::
-Sleep, % Sleepfunction(40, 60)
-SendInput, {sc14}
-return
+; Дополнительные хоткеи для кражи: Shift+mouse3 или Shift+0
+; Закомментировано на всякий, в краже раскомментить
+; +MButton::
+; +scB::
+; Sleep, % Sleepfunction(40, 60)
+; SendInput, {sc14}
+; return
 ;=============================================
 ; антиматфильтр
 :*:ебать::е6ать
