@@ -25,13 +25,23 @@ Add Influence to Weapon					20-30с
 Add Influence to Armour						20-30с
 Randomise values of "any" mods		10-30с
 Sacrifice Div Cards (0 or twice)			30-40c
-Enchant Map: no Sextant use			30-50c
 Remove non-Lightning add Lightning	20-30с
 Remove non-Cold add Cold					20-40с
 Remove non-Critical add Critical				30-50c
+Remove non-Chaos add Chaos				20-50c
+Enchant Map: no Sextant use			30-50c
 Enchant Body: Intelligence					Free (Vouch)
+Enchant Weapon: Elemental Damage	30-50c
 
 ; ==============================
+
+
+
+
+
+
+
+
 
 
 
