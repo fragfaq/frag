@@ -57,7 +57,7 @@ IfWinNotActive, ("ahk_class POEWindowClass")
 		WinWaitActive, ahk_class POEWindowClass
 	}
 Sleep, % Sleepfunction(40, 60)
-SendInput, {b}90
+SendInput, {b}
 Sleep, 20
 Return
 ;==============================================
