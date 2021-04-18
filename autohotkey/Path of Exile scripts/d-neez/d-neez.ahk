@@ -20,56 +20,53 @@ GroupAdd, poe, ahk_exe PathOfExile_x64.exe
 GroupAdd, poe, ahk_exe PathOfExile_x64Steam.exe
 GroupAdd, poe, ahk_exe PathOfExileSteam.exe
 ;=============================================
+; Функция для слипа, пример использования:
+; Sleep, % Sleepfunction(45, 80)
+; 45 и 80 могут быть любыми числами, между которыми будет найдено случайное число.
+; Каждый раз рандомное число будет разным, т.к. каждый раз идет обращение к функции, и она возвращает новый результат.
+Sleepfunction(min, max)
+{
+	random, randb, min, max
+	return randb
+}
+;=============================================
 #IfWinActive ahk_group poe
 ;=============================================
 ; Открытие портала на Alt+1. Свитки портала должны лежать во втором слоте нижней строки.
 !sc2::
-Random, v1, 50, 80
-Random, v2, 50, 80
-Random, v3, 50, 80
-Random, v4, 50, 80
-Random, v5, 50, 80
-Random, v6, 50, 80
 Random, Vspeed1, 4, 6
 Random, Vspeed2, 4, 6
-sleep, %v1%
+Sleep, % Sleepfunction(50, 80)
 MouseGetPos VportalX, VportalY				; Сохраняет текущие координаты курсора
-sleep, %v2%
+Sleep, % Sleepfunction(50, 80)
 SendInput, {sc17}							; Нажимает E, что б открыть инвентарь
-sleep, %v3%
+Sleep, % Sleepfunction(50, 80)
 MouseMove, 1345, 821, %Vspeed1%				; Наводит курсор на свиток портала
-sleep, %v4%
+Sleep, % Sleepfunction(50, 80)
 Click Right									; Открывает портал
-sleep, %v5%
+Sleep, % Sleepfunction(50, 80)
 SendInput, {sc17}							; Нажимает E, что б закрыть инвентарь
-sleep, %v6%
+Sleep, % Sleepfunction(50, 80)
 MouseMove, VportalX, VportalY, %Vspeed2%	; Возвращает курсор на место
 return
 ;=============================================
 ;exit на F1
 F1::
-BlockInput On
 Process close, PathOfExile.exe
 Process close, PathOfExile_x64.exe
 Process close, PathOfExile_x64Steam.exe
 Process close, PathOfExileSteam.exe
-BlockInput Off
 return
 ;=============================================
 ; Hideout
 F2::
-Random, vho1, 40, 80
-Random, vho2, 40, 80
-Random, vho3, 40, 80
-BlockInput On
 SendInput, {Enter}
-sleep, %vho1%
+Sleep, % Sleepfunction(40, 80)
 SendInput, {/}
-sleep, %vho2%
+Sleep, % Sleepfunction(40, 80)
 SendInput, hideout
-sleep, %vho3%
+Sleep, % Sleepfunction(40, 80)
 SendInput, {Enter}
-BlockInput Off
 return
 ;=============================================
 ; Ливнуть из пати на Alt+2
@@ -130,6 +127,15 @@ return
 Run, %A_ScriptDir%\res\Fast_Price.ahk
 return
 ;=============================================
+; В этом блоке описан даблкаст, принцип работы следующий:
+; Если Scrolllock нажат (лампочка горит), то при прожатии mouse2 через некоторое время прожимается шестерка, на которую стоит второй скил. Соответственно если Scrolllock не нажат - второй скил не кастуется. 
+#If GetKeyState("scrolllock", "T") = 1
+~RButton::
+Sleep, % Sleepfunction(405, 430)			; <----------- Вот тут менять время слипа между кастами.
+SendInput, {6}
+#If
+return
+;=============================================
 #IfWinActive
 ;=============================================
 F3::
@@ -153,12 +159,6 @@ else if Var = 3
 	Run, %A_ScriptDir%\res\g - default.ahk ; Открыть gui
 	Var := 0 ; Сменить значение переменной
 }
-return
-;=============================================
-ScrollLock:: ; Сброс на стандартные бинды
-Run, %A_ScriptDir%\res\g - default.ahk ; Открыть gui
-sleep, 50
-Var := 0
 return
 ;=============================================
 ExCalc:
