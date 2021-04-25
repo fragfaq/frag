@@ -544,7 +544,8 @@ if (Vkeys > 0 and Vkeys <= 11)				; RButton + R
 {
 	if Var_mana_toggle = 0
 	{
-		SetTimer, ManaLoop, % Sleepfunction(4800, 5000)
+		; SetTimer, ManaLoop, % Sleepfunction(4800, 5000)
+		SetTimer, ManaLoop, % Sleepfunction(5200, 5500) ; Попробую увеличить кд фласки, что бы она медленнеее расходовалась
 		Var_mana_toggle := 1
 		Menu, Tray, Icon, %A_ScriptDir%\res\Mana_Flask1.png, 1
 	}
@@ -653,7 +654,7 @@ F8::
 ; Vkeys := 1 ; Vkeys станет 2, бинды: 1&2 = 1/2/3, 3&d = 4+5, ~ = 5
 ; Vkeys := 5 ; Vkeys станет 6, бинды: 1&2 = 1, 3&d = 2+3+4+5, ~ = 5
 ; Vkeys := 6 ; Vkeys станет 7, бинды: 1&2 = 1/2, 3&d = 3+4, ~ = 5
-; Vkeys := 10 ; Vkeys станет 1, бинды: 1&2 = 1, 3&d = 2+3+4, ~ = 5
+Vkeys := 10 ; Vkeys станет 11, бинды: 1&2 = 1, 3&d = 2+3+4, ~ = 5
 ; --------------------------------------------------------------------------------
 ; Воспроизведение звука при акивации скрипта, если хоткей нажат случайно. Включение автокаста работает из любого окна, выключение только когда PoE активно.
 SoundPlay, %A_ScriptDir%\res\on.wav
@@ -685,7 +686,7 @@ if Vkeys = 0
 else if Vkeys > 0
 {
 	Vkeys += 1
-	if Vkeys > 10
+	if Vkeys > 11
 	{	
 		Sleep, % Sleepfunction(30, 50)
 		Vkeys := 0
