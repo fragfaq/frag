@@ -25,7 +25,7 @@ GroupAdd, poe, ahk_exe PathOfExile_x64.exe
 ; 9 = 1&2 = 1, 3 = 2+3+4, d&~ = 5 (В списке "Надо разобраться с:" пункт 3, не приоритетно)
 ; 10 = 1&2 = 1, 3 = 2+3+4, d = 3+4+5, ~ = 5 (В списке "Надо разобраться с:" пункт 4, странный кейс)
 ; 11 = 1&2 = 1, 3 = 2+3+4, d = 2+3+4, ~ = 5
-; 12 = 1&2 = 1&6, 3 = 2+3+4, d = 2+3+4, ~ = 5 (то же самое, что и 11, но на 1 и 2 прожимается сперва 1, а потом сразу 6, потому что на 6 стоит эндюринг край)
+; 12 = 1&2 = 1&6?, 3 = 2+3+4, d = 2+3+4, ~ = 5 (то же самое, что и 11, но на 1 и 2 прожимается сперва 1, а потом сразу 6, при условии, что Mouse1 не нажата. На 6 стоит эндюринг край)
 
 ; ВАЖНО:
 ; При изменении или добавлении биндов надо проверять все, т.к. есть строчки типа if (Vkeys < 1 or Vkeys > 10) и при добавлении новых вариантов переменных надо увеличивать числа в этих строчках.
@@ -203,15 +203,23 @@ else if (Vkeys = 7 or Vkeys = 8) 	; 1 или 2 в зависимости от Vd
 		Vdvehilki := 1
 	}
 }
-else if (Vkeys = 9 or Vkeys = 11)	; 1
+else if (Vkeys => 9 or Vkeys < 12)	; 1
 {
 	SendInput, 1
 }
-else if (Vkeys = 9 or Vkeys = 12)	; 1
+else if Vkeys = 12						; 1 или 1 & 6
 {
-	SendInput, 1
-	Sleep, % Sleepfunction(40, 80)
-	SendInput, 6
+	GetKeyState, state, LButton
+	if state = D
+	{
+		SendInput, 1						; 1 если mouse1 нажата
+	}
+	else
+	{
+		SendInput, 1
+		Sleep, % Sleepfunction(40, 80)	; 1 & 6 если mouse1 не нажата
+		SendInput, 6
+	}
 }
 return
 ;=========== бинд на 2 =================================
@@ -282,11 +290,19 @@ else if (Vkeys = 9 or Vkeys = 11)			; 1
 {
 	SendInput, 1
 }
-else if (Vkeys = 9 or Vkeys = 12)	; 1 & 6
+else if Vkeys = 12						; 1 или 1 & 6
 {
-	SendInput, 1
-	Sleep, % Sleepfunction(40, 80)
-	SendInput, 6
+	GetKeyState, state, LButton
+	if state = D
+	{
+		SendInput, 1						; 1 если mouse1 нажата
+	}
+	else
+	{
+		SendInput, 1
+		Sleep, % Sleepfunction(40, 80)	; 1 & 6 если mouse1 не нажата
+		SendInput, 6
+	}
 }
 return
 ;=========== бинд на 3 =================================
