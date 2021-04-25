@@ -537,7 +537,7 @@ if (Vkeys > 0 and Vkeys <= 10)				; RButton + R
 	{
 		SetTimer, ManaLoop, % Sleepfunction(4800, 5000)
 		Var_mana_toggle := 1
-		Menu, Tray, Icon, %A_ScriptDir%\res\Mana_Flask.png, 1
+		Menu, Tray, Icon, %A_ScriptDir%\res\Mana_Flask1.png, 1
 	}
 	else if Var_mana_toggle = 1
 	{
