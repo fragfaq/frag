@@ -493,11 +493,76 @@ return
 	; Sleep, % Sleepfunction(35, 50)
 	; SendInput, {MButton}
 ; }
-; else if (Vkeys <= 0 or Vkeys > 10)		; W (дефолт)
+; else if (Vkeys <= 0 or Vkeys > 10)				; W (дефолт)
 ; {
 	; SendInput, {sc11}
 ; }
 ; return
+;=========== бинд на 9 =====================================
+; Объединяет Vaal Molten Shell и Enduring Cry на один бинд
+; При активных биндах на фласки при нажатии на 9 (Mouse4, боковая кнопка мыши со вшитой девяткой на нее)
+; Сперва прожимается Vaal Molten Shell, т.к. он инстант, потом Enduring Cry
+~scA::
+if (Vkeys > 0 and Vkeys <= 10)				; 9 + 6
+{
+	Sleep, % Sleepfunction(20, 40)
+	SendInput, {6}
+}
+else if (Vkeys <= 0 or Vkeys > 10)				; дефолт
+{
+	Sleep, 0
+}
+return
+;=========== бинд на Mouse2 =================================
+; Bladefall‌ + Blade Blast на mouse2 (для деда)
+; Если бинды на фласки включены - то на Mouse2 сперва прожимается Mouse2, а потом сразу R, что б кастовать BB и BF на 1 клавишу.
+~RButton::
+if (Vkeys > 0 and Vkeys <= 10)				; RButton + R
+{
+	Sleep, % Sleepfunction(395, 430)
+	SendInput, {7}
+}
+else if (Vkeys <= 0 or Vkeys > 10)				; дефолт
+{
+	Sleep, 0
+}
+return
+;=========== бинд на Mouse3 ==================================
+; Автопрожатие манафласки по кд по таймеру.
+; Таймер запускается на Mouse3 и выключается вместе с биндами фласок
+~MButton::
+if (Vkeys > 0 and Vkeys <= 10)				; RButton + R
+{
+	if Var_mana_toggle = 0
+	{
+		SetTimer, ManaLoop, % Sleepfunction(4800, 5000)
+		Var_mana_toggle := 1
+		Menu, Tray, Icon, %A_ScriptDir%\res\Mana_Flask.png, 1
+	}
+	else if Var_mana_toggle = 1
+	{
+		SetTimer, ManaLoop, off
+		Var_mana_toggle := 0
+		Menu, Tray, Icon, %A_ScriptDir%\res\Life_flask1.png, 1
+	}
+}
+else if (Vkeys <= 0 or Vkeys > 10)				; дефолт
+{
+	SetTimer, ManaLoop, off
+	Var_mana_toggle := 0
+}
+return
+; ==========
+ManaLoop:
+IfWinNotActive, ("ahk_class POEWindowClass")
+	{
+		WinWaitActive ahk_class POEWindowClass
+	}
+Sleep, % Sleepfunction(20, 40)
+SendInput, {sc6}
+Sleep, % Sleepfunction(20, 40)
+return
+; =================================================================================
 ; =================================================================================
 /* 
 ; =================================================================================
