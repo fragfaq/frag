@@ -25,6 +25,7 @@ GroupAdd, poe, ahk_exe PathOfExile_x64.exe
 ; 9 = 1&2 = 1, 3 = 2+3+4, d&~ = 5 (В списке "Надо разобраться с:" пункт 3, не приоритетно)
 ; 10 = 1&2 = 1, 3 = 2+3+4, d = 3+4+5, ~ = 5 (В списке "Надо разобраться с:" пункт 4, странный кейс)
 ; 11 = 1&2 = 1, 3 = 2+3+4, d = 2+3+4, ~ = 5
+; 12 = 1&2 = 1&6, 3 = 2+3+4, d = 2+3+4, ~ = 5 (то же самое, что и 11, но на 1 и 2 прожимается сперва 1, а потом сразу 6, потому что на 6 стоит эндюринг край)
 
 ; ВАЖНО:
 ; При изменении или добавлении биндов надо проверять все, т.к. есть строчки типа if (Vkeys < 1 or Vkeys > 10) и при добавлении новых вариантов переменных надо увеличивать числа в этих строчках.
@@ -206,6 +207,12 @@ else if (Vkeys = 9 or Vkeys = 11)	; 1
 {
 	SendInput, 1
 }
+else if (Vkeys = 9 or Vkeys = 12)	; 1
+{
+	SendInput, 1
+	Sleep, % Sleepfunction(40, 80)
+	SendInput, 6
+}
 return
 ;=========== бинд на 2 =================================
 sc3::
@@ -274,6 +281,12 @@ else if (Vkeys = 7 or Vkeys = 8)			; 1 или 2 в зависимости от V
 else if (Vkeys = 9 or Vkeys = 11)			; 1
 {
 	SendInput, 1
+}
+else if (Vkeys = 9 or Vkeys = 12)	; 1 & 6
+{
+	SendInput, 1
+	Sleep, % Sleepfunction(40, 80)
+	SendInput, 6
 }
 return
 ;=========== бинд на 3 =================================
@@ -345,7 +358,7 @@ else if (Vkeys = 7 or Vkeys = 8)			; 3 = 3+4
 	Sleep, % Sleepfunction(45, 80)
 	SendInput, 4
 }
-else if (Vkeys => 9 and Vkeys <= 11)			; 3 = 2+3+4
+else if (Vkeys => 9 and Vkeys <= 12)			; 3 = 2+3+4
 {
 	SendInput, 2
 	Sleep, % Sleepfunction(45, 80)
@@ -475,7 +488,7 @@ else if Vkeys = 11							; D = 2+3+4
 	Sleep, % Sleepfunction(45, 80)
 	SendInput, 4
 }
-else if Vkeys > 11
+else if Vkeys => 12
 {
 	SendInput, {sc20}
 }
@@ -483,11 +496,11 @@ return
 ;=========== бинд на Tilde =============================
 ; Пятерка на тильду если Vkeys больше нуля, иначе дефолтный бинд
 sc29::
-if (Vkeys <= 0 or Vkeys > 11)			; дефолт (~)
+if (Vkeys <= 0 or Vkeys > 12)			; дефолт (~)
 {
 	SendInput, {sc29}
 }
-else if (Vkeys > 0 and Vkeys <= 11)		; ~ = 5
+else if (Vkeys > 0 and Vkeys <= 12)		; ~ = 5
 {
 	SendInput, 5
 }
@@ -512,12 +525,12 @@ return
 ; При активных биндах на фласки при нажатии на 9 (Mouse4, боковая кнопка мыши со вшитой девяткой на нее)
 ; Сперва прожимается Vaal Molten Shell, т.к. он инстант, потом Enduring Cry
 ~scA::
-if (Vkeys > 0 and Vkeys <= 11)				; 9 + 6
+if (Vkeys > 0 and Vkeys <= 12)				; 9 + 6
 {
-	Sleep, % Sleepfunction(20, 40)
+	Sleep, % Sleepfunction(40, 60)
 	SendInput, {6}
 }
-else if (Vkeys <= 0 or Vkeys > 11)				; дефолт
+else if (Vkeys <= 0 or Vkeys > 12)				; дефолт
 {
 	Sleep, 0
 }
@@ -526,12 +539,12 @@ return
 ; Bladefall‌ + Blade Blast на mouse2 (для деда)
 ; Если бинды на фласки включены - то на Mouse2 сперва прожимается Mouse2, а потом сразу R, что б кастовать BB и BF на 1 клавишу.
 ~RButton::
-if (Vkeys > 0 and Vkeys <= 11)				; RButton + R
+if (Vkeys > 0 and Vkeys <= 12)				; RButton + R
 {
 	Sleep, % Sleepfunction(395, 430)
 	SendInput, {7}
 }
-else if (Vkeys <= 0 or Vkeys > 11)				; дефолт
+else if (Vkeys <= 0 or Vkeys > 12)				; дефолт
 {
 	Sleep, 0
 }
@@ -540,7 +553,7 @@ return
 ; Автопрожатие манафласки по кд по таймеру.
 ; Таймер запускается на Mouse3 и выключается вместе с биндами фласок
 ~MButton::
-if (Vkeys > 0 and Vkeys <= 11)				; RButton + R
+if (Vkeys > 0 and Vkeys <= 12)				; RButton + R
 {
 	if Var_mana_toggle = 0
 	{
@@ -556,7 +569,7 @@ if (Vkeys > 0 and Vkeys <= 11)				; RButton + R
 		Menu, Tray, Icon, %A_ScriptDir%\res\Life_flask1.png, 1
 	}
 }
-else if (Vkeys <= 0 or Vkeys > 11)				; дефолт
+else if (Vkeys <= 0 or Vkeys > 12)				; дефолт
 {
 	SetTimer, ManaLoop, off
 	Var_mana_toggle := 0
@@ -654,7 +667,8 @@ F8::
 ; Vkeys := 1 ; Vkeys станет 2, бинды: 1&2 = 1/2/3, 3&d = 4+5, ~ = 5
 ; Vkeys := 5 ; Vkeys станет 6, бинды: 1&2 = 1, 3&d = 2+3+4+5, ~ = 5
 ; Vkeys := 6 ; Vkeys станет 7, бинды: 1&2 = 1/2, 3&d = 3+4, ~ = 5
-Vkeys := 10 ; Vkeys станет 11, бинды: 1&2 = 1, 3&d = 2+3+4, ~ = 5
+; Vkeys := 10 ; Vkeys станет 11, бинды: 1&2 = 1, 3&d = 2+3+4, ~ = 5
+Vkeys := 11 ; Vkeys станет 12, бинды: 1&2 = 1&6, 3&d = 2+3+4, ~ = 5
 ; --------------------------------------------------------------------------------
 ; Воспроизведение звука при акивации скрипта, если хоткей нажат случайно. Включение автокаста работает из любого окна, выключение только когда PoE активно.
 SoundPlay, %A_ScriptDir%\res\on.wav
@@ -686,7 +700,7 @@ if Vkeys = 0
 else if Vkeys > 0
 {
 	Vkeys += 1
-	if Vkeys > 11
+	if Vkeys > 12
 	{	
 		Sleep, % Sleepfunction(30, 50)
 		Vkeys := 0
@@ -912,6 +926,7 @@ F7::
 ; Остановка автопрожатия фласки с маной
 SetTimer, ManaLoop, Off
 Var_mana_toggle := 0
+Menu, Tray, Icon, %A_ScriptDir%\res\Life_flask1.png, 1
 ; --------------------------------------------------------------------------------
 ; Остановка автокаста
 SetTitleMatchMode, 2
