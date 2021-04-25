@@ -852,6 +852,28 @@ if WinExist("BlightClicker ahk_class AutoHotkey")
 }
 return
 #IfWinActive
+;========================================================
+; Этот блок добавлен, потому что звук на Shift+кнопки мыши пока не нужен, и так норм.
+#IfWinActive ahk_exe PathOfExile_x64.exe
+~+RButton::
+~+LButton::
+; ~sc1C::
+; ~^sc1C::
+	if Vkeys > 0
+	{
+		; SoundPlay, %A_ScriptDir%\res\off.wav
+		SendInput, {F7}
+	}
+; Так же в этот бинд добавлена отправка хоткея F4 в Path of Exile 3.0.ahk, что бы отключать автокликер нормально (сбрасывая значение переменной).
+SetTitleMatchMode, 2
+DetectHiddenWindows, On
+if WinExist("BlightClicker ahk_class AutoHotkey")
+{
+	SendLevel  1 
+	SendInput, {F4}
+}
+return
+#IfWinActive
 ;==============================================
 ;==============================================
 ; Сброс биндов на дефолтные и отключение автокаста при нажатии F7, Enter и Ctrl+Enter
