@@ -374,7 +374,15 @@ else if (Vkeys = 7 or Vkeys = 8)			; 3 = 3+4
 	Sleep, % Sleepfunction(45, 80)
 	SendInput, 4
 }
-else if (Vkeys => 9 and Vkeys <= 12)			; 3 = 2+3+4
+else if (Vkeys => 9 and Vkeys <= 11)			; 3 = 2+3+4
+{
+	SendInput, 2
+	Sleep, % Sleepfunction(45, 80)
+	SendInput, 3
+	Sleep, % Sleepfunction(45, 80)
+	SendInput, 4
+}
+else if Vkeys = 12			; 3 = 2+3+4
 {
 	SendInput, 2
 	Sleep, % Sleepfunction(45, 80)
@@ -504,7 +512,15 @@ else if Vkeys = 11							; D = 2+3+4
 	Sleep, % Sleepfunction(45, 80)
 	SendInput, 4
 }
-else if Vkeys => 12
+else if Vkeys = 12							; D = 2+3+4
+{
+	SendInput, 2
+	Sleep, % Sleepfunction(45, 80)
+	SendInput, 3
+	Sleep, % Sleepfunction(45, 80)
+	SendInput, 4
+}
+else if Vkeys => 13
 {
 	SendInput, {sc20}
 }
