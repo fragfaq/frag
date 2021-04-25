@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathOfBuilding>
+	<Build level="70" targetVersion="3_0" pantheonMajorGod="None" bandit="None" className="Templar" ascendClassName="Inquisitor" mainSocketGroup="2" viewMode="CALCS" pantheonMinorGod="None">
+		<PlayerStat stat="AverageHit" value="21334.21875"/>
+		<PlayerStat stat="AverageDamage" value="21334.21875"/>
+		<PlayerStat stat="Speed" value="3.14"/>
+		<PlayerStat stat="Speed" value="3.14"/>
+		<PlayerStat stat="Speed" value="3.14"/>
+		<PlayerStat stat="PreEffectiveCritChance" value="21.375"/>
+		<PlayerStat stat="CritChance" value="21.375"/>
+		<PlayerStat stat="CritMultiplier" value="1"/>
+		<PlayerStat stat="HitChance" value="100"/>
+		<PlayerStat stat="TotalDPS" value="3349472.34375"/>
+		<PlayerStat stat="TotalDPS" value="3349472.34375"/>
+		<PlayerStat stat="TotalDot" value="0"/>
+		<PlayerStat stat="WithBleedDPS" value="3349472.34375"/>
+		<PlayerStat stat="WithIgniteDPS" value="3349472.34375"/>
+		<PlayerStat stat="WithPoisonDPS" value="3349472.34375"/>
+		<PlayerStat stat="TotalDotDPS" value="0"/>
+		<PlayerStat stat="CombinedDPS" value="3349472.34375"/>
+		<PlayerStat stat="CombinedAvg" value="3349472.34375"/>
+		<PlayerStat stat="AreaOfEffectRadius" value="16"/>
+		<PlayerStat stat="ManaCost" value="28"/>
+		<PlayerStat stat="LifeCost" value="0"/>
+		<PlayerStat stat="ESCost" value="0"/>
+		<PlayerStat stat="RageCost" value="0"/>
+		<PlayerStat stat="ManaPercentCost" value="0"/>
+		<PlayerStat stat="LifePercentCost" value="0"/>
+		<PlayerStat stat="Str" value="216"/>
+		<PlayerStat stat="ReqStr" value="136"/>
+		<PlayerStat stat="Dex" value="161"/>
+		<PlayerStat stat="ReqDex" value="138"/>
+		<PlayerStat stat="Int" value="325"/>
+		<PlayerStat stat="ReqInt" value="160"/>
+		<PlayerStat stat="Devotion" value="0"/>
+		<PlayerStat stat="Life" value="3540"/>
+		<PlayerStat stat="Spec:LifeInc" value="142"/>
+		<PlayerStat stat="LifeUnreserved" value="3540"/>
+		<PlayerStat stat="LifeUnreservedPercent" value="100"/>
+		<PlayerStat stat="LifeRegen" value="551.78"/>
+		<PlayerStat stat="LifeLeechGainRate" value="0"/>
+		<PlayerStat stat="Mana" value="1072"/>
+		<PlayerStat stat="Spec:ManaInc" value="33"/>
+		<PlayerStat stat="ManaUnreserved" value="427"/>
+		<PlayerStat stat="ManaUnreservedPercent" value="39.832089552239"/>
+		<PlayerStat stat="ManaRegen" value="49.1"/>
+		<PlayerStat stat="ManaLeechGainRate" value="0"/>
+		<PlayerStat stat="EnergyShield" value="592"/>
+		<PlayerStat stat="Spec:EnergyShieldInc" value="60"/>
+		<PlayerStat stat="EnergyShieldRegen" value="0"/>
+		<PlayerStat stat="EnergyShieldLeechGainRate" value="0"/>
+		<PlayerStat stat="Evasion" value="767"/>
+		<PlayerStat stat="Spec:EvasionInc" value="0"/>
+		<PlayerStat stat="MeleeEvadeChance" value="0"/>
+		<PlayerStat stat="MeleeEvadeChance" value="0"/>
+		<PlayerStat stat="ProjectileEvadeChance" value="0"/>
+		<PlayerStat stat="Armour" value="91"/>
+		<PlayerStat stat="Spec:ArmourInc" value="20"/>
+		<PlayerStat stat="PhysicalDamageReduction" value="1"/>
+		<PlayerStat stat="EffectiveMovementSpeedMod" value="1.27"/>
+		<PlayerStat stat="BlockChance" value="20"/>
+		<PlayerStat stat="SpellBlockChance" value="0"/>
+		<PlayerStat stat="AttackDodgeChance" value="0"/>
+		<PlayerStat stat="SpellDodgeChance" value="0"/>
+		<PlayerStat stat="FireResist" value="65"/>
+		<PlayerStat stat="FireResistOverCap" value="0"/>
+		<PlayerStat stat="ColdResist" value="44"/>
+		<PlayerStat stat="ColdResistOverCap" value="0"/>
+		<PlayerStat stat="LightningResist" value="51"/>
+		<PlayerStat stat="LightningResistOverCap" value="0"/>
+		<PlayerStat stat="ChaosResist" value="-38"/>
+		<PlayerStat stat="ChaosResistOverCap" value="0"/>
+		<PlayerStat stat="FullDPS" value="0"/>
+		<PlayerStat stat="SkillDPS" value="table: 0x183c53a0"/>
+		<PlayerStat stat="PowerCharges" value="0"/>
+		<PlayerStat stat="PowerChargesMax" value="3"/>
+		<PlayerStat stat="FrenzyCharges" value="0"/>
+		<PlayerStat stat="FrenzyChargesMax" value="3"/>
+		<PlayerStat stat="EnduranceCharges" value="0"/>
+		<PlayerStat stat="EnduranceChargesMax" value="3"/>
+	</Build>
+	<Import lastAccountHash="614149b0096bca834f44b9fd02f7e0d2382e954c" lastRealm="PC" lastCharacterHash="6e156a37dfbace64e25b3fae952f607ad6acabec"/>
+	<Calcs>
+		<Input name="misc_buffMode" string="EFFECTIVE"/>
+		<Input name="skill_number" number="2"/>
+		<Section collapsed="false" id="SkillSelect"/>
+		<Section collapsed="false" id="HitDamage"/>
+		<Section collapsed="false" id="Warcries"/>
+		<Section collapsed="false" id="Dot"/>
+		<Section collapsed="false" id="Speed"/>
+		<Section collapsed="false" id="Crit"/>
+		<Section collapsed="false" id="Impale"/>
+		<Section collapsed="false" id="SkillTypeStats"/>
+		<Section collapsed="false" id="HitChance"/>
+		<Section collapsed="false" id="Bleed"/>
+		<Section collapsed="false" id="Poison"/>
+		<Section collapsed="false" id="Ignite"/>
+		<Section collapsed="false" id="Decay"/>
+		<Section collapsed="false" id="LeechGain"/>
+		<Section collapsed="false" id="EleAilments"/>
+		<Section collapsed="false" id="MiscEffects"/>
+		<Section collapsed="false" id="Attributes"/>
+		<Section collapsed="false" id="Life"/>
+		<Section collapsed="false" id="Mana"/>
+		<Section collapsed="false" id="EnergyShield"/>
+		<Section collapsed="false" id="Armour"/>
+		<Section collapsed="false" id="Evasion"/>
+		<Section collapsed="false" id="Resist"/>
+		<Section collapsed="false" id="Block"/>
+		<Section collapsed="false" id="MiscDefences"/>
+		<Section collapsed="false" id="DamageTaken"/>
+	</Calcs>
+	<Skills sortGemsByDPSField="CombinedDPS" sortGemsByDPS="true" defaultGemQuality="nil" defaultGemLevel="nil" showSupportGemTypes="ALL" showAltQualityGems="false">
+		<Skill mainActiveSkillCalcs="nil" includeInFullDPS="nil" label="" groupCount="nil" enabled="true" slot="Helmet" mainActiveSkill="nil">
+			<Gem enableGlobal2="nil" level="16" enableGlobal1="true" skillId="Bladefall" qualityId="Default" gemId="Metadata/Items/Gems/SkillGemBladefall" quality="0" enabled="true" count="nil" nameSpec="Bladefall"/>
+			<Gem enableGlobal2="nil" level="16" enableGlobal1="true" skillId="SupportHandcastAnticipation" qualityId="Default" gemId="Metadata/Items/Gems/SupportGemHandcastAnticipation" quality="0" enabled="true" count="nil" nameSpec="Unleash"/>
+			<Gem enableGlobal2="nil" level="16" enableGlobal1="true" skillId="SupportFasterCast" qualityId="Default" gemId="Metadata/Items/Gems/SupportGemFasterCast" quality="0" enabled="true" count="nil" nameSpec="Faster Casting"/>
+			<Gem enableGlobal2="nil" level="17" enableGlobal1="true" skillId="SupportSpellCascade" qualityId="Default" gemId="Metadata/Items/Gems/SupportGemSpellCascade" quality="0" enabled="true" count="nil" nameSpec="Spell Cascade"/>
+		</Skill>
+		<Skill mainActiveSkillCalcs="1" includeInFullDPS="nil" label="" groupCount="nil" enabled="true" slot="Body Armour" mainActiveSkill="1">
+			<Gem enableGlobal2="nil" level="16" enableGlobal1="true" skillId="BladeBlast" qualityId="Default" skillPart="6" gemId="Metadata/Items/Gems/SkillGemBladeBlast" quality="0" enabled="true" skillPartCalcs="6" count="nil" nameSpec="Blade Blast"/>
+			<Gem enableGlobal2="nil" level="16" enableGlobal1="true" skillId="SupportControlledDestruction" qualityId="Default" gemId="Metadata/Items/Gems/SupportGemControlledDestruction" quality="0" enabled="true" count="nil" nameSpec="Controlled Destruction"/>
+			<Gem enableGlobal2="nil" level="16" enableGlobal1="true" skillId="SupportElementalFocus" qualityId="Default" gemId="Metadata/Items/Gems/SupportGemElementalFocus" quality="0" enabled="true" count="nil" nameSpec="Elemental Focus"/>
+			<Gem enableGlobal2="nil" level="16" enableGlobal1="true" skillId="SupportConcentratedEffect" qualityId="Default" gemId="Metadata/Items/Gems/SupportGemConcentratedEffect" quality="0" enabled="true" count="nil" nameSpec="Concentrated Effect"/>
+			<Gem enableGlobal2="nil" level="16" enableGlobal1="true" skillId="SupportReducedMana" qualityId="Default" gemId="Metadata/Items/Gems/SupportGemReducedMana" quality="0" enabled="true" count="nil" nameSpec="Inspiration"/>
+		</Skill>
+		<Skill mainActiveSkillCalcs="nil" includeInFullDPS="nil" label="" groupCount="nil" enabled="true" slot="Gloves" mainActiveSkill="nil">
+			<Gem enableGlobal2="nil" level="16" enableGlobal1="true" skillId="BrandSupport" qualityId="Default" gemId="Metadata/Items/Gems/SkillGemArcanistBrand" quality="0" enabled="true" count="nil" nameSpec="Arcanist Brand"/>
+			<Gem enableGlobal2="nil" level="16" enableGlobal1="true" skillId="Purge" qualityId="Default" gemId="Metadata/Items/Gems/SkillGemPurge" quality="0" enabled="true" count="nil" nameSpec="Wave of Conviction"/>
+			<Gem enableGlobal2="nil" level="17" enableGlobal1="true" skillId="SupportChanceToIgnite" qualityId="Default" gemId="Metadata/Items/Gems/SupportGemChanceToIgnite" quality="0" enabled="true" count="nil" nameSpec="Combustion"/>
+			<Gem enableGlobal2="nil" level="16" enableGlobal1="true" skillId="AssassinsMark" qualityId="Default" gemId="Metadata/Items/Gems/SkillGemCriticalWeakness" quality="0" enabled="true" count="nil" nameSpec="Assassin&apos;s Mark"/>
+		</Skill>
+		<Skill mainActiveSkillCalcs="nil" includeInFullDPS="nil" label="" groupCount="nil" enabled="true" slot="Weapon 1" mainActiveSkill="nil">
+			<Gem enableGlobal2="nil" skillMinionSkillCalcs="1" level="16" enableGlobal1="true" skillId="SummonRockGolem" skillMinionSkill="1" qualityId="Default" gemId="Metadata/Items/Gems/SkillGemSummonRockGolem" quality="0" enabled="true" count="nil" nameSpec="Summon Stone Golem" skillMinion="SummonedStoneGolem"/>
+			<Gem enableGlobal2="nil" level="17" enableGlobal1="true" skillId="QuickGuard" qualityId="Default" gemId="Metadata/Items/Gems/SkillGemSteelskin" quality="0" enabled="true" count="nil" nameSpec="Steelskin"/>
+			<Gem enableGlobal2="nil" level="5" enableGlobal1="true" skillId="SupportArcaneSurge" qualityId="Default" gemId="Metadata/Items/Gems/SupportGemArcaneSurge" quality="0" enabled="true" count="nil" nameSpec="Arcane Surge"/>
+			<Gem enableGlobal2="nil" level="17" enableGlobal1="true" skillId="FlameDash" qualityId="Default" gemId="Metadata/Items/Gems/SkillGemFlameDash" quality="0" enabled="true" count="nil" nameSpec="Flame Dash"/>
+		</Skill>
+		<Skill mainActiveSkillCalcs="1" includeInFullDPS="nil" label="" groupCount="nil" enabled="true" slot="Boots" mainActiveSkill="1">
+			<Gem enableGlobal2="nil" skillMinionSkillCalcs="1" skillMinionCalcs="AxisEliteSoldierHeraldOfLight" level="16" enableGlobal1="true" skillId="HeraldOfPurity" skillMinionSkill="1" qualityId="Default" gemId="Metadata/Items/Gems/HeraldOfPurity" quality="0" enabled="true" count="nil" nameSpec="Herald of Purity" skillMinion="AxisEliteSoldierHeraldOfLight"/>
+		</Skill>
+		<Skill mainActiveSkillCalcs="1" includeInFullDPS="nil" label="" groupCount="nil" enabled="true" slot="Boots" mainActiveSkill="1">
+			<Gem enableGlobal2="nil" level="16" enableGlobal1="true" skillId="HeraldOfAsh" qualityId="Default" gemId="Metadata/Items/Gems/SkillGemHeraldOfAsh" quality="0" enabled="true" count="nil" nameSpec="Herald of Ash"/>
+		</Skill>
+		<Skill mainActiveSkillCalcs="nil" includeInFullDPS="nil" label="" groupCount="nil" enabled="true" slot="Boots" mainActiveSkill="nil">
+			<Gem enableGlobal2="nil" level="16" enableGlobal1="true" skillId="Vitality" qualityId="Default" gemId="Metadata/Items/Gems/SkillGemVitality" quality="0" enabled="true" count="nil" nameSpec="Vitality"/>
+		</Skill>
+	</Skills>
+	<Tree activeSpec="1">
+		<Spec ascendClassId="1" nodes="32245,7444,2292,20228,23027,48362,27203,5823,42760,61525,27659,49254,8198,9877,21958,25168,11420,12536,61320,61471,35283,54694,13164,55993,1203,31875,44941,22088,63799,35894,19635,44529,61653,44723,1346,18769,6237,60398,29353,23456,56029,55247,38190,55854,55332,50422,61871,1822,32710,44799,44347,6712,33435,17735,33755,43193,42837,10221,15064,41472,40907,39648,39790,4397,29199,13009,36949,31758,14936,28754,26564,31153,36678,6446,17352,14665,11016,21835,25058,10031,3656,1031,23760,44202,5430,18865,24050,10763,19417,8948,10635,4502,26866,27929,29061,38538,37671" treeVersion="3_14" classId="5">
+			<EditedNodes/>
+			<URL>
+				https://www.pathofexile.com/passive-skill-tree/AAAABAUBAH31HRQI9E8EWfO86mpDFr-nCGwLwGYgBiaVVcZiUCycMPjviPAfidPVpjNs2rkEs3yDr41WSPk3jDZMs63x8NWuswVCSVEYXevucqlboNrd18-VLtou2CTE9gcef8au_607GjiCm0VHg9uouadVJ-062KIAn8ua4JtuES1yDzLRkFV8DjpYcFJnxHmxj0YZLkPIOUkrCFVLYeInLw5IBAdc0KyqFTZJsV3yKgtL2SL0KYsRlmjybRlxhZaKkyc=
+			</URL>
+			<Sockets>
+				<Socket nodeId="16218" itemId="0"/>
+				<Socket nodeId="11150" itemId="0"/>
+				<Socket nodeId="61834" itemId="0"/>
+				<Socket nodeId="64583" itemId="0"/>
+				<Socket nodeId="22994" itemId="0"/>
+				<Socket nodeId="48679" itemId="0"/>
+				<Socket nodeId="2311" itemId="0"/>
+				<Socket nodeId="9408" itemId="0"/>
+				<Socket nodeId="36634" itemId="0"/>
+				<Socket nodeId="29712" itemId="0"/>
+				<Socket nodeId="21984" itemId="0"/>
+				<Socket nodeId="26725" itemId="0"/>
+				<Socket nodeId="33753" itemId="0"/>
+				<Socket nodeId="31683" itemId="0"/>
+				<Socket nodeId="34483" itemId="0"/>
+				<Socket nodeId="55190" itemId="0"/>
+				<Socket nodeId="9797" itemId="0"/>
+				<Socket nodeId="60735" itemId="0"/>
+				<Socket nodeId="7960" itemId="0"/>
+				<Socket nodeId="33631" itemId="0"/>
+				<Socket nodeId="46519" itemId="0"/>
+				<Socket nodeId="40400" itemId="0"/>
+				<Socket nodeId="13170" itemId="0"/>
+				<Socket nodeId="3109" itemId="0"/>
+				<Socket nodeId="2491" itemId="0"/>
+				<Socket nodeId="46393" itemId="0"/>
+				<Socket nodeId="23756" itemId="0"/>
+				<Socket nodeId="59585" itemId="0"/>
+				<Socket nodeId="14993" itemId="0"/>
+				<Socket nodeId="12161" itemId="0"/>
+				<Socket nodeId="28475" itemId="0"/>
+				<Socket nodeId="54127" itemId="0"/>
+				<Socket nodeId="26196" itemId="0"/>
+				<Socket nodeId="18436" itemId="0"/>
+				<Socket nodeId="61288" itemId="0"/>
+				<Socket nodeId="23984" itemId="0"/>
+				<Socket nodeId="33989" itemId="0"/>
+				<Socket nodeId="24970" itemId="0"/>
+				<Socket nodeId="17219" itemId="0"/>
+				<Socket nodeId="46882" itemId="0"/>
+				<Socket nodeId="41263" itemId="0"/>
+				<Socket nodeId="44169" itemId="0"/>
+				<Socket nodeId="61666" itemId="0"/>
+				<Socket nodeId="51198" itemId="0"/>
+				<Socket nodeId="22748" itemId="0"/>
+				<Socket nodeId="61419" itemId="0"/>
+				<Socket nodeId="10532" itemId="0"/>
+				<Socket nodeId="49684" itemId="0"/>
+				<Socket nodeId="48768" itemId="0"/>
+				<Socket nodeId="41876" itemId="0"/>
+				<Socket nodeId="49080" itemId="0"/>
+				<Socket nodeId="32763" itemId="0"/>
+				<Socket nodeId="12613" itemId="0"/>
+				<Socket nodeId="6230" itemId="0"/>
+				<Socket nodeId="36931" itemId="0"/>
+				<Socket nodeId="6910" itemId="0"/>
+				<Socket nodeId="61305" itemId="0"/>
+			</Sockets>
+		</Spec>
+	</Tree>
+	<Notes>
+		
+	</Notes>
+	<TreeView searchStr="unnerv" zoomY="107.9728" showHeatMap="false" zoomLevel="6" showStatDifferences="true" zoomX="452.0944"/>
+	<Items activeItemSet="1" useSecondWeaponSet="false">
+		<Item id="17">
+			Rarity: UNIQUE
+Crown of the Inward Eye
+Prophet Crown
+Item Level: 86
+Quality: 20
+Sockets: G-B-B-B
+LevelReq: 63
+Implicits: 0
+333% increased Armour and Energy Shield
+21% increased maximum Life, Mana and Global Energy Shield
+Transfiguration of Soul
+Transfiguration of Body
+Transfiguration of Mind
+		</Item>
+		<Item id="10">
+			Rarity: RARE
+Storm Corona
+Lunaris Circlet
+Unique ID: 7b7314710a409c8444ed8de8ab79f9ef07a0afaa55f74afb6de4d1b160d8f0b9
+Item Level: 39
+Quality: 20
+Sockets: B-B-B-G
+LevelReq: 39
+Implicits: 0
++13 to Intelligence
++64 to maximum Life
+10% increased Rarity of Items found
++20% to Cold Resistance
+{crafted}+29 to maximum Mana
+		</Item>
+		<Item id="19">
+			Rarity: RARE
+Carrion Road
+Serpentscale Boots
+Unique ID: 53cd581c58b2456b1ad0112d5a6ab972f02d054b70369e57e0a89f41abb148c0
+Item Level: 44
+Quality: 0
+Sockets: R R R
+LevelReq: 42
+Implicits: 1
+{crafted}Adds 33 to 50 Cold Damage if you&apos;ve been Hit Recently
++74 to maximum Life
+Regenerate 5.4 Life per second
+7% increased Rarity of Items found
+25% increased Movement Speed
+{crafted}+16% to Fire and Lightning Resistances
+		</Item>
+		<Item id="1">
+			Rarity: MAGIC
+Enduring Eternal Mana Flask
+Unique ID: ad4cebfb37927a80900fceb4f53cd46d2779c3524c6e3325c81e6306a915a06d
+Item Level: 68
+Quality: 19
+LevelReq: 65
+Implicits: 0
+30% reduced Amount Recovered
+30% reduced Duration
+Flask Effect is not removed at Full Mana
+Flask Effect does not Queue
+		</Item>
+		<Item id="2">
+			Rarity: RARE
+Victory Bond
+Leather Belt
+Unique ID: d23c370b3c560c571316a1e554aacb8a6018ea5f9a506cf08236d096a2df7ecd
+Item Level: 72
+LevelReq: 57
+Implicits: 1
++27 to maximum Life
++13 to Strength
++96 to maximum Life
++43% to Cold Resistance
+25% increased Stun and Block Recovery
+{crafted}+37 to maximum Mana
+		</Item>
+		<Item id="3">
+			Rarity: MAGIC
+Avenger&apos;s Quicksilver Flask of Adrenaline
+Unique ID: 39de0b9e6b9abf040fce67d6acc898d9d8b0d5a838b354f852e15a9260c451e7
+Item Level: 54
+Quality: 20
+LevelReq: 9
+Implicits: 0
+Recharges 5 Charges when you take a Critical Strike
+24% increased Movement Speed during Flask effect
+		</Item>
+		<Item id="4">
+			Rarity: MAGIC
+Surgeon&apos;s Quartz Flask of Quickening
+Unique ID: 909b42fd6d0cf896e16c457343bb30c9ef9fe59b60ff8076dd3eda1c71ea62d9
+Item Level: 53
+Quality: 0
+LevelReq: 27
+Implicits: 0
+20% chance to gain a Flask Charge when you deal a Critical Strike
+11% increased Cast Speed during Flask effect
+		</Item>
+		<Item id="5">
+			Rarity: NORMAL
+Imbued Wand
+Unique ID: 5cba47ccfe6d9db5c234c0a2b616b58c7126d34f1bec79bf2e55f1442bcd7a92
+Item Level: 60
+Quality: 0
+Sockets: R-B B
+LevelReq: 59
+Implicits: 1
+34% increased Spell Damage
+		</Item>
+		<Item id="6">
+			Rarity: RARE
+Chimeric Caress
+Silk Gloves
+Unique ID: 53274d92bfd39d64e0a903891569d16a7bbd04c61c897d3f7ba2991ec92d81b9
+Item Level: 25
+Quality: 20
+Sockets: B-B-B-B
+LevelReq: 25
+Implicits: 0
++10 to maximum Life
++15% to Lightning Resistance
++2 Life gained for each Enemy hit by your Attacks
++1 Mana gained on Kill
+{crafted}+44 to maximum Mana
+		</Item>
+		<Item id="7">
+			Rarity: NORMAL
+Omen Wand
+Unique ID: f2470fb7414f8509124ec89969305377f8f7cd14ca5e5fb2dc3b043122968a4b
+Item Level: 54
+Quality: 0
+Sockets: R-B-B
+LevelReq: 53
+Implicits: 1
+27% increased Spell Damage
+		</Item>
+		<Item id="8">
+			Rarity: RARE
+Sorrow Curtain
+Necromancer Silks
+Unique ID: d04543bb564a4a4b2f21ff7ec2c70f3e3ee52bb21a8ea9fa308a0620bd913c51
+Item Level: 63
+Quality: 0
+Sockets: B-B-B-R-G B
+LevelReq: 59
+Implicits: 0
++8 to Intelligence
++21 to maximum Energy Shield
+8% increased Energy Shield
++31 to maximum Life
+7% increased Stun and Block Recovery
+{crafted}+20 to Strength
+		</Item>
+		<Item id="9">
+			Rarity: MAGIC
+Bubbling Divine Life Flask of Staunching
+Unique ID: c89bdcc2e06ff300670db7ceef17f169f6768b2e02fa1a0bb17022c51fae6158
+Item Level: 65
+Quality: 20
+LevelReq: 60
+Implicits: 0
+50% reduced Amount Recovered
+135% increased Recovery rate
+50% of Recovery applied Instantly
+Immunity to Bleeding and Corrupted Blood during Flask effect
+Removes Bleeding and Corrupted Blood on use
+		</Item>
+		<Item id="11">
+			Rarity: RARE
+Brood Glance
+Harlequin Mask
+Unique ID: 6397f0abcf513e3fda2c7c0d7ddc723b58ffae2112b4101f8a9ffad07899961d
+Item Level: 66
+Quality: 0
+Sockets: B-B-G-B
+LevelReq: 57
+Implicits: 1
+{crafted}Herald of Purity has 30% reduced Reservation
++12 to maximum Energy Shield
++118 to maximum Life
+Regenerate 9.4 Life per second
++31% to Fire Resistance
++27% to Lightning Resistance
+{crafted}+36 to maximum Mana
+		</Item>
+		<Item id="12">
+			Rarity: RARE
+Dire Twirl
+Two-Stone Ring
+Unique ID: efd8d2c25ae596cccd10daf84106ea383506057005dfd60d8924da9debcc6ba8
+Item Level: 44
+LevelReq: 33
+Implicits: 1
++13% to Fire and Cold Resistances
++66 to Evasion Rating
++17 to maximum Energy Shield
++19 to maximum Mana
+13% increased Rarity of Items found
++22% to Lightning Resistance
++12% to Chaos Resistance
+		</Item>
+		<Item id="13">
+			Rarity: RARE
+Tempest Goad
+Serpentine Staff
+Unique ID: 2ade7c3c951647ca9a8034ad3cba228a3b2a0aea9de1ebba852cc422e447619b
+Item Level: 50
+Quality: 20
+Sockets: R-R-B-B
+LevelReq: 49
+Implicits: 1
++20% Chance to Block Attack Damage while wielding a Staff
+Adds 20 to 34 Physical Damage
+21% increased Attack Speed
++31% to Cold Resistance
+0.27% of Physical Attack Damage Leeched as Mana
++6 Mana gained on Kill
+{crafted}68% increased Physical Damage
+		</Item>
+		<Item id="14">
+			Rarity: MAGIC
+Bubbling Hallowed Life Flask of Heat
+Unique ID: d8a6e8ae0b67f2da27dc708103d4742cf4bb78f8aaea705204d86b2679554846
+Item Level: 45
+Quality: 0
+LevelReq: 42
+Implicits: 0
+50% reduced Amount Recovered
+135% increased Recovery rate
+50% of Recovery applied Instantly
+Immunity to Freeze and Chill during Flask effect
+Removes Freeze and Chill on use
+		</Item>
+		<Item id="15">
+			Rarity: RARE
+Vengeance Grasp
+Ruby Ring
+Unique ID: 3e33d380078b85da5b1582d495e5c5b633fc8e8076450a89020a2c10d6fb2a0b
+Item Level: 26
+LevelReq: 19
+Implicits: 1
++28% to Fire Resistance
++19 to Evasion Rating
++2 to maximum Energy Shield
++28 to maximum Life
++20% to Fire Resistance
++14% to Lightning Resistance
++10% to Chaos Resistance
+		</Item>
+		<Item id="16">
+			Rarity: RARE
+Wrath Choker
+Jade Amulet
+Unique ID: 93963c860ec00464a192b340f8048e79f8a668f61bcae3146e0bebcdc2cebfc5
+Item Level: 73
+LevelReq: 54
+Implicits: 1
++27 to Dexterity
++34 to Intelligence
+13% increased Cast Speed
++12 to maximum Energy Shield
++33 to maximum Mana
+{crafted}+49 to maximum Life
+		</Item>
+		<Slot name="Weapon 1" itemId="13"/>
+		<Slot name="Flask 3" itemId="3"/>
+		<Slot name="Gloves" itemId="6"/>
+		<Slot name="Belt" itemId="2"/>
+		<Slot name="Flask 5" itemId="1"/>
+		<Slot name="Helmet" itemId="11"/>
+		<Slot name="Flask 1" itemId="9"/>
+		<Slot name="Flask 4" itemId="4"/>
+		<Slot name="Flask 2" itemId="14"/>
+		<Slot name="Weapon 2 Swap" itemId="7"/>
+		<Slot name="Weapon 1 Swap" itemId="5"/>
+		<Slot name="Ring 2" itemId="12"/>
+		<Slot name="Body Armour" itemId="8"/>
+		<Slot name="Ring 1" itemId="15"/>
+		<Slot name="Boots" itemId="19"/>
+		<Slot name="Amulet" itemId="16"/>
+		<ItemSet useSecondWeaponSet="false" id="1">
+			<Slot name="Weapon 1Swap Abyssal Socket 5" itemId="0"/>
+			<Slot name="Weapon 1 Abyssal Socket 2" itemId="0"/>
+			<Slot name="Weapon 1" itemId="13"/>
+			<Slot name="Boots Abyssal Socket 5" itemId="0"/>
+			<Slot name="Weapon 1Swap Abyssal Socket 2" itemId="0"/>
+			<Slot name="Belt Abyssal Socket 2" itemId="0"/>
+			<Slot name="Flask 3" itemId="3"/>
+			<Slot name="Weapon 2Swap Abyssal Socket 3" itemId="0"/>
+			<Slot name="Weapon 1 Abyssal Socket 5" itemId="0"/>
+			<Slot name="Weapon 2 Abyssal Socket 5" itemId="0"/>
+			<Slot name="Weapon 2 Abyssal Socket 4" itemId="0"/>
+			<Slot name="Weapon 1 Abyssal Socket 6" itemId="0"/>
+			<Slot name="Weapon 2 Abyssal Socket 6" itemId="0"/>
+			<Slot name="Weapon 2Swap Abyssal Socket 1" itemId="0"/>
+			<Slot name="Boots Abyssal Socket 3" itemId="0"/>
+			<Slot name="Helmet Abyssal Socket 1" itemId="0"/>
+			<Slot name="Belt Abyssal Socket 6" itemId="0"/>
+			<Slot name="Helmet Abyssal Socket 2" itemId="0"/>
+			<Slot name="Gloves" itemId="6"/>
+			<Slot name="Helmet Abyssal Socket 3" itemId="0"/>
+			<Slot name="Weapon 1Swap Abyssal Socket 1" itemId="0"/>
+			<Slot name="Helmet Abyssal Socket 4" itemId="0"/>
+			<Slot name="Weapon 2 Abyssal Socket 1" itemId="0"/>
+			<Slot name="Weapon 1 Abyssal Socket 4" itemId="0"/>
+			<Slot name="Belt" itemId="2"/>
+			<Slot name="Gloves Abyssal Socket 4" itemId="0"/>
+			<Slot name="Boots Abyssal Socket 4" itemId="0"/>
+			<Slot name="Weapon 2 Abyssal Socket 2" itemId="0"/>
+			<Slot name="Flask 5" itemId="1"/>
+			<Slot name="Boots Abyssal Socket 2" itemId="0"/>
+			<Slot name="Belt Abyssal Socket 3" itemId="0"/>
+			<Slot name="Body Armour Abyssal Socket 1" itemId="0"/>
+			<Slot name="Gloves Abyssal Socket 1" itemId="0"/>
+			<Slot name="Helmet Abyssal Socket 5" itemId="0"/>
+			<Slot name="Helmet Abyssal Socket 6" itemId="0"/>
+			<Slot name="Helmet" itemId="11"/>
+			<Slot name="Flask 1" itemId="9"/>
+			<Slot name="Gloves Abyssal Socket 5" itemId="0"/>
+			<Slot name="Body Armour Abyssal Socket 2" itemId="0"/>
+			<Slot name="Boots Abyssal Socket 6" itemId="0"/>
+			<Slot name="Weapon 1 Abyssal Socket 3" itemId="0"/>
+			<Slot name="Weapon 2 Abyssal Socket 3" itemId="0"/>
+			<Slot name="Belt Abyssal Socket 4" itemId="0"/>
+			<Slot name="Weapon 2Swap Abyssal Socket 2" itemId="0"/>
+			<Slot name="Belt Abyssal Socket 1" itemId="0"/>
+			<Slot name="Body Armour Abyssal Socket 3" itemId="0"/>
+			<Slot name="Flask 4" itemId="4"/>
+			<Slot name="Flask 2" itemId="14"/>
+			<Slot name="Belt Abyssal Socket 5" itemId="0"/>
+			<Slot name="Weapon 1Swap Abyssal Socket 3" itemId="0"/>
+			<Slot name="Weapon 2" itemId="0"/>
+			<Slot name="Weapon 2Swap Abyssal Socket 6" itemId="0"/>
+			<Slot name="Boots Abyssal Socket 1" itemId="0"/>
+			<Slot name="Body Armour Abyssal Socket 4" itemId="0"/>
+			<Slot name="Weapon 2Swap Abyssal Socket 4" itemId="0"/>
+			<Slot name="Weapon 2 Swap" itemId="7"/>
+			<Slot name="Weapon 1 Swap" itemId="5"/>
+			<Slot name="Weapon 1Swap Abyssal Socket 6" itemId="0"/>
+			<Slot name="Ring 2" itemId="12"/>
+			<Slot name="Gloves Abyssal Socket 2" itemId="0"/>
+			<Slot name="Body Armour Abyssal Socket 6" itemId="0"/>
+			<Slot name="Weapon 1 Abyssal Socket 1" itemId="0"/>
+			<Slot name="Body Armour" itemId="8"/>
+			<Slot name="Gloves Abyssal Socket 3" itemId="0"/>
+			<Slot name="Ring 1" itemId="15"/>
+			<Slot name="Weapon 1Swap Abyssal Socket 4" itemId="0"/>
+			<Slot name="Body Armour Abyssal Socket 5" itemId="0"/>
+			<Slot name="Gloves Abyssal Socket 6" itemId="0"/>
+			<Slot name="Boots" itemId="19"/>
+			<Slot name="Weapon 2Swap Abyssal Socket 5" itemId="0"/>
+			<Slot name="Amulet" itemId="16"/>
+		</ItemSet>
+	</Items>
+	<Config>
+		<Input name="targetBrandedEnemy" boolean="true"/>
+		<Input name="ActiveBrands" number="3"/>
+		<Input name="conditionOnConsecratedGround" boolean="true"/>
+		<Input name="conditionEnemyOnConsecratedGround" boolean="true"/>
+		<Input name="waveOfConvictionExposureType" string="Fire"/>
+		<Input name="conditionEnemyIgnited" boolean="true"/>
+		<Input name="conditionEnemyUnnerved" boolean="true"/>
+		<Input name="playerHasMinusMaxResist" number="0"/>
+		<Input name="BrandsAttachedToEnemy" number="1"/>
+	</Config>
+</PathOfBuilding>
