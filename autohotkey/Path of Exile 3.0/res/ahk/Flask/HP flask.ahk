@@ -34,13 +34,14 @@ GroupAdd, poe, ahk_exe PathOfExile_x64.exe
 ; =========================
 ; Основные переменные:
 ; Vkeys					- меняет хоткеи
-; Vdvehilki				- меняет значение переменной для варианта 1
+; Vdvehilki					- меняет значение переменной для варианта 1
 ; Vtrihilki					- меняет значение переменной для варианта 2 и 3
 ; Vkvadhilki				- меняет значение переменной для варианта 4 и 5
-; Var_autoflask_bind	- для автофласок, потом разобраться с ним.
-; VautoButton			- тоже для автофласок, потом разобраться с ним.
-; Var_auto_skils			- для автокаста скилов, подробное описание в функции autocast
-; Var_path_auto_skils	- путь для скрипта автокаста, после "%A_ScriptDir%\"
+; Var_autoflask_bind			- для автофласок, потом разобраться с ним.
+; VautoButton				- тоже для автофласок, потом разобраться с ним.
+; Var_auto_skils				- для автокаста скилов, подробное описание в функции autocast
+; Var_path_auto_skils			- путь для скрипта автокаста, после "%A_ScriptDir%\"
+; Var_mana_toggle			- нужна что бы включать и выключать автофласку маны
 ;==============================================
 ; Переменные текста Gui
 ; VHeal				- текст первой строки
@@ -64,6 +65,7 @@ global VautoButton := 0
 global Var_autoflask_bind := 0
 global Var_auto_skils := 0
 global Var_path_auto_skils := "support skils script\BoneArmor.ahk"
+global Var_mana_toggle := 0
 ;==============================================
 ; Стартовый Gui, который показывает только что Vkeys = 0
 Gui, Destroy
