@@ -849,6 +849,15 @@ else if Vkeys = 11
 	VText1 := "d = 234"
 	VText2 := ""
 }
+else if Vkeys = 12
+{
+	VHeal := "Хилка+Cry на 1 и 2"
+	Vutil := "Утилитки одновременно"
+	VHealnumder := 1
+	Vutilnumber := 3
+	VText1 := "d = 234"
+	VText2 := ""
+}
 Sleep, % Sleepfunction(30, 50)
 ; ---------------------
 ; Код самого Gui
