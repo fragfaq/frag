@@ -556,67 +556,67 @@ return
 ; Объединяет Vaal Molten Shell и Enduring Cry на один бинд
 ; При активных биндах на фласки при нажатии на 9 (Mouse4, боковая кнопка мыши со вшитой девяткой на нее)
 ; Сперва прожимается Vaal Molten Shell, т.к. он инстант, потом Enduring Cry
-~scA::
-if (Vkeys > 0 and Vkeys <= 12)				; 9 + 6
-{
-	Sleep, % Sleepfunction(40, 60)
-	SendInput, {6}
-}
-else if (Vkeys <= 0 or Vkeys > 12)				; дефолт
-{
-	Sleep, 0
-}
-return
+; ~scA::
+; if (Vkeys > 0 and Vkeys <= 12)				; 9 + 6
+; {
+	; Sleep, % Sleepfunction(40, 60)
+	; SendInput, {6}
+; }
+; else if (Vkeys <= 0 or Vkeys > 12)				; дефолт
+; {
+	; Sleep, 0
+; }
+; return
 ;=========== бинд на Mouse2 =================================
 ; Bladefall‌ + Blade Blast на mouse2 (для деда)
 ; Если бинды на фласки включены - то на Mouse2 сперва прожимается Mouse2, а потом сразу R, что б кастовать BB и BF на 1 клавишу.
-~RButton::
-if (Vkeys > 0 and Vkeys <= 12)				; RButton + R
-{
-	Sleep, % Sleepfunction(395, 430)
-	SendInput, {7}
-}
-else if (Vkeys <= 0 or Vkeys > 12)				; дефолт
-{
-	Sleep, 0
-}
-return
+; ~RButton::
+; if (Vkeys > 0 and Vkeys <= 12)				; RButton + R
+; {
+	; Sleep, % Sleepfunction(395, 430)
+	; SendInput, {7}
+; }
+; else if (Vkeys <= 0 or Vkeys > 12)				; дефолт
+; {
+	; Sleep, 0
+; }
+; return
 ;=========== бинд на Mouse3 ==================================
 ; Автопрожатие манафласки по кд по таймеру.
 ; Таймер запускается на Mouse3 и выключается вместе с биндами фласок
-~MButton::
-if (Vkeys > 0 and Vkeys <= 12)				; RButton + R
-{
-	if Var_mana_toggle = 0
-	{
+; ~MButton::
+; if (Vkeys > 0 and Vkeys <= 12)				; RButton + R
+; {
+	; if Var_mana_toggle = 0
+	; {
 		; SetTimer, ManaLoop, % Sleepfunction(4800, 5000)
-		SetTimer, ManaLoop, % Sleepfunction(5200, 5500) ; Попробую увеличить кд фласки, что бы она медленнеее расходовалась
-		Var_mana_toggle := 1
-		Menu, Tray, Icon, %A_ScriptDir%\res\Mana_Flask1.png, 1
-	}
-	else if Var_mana_toggle = 1
-	{
-		SetTimer, ManaLoop, off
-		Var_mana_toggle := 0
-		Menu, Tray, Icon, %A_ScriptDir%\res\Life_flask1.png, 1
-	}
-}
-else if (Vkeys <= 0 or Vkeys > 12)				; дефолт
-{
-	SetTimer, ManaLoop, off
-	Var_mana_toggle := 0
-}
-return
+		; SetTimer, ManaLoop, % Sleepfunction(5200, 5500) ; Попробую увеличить кд фласки, что бы она медленнеее расходовалась
+		; Var_mana_toggle := 1
+		; Menu, Tray, Icon, %A_ScriptDir%\res\Mana_Flask1.png, 1
+	; }
+	; else if Var_mana_toggle = 1
+	; {
+		; SetTimer, ManaLoop, off
+		; Var_mana_toggle := 0
+		; Menu, Tray, Icon, %A_ScriptDir%\res\Life_flask1.png, 1
+	; }
+; }
+; else if (Vkeys <= 0 or Vkeys > 12)				; дефолт
+; {
+	; SetTimer, ManaLoop, off
+	; Var_mana_toggle := 0
+; }
+; return
 ; ==========
-ManaLoop:
-IfWinNotActive, ("ahk_class POEWindowClass")
-	{
-		WinWaitActive ahk_class POEWindowClass
-	}
-Sleep, % Sleepfunction(20, 40)
-SendInput, {sc6}
-Sleep, % Sleepfunction(20, 40)
-return
+; ManaLoop:
+; IfWinNotActive, ("ahk_class POEWindowClass")
+	; {
+		; WinWaitActive ahk_class POEWindowClass
+	; }
+; Sleep, % Sleepfunction(20, 40)
+; SendInput, {sc6}
+; Sleep, % Sleepfunction(20, 40)
+; return
 ; =================================================================================
 ; =================================================================================
 /* 
@@ -692,7 +692,7 @@ F8::
 ; Закомментировать все в этом блоке для доступности всех биндов. 
 ; Если какое-то значение Vkeys задано (не закомментированная строка), то при нажатии на F8 значение Vkeys станет на 1 больше.
 ; К примеру если не закомментирована строка "Vkeys := 0 ; 1&2 = 1/2, 3&d = 3+4+5, ~ = 5" то Vkeys станет 1. В строке указано какие бинды выставятся.
-; Vkeys := 4 ; Vkeys станет 5, бинды: 1&2 = 1/2, 3&d = 3/4, ~ = 5
+Vkeys := 4 ; Vkeys станет 5, бинды: 1&2 = 1/2, 3&d = 3/4, ~ = 5
 ; Vkeys := 8 ; Vkeys станет 9, бинды: 1&2 = 1, 3 = 2+3+4, d = 5, ~ = 5
 ; Vkeys := 9 ; Vkeys станет 10, бинды: 1&2 = 1, 3 = 2+3+4, d = 3+4+5, ~ = 5
 ; Vkeys := 0 ; Vkeys станет 1, бинды: 1&2 = 1/2, 3&d = 3+4+5, ~ = 5
@@ -700,7 +700,7 @@ F8::
 ; Vkeys := 5 ; Vkeys станет 6, бинды: 1&2 = 1, 3&d = 2+3+4+5, ~ = 5
 ; Vkeys := 6 ; Vkeys станет 7, бинды: 1&2 = 1/2, 3&d = 3+4, ~ = 5
 ; Vkeys := 10 ; Vkeys станет 11, бинды: 1&2 = 1, 3&d = 2+3+4, ~ = 5
-Vkeys := 11 ; Vkeys станет 12, бинды: 1&2 = 1&6, 3&d = 2+3+4, ~ = 5
+; Vkeys := 11 ; Vkeys станет 12, бинды: 1&2 = 1&6, 3&d = 2+3+4, ~ = 5
 ; --------------------------------------------------------------------------------
 ; Воспроизведение звука при акивации скрипта, если хоткей нажат случайно. Включение автокаста работает из любого окна, выключение только когда PoE активно.
 SoundPlay, %A_ScriptDir%\res\on.wav
@@ -1041,47 +1041,47 @@ return
 */
 ;=============================================
 ; Gui для автофласок, с ними надо еще разобраться (в списке "Надо разобраться с:" пункт 2)
-Autoflask:
-!sc21::
-SetTitleMatchMode, 2
-DetectHiddenWindows, On
-WinClose, Loop HP All flask.ahk - AutoHotkey v ; Закрывает цикл, если он работает
-Sleep, 20
-if VautoButton = 0	; если переменные клавиш в исходном состоянии - бинд клавиши D будет d = 2+3+4+5. При нажатии
-{					; хоткея или кнопки отрисовывается Gui, меняются значения VautoButton и Var_autoflask_bind на 1
-	Gui, 2:Destroy	; После этого бинд клавиши D будет запускать скрипт автофласок.
-	Gui, 3:Destroy
-	SoundBeep, 60, 50
-	Sleep, 20
-	Gui, 2:+LastFound +AlwaysOnTop +ToolWindow +OwnDialogs
-	Gui, 2:Font, S36 W900, Verdana
-	Gui, 2:Add, Text, x10 y3 c000000 BackgroundTrans, !!!!
-	Gui, 2:Add, Text, x6 y0 cb40a0a BackgroundTrans, !!!!
-	Gui, 2:Show, x480 y870 NoActivate, Auto_on
-	Gui, 2:Color, 000001
-	WinSet, TransColor, 000001
-	Gui, 2:-Caption
-	Var_autoflask_bind := 1
-	VautoButton := 1
-}
-else if VautoButton = 1 ; если биндом клавиши является запуск скрипта - меняет бинд на дефолтный.
-{
-	Gui, 2:Destroy
-	Gui, 3:Destroy
-	SoundBeep, 60, 50
-	Sleep, 20
-	Gui, 2:+LastFound +AlwaysOnTop +ToolWindow +OwnDialogs
-	Gui, 2:Font, S36 W900, Verdana
-	Gui, 2:Add, Text, x10 y3 c000000 BackgroundTrans, 
-	Gui, 2:Add, Text, x6 y0 cb40a0a BackgroundTrans, 
-	Gui, 2:Show, x480 y870 NoActivate, Auto_off
-	Gui, 2:Color, 000001
-	WinSet, TransColor, 000001
-	Gui, 2:-Caption
-	Var_autoflask_bind := 0
-	VautoButton := 0
-}
-return
+; Autoflask:
+; !sc21::
+; SetTitleMatchMode, 2
+; DetectHiddenWindows, On
+; WinClose, Loop HP All flask.ahk - AutoHotkey v ; Закрывает цикл, если он работает
+; Sleep, 20
+; if VautoButton = 0	; если переменные клавиш в исходном состоянии - бинд клавиши D будет d = 2+3+4+5. При нажатии
+; {					; хоткея или кнопки отрисовывается Gui, меняются значения VautoButton и Var_autoflask_bind на 1
+	; Gui, 2:Destroy	; После этого бинд клавиши D будет запускать скрипт автофласок.
+	; Gui, 3:Destroy
+	; SoundBeep, 60, 50
+	; Sleep, 20
+	; Gui, 2:+LastFound +AlwaysOnTop +ToolWindow +OwnDialogs
+	; Gui, 2:Font, S36 W900, Verdana
+	; Gui, 2:Add, Text, x10 y3 c000000 BackgroundTrans, !!!!
+	; Gui, 2:Add, Text, x6 y0 cb40a0a BackgroundTrans, !!!!
+	; Gui, 2:Show, x480 y870 NoActivate, Auto_on
+	; Gui, 2:Color, 000001
+	; WinSet, TransColor, 000001
+	; Gui, 2:-Caption
+	; Var_autoflask_bind := 1
+	; VautoButton := 1
+; }
+; else if VautoButton = 1 ; если биндом клавиши является запуск скрипта - меняет бинд на дефолтный.
+; {
+	; Gui, 2:Destroy
+	; Gui, 3:Destroy
+	; SoundBeep, 60, 50
+	; Sleep, 20
+	; Gui, 2:+LastFound +AlwaysOnTop +ToolWindow +OwnDialogs
+	; Gui, 2:Font, S36 W900, Verdana
+	; Gui, 2:Add, Text, x10 y3 c000000 BackgroundTrans, 
+	; Gui, 2:Add, Text, x6 y0 cb40a0a BackgroundTrans, 
+	; Gui, 2:Show, x480 y870 NoActivate, Auto_off
+	; Gui, 2:Color, 000001
+	; WinSet, TransColor, 000001
+	; Gui, 2:-Caption
+	; Var_autoflask_bind := 0
+	; VautoButton := 0
+; }
+; return
 ;==============================================
 :*:111111::
 reload
