@@ -965,9 +965,9 @@ F7::
 ; VautoButton := 0
 ; --------------------------------------------------------------------------------
 ; Остановка автопрожатия фласки с маной
-SetTimer, ManaLoop, Off
-Var_mana_toggle := 0
-Menu, Tray, Icon, %A_ScriptDir%\res\Life_flask1.png, 1
+; SetTimer, ManaLoop, Off
+; Var_mana_toggle := 0
+; Menu, Tray, Icon, %A_ScriptDir%\res\Life_flask1.png, 1
 ; --------------------------------------------------------------------------------
 ; Остановка автокаста
 SetTitleMatchMode, 2
