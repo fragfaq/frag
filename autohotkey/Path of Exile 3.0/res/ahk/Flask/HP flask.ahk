@@ -895,7 +895,7 @@ Gui, Add, Text, x221 y80 c000000 BackgroundTrans, keys %Vkeys%
 Gui, Add, Text, x221 y86 c000000 BackgroundTrans, keys %Vkeys%
 Gui, Add, Text, x219 y83 ca0a0a0 BackgroundTrans, keys %Vkeys%
 ; Кнопка для автопрожатия хп фласок
-Gui, add, Picture, x308 y88 w22 h25 gAutoflask, %A_ScriptDir%\res\hp-A.png
+; Gui, add, Picture, x308 y88 w22 h25 gAutoflask, %A_ScriptDir%\res\hp-A.png
 ; показ и положение Gui
 Gui, Show, x220 y870 NoActivate, Flask
 ; прозрачность
