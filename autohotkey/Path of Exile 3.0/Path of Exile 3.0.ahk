@@ -331,11 +331,18 @@ return
 ;===============================================
 
 ;=============================================
-
-; Дымовая мина
+; Дымовая мина или еще какая-нибудь
 ; ~sc10::
+; ~sc11::
 ; Sleep, 300
-; SendInput, 6
+; Sleep, % Sleepfunction(280, 400)
+; SendInput, 8
+; Sleep, % Sleepfunction(280, 400)
+; SendInput, 8
+; Sleep, % Sleepfunction(280, 400)
+; SendInput, 8
+; Sleep, % Sleepfunction(280, 400)
+; SendInput, 8
 ; return
 ;=============================================
 ; Автокликер на Ctrl+Mouse3
