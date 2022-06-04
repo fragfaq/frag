@@ -92,7 +92,7 @@
 	<Import lastAccountHash="5a634012bd9585e53eba4bd0800e0fb67c96b020" lastRealm="PC" lastCharacterHash="aeca970d36f8b21526f7b91b9407303139a169f3"/>
 	<Calcs>
 		<Input name="misc_buffMode" string="EFFECTIVE"/>
-		<Input name="skill_number" number="1"/>
+		<Input name="skill_number" number="6"/>
 		<Section collapsed="nil" id="SkillSelect"/>
 		<Section collapsed="nil" id="HitDamage"/>
 		<Section collapsed="nil" id="Warcries"/>
@@ -129,7 +129,7 @@
 			<Gem enableGlobal2="nil" level="17" enableGlobal1="true" skillId="Determination" qualityId="Default" gemId="Metadata/Items/Gems/SkillGemDetermination" quality="0" enabled="true" count="nil" nameSpec="Determination"/>
 			<Gem enableGlobal2="nil" level="13" enableGlobal1="true" skillId="DefianceBanner" qualityId="Default" gemId="Metadata/Items/Gems/SkillGemDefianceBanner" quality="0" enabled="true" count="nil" nameSpec="Defiance Banner"/>
 		</Skill>
-		<Skill mainActiveSkillCalcs="nil" includeInFullDPS="nil" label="" groupCount="nil" enabled="true" slot="Boots" mainActiveSkill="nil">
+		<Skill mainActiveSkillCalcs="1" includeInFullDPS="nil" label="" groupCount="nil" enabled="true" slot="Boots" mainActiveSkill="nil">
 			<Gem enableGlobal2="nil" level="17" enableGlobal1="true" skillId="FireTrap" qualityId="Default" gemId="Metadata/Items/Gems/SkillGemFireTrap" quality="0" enabled="true" count="nil" nameSpec="Fire Trap"/>
 			<Gem enableGlobal2="nil" level="17" enableGlobal1="true" skillId="SupportLifetap" qualityId="Default" gemId="Metadata/Items/Gems/SupportGemLifetap" quality="0" enabled="true" count="nil" nameSpec="Lifetap"/>
 			<Gem enableGlobal2="nil" level="17" enableGlobal1="true" skillId="SupportControlledDestruction" qualityId="Default" gemId="Metadata/Items/Gems/SupportGemControlledDestruction" quality="0" enabled="true" count="nil" nameSpec="Controlled Destruction"/>
@@ -141,7 +141,7 @@
 		<Skill mainActiveSkillCalcs="nil" includeInFullDPS="nil" label="" groupCount="nil" enabled="true" slot="Weapon 1" mainActiveSkill="nil">
 			<Gem enableGlobal2="nil" level="17" enableGlobal1="true" skillId="Purity" qualityId="Default" gemId="Metadata/Items/Gems/SkillGemPurity" quality="0" enabled="true" count="nil" nameSpec="Purity of Elements"/>
 		</Skill>
-		<Skill mainActiveSkillCalcs="nil" includeInFullDPS="nil" label="" groupCount="nil" enabled="true" slot="Body Armour" mainActiveSkill="1">
+		<Skill mainActiveSkillCalcs="1" includeInFullDPS="nil" label="" groupCount="nil" enabled="true" slot="Body Armour" mainActiveSkill="1">
 			<Gem enableGlobal2="nil" level="17" enableGlobal1="true" skillId="RighteousFire" qualityId="Default" gemId="Metadata/Items/Gems/SkillGemRighteousFire" quality="0" enabled="true" count="nil" nameSpec="Righteous Fire"/>
 			<Gem enableGlobal2="nil" level="17" enableGlobal1="true" skillId="SupportIncreasedBurningDamage" qualityId="Default" gemId="Metadata/Items/Gems/SupportGemIncreasedBurningDamage" quality="0" enabled="true" count="nil" nameSpec="Burning Damage"/>
 			<Gem enableGlobal2="nil" level="17" enableGlobal1="true" skillId="SupportIncreasedAreaOfEffect" qualityId="Default" gemId="Metadata/Items/Gems/SupportGemIncreasedAreaOfEffect" quality="0" enabled="true" count="nil" nameSpec="Increased Area of Effect"/>
@@ -181,7 +181,7 @@
 	<Notes>
 		
 	</Notes>
-	<TreeView searchStr="" zoomY="408.1683328" showHeatMap="nil" zoomLevel="8" showStatDifferences="true" zoomX="581.2678656"/>
+	<TreeView searchStr="" zoomY="304.31179699753" showHeatMap="nil" zoomLevel="8" showStatDifferences="true" zoomX="836.19733597037"/>
 	<Items activeItemSet="1" useSecondWeaponSet="nil">
 		<Item id="1">
 			Rarity: RARE
