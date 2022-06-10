@@ -7,7 +7,13 @@ CoordMode, Mouse, Screen
 ;========================================================================
 Menu, Tray, Icon, %A_ScriptDir%\res\pic\s.ico, 1
 ;========================================================================
-; Название предмета из буфера обмена
+Currency_List := "chaos||exalted|alch|fuse|jew|chisel|vaal"
+;========================================================================
+; Эта штука отвалилась, потому что ГГГ переделали текст копирования итемов. Чинить я ее не буду, потому что сложна, а толку почти ноль от нее.
+; Раньше в Currency_List менялась дефолтная валюта благодоря этой штуке. Я вынес его отдельно, сейчас всегда по дефолту хаос.
+; Это позволила мне сделать Gui более понятным в том, как считается Ratio, я сменил текст, в том числе на двух кнопках.
+/*
+; Название предмета из буфера обмена?
 SendInput, ^{sc2E} ; Копирование в буфер из под курсора
 Sleep, 50
 Item_Copy := Clipboard
@@ -36,6 +42,7 @@ if Item_Copy_Full_Cut = ; Если скопировалась какая-то х
 	Item_Copy_Full_Cut := "Itemasdafdsfsdfsdfasdasd"
 }
 Sleep, 30
+*/
 ;========================================================================
 ; Общие опции Gui
 Gui, 1:+LastFound +AlwaysOnTop +OwnDialogs
@@ -55,20 +62,21 @@ Gui, 1:Font, S14 W700, Verdana
 Gui, 1:Add, Edit, x110 y50 w90 r1 vIpay, 1
 Gui, 1:Add, UpDown, Range1-9999, 1
 Gui, 1:Font, S18 W700, Verdana
-Gui, 1:Add, Text, x220 y55 w260 h25 r1 c00e500, %Item_Copy_Full_Cut%
+; Gui, 1:Add, Text, x220 y55 w260 h25 r1 c00e500, %Item_Copy_Full_Cut% 
+Gui, 1:Add, Text, x220 y55 w260 h25 r1 c00e500, Use Ratio from:
 ; Третья строка элементов Gui (кнопки превью и релоад тултип)
 Gui, 1:Add, Text, x10 y95, Ratio:
 Gui, 1:Font, S14 W700, Verdana
 Gui, 1:Add, Edit, x95 y90 w135 r1 vRatio, 
 Gui, 1:Add, UpDown, Range0-999999999, 1
-Gui, 1:Add, Button, x255 y90 w115 h30 gCalc_use_ratio, Use Ratio
-Gui, 1:Add, Button, x390 y90 w95 h30 gCalc_not_use_ratio, Not Use
+Gui, 1:Add, Button, x255 y90 w115 h30 gCalc_use_ratio, EditBox
+Gui, 1:Add, Button, x390 y90 w95 h30 gCalc_not_use_ratio, Use My
 ; Четвертая и пятая строки элементов Gui, значения при рэтио с сайта
 Gui, 1:Add, GroupBox, x10 y130 w480 h95 c00e500 Section, Use site Ratio: All ratio and sum
 Gui, 1:Add, Text, xs+10 ys+30 vChaos_label_in_site_ratio, chaos
 Gui, 1:Add, Text, xs+240 ys+30 vChaos_ratio_in_site_ratio, Ratio.....
 Gui, 1:Add, Text, xs+390 ys+30 vChaos_count_in_site_ratio, Sum..
-Gui, 1:Add, Text, xs+10 ys+65 w220 h25, %Item_Copy_Full_Cut%
+Gui, 1:Add, Text, xs+10 ys+65 w220 h25, ITEM
 Gui, 1:Add, Text, xs+240 ys+65 vCurrency_ratio_in_site_ratio, Ratio.....
 Gui, 1:Add, Text, xs+390 ys+65 vCurrency_count_in_site_ratio, Sum..
 ; Шестая и седьмая строки элементов Gui, значения при моем рэтио
@@ -76,7 +84,7 @@ Gui, 1:Add, GroupBox, x10 y230 w480 h95 c00e500 Section, Use my Ratio: All ratio
 Gui, 1:Add, Text, xs+10 ys+30 vCurrency_label_in_my_ratio, chaos
 Gui, 1:Add, Text, xs+240 ys+30 vChaos_ratio_in_my_ratio, Ratio.....
 Gui, 1:Add, Text, xs+390 ys+30 vChaos_count_in_my_ratio, Sum..
-Gui, 1:Add, Text, xs+10 ys+65 w220 h25, %Item_Copy_Full_Cut%
+Gui, 1:Add, Text, xs+10 ys+65 w220 h25, ITEM
 Gui, 1:Add, Text, xs+240 ys+65 vCurrency_ratio_in_my_ratio, Ratio.....
 Gui, 1:Add, Text, xs+390 ys+65 vCurrency_count_in_my_ratio, Sum..
 Gui, 1:Font, S22 W700, Verdana
@@ -96,7 +104,7 @@ Gui, 1:Add, Text, xs+340 ys+55 gMoveratio, ▲
 ; Отображение Gui
 Gui, 1:Show, x700 y270 w500, Price
 Return
-;========================================================================--------------------------------------------------------------
+;========================================================================------------------------------------------------
 ; Дебаг, потом убрать
 ;F8::
 ;MsgBox,,, 1
