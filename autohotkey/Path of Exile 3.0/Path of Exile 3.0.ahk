@@ -310,6 +310,20 @@ sc149::
 run, %A_ScriptDir%\res\ahk\gui\Fast_Price.ahk
 return
 ;===============================================
+; Прокаст всех пяти аур, на Ctrl+W нажимаются Ctrl+I, Ctrl+O, Ctrl+P, Ctrl+[ и Ctrl+]
+^sc11::
+Sleep, % Sleepfunction(250, 500)
+SendInput, ^{sc17}	
+Sleep, % Sleepfunction(250, 500)
+SendInput, ^{sc18}	
+Sleep, % Sleepfunction(250, 500)
+SendInput, ^{sc19}	
+Sleep, % Sleepfunction(250, 500)
+SendInput, ^{sc1A}	
+Sleep, % Sleepfunction(250, 500)
+SendInput, ^{sc1B}	
+return
+;===============================================
 ; ty на Insert
 ; sc152::
 ; Sleep, 50
