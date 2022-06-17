@@ -310,24 +310,24 @@ run, %A_ScriptDir%\res\ahk\gui\Fast_Price.ahk
 return
 ;===============================================
 ; ty на Insert
-sc152::
-Sleep, 50
-SendInput, ty
-Sleep, 50
-return
+; sc152::
+; Sleep, 50
+; SendInput, ty
+; Sleep, 50
+; return
 ;===============================================
-:*:tttt::
-Send thanks
-return
+; :*:tttt::
+; Send thanks
+; return
 ;============
-:*:llll::
+; :*:llll::
 ; Send Hi, can you wait a bit? I have to finish here. I will try to quickly
-Send Hi, can you wait a bit? I have to finish here.
-return
+; Send Hi, can you wait a bit? I have to finish here.
+; return
 ;============
-:*:mnm::
-Send Hi, after map
-return
+; :*:mnm::
+; Send Hi, after map
+; return
 ;===============================================
 
 ;=============================================
