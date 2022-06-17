@@ -255,14 +255,14 @@ return
 ; ===================
 ;=============================================
 ;Shift+Alt+q - Shift+mouse1 10 раз (автозаточка)
-+!sc10::
-Loop, 10
-{
-Random, vS1, 100, 190
-Sleep, % Sleepfunction(100, 200)
-SendInput, +{LButton}
-}
-return
+; +!sc10::
+; Loop, 10
+; {
+; Random, vS1, 100, 190
+; Sleep, % Sleepfunction(100, 200)
+; SendInput, +{LButton}
+; }
+; return
 ; =============================================
 ;Control+s = Esc, для закрытия чата
 ^sc1F::
