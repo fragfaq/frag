@@ -225,13 +225,13 @@ return
 ;         Скрипты на хоткеи                   =============================================
 ;==========================================================================================
 ; Logout на Alt+CapsLock и на Shift+CapsLock
-!sc3A::
-+sc3A::
-BlockInput On
-Process close, PathOfExile.exe
-Process close, PathOfExile_x64.exe
-BlockInput Off
-return
+; !sc3A::
+; +sc3A::
+; BlockInput On
+; Process close, PathOfExile.exe
+; Process close, PathOfExile_x64.exe
+; BlockInput Off
+; return
 ;==========================================================================================
 ;сообщение в гильду на Del
 sc153::
