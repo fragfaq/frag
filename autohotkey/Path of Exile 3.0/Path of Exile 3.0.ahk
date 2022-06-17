@@ -198,6 +198,7 @@ sleep, 30
 Run, %A_ScriptDir%\res\ahk\other\Craft.ahk
 return
 ;==============================================
+; отправляет в пое сообщение трэйда из буфера
 F3::
 IfWinNotActive, ("ahk_class POEWindowClass")
 {
