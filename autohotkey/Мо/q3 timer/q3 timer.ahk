@@ -1,11 +1,21 @@
 ﻿#SingleInstance Force
 
-F1::
-Sleep, 24000
-SoundPlay, %A_ScriptDir%\res\1.mp3
+sc2F::
+SendInput, {sc2F}
+SetTimer, Timer1, 24000
 return
 
-F2::
-Sleep, 24000
+sc2D::
+SendInput, {sc2D}
+SetTimer, Timer2, 24000
+return
+
+Timer1:
+SoundPlay, %A_ScriptDir%\res\1.mp3
+SetTimer, Timer1, off
+return
+
+Timer2:
 SoundPlay, %A_ScriptDir%\res\2.mp3
+SetTimer, Timer2, off
 return
