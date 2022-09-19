@@ -1,0 +1,113 @@
+﻿{
+    /* Плашка снять стрим с главной */
+    publication-announce-alert {
+        display: none
+    }
+    /* зеленый цвет вопросиков */
+    .chat-msg__possible-violation {
+        color: #2c9917
+    }
+    /* фон сайта */
+    div.content {
+        background-color: #171717
+    }
+    /* осветлить слишком темный текст */
+    .ql-editor,
+    .comment-message,
+    .comment-header__name,
+    .publication__title,
+    .blog-card__title,
+    .blog-card-author__nickname,
+    .article-card__title,
+    .recent-blogs-item__title,
+    .stream-card__title,
+    .publication__summary,
+    .news-carousel-item__title,
+    .forum-thread__title,
+    .publication-author__nickname,
+    .blogs-author__nickname,
+    .news-archive__header,
+    .news-archive-item__title,
+    .aep-text__title,
+    .aep-text__summary,
+    .ql-editor.ql-blank::before,
+    .adash-column__header,
+    .adash-column-item__title,
+    .apub-feature-header__article,
+    .table td {
+        color: #999
+    }
+    /* всякие полоски */
+    .publication__summary {
+        border-bottom: none
+    }
+    .blogs-author {
+        border-bottom: none
+    }
+    /* убирает красный хавер на "В прямом эфире" */
+    .index-stream-divider a:hover {
+        color: #999
+    }
+    /* черный фон поля ввода комментов */
+    .input {
+        background-color: black;
+        color: #d2d2d2;
+    }
+
+    /* размер картинки в шапке */
+    .header-wrapper--has-feature {
+        height: 30%;
+    }
+    /* выпиливает с глагны ссылки на социалки */
+    .index-social_flex {
+        display: none
+    }
+
+    /* Обводка блогов */
+    .blog-card {
+        padding: 10px;
+        box-shadow: 0 2px 6px 0 rgb(93, 201, 186);
+    }
+    /* уменьшает отступ статей */
+    .main {
+        padding: 20px 24px
+    }
+    .news-carousel {
+        margin-bottom: 10px;
+    }
+    /* убирает рамку картинок в чате */
+    .chat-msg__image {
+        border: none !important;
+    }
+    /* ховер текста карусельки */
+    .news-carousel-item__title:hover {
+        color: #999
+    }
+    /* ховер текста новостей */
+    .article-card__title:hover {
+        color: #999
+    }
+    /* цвет блока под подвалом в профиле юзера */
+    body.ng-tns-0-0 {
+        background-color: #171717
+    }
+    /* кнопка доната на стриме */
+    .btn--primary {
+        background-color: #015c0b
+    }
+    /* кнопка подписки */
+    .btn-subscribe {
+        background-color: #546059;
+        box-shadow: inset 0 0 0 1px #000;
+        color: #000;
+    }
+    /* цвет некоторых кнопок в модерке */
+    button.btn.btn--tertiary {
+        color: #000;
+    }
+    /* галочка хистори банов */
+    svg.angle.ng-star-inserted {
+        fill: #0f0;
+        background-color: #681c1c
+    }
+}
