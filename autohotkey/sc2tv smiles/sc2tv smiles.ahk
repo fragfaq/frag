@@ -1,91 +1,59 @@
 ﻿Menu, Tray, Icon, 1.ico, 1
 ;=============================================
-GroupAdd, smile, ahk_exe firefox.exe
+; GroupAdd, smile, ahk_exe firefox.exe
 GroupAdd, smile, ahk_exe chrome.exe
-GroupAdd, smile, ahk_exe Skype.exe
+; GroupAdd, smile, ahk_exe Skype.exe
 GroupAdd, smile, ahk_exe Discord.exe
 GroupAdd, smile, ahk_exe Telegram.exe
 ;=============================================
 #IfWinActive ahk_group smile
 ;=============================================
 F1::
-BlockInput On
+Sleep, 200
 SendInput, {space}:five:{space}
-SendInput, {Enter}
-BlockInput Off
+Sleep, 200
+return
+;=============================================
+F2::
+Sleep, 200
+SendInput, {space}:joyful:{space}
+Sleep, 200
+return
+;=============================================
+F4::
+Sleep, 200
+SendInput, {space}:gusta:{space}
+Sleep, 200
+return
+;=============================================
+F8::
+Sleep, 200
+SendInput, {space}:anigandalf:{space}
+Sleep, 200
 return
 ;=============================================
 F9::
-ClipSaved := ClipboardAll
-Random, v1, 1, 3
 Sleep, 200
-Clipboard = :shockot:
+SendInput, {space}:anigglord:{space}
 Sleep, 200
-SendInput, ^{sc2F %v1%}
-Sleep, 200
-SendInput, {Enter}
-Sleep, 200
-Clipboard := ClipSaved
 return
 ;=============================================
 F10::
-ClipSaved := ClipboardAll
-Random, v1, 1, 3
 Sleep, 200
-Clipboard = :happy:
+SendInput, {space}:happy:{space}
 Sleep, 200
-SendInput, ^{sc2F %v1%}
-Sleep, 200
-SendInput, {Enter}
-Sleep, 200
-Clipboard := ClipSaved
 return
 ;=============================================
 F11::
-ClipSaved := ClipboardAll
-Random, v1, 1, 3
 Sleep, 200
-Clipboard = :peka:
+SendInput, {space}:peka:{space}
 Sleep, 200
-SendInput, ^{sc2F %v1%}
-Sleep, 200
-SendInput, {Enter}
-Sleep, 200
-Clipboard := ClipSaved
 return
 ;=============================================
 F12::
-ClipSaved := ClipboardAll
-Random, v1, 1, 3
 Sleep, 200
-Clipboard = :grumpy:
+SendInput, {space}:grumpy:{space}
 Sleep, 200
-SendInput, ^{sc2F %v1%}
-Sleep, 200
-SendInput, {Enter}
-Sleep, 200
-Clipboard := ClipSaved
-return
-;=============================================
-Browser_Back::
-BlockInput On
-SendInput, {space}:aniadolf:{space}
-SendInput, {Enter}
-BlockInput Off
-return
-;=============================================
-Browser_Forward::
-BlockInput On
-SendInput, {space}:anilove:{space}
-SendInput, {Enter}
-BlockInput Off
-return
-;=============================================
-Browser_Stop::
-BlockInput On
-SendInput, {space}:holypeka:{space}
-SendInput, {Enter}
-BlockInput Off
 return
 ;=============================================
 +F12::
